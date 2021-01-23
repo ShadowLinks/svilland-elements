@@ -5,7 +5,7 @@
 		<description></description>
 		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
 		<update version="0.0.1">
-			<file name="race-austri.xml" url="addlater" />
+			<file name="race-austri.xml" url="https://raw.githubusercontent.com/The-Multitud-e/svilland-elements/main/svilland/race-austri.xml" />
 		</update>
 	</info>
 	
