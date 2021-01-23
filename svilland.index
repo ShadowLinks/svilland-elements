@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Svilland</name>
+		<description>Norse themed setting and character options for D&amp;D 5e</description>
+		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
+		<update version="0.0.1">
+			<file name="svilland.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="add it later" />
+		
+		<!-- Races -->
+		<file name="race-austri.xml" url="addlater"/>
+		
+		<!-- Classes -->
+		
+		
+		<!-- Spells -->
+		
+		
+		<!-- Equipment -->	
+		
+		
+		</files>
+</index>

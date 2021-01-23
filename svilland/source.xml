@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="source.xml" url="addlater" />
+		</update>
+	</info>
+	<element name="Svilland" type="Source" source="Third-Party" id="ID_DRS_SOURCE_SVILLAND">
+		<description>
+			<![CDATA[<p>Norse setting and character options for 5e</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">SVI</set>
+			<set name="author" abbreviation="DRS">Dream Realm Storytellers</set>
+			<set name="official">false</set>
+			<set name="core">false</set>
+			<set name="release">20200815</set>
+		</setters>
+	</element>
+</elements>
