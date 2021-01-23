@@ -60,8 +60,8 @@ aurora content builder elements from svilland norse setting for 5e
 	- Laugr-Touched
 	- Sol-Touched
 
-### Races:
-- Austri
+### Races- in progress:
+- Austri - in progress
 - Dvergr
 - Half-Jotunn
 	- Mountain Half-Jotunn
