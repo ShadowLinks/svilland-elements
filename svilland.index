@@ -10,6 +10,8 @@
 	</info>
 	<files>
 		<file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/source.xml" />
+		<file name="langauges.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/languages.xml"/>
+		<file name="backgrounds.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/backgrounds.xml" />
 		
 		<!-- Races -->
 		<file name="race-austri.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/race-austri.xml"/>
