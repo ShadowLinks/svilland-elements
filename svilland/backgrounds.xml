@@ -284,7 +284,7 @@
             </select>
         </rules>
     </element>
-    <element name="History" type="Background Feature" source="source" id="ID_DRS_SVILLAND_BACKGROUND_FEATURE_HISTORY">
+    <element name="History" type="Background Feature" source="svilland" id="ID_DRS_SVILLAND_BACKGROUND_FEATURE_HISTORY">
         <supports>thrall-prof</supports>
         <requirements>ID_DRS_SVILLAND_BACKGROUND_THRALL</requirements>
         <description>
@@ -298,7 +298,7 @@
             <select type="Proficiency" name="Tool Proficiency, Thrall" supports="Artisan" />
         </rules>
     </element>
-    <element name="Animal Handling" type="Background Feature" source="source" id="ID_DRS_SVILLAND_BACKGROUND_FEATURE_ANIMALHANDLING">
+    <element name="Animal Handling" type="Background Feature" source="svilland" id="ID_DRS_SVILLAND_BACKGROUND_FEATURE_ANIMALHANDLING">
         <supports>thrall-prof</supports>
         <requirements>ID_DRS_SVILLAND_BACKGROUND_THRALL</requirements>
         <description>
@@ -312,7 +312,7 @@
             <select type="Proficiency" name="Tool Proficiency, Thrall" supports="Artisan" />
         </rules>
     </element>
-    <element name="Medicine" type="Background Feature" source="source" id="ID_DRS_SVILLAND_BACKGROUND_FEATURE_MEDICINE">
+    <element name="Medicine" type="Background Feature" source="svilland" id="ID_DRS_SVILLAND_BACKGROUND_FEATURE_MEDICINE">
         <supports>thrall-prof</supports>
         <requirements>ID_DRS_SVILLAND_BACKGROUND_THRALL</requirements>
         <description>
@@ -326,7 +326,7 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
         </rules>
     </element>
-    <element name="Nature" type="Background Feature" source="source" id="ID_DRS_SVILLAND_BACKGROUND_FEATURE_NATURE">
+    <element name="Nature" type="Background Feature" source="svilland" id="ID_DRS_SVILLAND_BACKGROUND_FEATURE_NATURE">
         <supports>thrall-prof</supports>
         <requirements>ID_DRS_SVILLAND_BACKGROUND_THRALL</requirements>
         <description>
