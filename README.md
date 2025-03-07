@@ -12,7 +12,7 @@ Thank you to The-Multitud-e for starting the project I forked from.
 - Seidr
 	- Chanter of Kin
 	- Chanter of Skies
-	- Chanter of Natura
+	- Chanter of Naturra
 - Paladin Oaths
 	- Oath to Freyja
 	- Oath to Hel
@@ -30,7 +30,7 @@ Thank you to The-Multitud-e for starting the project I forked from.
 	- Tradition of Villr
 - Fighter Archetypes
 	- Rune Warrior
-	- Shield-person
+	- Shieldman/Shieldmaiden
 	- Vikingr
 - Cleric Domains
 	- Execution Domain
@@ -59,7 +59,7 @@ Thank you to The-Multitud-e for starting the project I forked from.
 	- Isa-Touched
 	- Kaun-Touched
 	- Laugr-Touched
-	- Sol-Touched
+	- Thurisaz-Touched
 
 ### Races- in progress:
 - Austri - in progress
