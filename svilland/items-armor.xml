@@ -19,12 +19,189 @@
             <set name="weight" lb="8">8 lb.</set>
             <set name="slot">body</set>
             <set name="armor">Light</set>
+            <set name="stealth">Disadvantage</set>
             <set name="armorClass">11 + Dex modifier</set>
             <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_LEATHER</set>
         </setters>
         <rules>
             <stat name="ac:armored:armor" value="11"/>
             <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
+        </rules>
+    </element>
+    <element name="Light Hide" type="Armor" source="Svilland" id="ID_DRS_SVILLAND_ARMOR_MEDIUM_LIGHT_HIDE">
+        <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+        <description>
+            <p>This armor is made from thin hides such as hare and fox hide. It is as flexible as leather, which means it offers protection without sacrificing mobility or imposing disadvantage on Dexterity (Stealth) checks.</p>
+        </description>
+        <setters>
+            <set name="category">Armor</set>
+            <set name="cost" currency="gp">20</set>
+            <set name="weight" lb="12">12 lb.</set>
+            <set name="slot">body</set>
+            <set name="armor">Medium</set>
+            <set name="armorClass">12 + Dex modifier (max 2)</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HIDE</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="12"/>
+        </rules>
+    </element>
+    <element name="Medium Hide" type="Armor" source="Svilland" id="ID_DRS_SVILLAND_ARMOR_MEDIUM_MEDIUM_HIDE">
+        <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+        <description>
+            <p>This armor is made of wolf hide. It is the most common type of hide armor and provides decent protection.</p>
+        </description>
+        <setters>
+            <set name="category">Armor</set>
+            <set name="cost" currency="gp">45</set>
+            <set name="weight" lb="12">14 lb.</set>
+            <set name="slot">body</set>
+            <set name="armor">Medium</set>
+            <set name="armorClass">13 + Dex modifier (max 2)</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HIDE</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="13"/>
+        </rules>
+    </element>
+    <element name="Heavy Hide" type="Armor" source="Svilland" id="ID_DRS_SVILLAND_ARMOR_MEDIUM_HEAVY_HIDE">
+        <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+        <description>
+            <p>This armor is made of thick hides, such as that of the grizzly or the black bear. It provides great protection but is quite crude compared to its counterparts. Some jarls and warlords perceive this armor as a symbol of status, as it is usually made from the hide of bears one hunts themselves.</p>
+        </description>
+        <setters>
+            <set name="category">Armor</set>
+            <set name="cost" currency="gp">60</set>
+            <set name="weight" lb="17">17 lb.</set>
+            <set name="slot">body</set>
+            <set name="armor">Medium</set>            
+            <set name="stealth">Disadvantage</set>
+            <set name="armorClass">14 + Dex modifier (max 2)</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HIDE</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="14"/>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
+        </rules>
+    </element>
+    <element name="Plated Leather" type="Armor" source="Svilland" id="ID_DRS_SVILLAND_ARMOR_MEDIUM_PLATED_LEATHER">
+        <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+        <description>
+            <p>This armor is made up of a leather breast armor worn over the studded leather and gambeson. The piece has thin plates sewn into its layers. Since its plates don’t touch each other, it provides decent protection without sacrificing mobility.</p>
+        </description>
+        <setters>
+            <set name="category">Armor</set>
+            <set name="cost" currency="gp">400</set>
+            <set name="weight" lb="18">18 lb.</set>
+            <set name="slot">body</set>
+            <set name="armor">Medium</set>
+            <set name="armorClass">14 + Dex modifier (max 2)</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HIDE</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="14"/>
+        </rules>
+    </element>
+    <element name="Lamellar" type="Armor" source="Svilland" id="ID_DRS_SVILLAND_ARMOR_MEDIUM_LAMELLAR">
+        <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+        <description>
+            <p>This armor is made of thin, square, or rectangular pieces of metal woven into one another with leather lace, sewn onto a leather base. The metal pieces are tightly wound together, leaving no gaps in between and thus providing stellar protection.</p>
+        </description>
+        <setters>
+            <set name="category">Armor</set>
+            <set name="cost" currency="gp">750</set>
+            <set name="weight" lb="20">20 lb.</set>
+            <set name="slot">body</set>
+            <set name="armor">Medium</set>            
+            <set name="stealth">Disadvantage</set>
+            <set name="armorClass">15 + Dex modifier (max 2)</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HIDE</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="15"/>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
+        </rules>
+    </element>
+    <element name="Chain Hauberk" type="Armor" source="Svilland" id="ID_DRS_SVILLAND_ARMOR_HEAVY_CHAIN_HAUBERK">
+        <supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+        <description>
+            <p>This armor is a lighter version of Svilland chain mail (see below). It has short sleeves that cover half the arm, and it does not have leggings. It is a simple and versatile armor. It has a single piece with no straps or leather lines.</p>
+        </description>
+        <setters>
+            <set name="category">Armor</set>
+            <set name="cost" currency="gp">75</set>
+            <set name="weight" lb="22">22 lb.</set>
+            <set name="slot">body</set>
+            <set name="armor">Heavy</set>            
+            <set name="stealth">Disadvantage</set>
+            <set name="armorClass">16</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_CHAIN_MAIL</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="16"/>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
+            <stat name="speed" value="-10" bonus="armor" requirements="!([str:13]||ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT)"/>
+        </rules>
+    </element>
+    <element name="Svilland Chain Mail" type="Armor" source="Svilland" id="ID_DRS_SVILLAND_ARMOR_HEAVY_SVILLAND_CHAIN_MAIL">
+        <supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+        <description>
+            <p>Svilland chain mail is more protective than other chain mail thanks to its structure, which is much more tightly woven.</p>
+        </description>
+        <setters>
+            <set name="category">Armor</set>
+            <set name="cost" currency="gp">200</set>
+            <set name="weight" lb="33">33 lb.</set>
+            <set name="slot">body</set>
+            <set name="armor">Heavy</set>            
+            <set name="stealth">Disadvantage</set>
+            <set name="armorClass">17</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_CHAIN_MAIL</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="17"/>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
+            <stat name="speed" value="-10" bonus="armor" requirements="!([str:15]||ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT)"/>
+        </rules>
+    </element>
+    <element name="Square Plates" type="Armor" source="Svilland" id="ID_DRS_SVILLAND_ARMOR_HEAVY_SQUARE_PLATES">
+        <supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+        <description>
+            <p>Svilland chain mail is more protective than other chain mail thanks to its structure, which is much more tightly woven.</p>
+        </description>
+        <setters>
+            <set name="category">Armor</set>
+            <set name="cost" currency="gp">1500</set>
+            <set name="weight" lb="45">45 lb.</set>
+            <set name="slot">body</set>
+            <set name="armor">Heavy</set>            
+            <set name="stealth">Disadvantage</set>
+            <set name="armorClass">18</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_PLATE</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="18"/>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
+            <stat name="speed" value="-10" bonus="armor" requirements="!([str:15]||ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT)"/>
+        </rules>
+        </element>
+    <element name="Round Shield" type="Armor" source="Svilland" id="ID_DRS_SVILLAND_GEAR_ROUND_SHIELD">
+        <supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
+        <description>
+            <p>A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time.</p>
+        </description>
+        <setters>
+            <set name="category">Armor</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="6">6 lb.</set>
+            <set name="slot">onehand,secondary</set>
+            <set name="type">Shield</set>
+            <set name="armor">Shield</set>
+            <set name="armorClass">+2</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
+        </setters>
+        <rules>
+            <stat name="ac:shield" value="2" bonus="shield"/>
         </rules>
     </element>
 </elements>
