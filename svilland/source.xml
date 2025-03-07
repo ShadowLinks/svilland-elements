@@ -12,9 +12,11 @@
 		<setters>
 			<set name="abbreviation">SVI</set>
 			<set name="author" abbreviation="DRS">Dream Realm Storytellers</set>
+			<set name="image">https://d1vzi28wh99zvq.cloudfront.net/images/13543/280918.jpg</set>
 			<set name="official">false</set>
 			<set name="core">false</set>
 			<set name="release">20200815</set>
+			<set name="third-party">true</set>
 		</setters>
 	</element>
 </elements>
