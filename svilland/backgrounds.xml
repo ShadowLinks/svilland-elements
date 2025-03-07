@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Backgrounds</name>
+		<description></description>
+		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
+		<update version="0.0.1">
+			<file name="backgrounds.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/backgrounds.xml" />
+		</update>
+	</info>
+    <element name="Destined" type="Background" source="Svilland" id="ID_DRS_SVILLAND_BACKGROUND_DESTINED">
+        <description>
+            <p>You were born in a divine and holy way. This could mean that you were born on an important day or in a ritual, or that you are connected to the Gods and Goddesses in another kind of way. You can understand the workings of the Gods and Goddesses better than most. You have been appointed a sacred mission by the Gods and Goddesses and must survive until their deed is done. Being destined brings with it a lot of responsibilities. Most people who know you are destined expect heroic (and mostly impossible) things of you. Every destined faces the challenge of not knowing what they were destined to do. You never know whether you are doing what you are destined to do or failing and disappointing your deity.</p>
+            <p class="indent"></p>
+            <ul class="unstyled">
+                <li><strong>Skill Proficiencies:</strong> Relgion, Survival</li>
+                <li><strong>Languages:</strong> Hellic if you are chosen by Hel or Fenrir. Asgardian if you are chosen by any other deity</li>
+                <li><strong>Equipment:</strong> A set of winter clothes, a scroll explaining you are destined to do something written by someone important to you, and a belt pouch containing 10 gp</li>
+            </ul>
+            <table>
+                <thead>
+                    <tr><td>d10</td><td>Deities</td></tr>
+                </thead>
+                <tr><td>1</td><td>Odin</td></tr>
+                <tr><td>2</td><td>Loki</td></tr>
+                <tr><td>3</td><td>Hel</td></tr>
+                <tr><td>4</td><td>Ullr</td></tr>
+                <tr><td>5</td><td>Fenrir</td></tr>
+                <tr><td>6</td><td>Tyr</td></tr>
+                <tr><td>7</td><td>Balder</td></tr>
+                <tr><td>8</td><td>Skadi</td></tr>
+                <tr><td>9</td><td>Thor</td></tr>
+                <tr><td>10</td><td>Aegir or Ran</td></tr>
+                <tr><td>11</td><td>Freyja</td></tr>
+                <tr><td>12</td><td>Heimdallr</td></tr>
+            </table>
+            <div element="ID_DRS_SVILLAND_BACKGROUND_FEATURE_AURA_OF_GODS" />
+            <h5>SUGGESTED CHARACTERISTICS</h5>
+            <p>Most of the destined live on the road. They are travellers who seek quests in the name of their Gods and Goddesses. The destined try to do something that no one else could, not knowing what they must accomplish. Because of this, they tend to be obsessed with the notion of destiny, especially their own.</p>
+        </description>
+        <setters>
+            <set name="Religion, Survival, Hellic or Asgardian"></set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <select type="Language" name="Language, Destined" supports="ID_LANGUAGE_HELLIC||ID_LANGUAGE_ASGARDIAN" />
+            <grant type="Background Feature" id="ID_DRS_SVILLAND_BACKGROUND_FEATURE_AURA_OF_GODS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select type="List" name="Personality Trait" number="2">
+                <item id="1">I believe every God and Goddess has their own way and that every way must be respected.</item>
+                <item id="2">My path is the only true way. I tend to try and convert people to my belief.</item>
+                <item id="3">I believe everything is a message about my journey, which means I can be nosey from time to time.</item>
+                <item id="4">The only thing I know is that I must finish my journey, and I am determined to do so.</item>
+                <item id="5">My God or Goddess may be with me, but its enemies are against me. I don’t let my guard down easily.</item>
+                <item id="6">My faith is my shield. I have no fear, for I know that my deity will protect me at all cost.</item>
+                <item id="7">I should live by my quest as I act as the shadow of my deity.</item>
+                <item id="8">Nothing can stop me if I want something to be done.</item>
+            </select>
+            <select type="List" name="Ideal">
+                <item id="1">Illumination: I will share all the knowledge and secrets I find along the way. (Good)</item>
+                <item id="2">Path: I may be chained to my destiny, but even that can’t keep me from making my own path. (Chaotic)</item>
+                <item id="3">Power: Once I have done my task and received my reward, every last creature will taste my power. (Evil)</item>
+                <item id="4">Mission: Just as the Gods and Goddesses have made me, I have made my way. (Any)</item>
+                <item id="5">Justice: I must not use my divine cause as an excuse to be unjust. (Lawful)</item>
+                <item id="6">Unknown: If this journey is a question, I will have my answers. (Neutral)</item>
+            </select>
+            <select type="List" name="Bond">
+                <item id="1">I would die to complete my quest.</item>
+                <item id="2">I would punish everyone and everything trying to keep me from my path.</item>
+                <item id="3">I will do anything to protect my deity’s name.</item>
+                <item id="4">Everything I do, I do for the followers of my deity.</item>
+                <item id="5">I would do anything to protect my deity’s religious order.</item>
+                <item id="6">I owe everything to my companions who helped me on my quest.</item>
+            </select>
+            <select type="List" name="Flaw">
+                <item id="1">I trust my deity’s followers, gothis or alles, no question asked.</item>
+                <item id="2">My way of doing things may be too violent for some.</item>
+                <item id="3">I sometimes feel trapped by the quest bestowed upon me, and I secretly hate the Gods and Goddesses for it.</item>
+                <item id="4">I expect the worst of anyone who does not follow my deity.</item>
+                <item id="5">I feel the full weight of my quest on my shoulders, and it makes me paranoid.</item>
+                <item id="6">I put my destiny before everything else, even before those that are important to me.</item>
+            </select>
+        </rules>
+    </element>
+    <element name="Feature: Aura of Gods" type="Background Feature" source="Svilland" id="ID_DRS_SVILLAND_BACKGROUND_FEATURE_AURA_OF_GODS">
+        <description>
+            <p>You have an aura around you blessed by the Gods and Goddesses. When you say you are following a path shown by the Asgardians or when people realize that you represent a God or Goddess, they can provide you and your allies with shelter. This shelter can be the house of a follower or sacred ground like a temple.</p>
+            <p class="indent">Also, people who follow the same God or Goddess as you will have a good first impression of you.</p>
+        </description>
+        <sheet alt="Aura of Gods">
+            <description>You have an aura around you blessed by the Gods and Goddesses. When you say you are following a path shown by the Asgardians or when people realize that you represent a God or Goddess, they can provide you and your allies with shelter. This shelter can be the house of a follower or sacred ground like a temple.
+            Also, people who follow the same God or Goddess as you will have a good first impression of you.
+            </description>
+        </sheet>
+    </element>
+    <element name="Karl" type="Background" source="Svilland" id="ID_DRS_SVILLAND_BACKGROUND_KARL">
+        <description>
+            <p>You were born to (or adopted by) a merchant family and thus know how to handle money. You know the meaning of nobility and royalty and understand the subtleties of dealing with people from all walks of life. Not all Svillanders are fond of karls, and you may thus not be welcome everywhere. There may even be those who seek to strip you of your wealth.</p>
+            <p class="indent">You may work with your GM to determine the detailed circumstances of your past that may include what the family traded in, their level of prosperity, the relationships within the family, or your position within.</p>
+            <ul class="unstyled">
+                <li><strong>Skill Proficiencies:</strong> Insight, Persuasion</li>
+                <li><strong>Languages:</strong> One of your choice</li>
+                <li><strong>Equipment:</strong> A set of traveler’s cloth, a pouch of 25 gp</li>
+            </ul>
+            <div element="ID_DRS_SVILLAND_BACKGROUND_FEATURE_BARTER_AND_BARGAIN" />
+            <h5>SUGGESTED CHARACTERISTICS</h5>
+            <p>Karls are the traders and merchants of Svilland. They earn a lot more money in comparison to the rest of Svilland. But unlike jarls, they don’t own any land or have any political power.</p>
+        </description>
+        <setters>
+            <set name="Insight, Persasion, 1 language"></set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+            <select type="Language" name="Language, Karl" supports="Standard||Exotic" />
+            <grant type="Background Feature" id="ID_DRS_SVILLAND_BACKGROUND_FEATURE_BARTER_AND_BARGAIN" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select type="List" name="Personality Trait" number="2">
+                <item id="1">I am quite frugal and I always barter for the best price.</item>
+                <item id="2">Bargaining is my hobby. I even bargain for items that I know I won’t buy.</item>
+                <item id="3">Raiding, stealing or crafting. If the item is valuable, how I acquire it is not important.</item>
+                <item id="4">I sell whatever I want to whomever I want; no matter how much others may be willing to pay.</item>
+                <item id="5">None can appraise something as I do.</item>
+                <item id="6">I try to learn special knowledge about people I bargain with, just to get lower prices.</item>
+                <item id="7">Art has more value than the lives of those who cannot appreciate it.</item>
+                <item id="8">Quality of product is the most important thing for me.</item>
+            </select>
+            <select type="List" name="Ideal">
+                <item id="1">Commerce. Trading is the basis of our community. It is our duty to keep it up. (Lawful)</item>
+                <item id="2">Fairness. I will see enough gold in Valhalla. I’d rather share my wealth in this life with the poor, with those in need, or with my friends. (Good)</item>
+                <item id="3">Greed. I do not work for free. Everything comes at a price. (Evil)</item>
+                <item id="4">Venture. Free trade means free life. I wander and trade because I want to. (Chaotic)</item>
+                <item id="5">Trade. I only care about my work; nothing more, nothing less. I do not care what happens to items once I sell them, nor to people once they pay me. (Neutral)</item>
+                <item id="6">Mission. I have a goal that I want to reach. (Any)</item>
+            </select>
+            <select type="List" name="Bond">
+                <item id="1">I’m quite close with my family, and my first duty is to them.</item>
+                <item id="2">I had the best years of my life at home. I will return one day to help the folk there.</item>
+                <item id="3">Money can buy protection. I am trying to protect my loved ones.</item>
+                <item id="4">The customer is always right.</item>
+                <item id="5">I will help anyone carrying my deity’s symbol. I have to help them to prepare for Ragnarok.</item>
+                <item id="6">I keep the first gold piece I earned on my person at all times. That little piece is where all this began.</item>
+            </select>
+            <select type="List" name="Flaw">
+                <item id="1">I am always hungry for more.</item>
+                <item id="2">I must become the wealthiest and most prestigious of them all. I am jealous of such people.</item>
+                <item id="3">I must obtain the rarest pieces.</item>
+                <item id="4">I have secrets about how I obtained my priceless treasures.</item>
+                <item id="5">I can steal and even kill to get what I want.</item>
+                <item id="6">I am brutally honest, even at the cost of others’ feelings.</item>
+            </select>
+        </rules>
+    </element>
+    <element name="Feature: Barter and Bargain" type="Background Feature" source="Svilland" id="ID_DRS_SVILLAND_BACKGROUND_FEATURE_BARTER_AND_BARGAIN">
+        <description>
+            <p>You possess all the skills and tricks expected of a merchant. You can easily bargain for an item or understand a scam. You also have acquaintances from all over, owing to your many travels as a merchant. These people can help you find some specific items, places, or other people.</p>
+        </description>
+        <sheet alt="Barter and Bargain">
+            <description>You possess all the skills and tricks expected of a merchant. You can easily bargain for an item or understand a scam. You also have acquaintances from all over, owing to your many travels as a merchant. These people can help you find some specific items, places, or other people.</description>
+        </sheet>
+    </element>
+    <element name="Reverend" type="Background" source="Svilland" id="ID_DRS_SVILLAND_BACKGROUND_REVEREND">
+        <description>
+            <p>You devoted your life to the ways and teachings of the Gods and Goddesses. In doing so, you have become an idol for some people. Reverends generally travel lands to enlighten people in the ways of the Gods and Goddesses and help those in need. You can be a traveller who spreads the teachings of the Allfather, or someone who settled down in a village to help the people there. Unlike some alles and gothis, reverends don’t have any connections to a temple nor any titles, and therefore do not receive orders from anyone.</p>
+            <p class="indent"></p>
+            <ul class="unstyled">
+                <li><strong>Skill Proficiencies:</strong> Religion, Persuasion, or Intimidation</li>
+                <li><strong>Languages:</strong> Asgurdian and another of your choice</li>
+                <li><strong>Equipment:</strong> Texts of some of your teachings, a musical instrument of your choice, calligrapher’s supplies, and a belt pouch containing 20 gp</li>
+            </ul>
+            <div element="WISDOM_FROM_WITHIN" />
+            <h5>SUGGESTED CHARACTERISTICS</h5>
+            <p>Reverends are generally unbiased about beliefs. Many of them start organizations or cults to spread the teachings of their deity. Some of them also rise in the ranks of society. Some reverends act as consultants and advisors to people in high places.</p>
+        </description>
+        <setters>
+            <set name="Religion/Persuasion/Intimidation, Asguardian and 1 more language"></set>
+        </setters>
+        <rules>
+            <select type="Proficiency" name="name" supports="ID_PROFICIENCY_SKILL_RELIGION||ID_PROFICIENCY_SKILL_PERSUASION||ID_PROFICIENCY_SKILL_INTIMIDATION" />
+            <grant type="Language" id="ID_LANGUAGE_ASGARDIAN" />
+            <select type="Language" name="Language, Reverend" supports="Standard||Exotic" />
+            <grant type="Background Feature" id="WISDOM_FROM_WITHIN" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select type="List" name="Personality Trait" number="2">
+                <item id="1">I love a mystery; each one opens up a path leading to new understanding.</item>
+                <item id="2">I like to speak with hidden messages.</item>
+                <item id="3">I read anything I can get my hands on, and love to discuss them with people.</item>
+                <item id="4">The ends always justify the means.</item>
+                <item id="5">All things in life are important; down to every last little detail.</item>
+                <item id="6">Actions speak for themselves, words alone are never enough.</item>
+                <item id="7">Gods and Goddesses see everything, therefore I never do something I might regret.</item>
+                <item id="8">Gods and Goddesses work in mysterious ways and I follow their will.</item>
+            </select>
+            <select type="List" name="Ideal">
+                <item id="1">Gratitude. Gods and goddesses have plans for everyone. We should all accept our lot without complaint. (Lawful)</item>
+                <item id="2">Grace. Gold is nothing compared to the wealth granted by the sacred teachings of deities. Share them. (Good)</item>
+                <item id="3">Tyrant. I carry the will of Gods and Goddesses. My word is the law and I can do no wrong. (Evil)</item>
+                <item id="4">Will. Everything is the will of Gods and Goddesses. We must trust them. (Neutral)</item>
+                <item id="5">Acceptance. Everyone’s faith is their own. People should be allowed to think however they want. (Chaotic)</item>
+                <item id="6">Crusade. I will prove to everyone that my deity is the mightiest of all. (Any)</item>
+            </select>
+            <select type="List" name="Bond">
+                <item id="1">The holy symbol of my deity is my most valuable treasure.</item>
+                <item id="2">I always carry around little items related to the teachings of my deity.</item>
+                <item id="3">I used to teach a child about my deity, I haven’t seen them for a while.</item>
+                <item id="4">Everyone must revere my deity.</item>
+                <item id="5">The holy sites dedicated to my deity must be preserved at all cost.</item>
+                <item id="6">The relics of my deity must be explored and be put to use.</item>
+            </select>
+            <select type="List" name="Flaw">
+                <item id="1">I easily trust the followers of my deity.</item>
+                <item id="2">I hate those who worship the enemies of my deity.</item>
+                <item id="3">I surrender my entire being and that of all others to my deity. No sacrifice is too great for my beliefs.</item>
+                <item id="4">I fear losing my status in the eyes of people.</item>
+                <item id="5">Abandoning the ways of my deity is my worst nightmare.</item>
+                <item id="6">I do not like, nor do I tolerate, my deity being questioned.</item>
+            </select>
+        </rules>
+    </element>
+    <element name="Feature: Wisdom From Within" type="Background Feature" source="Svilland" id="ID_DRS_SVILLAND_BACKGROUND_FEATURE_WISDOM_FROM_WITHIN">
+        <description>
+            <p>You are a wise person that talks and shares thoughts. Generally, reverends are welcome in the homes of the royalty or the nobility, and most officials are willing to help you. In addition, people respect you and thus tend to listen to you talk about your teachings.</p>
+        </description>
+        <sheet alt="Wisdom From Within">
+            <description>You are a wise person that talks and shares thoughts. Generally, reverends are welcome in the homes of the royalty or the nobility, and most officials are willing to help you. In addition, people respect you and thus tend to listen to you talk about your teachings.</description>
+        </sheet>
+    </element>
+    <element name="Thrall" type="Background" source="Svilland" id="ID_DRS_SVILLAND_BACKGROUND_THRALL">
+        <description>
+            <p>At some point in your life, you were someone’s servant. You know what it is like to live in someone’s shadow, but this might be a good thing after all.</p>
+            <p class="indent">Thralls take care of a household’s daily errands and take care of the farm or animals if there are any. In return, they are awarded a decent place to sleep and some money to spend. They are not allowed to leave the village, but they can do whatever they want in their downtime as long as they get their job done.</p>
+            <p class="indent">Although thralls are considered servants, it is still considered cruel and dishonorable to give thralls demeaning or futile duties. Masters are expected to provide thralls with a good life. In fact, they can’t mistreat a thrall or are punished severely. If a thrall is beaten or killed by its master, the master gets stripped from all its titles. This informal rule ensures that all thralls are paid and treated well even if they work day and night.</p>
+            <ul class="unstyled">
+                <li><strong>Skill Proficiencies:</strong> Sleight of Hand and one of the following of your choice: History, Animal Handling, Medicine, or Nature</li>
+                <li><strong>Tool Proficiencies:</strong> If you choose History or Animal Handling as a skill proficiency, you can choose one of any artisan’s tools. If you choose Medicine or Nature as a skill proficiency you gain proficiency with the herbalism kit.</li>
+                <li><strong>Equipment:</strong> A set of common clothes, your release order from your master, and 4 gp</li>
+            </ul>
+            <div element="ID_DRS_SVILLAND_BACKGROUND_FEATURE_SOLIDARITY_OF_AGGRIEVED" />
+            <h5>SUGGESTED CHARACTERISTICS</h5>
+            <p>Thralls must work hard every day, just to earn their place in someone else’s land. For most, freedom means everything. Still, there are also thralls who want to serve a master. No matter what views thralls may have, they are the ones who work and fight for the gains of others.</p>
+        </description>
+        <setters>
+            <set name="Sleight of Hand, History/Animal Handling/Medicine/Nagure, Artisan Tools or Herbalism Kit"></set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+            <select type="Background Feature" name="Proficiency, Thrall" supports="thrall-prof" />
+            <grant type="Background Feature" id="ID_DRS_SVILLAND_BACKGROUND_FEATURE_SOLIDARITY_OF_AGGRIEVED" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+            <select type="List" name="Personality Trait" number="2">
+                <item id="1">I see my old master as an idol. I am ambitious to become a master like them.</item>
+                <item id="2">I have spent so much time as a thrall that I have a bit of a hard time dealing with life as a free person.</item>
+                <item id="3">Although I lived as a thrall, I try to approach the masters of thralls peacefully.</item>
+                <item id="4">Although I lived as a thrall, I lived a life of prosperity. I don’t prefer this freedom.</item>
+                <item id="5">I am optimistic about my future.</item>
+                <item id="6">I am pessimistic about my future. I will probably become a thrall for someone else.</item>
+                <item id="7">I am intolerant of thrall masters.</item>
+                <item id="8">I always try to apply the lessons I learned from my old life in my new experiences.</item>
+            </select>
+            <select type="List" name="Ideal">
+                <item id="1">Obedience. Life has plans for everyone. We must accept our lot without complaint(Lawful)</item>
+                <item id="2">Freedom. I know that freedom is a gift. I must take advantage of the chance that I’ve been given. (Neutral)</item>
+                <item id="3">Rebellion. I broke my chains once and for all. Nothing will chain me again. (Chaotic)</item>
+                <item id="4">Liberation. I lived a life of pain and misery. Others should not. I try to help those in need. (Good)</item>
+                <item id="5">Revenge. I lived a life of pain and misery. And now the tables have turned. (Evil)</item>
+                <item id="6">Expediency. Life is chaos. One can live a life of prosperity by being a part of this chaos. (Chaotic)</item>
+            </select>
+            <select type="List" name="Bond">
+                <item id="1">I respect my former master for I have lived one of the best lives a thrall can. I would risk much to help them in times of need.</item>
+                <item id="2">I have a secret that can lead my former master’s family to destruction.</item>
+                <item id="3">I owe my life to my former master for saving me from death.</item>
+                <item id="4">I’ve dedicated my life to other thralls.</item>
+                <item id="5">I am in love with a member of my former master’s family.</item>
+                <item id="6">I tend to dedicate my life to a goal.</item>
+            </select>
+            <select type="List" name="Flaw">
+                <item id="1">I secretly stole things from my master and am now addicted to the rush of stealing.</item>
+                <item id="2">I cannot resist the urge to help other thralls in need.</item>
+                <item id="3">I hate all thralls who want to keep living as thralls.</item>
+                <item id="4">I despise all authorities.</item>
+                <item id="5">I tend to trust other thralls without question.</item>
+                <item id="6">I secretly want to become a master.</item>
+            </select>
+        </rules>
+    </element>
+    <element name="History" type="Background Feature" source="source" id="ID_DRS_SVILLAND_BACKGROUND_FEATURE_HISTORY">
+        <supports>thrall-prof</supports>
+        <requirements>ID_DRS_SVILLAND_BACKGROUND_THRALL</requirements>
+        <description>
+            <p>History and 1 Artisan Tool proficienc</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+            <select type="Proficiency" name="Tool Proficiency, Thrall" supports="Artisan" />
+        </rules>
+    </element>
+    <element name="Animal Handling" type="Background Feature" source="source" id="ID_DRS_SVILLAND_BACKGROUND_FEATURE_ANIMALHANDLING">
+        <supports>thrall-prof</supports>
+        <requirements>ID_DRS_SVILLAND_BACKGROUND_THRALL</requirements>
+        <description>
+            <p>Animal Handling and 1 Artisan Tool proficienc</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />            
+            <select type="Proficiency" name="Tool Proficiency, Thrall" supports="Artisan" />
+        </rules>
+    </element>
+    <element name="Medicine" type="Background Feature" source="source" id="ID_DRS_SVILLAND_BACKGROUND_FEATURE_MEDICINE">
+        <supports>thrall-prof</supports>
+        <requirements>ID_DRS_SVILLAND_BACKGROUND_THRALL</requirements>
+        <description>
+            <p>Medicine and Herbalism Kit proficienc</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+        </rules>
+    </element>
+    <element name="Nature" type="Background Feature" source="source" id="ID_DRS_SVILLAND_BACKGROUND_FEATURE_NATURE">
+        <supports>thrall-prof</supports>
+        <requirements>ID_DRS_SVILLAND_BACKGROUND_THRALL</requirements>
+        <description>
+            <p>Nature and Herbalism Kit proficiency</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+        </rules>
+    </element>
+    <element name="Feature: Solidarity of Aggrieved" type="Background Feature" source="Svilland" id="ID_DRS_SVILLAND_BACKGROUND_FEATURE_SOLIDARITY_OF_AGGRIEVED">
+        <description>
+            <p>As a thrall living in someone else’s house, you didn’t have your own life. But poor and aggrieved people know that they need to help each other to survive. You can ask poor people on the streets or in the wild for some favors like a place to sleep or something to eat.</p>
+        </description>
+        <sheet alt="Solidarity of Aggrieved">
+            <description>As a thrall living in someone else’s house, you didn’t have your own life. But poor and aggrieved people know that they need to help each other to survive. You can ask poor people on the streets or in the wild for some favors like a place to sleep or something to eat.</description>
+        </sheet>
+    </element>
+</elements>
