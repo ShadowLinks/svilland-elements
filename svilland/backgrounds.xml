@@ -180,7 +180,7 @@
             <select type="Proficiency" name="name" supports="ID_PROFICIENCY_SKILL_RELIGION||ID_PROFICIENCY_SKILL_PERSUASION||ID_PROFICIENCY_SKILL_INTIMIDATION" />
             <grant type="Language" id="ID_LANGUAGE_ASGARDIAN" />
             <select type="Language" name="Language, Reverend" supports="Standard||Exotic" />
-            <grant type="Background Feature" id="WISDOM_FROM_WITHIN" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <grant type="Background Feature" id="ID_DRS_SVILLAND_BACKGROUND_FEATURE_WISDOM_FROM_WITHIN" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
             <select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
             <select type="List" name="Personality Trait" number="2">
                 <item id="1">I love a mystery; each one opens up a path leading to new understanding.</item>
