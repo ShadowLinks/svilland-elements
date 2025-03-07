@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Weapons</name>
+		<description></description>
+		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
+		<update version="0.0.1">
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-weapons.xml" />
+		</update>
+	</info>
+    <element name="Weapon Proficiency (Saex)" type="Proficiency" source="Svilland" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SAEX">
+        <supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+    </element>
+    <element name="Saex" type="Weapon" source="Svilland" id="ID_DRS_SILVERPLATE_WEAPON_SAEX">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+        <description>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="piercing">1d6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SAEX</set>
+        </setters>
+    </element>
+    <element name="Weapon Proficiency (Svillander Javelin)" type="Proficiency" source="Svilland" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SVILLANDER_JAVELIN">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+    </element>
+    <element name="Svillander Javelin" type="Weapon" source="Svilland" id="ID_DRS_SILVERPLATE_WEAPON_SVILLANDER_JAVELIN">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+        <description>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="3">3 lb.</set>
+            <set name="slot">onehand</set> 
+            <set name="range">30/120</set>
+            <set name="damage" type="piercing">1d10</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SVILLANDER_JAVELIN</set>
+        </setters>
+    </element>
+    <element name="Weapon Proficiency (Svillander Axe)" type="Proficiency" source="Svilland" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SVILLANDER_AXE">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_SVILLANDER_AXE</supports>
+    </element>
+    <element name="Svillander Axe" type="Weapon" source="Svilland" id="ID_DRS_SILVERPLATE_WEAPON_SVILLANDER_AXE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_SVILLANDER_AXE</supports>
+        <description>
+            <p/>
+            <div element="ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_SVILLANDER_AXE"/>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">30</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">twohand</set> 
+            <set name="damage" type="slashing">1d10</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SVILLANDER_AXE</set>
+        </setters>
+    </element>
+    <element name="Special (Svillander Axe)" type="Weapon Property" source="Svilland" id="ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_SVILLANDER_AXE">
+        <description>
+            <p>You can choose to attack recklessly when you use a Svillander axe. Decrease your attack roll by 1d4 and increase the damage by 1d4. In addition, if a creature that is within 5 feet of you rolls a 1 on a weapon attack roll against you while you are wielding this weapon, or if you roll a 20 on an attack roll against a creature wielding a shield, you can make a Strength (Athletics) check as a reaction (DC equal to the creature’s AC) to disarm the creature, taking away its weapon or shield by hooking it with your axe on a success.</p>
+        </description>
+    </element>
+    <element name="Weapon Proficiency (Svardstav)" type="Proficiency" source="Svilland" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SVARDSTAV">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    </element>
+    <element name="Svardstav" type="Weapon" source="Svilland" id="ID_DRS_SILVERPLATE_WEAPON_SVARDSTAV">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">25</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">twohand</set> 
+            <set name="damage" type="slashing">2d4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SVARDSTAV</set>
+        </setters>
+    </element>
+    <element name="Weapon Proficiency (Svillander Sling)" type="Proficiency" source="Svilland" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SVILLANDER_SLING">
+        <supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+    </element>
+    <element name="Svillander Sling" type="Weapon" source="Svilland" id="ID_DRS_SILVERPLATE_WEAPON_SVILLANDER_SLING">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="sp">5</set>
+            <set name="weight" lb="0">0</set>
+            <set name="slot">twohand</set> 
+            <set name="range">90/400</set>
+            <set name="damage" type="bludgeoning">1d6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SVILLANDER_SLING</set>
+        </setters>
+    </element>
+    <element name="Weapon Proficiency (Yew Longbow)" type="Proficiency" source="Svilland" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_YEW_LONGBOW">
+        <supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY</supports>
+    </element>
+    <element name="Yew Longbow" type="Weapon" source="Svilland" id="ID_DRS_SILVERPLATE_WEAPON_YEW_LONGBOW">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY</supports>
+        <description>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Weapons</set>
+            <set name="cost" currency="gp">75</set>
+            <set name="weight" lb="4">4</set>
+            <set name="slot">twohand</set> 
+            <set name="range">150/600</set>
+            <set name="damage" type="piercing">1d10</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_YEW_LONGBOW</set>
+        </setters>
+    </element>
+</elements>
