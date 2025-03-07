@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Armor</name>
+        <description></description>
+        <author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
+        <update version="0.0.1">
+            <file name="items-armor.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-armor.xml" />
+        </update>
+    </info>
+    <element name="Gambeson" type="Armor" source="Player’s Handbook" id="ID_DRS_SVILLAND_ARMOR_LIGHT_GAMBESON">
+        <supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+        <description>
+            <p>This is the most common armor in Svilland. It is simply heavy clothing. It is made up of layers of hardened wool that greatly reduce penetration.</p>
+        </description>
+        <setters>
+            <set name="category">Armor</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="8">8 lb.</set>
+            <set name="slot">body</set>
+            <set name="armor">Light</set>
+            <set name="armorClass">11 + Dex modifier</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_LEATHER</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="11"/>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
+        </rules>
+    </element>
+</elements>
