@@ -12,6 +12,7 @@
 		<setters>
 			<set name="abbreviation">SVI</set>
 			<set name="author" abbreviation="DRS">Dream Realm Storytellers</set>
+			<set name="url">https://drspublishing.com/pages/svilland</set>
 			<set name="image">https://d1vzi28wh99zvq.cloudfront.net/images/13543/280918.jpg</set>
 			<set name="official">false</set>
 			<set name="core">false</set>
