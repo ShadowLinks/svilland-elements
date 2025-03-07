@@ -5,14 +5,14 @@
 		<description>Norse themed setting and character options for D&amp;D 5e</description>
 		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
 		<update version="0.0.1">
-			<file name="svilland.index" url="https://raw.githubusercontent.com/The-Multitud-e/svilland-elements/main/svilland.index"/>
+			<file name="svilland.index" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland.index"/>
 		</update>
 	</info>
 	<files>
-		<file name="source.xml" url="https://raw.githubusercontent.com/The-Multitud-e/svilland-elements/main/svilland/source.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/source.xml" />
 		
 		<!-- Races -->
-		<file name="race-austri.xml" url="https://raw.githubusercontent.com/The-Multitud-e/svilland-elements/main/svilland/race-austri.xml"/>
+		<file name="race-austri.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/race-austri.xml"/>
 		
 		<!-- Classes -->
 		

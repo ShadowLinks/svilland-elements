@@ -1,5 +1,6 @@
 # svilland-elements
 aurora content builder elements from svilland norse setting for 5e
+Thank you to The-Multitud-e for starting the project I forked from.
 
 ## Things to do:
 

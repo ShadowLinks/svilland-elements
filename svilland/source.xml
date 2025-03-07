@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="source.xml" url="https://raw.githubusercontent.com/The-Multitud-e/svilland-elements/main/svilland/source.xml" />
+			<file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/source.xml" />
 		</update>
 	</info>
 	<element name="Svilland" type="Source" source="Third-Party" id="ID_DRS_SOURCE_SVILLAND">
