@@ -1,0 +1,189 @@
+<elements>
+    <info>
+        <name>Feats</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/feats.xml"/>
+        </update>
+    </info>
+    <element name="Blessed With Magic" type="Feat" source="Svilland" id="ID_DRS_SVILLAND_FEAT_BLESSED_WITH_MAGIC">
+        <description>
+            <p>You can attune to one more item that requires attunement.</p>
+        </description>
+        <sheet>
+            <description>You can attune to one more item that requires attunement.</description>
+        </sheet>
+        <rules>
+            <stat name="attunement:max" value="4" bonus="base" />
+        </rules>
+    </element>
+    <element name="Boon of Freyja" type="Feat" source="Svilland" id="ID_DRS_SVILLAND_FEAT_BOON_OF_FREYJA">
+        <prerequisite>Being a worshipper of Freyja</prerequisite>
+        <description>
+            <p>Freyja grants you her boon. You regain all your lost hit points at the end of a short rest instead of a long rest. Additionally, when you level up, if the result of your hit dice roll is less than or equal to half of the maximum possible outcome, you can reroll the hit die once. You can take the higher result.</p>
+        </description>
+        <sheet>
+            <description>You regain all your lost hit points at the end of a short rest instead of a long rest. Additionally, when you level up, if the result of your hit dice roll is less than or equal to half of the maximum possible outcome, you can reroll the hit die once. You can take the higher result.</description>
+        </sheet>
+    </element>
+    <element name="Combat Ready" type="Feat" source="Svilland" id="ID_DRS_SVILLAND_FEAT_COMBAT_READY">
+        <description>
+            <p>You are always ready for combat. You gain the following benefits:</p>
+            <ul>
+                <li>You can choose to take a bonus action right before you roll for initiative.</li>
+                <li>You gain 10 temporary hit points in the first round of every battle that last until the end of the turn.</li>
+                <li>Your passive Wisdom (Perception) score increases by 2.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You can choose to take a bonus action right before you roll for initiative.
+            You gain 10 temporary hit points in the first round of every battle that last until the end of the turn. 
+            Your passive Wisdom (Perception) score increases by 2.            </description>
+        </sheet>
+    </element>
+    <element name="Draugr Slayer" type="Feat" source="Svilland" id="ID_DRS_SVILLAND_FEAT_DRAUGR_SLAYER">
+        <description>
+            <p>You are an expert at slaying the undead. You gain the following benefits:</p>
+            <ul>
+                <li>When you reduce a draugr to 0 hit points, you can make another attack as a reaction.</li>
+                <li>You have advantage on your attack rolls against draugrs.</li>
+                <li>You can’t be flanked by the undead.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When you reduce a draugr to 0 hit points, you can make another attack as a reaction.
+            You have advantage on your attack rolls against draugrs.
+            You can’t be flanked by the undead.</description>
+        </sheet>
+    </element>
+    <element name="Heavy Arsenal Mastery" type="Feat" source="Svilland" id="ID_DRS_SVILLAND_FEAT_HEAVY_ARSENAL_MASTERY">
+    <prerequisite>Proficiency with a heavy weapon</prerequisite>
+        <description>
+            <p>You master a heavy weapon that you are proficient with. As a result, you gain the following benefits:</p>
+            <ul>
+                <li>You have a +1 bonus to your attack rolls when you are attacking with your chosen weapon.</li>
+                <li>You have advantage on your opportunity attack rolls made with the chosen weapon.</li>
+                <li>When you use an action to make a weapon attack with the chosen weapon, you can make another attack with the weapon’s handle as a bonus action. The second attack deals 1d4 bludgeoning damage on a hit.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You master a heavy weapon that you are proficient with.
+            You have a +1 bonus to your attack rolls when you are attacking with your chosen weapon.
+            You have advantage on your opportunity attack rolls made with the chosen weapon.
+            When you use an action to make a weapon attack with the chosen weapon, you can make another attack with the weapon’s handle as a bonus action. The second attack deals 1d4 bludgeoning damage on a hit.</description>
+        </sheet>
+    </element>
+    <element name="Lausatök Glima" type="Feat" source="Svilland" id="ID_DRS_SVILLAND_FEAT_LAUSATOK_GLIMA">
+        <description>
+            <p>You are a wrestler; a practitioner of traditional wrestling. You gain the following benefits:</p>
+            <ul>
+                <li>Your Strength score increases by 1, to a maximum of 20.</li>
+                <li>As long as you face a creature directly, you have advantage on Dexterity saving throws against the effects caused by the creature.</li>
+                <li>When a creature makes a melee weapon attack against you, you can try to dodge it as a reaction. Make a Dexterity saving throw against the attack roll. If you succeed, you dodge the attack and take no damage. Once you use this feature, you must finish a short or long rest to use it again.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>As long as you face a creature directly, you have advantage on Dexterity saving throws against the effects caused by the creature.
+            When a creature makes a melee weapon attack against you, you can try to dodge it as a reaction. Make a Dexterity saving throw against the attack roll. If you succeed, you dodge the attack and take no damage. Once you use this feature, you must finish a short or long rest to use it again.</description>
+        </sheet>
+        <rules>
+            <stat name="Strength" value="1"/>
+        </rules>
+    </element>
+    <element name="Rune Master" type="Feat" source="Svilland" id="ID_DRS_SVILLAND_FEAT_RUNE_MASTER">
+        <prerequisite>The ability to cast at least one spell and Intelligence 13 or higher</prerequisite>
+        <requirements>[int:13],[type:spell]</requirements>
+        <description>
+            <p>You are a master of runestones. You gain the following benefits:</p>
+            <ul>
+                <li>You can become attuned to a runestone in a short rest instead of a long rest.</li>
+                <li>While casting a spell stored within a runestone, you can expend one of your own spell slots instead of the runestone’s charges. To do so, you must expend a spell slot equal to the level of the spell you want to cast.</li>
+                <li>While casting a spell stored within a runestone, you can choose to cast it as if you were using a spell slot of 1 level higher. Once you use this feature, you must finish a long rest to use it again.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You can become attuned to a runestone in a short rest instead of a long rest.
+            While casting a spell stored within a runestone, you can expend one of your own spell slots instead of the runestone’s charges. To do so, you must expend a spell slot equal to the level of the spell you want to cast.
+            While casting a spell stored within a runestone, you can choose to cast it as if you were using a spell slot of 1 level higher. Once you use this feature, you must finish a long rest to use it again.</description>
+        </sheet>
+    </element>
+    <element name="Scent of Fenrir" type="Feat" source="Svilland" id="ID_DRS_SVILLAND_FEAT_SCENT_OF_FENRIR">
+        <prerequisite>Wisdom 13 or higher</prerequisite>
+        <requirements>[wis:13]</requirements>
+        <description>
+            <p>You’ve learned how to track scent as wolves do. You gain the following benefits:</p>
+            <ul>
+                <li>Your Wisdom score increases by 1, to a maximum of 20.</li>
+                <li>You can smell blood within 60 feet of you. You can also smell invisible or hidden creatures with a successful DC 15 Wisdom (Perception) check.</li>
+                <li>As an action, you can identify a creature’s type by smelling its blood. Once you use this feature, you must finish a long rest to use it again.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You can smell blood within 60 feet of you. You can also smell invisible or hidden creatures with a successful DC 15 Wisdom (Perception) check.
+            As an action, you can identify a creature’s type by smelling its blood. Once you use this feature, you must finish a long rest to use it again.</description>
+        </sheet>
+        <rules>
+            <stat name="Wisdom" value="1"/>
+        </rules>
+    </element>
+    <element name="Sheild Stance" type="Feat" source="Svilland" id="ID_DRS_SVILLAND_FEAT_SHIELD_STANCE">
+        <prerequisite>Proficency with shields</prerequisite>
+        <requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS</requirements>
+        <description>
+            <p>You’ve learned how to hold your shield in front of you effectively to take a shield stance. As a result, you gain the following benefits:</p>
+            <ul>
+                <li>While holding a shield and wielding a weapon, you can try to hook a creature’s shield with your weapon and disarm it as an action if the creature is within your reach. The target must succeed on a Strength (Athletics) check contested by one of your own, or it drops the shield.</li>
+                <li>While holding your shield in front of you, you gain a +1 bonus to AC.</li>
+                <li>When you move through a hostile creature’s space and the creature makes an opportunity attack against you, you can choose to have resistance to bludgeoning, piercing, and slashing damage as a reaction by blocking the attack with your shield.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>While holding a shield and wielding a weapon, you can try to hook a creature’s shield with your weapon and disarm it as an action if the creature is within your reach. The target must succeed on a Strength (Athletics) check contested by one of your own, or it drops the shield.
+            While holding your shield in front of you, you gain a +1 bonus to AC.
+            When you move through a hostile creature’s space and the creature makes an opportunity attack against you, you can choose to have resistance to bludgeoning, piercing, and slashing damage as a reaction by blocking the attack with your shield.</description>
+        </sheet>
+    </element>
+    <element name="War Cry" type="Feat" source="Svilland" id="ID_DRS_SVILLAND_FEAT_WAR_CRY">
+        <prerequisite>Charisma 15 or higher</prerequisite>
+        <requirements>[cha:15]</requirements>
+        <description>
+            <p>As an action, you scream for war. You and a number of allies of your choice equal to your Charisma modifier within 60 feet of you that can hear you have advantage on the first melee or ranged weapon attack roll on each of their turns, and these attacks deal an extra 1 force damage.</p>
+        </description>
+        <sheet>
+            <description>As an action, you scream for war. You and a number of allies of your choice equal to your Charisma modifier within 60 feet of you that can hear you have advantage on the first melee or ranged weapon attack roll on each of their turns, and these attacks deal an extra 1 force damage.</description>
+        </sheet>
+    </element>
+    <element name="Weapon Thrower" type="Feat" source="Svilland" id="ID_DRS_SVILLAND_FEATW_WEAPON_THROWER">
+        <description>
+            <p>You learn how to handle melee weapons in a ranged fight. As a result, you gain the following benefits:</p>
+            <ul>
+                <li>Your Strength score increases by 1, to a maximum of 20.</li>
+                <li>You can throw all types of weapons. However you can only deal half of the weapon’s normal damage if it does not have the thrown property.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You can throw all types of weapons. However you can only deal half of the weapon’s normal damage if it does not have the thrown property.</description>
+        </sheet>
+        <rules>
+            <stat name="Strength" value="1"/>
+        </rules>
+    </element>
+</elements>
+
+
+<!-- 
+
+<element name="name" type="Feat" source="Svilland" id="ID_DRS_SVILLAND_FEAT_">
+        <description>
+            <p></p>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+-->
