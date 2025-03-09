@@ -1,0 +1,180 @@
+<elements>
+    <info>
+        <name>Spells</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/spells.xml"/>
+        </update>
+    </info>
+    <element name="Avalanche" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_AVALANCHE">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You choose a point within range, and cause an avalanche to fall, covering a 50-foot radius. Creatures in the area must make a Dexterity saving throw. On a failed save, a creature takes 6d8 bludgeoning damage and 6d8 cold damage. Large or smaller creatures must succeed on another Strength saving throw or be buried under the snow. If so, it takes a creature 10 Actions to reach the surface. On a successful save, a creature is not buried in the snow and takes half damage.</p>
+            <p class="indent">The avalanche deals maximum damage to constructs, structures, and terrain features (trees, vegetation, etc.). The avalanche remains until it melts naturally. If the avalanche melts instantly, this causes a flood that acts as a river with a width of 20 feet. A creature in contact with the ground within the area must succeed on a Strength saving throw to keep from falling into the flood, or on a Dexterity saving throw to avoid it, or be carried 30 feet away and take 1d6 bludgeoning damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">cold, bludgeoning</set>
+            <set name="level">8</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">100 feet</set>
+            <set name="duration">Instataneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Betraying Snow" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_BETRAYING_SNOW">
+        <supports>supports</supports>
+        <description>
+            <p>You choose a point within range. Ice and snow within a 20-foot radius centered on the designated point become brittle and make loud noises when stepped on. A creature has disadvantage on Dexterity (Stealth) checks while walking in the area.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">8 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Bitter Touch of Helheim" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_BITTER_TOUCH_OF_HELHEIM">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You touch your target, and have it experience the unholy cold of Helheim. The target must succeed on a Constitution saving throw or become as pale as death and take an extra 1d8 cold damage from your attacks for the duration of the spell.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the cold damage increases by 1d8 for every two slot levels above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">cold</set>
+            <set name="level">3</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Blinding Radiance" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_BLINDING_RADIANCE">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You choose a point within range and cause an explosion of radiant light. Creatures within a 10-foot radius sphere centered on that point must make a Constitution saving throw. On a failed save, a creature takes 2d8 radiant damage and is blinded until the end of its next turn. On a successful save, the damage is halved and the creature is not blinded.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">radiant</set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instataneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Bolt of Watery Death" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_BOLD_OF_WATERY_DEATH">
+        <supports>Spell Attack, Spell Saving Throw</supports>
+        <description>
+            <p>Make a ranged spell attack. On a hit, a bolt of water streaks towards a creature of your choice within range, dealing 3d8 cold damage to the target. The target must succeed on a Wisdom saving throw or is charmed until the end of its next turn.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instataneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Boon of Sacrifice" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_BOON_OF_SACRIFICE">
+        <supports>supports</supports>
+        <description>
+            <p>When you make a hit that kills a creature with a challenge rating of 2 or higher, you can dedicate the kill to your deity. As a reward, your deity sends a guardian to your aid.</p>
+            <p class="indent">The guardian shares your initiative count, but it takes its turn immediately after yours. It has AC 16 and 40 hit points. On each of its turns, it must spend its action to make one melee spell attack dealing 1d10 force damage, or to cast the cure wounds spell healing 2d8 + 4 hit points.</p>
+            <p class="indent">The guardian fights alongside you until it drops to 0 hit points or until the spell ends, at which point it disappears.</p>
+            <p class="indent">The guardian’s size is Medium, and its shape is determined by the GM. While Odin is sending warriors of Valhalla, Hel can send fiendish or undead creatures from Helheim.</p>
+        </description>
+        <setters>
+            <set name="keywords">summon</set>
+            <set name="level">4</set>
+            <set name="school">Abjuration</set>
+            <set name="time">Reaction</set>
+            <set name="range">60 feet</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Borrowed Hand" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_BORROWED_HAND">
+        <supports>supports</supports>
+        <description>
+            <p>This spell is considered to be extreme and unnecessary by most Svillanders, but the alle of Hel think that every part of a person (soul and body) should serve a purpose, even after death.</p>
+            <p class="indent">By devouring the flesh of a dead humanoid creature, you gain proficiency in the skills in which the creature itself was proficient. In addition, compare your proficiency bonus with that of the creature, and use the higher number as your new proficiency bonus. Also, you can gain access to specific pieces of knowledge the dead creature knew about, such as the place of a specific item or the name of a specific person, at the GM’s discretion.</p>
+            <p class="indent">The casting time of the spell cannot be reduced by any means, and the verbal components of the spell must be performed. You must devour the flesh with the proper chant and spend the necessary time to cast the spell for it to work.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 hour</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a dead body</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+</elements>
+<!-- 
+<element name="name" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_">
+        <supports>supports</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">duration</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    -->
