@@ -39,7 +39,7 @@
             <p>Most of the destined live on the road. They are travellers who seek quests in the name of their Gods and Goddesses. The destined try to do something that no one else could, not knowing what they must accomplish. Because of this, they tend to be obsessed with the notion of destiny, especially their own.</p>
         </description>
         <setters>
-            <set name="Religion, Survival, Hellic or Asgardian"></set>
+            <set name="short">Religion, Survival, Hellic or Asgardian</set>
         </setters>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
@@ -108,7 +108,7 @@
             <p>Karls are the traders and merchants of Svilland. They earn a lot more money in comparison to the rest of Svilland. But unlike jarls, they don’t own any land or have any political power.</p>
         </description>
         <setters>
-            <set name="Insight, Persasion, 1 language"></set>
+            <set name="short">Insight, Persasion, 1 language</set>
         </setters>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
@@ -174,7 +174,7 @@
             <p>Reverends are generally unbiased about beliefs. Many of them start organizations or cults to spread the teachings of their deity. Some of them also rise in the ranks of society. Some reverends act as consultants and advisors to people in high places.</p>
         </description>
         <setters>
-            <set name="Religion/Persuasion/Intimidation, Asguardian and 1 more language"></set>
+            <set name="short">Religion/Persuasion/Intimidation, Asguardian and 1 more language</set>
         </setters>
         <rules>
             <select type="Proficiency" name="Proficiency, Reverend" supports="ID_PROFICIENCY_SKILL_RELIGION||ID_PROFICIENCY_SKILL_PERSUASION||ID_PROFICIENCY_SKILL_INTIMIDATION" />
@@ -241,7 +241,7 @@
             <p>Thralls must work hard every day, just to earn their place in someone else’s land. For most, freedom means everything. Still, there are also thralls who want to serve a master. No matter what views thralls may have, they are the ones who work and fight for the gains of others.</p>
         </description>
         <setters>
-            <set name="Sleight of Hand, History/Animal Handling/Medicine/Nagure, Artisan Tools or Herbalism Kit"></set>
+            <set name="short">Sleight of Hand, History/Animal Handling/Medicine/Nagure, Artisan Tools or Herbalism Kit</set>
         </setters>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
