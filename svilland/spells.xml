@@ -806,10 +806,174 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Owner of the Spirits" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_OWNER_OF_THE_SPIRITS">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You choose an undead creature you can see within range. It must succeed on a Wisdom saving throw or on each of its turns, it must execute a single-word command given by you. It can repeat its saving throw at the end of each of its turns, ending the spell on a successful one.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, you can target an additional undead within range for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Open Soul" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_OPEN_SOUL">
+        <supports>supports</supports>
+        <description>
+            <p>You touch a creature, and open its soul up to magical effects, causing it to lose a bit of its control. For the duration, it has disadvantage on saving throws against spells and other magical effects from the school of enchantment.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Oppression of Thurisaz" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_OPPRESSION_OF_THURISAZ">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>A Thurisaz rune appears at a point you choose within range. Each creature within 30 feet of the rune must succeed on a Constitution saving throw or feel oppressed under Thurisaz’s might, becoming blinded and deafened until the end of its next turn.</p>
+        </description>
+        <setters>
+            <set name="keywords">blind, deaf</set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">reaction</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">false</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Reveal the Dreams" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_REVEAL_THE_DREAMS">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You choose a target you see within range and try to learn its deepest darkest desires and fears. The target must succeed on a Wisdom saving throw, or you learn its current fears and desires.</p>
+            <p class="indent">The target can repeat its saving throw at the end of each of its turns. On each failed save, you learn deeper knowledge (1 week old desires and fears on 2, 1 month old on 3, and 1 year old on 4 consecutive fails). On a successful save, the spell ends.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Divination</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Ride Like Lightning" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RIDE_LIKE_LIGHTNING">
+        <supports>supports</supports>
+        <description>
+            <p>You touch a creature and bless it with the power of lightning. Its speed is tripled until the end of its next turn.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rotten Snow" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_ROTTEN_SNOW">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You choose a point within range and fill a 20-foot radius centered on that point with rotten snow, which is poisonous and smells like the dead. A creature that enters the area for the first time on a turn or ends its turn there must succeed on a Constitution saving throw or become poisoned until the end of its next turn.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Runemight" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNEMIGHT">
+        <supports>supports</supports>
+        <description>
+            <p>Concentration, up to 1 minute As you empower yourself with the might of the runes, you grow larger and your melee weapon attacks are guided by the runes.</p>
+            <p class="indent">Your size category increases by one, along with your items, and you gain advantage on Strength and Constitution checks. Also, you add half of your proficiency bonus to the attack roll when you make a melee weapon attack.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rune of Burning Fatality" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_BURNING_FATALITY">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You choose a creature you see within range and conjure a burning fire inside it. If the target dies within the duration, it explodes. Each creature within 40 feet of the target must make a Dexterity saving throw. On a failed save, a creature takes 15d6 fire damage, or half as much on a successful one.</p>
+            <p class="indent">If this explosion kills another creature, it also explodes. Each creature within 20 feet of the target must make a Dexterity saving throw. On a failed save, a creature takes 10d6 fire damage, or half as much on a successful one.</p>
+        </description>
+        <setters>
+            <set name="keywords">fire</set>
+            <set name="level">9</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">10 minutes</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
-<element name="name" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_">
+<element name="Rune of name" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_">
         <supports>supports</supports>
         <description>
             <p></p>

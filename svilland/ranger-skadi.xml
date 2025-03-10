@@ -1,0 +1,61 @@
+		<description>
+			<p></p>
+			<p class="indent"></p>
+			<div element="ID__" />
+			<div element="ID___" />
+			<div element="ID____" />
+			<div element="ID_____" />
+			<div element="ID______" />
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID__" level="1" />
+			<grant type="Archetype Feature" id="ID___" level="1" />
+			<grant type="Archetype Feature" id="ID____" level="1" />
+			<grant type="Archetype Feature" id="ID_____" level="1" />
+			<grant type="Archetype Feature" id="ID______" level="1" />
+		</rules>
+	</element>
+	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+</elements>
