@@ -97,7 +97,7 @@
         </description>
         <setters>
             <set name="keywords"></set>
-            <set name="level">level</set>
+            <set name="level">1</set>
             <set name="school">Evocation</set>
             <set name="time">1 action</set>
             <set name="range">120 feet</set>
@@ -155,7 +155,212 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Cage of Bones" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_CAGE_OF_BONES">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You choose a creature within range. It must succeed on a Dexterity saving throw or is caged inside shifting spiked bones that pierce its body. While caged, the target is restrained and takes 2d4 piercing damage at the end of each of its turns.</p>
+            <p class="indent">The cage can be destroyed. It has AC 15, 40 Hit Points, immunity to poison and psychic damage, and vulnerability to bludgeoning damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">piercing</set>
+            <set name="level">4</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 hour</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a piece of bone</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Cage of Water" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_CAGE_OF_WATER">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>A ball of water bursts toward a target of your choice within range and explodes, expanding to form a spherical ball of water. The target must succeed on a Dexterity saving throw or become caged inside. The target repeats its saving throw at the end of each of its turns, ending the effects of the spell on a successful save.</p>
+            <p class="indent">A caged creature is restrained for the duration of the spell. In addition, as a bonus action, you can telepathically move the cage 30 feet.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Cold of Hel" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_COLD_OF_HEL">
+        <supports>supports</supports>
+        <description>
+            <p>You infuse a 30-foot radius centered on a point you touch with the unholy powers of Helheim. The area becomes desecrated and undead creatures have advantage on Wisdom saving throws within the area.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Cold's Embrace" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>The best defense against the cold is cold itself. You clean a creature’s body with snow, and it makes a Constitution saving throw. On a successful save, it gains resistance against cold damage for the duration. On a failed save, it takes 1d6 cold damage and suffers one level of exhaustion.</p>
+        </description>
+        <setters>
+            <set name="keywords">cold</set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 minute</set>
+            <set name="range">Touch</set>
+            <set name="duration">8 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a handful of snow</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Control Spirit" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_CONTROL_SPIRIT">
+        <supports>supports</supports>
+        <description>
+            <p>You choose a spirit within range. It must succeed on a Charisma saving throw, or you can control its actions for the duration. While you are in control of the spirit, you are aware of its abilities and can command the spirit to use them. It rolls its own initiative and acts on its own turn, and you can give one new order to the spirit on each of your turns as a bonus action.</p>
+            <p class="indent">The spirit can repeat its saving throw at the end of each of its turns, ending the effects of the spell on a successful save.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 7th level or higher, you can target one additional spirit within range for each slot level above 6th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">6</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Crippling Spirits" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_CRIPPLING_SPIRITS">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You choose a creature in contact with the ground within range. It must succeed on a Strength saving throw, or spirits of the earth rise from the ground and wrap around the target’s legs (or any other limbs the creature might have that serve the same purpose), halving its speed</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Cursed Tongue" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_CURSED_TONGUE">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You choose a creature within range and following in the footsteps of Loki and his mockeries, you twist its tongue. The creature must succeed on a Charisma saving throw, or Hellic becomes the only spoken language it can speak for the duration, even if the target does not know the language.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Dagger of Agony" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_DAGGER_OF_AGONY">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You plunge a dagger into the chest of an unconscious creature while you are crying in agony. The target must succeed on a Constitution saving throw or its eyes melt, blood gushes out from its ears, its tongue twists, and it dies making indiscernible sounds as it drowns in its own blood. A creature who is within 30 feet of the target and who can see or hear it must succeed on a Wisdom saving throw or become frightened of you until the end of its next turn.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instataneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a dagger that is consumed while casting the spell</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Deprivation of Sleep" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_DEPRIVATION_OF_SLEEP">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You think of a creature you have seen before. Then, you create horrors in your mind and unleash them into the mind of the creature, offering your own peace as payment. To do this, you chant incantations for 1 hour. The target must make a Wisdom saving throw. On a failed save, neither you nor the target can rest for the next 8 hours. On a successful save, both you and the target can rest normally.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Divination</set>
+            <set name="time">1 hour</set>
+            <set name="range">Unlimited</set>
+            <set name="duration">8 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">your next long rest</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Devitalizing Smite" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_DEVITALIZING_SMITE">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>The next time you hit a creature with a melee weapon attack before the spell ends, you deal an extra 4d8 damage of the weapon’s damage type. If your weapon has more than one damage type, you choose the damage type of the extra damage. The target must also succeed on a Constitution saving throw or gain vulnerability against the damage type of the extra damage dealt with this spell until the end of its next turn.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
+
 <!-- 
 <element name="name" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_">
         <supports>supports</supports>
