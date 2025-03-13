@@ -3,7 +3,7 @@
         <name>Languages</name>
         <description></description>
         <update version="0.0.1">
-            <file name="langauges.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/languages.xml"/>
+            <file name="langauges.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/languages.xml"/>
         </update>
     </info>
      <element name="Asgardian" type="Language" source="Svilland" id="ID_LANGUAGE_ASGUARDIAN">
