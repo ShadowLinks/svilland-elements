@@ -3,7 +3,7 @@
         <name>Spells</name>
         <description></description>
         <update version="0.0.1">
-            <file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/spells.xml"/>
+            <file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/spells.xml"/>
         </update>
     </info>
     <element name="Avalanche" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_AVALANCHE">
@@ -967,6 +967,152 @@
             <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
             <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rune of Call Rain" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_CALL_RAIN">
+        <supports>supports</supports>
+        <description>
+            <p>A mild rain comes down in an area of 10-foot radius centered on you.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">0</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+<element name="Rune of Confusion" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_CONFUSION">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>The next time you hit with a weapon attack during the spell’s duration, the target must succeed on a Charisma saving throw or the power of the runes clouds its judgement. It has disadvantage on attack rolls for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the spell on a successful one.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+<element name="Rune of Death" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_DEATH">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>The next time you hit with a weapon attack during the spell’s duration, your attack deals an extra 6d6 necrotic damage. Also, the target must succeed on a Constitution saving throw or its hit point maximum is reduced by the necrotic damage dealt. This reduction lasts until the target finishes a long rest.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the necrotic damage dealt increases by 1d6 for each slot level above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">necrotic</set>
+            <set name="level">3</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+<element name="Rune of Dismay" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_DISMAY">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>The next time you hit with a weapon attack during the spell’s duration, the target must succeed on a Wisdom saving throw or be frightened for 1 minute by the power of the runes. The target can repeat its saving throw at the end of each of its turns, ending the spell on a successful one.</p>
+        </description>
+        <setters>
+            <set name="keywords">frighten</set>
+            <set name="level">2</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+<element name="Rune of Earth's Grab" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_EARTHS_GRAB">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>The next time you hit with a weapon attack during the spell’s duration, the target must succeed on a Strength saving throw or the spirits of the earth hold the creature down and reduce its speed by 15 feet until the end of its next turn.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, its speed is reduced by 25 feet.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+<element name="Rune of Elemental Burst" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_ELEMENTAL_BURST">
+        <supports>Melee, Spell Attack</supports>
+        <description>
+            <p>You choose one of the elements; cold, fire or lightning. An elemental weapon made of the chosen element bursts into existence in your hand. It can be a one-handed or a twohanded weapon. You count as proficient with the weapon, and you can make melee spell attacks with it. On a hit, a onehanded weapon conjured in this way deals damage of the chosen type equal to 1d6 + your spellcasting ability modifier, while a two-handed one deals 1d10 + your spellcasting ability modifier.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the damage of the weapon increases to 3d6 + your spellcasting ability modifier for one-handed weapons, or to 3d10 + your</p>
+        </description>
+        <setters>
+            <set name="keywords">cold, fire, lightning</set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+<element name="Rune of Elemental Channeling" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_ELEMENTAL_CHANNELING">
+        <supports>supports</supports>
+        <description>
+            <p></p>
+            <p class="indent">You choose one of the elements; cold, fire or lightning. An elemental rune appears and starts to glow over your head. It gets brighter and brighter with each passing turn, as it stores more and more energy.</p>
+            <p class="indent">The rune stores 1d6 damage of the chosen damage type at the end of each of your turns. You can add this stored damage to that of any spell that deals damage of the chosen damage type. The stored energy can both be used in parts and as a whole. When the entire stored damage is used up, the spell ends. If you do not use this extra damage within 1 minute, the rune is broken, and you take 10d6 damage of the chosen type. This damage ignores resistance and immunity.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 7th level or higher, the stored damage increases to 2d6 per turn, and the damage you take when the rune is broken increases to 20d6.</p>
+        </description>
+        <setters>
+            <set name="keywords">cold,fire,lightning</set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
