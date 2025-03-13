@@ -1586,6 +1586,92 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Song of the End" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_SONG_OF_THE_END">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You start singing “The Song of the End”. It tells the story of the afterlife and what happens after death. It calls the living to the lands of undeath and claims the ones caught between life and death for the realms of death. Any creature within 300 feet of you and that can hear you must make a Constitution saving throw at the end of each of its turns. A creature falls unconscious if it fails 3 saving throws. Additionally, creatures within the area automatically fail their death saving throws.</p>
+        </description>
+        <setters>
+            <set name="keywords">unconscious</set>
+            <set name="level">9</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Soul-Infused Weapon" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_SOUL_INFUSED_WEAPON">
+        <supports>supports</supports>
+        <description>
+            <p>You bind a soul to a weapon. If the weapon is nonmagical, it becomes a magic weapon. You also have a +1 bonus to the attack rolls and damage rolls you make using this weapon, however this spell does not work on the weapon if the weapon is +3.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Soul Scream" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_SOUL_SCREAM">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You let out a painful scream. Creatures that can hear you within 30 feet of you must make a Wisdom saving throw or become frightened for 1 minute. Creatures whose number of hit dice exceeds yours are immune to this effect.</p>
+        </description>
+        <setters>
+            <set name="keywords">frighten</set>
+            <set name="level">2</set>
+            <set name="school">Illusion</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Soul Weapon" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_SOUL_WEAPON">
+        <supports>supports</supports>
+        <description>
+            <p>You summon a weapon as an extension of your soul. It has the following properties:</p>
+            <ul>
+                <li>It is a magic weapon.</li>
+                <li>You are considered proficient with this weapon. As an action, you can make either melee or ranged spell attacks with it, depending on the weapon you summoned. Whatever the weapon’s shape is, it deals 4d8 psychic damage.</li>
+                <li>It disappears when you let go of it. You can call it back as a bonus action within the duration.</li>
+                <li>The weapon sheds spirit light, which is explained in spirit light spell.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">psychic</set>
+            <set name="level">7</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
