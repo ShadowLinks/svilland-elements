@@ -990,7 +990,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-<element name="Rune of Confusion" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_CONFUSION">
+    <element name="Rune of Confusion" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_CONFUSION">
         <supports>Spell Saving Throw</supports>
         <description>
             <p>The next time you hit with a weapon attack during the spell’s duration, the target must succeed on a Charisma saving throw or the power of the runes clouds its judgement. It has disadvantage on attack rolls for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the spell on a successful one.</p>
@@ -1010,7 +1010,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-<element name="Rune of Death" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_DEATH">
+    <element name="Rune of Death" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_DEATH">
         <supports>Spell Saving Throw</supports>
         <description>
             <p>The next time you hit with a weapon attack during the spell’s duration, your attack deals an extra 6d6 necrotic damage. Also, the target must succeed on a Constitution saving throw or its hit point maximum is reduced by the necrotic damage dealt. This reduction lasts until the target finishes a long rest.</p>
@@ -1031,7 +1031,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-<element name="Rune of Dismay" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_DISMAY">
+    <element name="Rune of Dismay" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_DISMAY">
         <supports>Spell Saving Throw</supports>
         <description>
             <p>The next time you hit with a weapon attack during the spell’s duration, the target must succeed on a Wisdom saving throw or be frightened for 1 minute by the power of the runes. The target can repeat its saving throw at the end of each of its turns, ending the spell on a successful one.</p>
@@ -1051,7 +1051,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-<element name="Rune of Earth's Grab" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_EARTHS_GRAB">
+    <element name="Rune of Earth's Grab" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_EARTHS_GRAB">
         <supports>Spell Saving Throw</supports>
         <description>
             <p>The next time you hit with a weapon attack during the spell’s duration, the target must succeed on a Strength saving throw or the spirits of the earth hold the creature down and reduce its speed by 15 feet until the end of its next turn.</p>
@@ -1072,7 +1072,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-<element name="Rune of Elemental Burst" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_ELEMENTAL_BURST">
+    <element name="Rune of Elemental Burst" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_ELEMENTAL_BURST">
         <supports>Melee, Spell Attack</supports>
         <description>
             <p>You choose one of the elements; cold, fire or lightning. An elemental weapon made of the chosen element bursts into existence in your hand. It can be a one-handed or a twohanded weapon. You count as proficient with the weapon, and you can make melee spell attacks with it. On a hit, a onehanded weapon conjured in this way deals damage of the chosen type equal to 1d6 + your spellcasting ability modifier, while a two-handed one deals 1d10 + your spellcasting ability modifier.</p>
@@ -1093,7 +1093,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-<element name="Rune of Elemental Channeling" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_ELEMENTAL_CHANNELING">
+    <element name="Rune of Elemental Channeling" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_ELEMENTAL_CHANNELING">
         <supports>supports</supports>
         <description>
             <p></p>
@@ -1116,10 +1116,480 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Rune of Giant Bane" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_GIANT_BANE">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You summon the wrath of the Gods and Goddesses against all giants. The next time you hit a giant with a weapon attack during the spell’s duration, it must succeed on a Constitution saving throw or fall unconscious.</p>
+        </description>
+        <setters>
+            <set name="keywords">unconscious</set>
+            <set name="level">4</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>    
+    <element name="Rune of Halt" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_HALT">
+        <supports>Spell saving Throw</supports>
+        <description>
+            <p>The next time you hit with a weapon attack during the spell’s duration, the target must succeed on a Wisdom saving throw or be crushed beneath the power of the runes, feel helpless, and become paralyzed for 1 minute. It can repeat the saving throw at the end of each of its turns, ending the spell on a successful one.</p>
+        </description>
+        <setters>
+            <set name="keywords">paralyze</set>
+            <set name="level">3</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rune of Harm" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_HARM">
+        <supports>supports</supports>
+        <description>
+            <p>The next time you hit with a weapon attack during the spell’s duration, your attack bypasses the damage resistances or damage immunities of your target.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rune of Mjolnir" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_MJOLNIR">
+        <supports>Spell Attack</supports>
+        <description>
+            <p>You call out and evoke one of the greatest examples of thunder and lightning that was ever shaped. Lightning cracks in the air, thunder roars in the sky, and hammer-shaped lightning falls from the sky on a target of your choice within range. Make a ranged spell attack. On a hit, the target takes 15d6 lightning and 15d6 thunder damage. If the target is a construct or a building, it takes double damage from this spell.</p>
+            <p class="indent">If the target is indoors or there are any obstacles between the hammer and the target, the hammer reaches to the target by breaking the obstacles loudly.</p>
+        </description>
+        <setters>
+            <set name="keywords">lightning, thunder</set>
+            <set name="level">9</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">150 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rune of Power" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_POWER">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>The next time you hit a creature within the spell’s duration, it must succeed on a Wisdom saving throw or take an extra 2d8 force damage.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 2d8 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rune of Ruin-Dweller" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_RUIN_DWELLER">
+        <supports>supports</supports>
+        <description>
+            <p>You touch a creature, and it becomes proficient in Acrobatics and Investigation for the duration. If the target is already proficient in these skills, it has advantage in Dexterity (Acrobatics) and Intelligence (Investigation) checks instead.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rune of Slaying" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_SLAYING">
+        <supports>supports</supports>
+        <description>
+            <p>The next time you hit a creature with a weapon attack during the spell’s duration, the target takes an additional 1d8 damage of the attack’s damage type. If the attack deals damage of more than one damage type, you choose the type of the additional damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rune of Sloth" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_SLOTH">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>The next time you hit a creature with a weapon attack during the spell’s duration, its speed is reduced by half for 1 minute. It must also succeed on a Constitution saving throw, or it cannot take any reactions until the end of its next turn.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rune of Speed" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_SPEED">
+        <supports>supports</supports>
+        <description>
+            <p>Your speed increases by 5 feet for the spell’s duration.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, your speed increases by 5 more feet for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rune of the Giant" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_THE_GIANT">
+        <supports>supports</supports>
+        <description>
+            <p>As you draw power from the runes, you grow in size and strength. For the duration, you gain advantage on Strength checks, Strength saving throws, and your size increases by 1 category - from Medium to Large, for example - along with your equipment. Your weapon attacks that use Strength deals 1d6 more damage of the weapon’s damage type.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rune of Thunderblood" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_THUNDERBLOOD">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>When you are hit by a creature within 5 feet of you, you turn your blood into bolts of lightning. The attacker must make a Dexterity saving throw. On a failed save, it takes 8d6 lightning damage, or half as much on a successful one.</p>
+        </description>
+        <setters>
+            <set name="keywords">lightning</set>
+            <set name="level">5</set>
+            <set name="school">Transmutation</set>
+            <set name="time">Reaction</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rune of Transformation" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_TRANSFORMATION">
+        <supports>supports</supports>
+        <description>
+            <p>You become an avatar of war; a meat grinder made of flesh. For the duration, you gain the following benefits:</p>
+            <ul>
+                <li>You are considered proficient with all types of weapons and armor.</li>
+                <li>You become proficient in Strength (Athletics) checks and have advantage on Strength and Constitution checks.</li>
+                <li>Your size increases by one category - from Medium to Large, for example.</li>
+                <li>When you make a weapon attack as an action, you can make two additional attacks.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">9</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rune of Translocation" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_TRANSLOCATION">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You touch a creature of the same size as you. It must succeed on a Wisdom saving throw or change places with you.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rune of Troldkin" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_TROLDKIN">
+        <supports>supports</supports>
+        <description>
+            <p>You gain a part of the legendary regenerative powers of the troldfolk. For the duration, you regain 3 hit points at the start of each of your turns.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the hit points regained increases by 1 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">heal</set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Rune of Vargr Blood" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_VARGR_BLOOD">
+        <supports>supports</supports>
+        <description>
+            <p>You evoke the powers within vargr blood. For the duration, you gain the following benefits:</p>
+            <ul>
+                <li>You have advantage on Dexterity (Stealth) and Wisdom (Survival) checks.</li>
+                <li>You can smell blood within 30 feet of you and can track it with a successful DC 13 Wisdom (Survival) check.</li>
+                <li>You regain 1 hit point at the start of each of your turns. If you take damage from an attack made with a silvered weapon, this trait doesn’t function at the start of your next turn.</li>
+            </ul>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the hit points regained increases by 2 for each slot level above 1st.</p>
+        </description>
+        <setters>
+            <set name="keywords">heal</set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Running Through Snow" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNNING_THROUGH_SNOW">
+        <supports>supports</supports>
+        <description>
+            <p>You summon the power of winter. For the duration, you gain the following benefits:</p>
+            <ul>
+                <li>You can run through snow, leaving no trail behind.</li>
+                <li>Difficult terrains in snowy areas don’t slow your speed and travel.</li>
+                <li>Your speed increases by 10 feet in snowy areas.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Salmon Form" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_SALMON_FORM">
+        <supports>supports</supports>
+        <description>
+            <p>You turn into a salmon for the duration. You gain the following benefits:</p>
+            <ul>
+                <li>You gain a swimming speed of 40 feet.</li>
+                <li>Your Strength score becomes 3, Dexterity score becomes 15, Constitution score becomes 12. You retain your Intelligence, Wisdom, and Charisma scores.</li>
+                <li>Your AC becomes 12 and your hit point maximum is 5.</li>
+            </ul>
+            <p class="indent">For other rules of this spell, you can refer to the Wild Shape feature.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Seeds of Agony" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_SEEDS_OF_AGONY">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You touch an unconscious humanoid, pull the soul out of its body, and take it into your own. While casting the spell, you make the soul experience all the pain, trauma, stress, and agony you had in your lifetime. When you finish casting the spell, you plant the seeds of this agony into the soul by showing it a vision, a glimpse of Balder in Helheim, before returning it to its original body.</p>
+            <p class="indent">The target must succeed on a Wisdom saving throw or its alignment changes to evil.</p>
+            <p class="indent">Only a wish spell can reverse the effects of this spell.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 hour</set>
+            <set name="range">Touch</set>
+            <set name="duration">Permanent</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Shatter Soul" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_SHATTER_SOUL">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>Massive spectral spears pour down from the sky, falling on a 60-foot radius centered on a point that you can see within range. Each creature in the area must make a Wisdom saving throw. On a failed save, a creature takes 20d6 psychic damage and 20d6 necrotic damage. On a successful save, the damage is halved.</p>
+            <p class="indent">A creature killed by this spell can only be resurrected by a true resurrection spell.</p>
+        </description>
+        <setters>
+            <set name="keywords">necrotic, psychic</set>
+            <set name="level">9</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">1 mile</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Smoke of Lava" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_SMOKE_OF_LAVA">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You start to radiate immense heat and breathe poisonous smoke. Any creature who comes within 5 feet of you for the first time on a turn or ends its turn there must make a Constitution saving throw. On a failed save, it takes 3d8 fire damage and becomes poisoned. On a successful save, the damage is halved and the target is not poisoned.</p>
+        </description>
+        <setters>
+            <set name="keywords">fire, poisoned</set>
+            <set name="level">3</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minunte</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Snow Hole" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_SNOW_HOLE">
+        <supports>supports</supports>
+        <description>
+            <p>A point you touch on a snowy surface turns into a 20-foot-deep hole with a 10-foot radius. Because the icy surface is slippery, anyone who tries to climb up the hole has disadvantage on Strength (Athletics) checks.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">2</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">8 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Song of Home" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_SONG_OF_HOME">
+        <supports>supports</supports>
+        <description>
+            <p>The warmth of hearth and home is brought forth with your song. Up to five creatures of your choice that are within 30 feet of you and that can hear you are not affected by cold weather conditions.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 8 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
-<element name="Rune of name" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_">
+<element name="name" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_">
         <supports>supports</supports>
         <description>
             <p></p>
@@ -1129,7 +1599,7 @@
             <set name="level">level</set>
             <set name="school">Evocation</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
+            <set name="range">Self</set>
             <set name="duration">Instantaneous</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
