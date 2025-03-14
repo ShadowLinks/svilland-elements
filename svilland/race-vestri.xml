@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Vestri</name>
+		<description></description>
+		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
+		<update version="0.0.1">
+			<file name="race-vestri.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/race-vestri.xml" />
+		</update>
+	</info>
+    <element name="Vestri" type="Race" source="Svilland" id="ID_DRS_SVILLAND_RACE_VESTRI">
+        <description>
+            <p></p>
+            <h4>HEADING</h4>
+            <p></p>
+            <p class="indent"></p>
+            <h4>HEADING</h4>
+            <p></p>
+            <p class="indent"></p>
+            <h4>name Traits</h4>
+            <p></p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> _______</p>
+            <p class="indent"><strong><em>Age.</em></strong> _______</p>
+            <p class="indent"><strong><em>Alignment.</em></strong> _______</p>
+            <p class="indent"><strong><em>Size.</em></strong> _______</p>
+            <p class="indent"><strong><em>Speed.</em></strong> _______</p>
+            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
+            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
+            <p class="indent"><strong><em>Languages.</em></strong> _______</p>
+        </description>
+        <setters>
+            <set name="names" type="male"></set>
+            <set name="names" type="female"></set>
+            <set name="names" type="clan"></set>
+            <set name="names-format">{{name}} {{clan}}</set>
+            <set name="height" modifier="2d8">6'0"</set>
+			<set name="weight" modifier="2d6">180 lb.</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SVILLAND_VESTRI_RACIAL_TRAIT_" />
+            <grant type="Racial Trait" id="ID_DRS_SVILLAND_VESTRI_RACIAL_TRAIT_" />
+        </rules>
+    </element>
+    <element name="name" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_VESTRI_RACIAL_TRAIT_">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="name" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_VESTRI_RACIAL_TRAIT_">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>
