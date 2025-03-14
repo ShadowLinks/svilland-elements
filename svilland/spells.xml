@@ -1672,18 +1672,291 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-</elements>
-
-<!-- 
-<element name="name" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_">
-        <supports>supports</supports>
+    <element name="Spiked Shell" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_SPIKED_SHELL">
+        <supports>Spell Saving Throw</supports>
         <description>
-            <p></p>
+            <p>You grow a spiked shell, resembling that of a turtle. When you are hit by a melee weapon attack or melee spell attack made by an enemy within 5 feet of you, the attacker must succeed on a Dexterity saving throw or take 2d8 piercing damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">piercing</set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Spirit Bind" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_SPIRIT_BIND">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>Make a DC 20 Intelligence (Religion) check to attract the attention of a spirit. On a failure, the spell fails. On a success, the spirit must succeed on a Charisma saving throw or be bound to the place (castle, forest, house, lake, etc.) in which you cast the spell. Such spirits try to protect the places to which they are bound at all costs.</p>
+            <p class="indent">The bond between the spirit and the place can only be reversed by means of a wish spell.</p>
         </description>
         <setters>
             <set name="keywords"></set>
-            <set name="level">level</set>
+            <set name="level">6</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 minute</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Spirit Harm" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_SPIRIT_HARM">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You choose a target within range. It must succeed on a Wisdom saving throw or have its soul extend and stretch out from its body as a blurred line in a direction you choose. The stretched soul can be harmed and the damage it takes decreases the target creature’s hit points. The stretched soul has the following traits:</p>
+            <ul>
+                <li>It has AC 10 + the creature’s Dexterity modifier.</li>
+                <li>It has resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.</li>
+                <li>It has immunity to necrotic and poison damage.</li>
+                <li>It is immune to being charmed, exhausted, grappled,paralyzed, petrified, poisoned, prone, stunned, and restrained.</li>
+                <li>The length of the stretched soul differs depending on the creature size. The length is 5 feet for Tiny creatures and increases by 5 feet for each size category larger.</li>
+                <li>Since the stretched soul is incorporeal, one can walk through it with ease.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Spirit Light" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_SPIRIT_LIGHT">
+        <supports>supports</supports>
+        <description>
+            <p>An object or a creature you touch sheds a green light in a 20-foot radius. This light reveals the spirits in the area, both in your realm and in the spirit realm. You can’t contact or interact with the spirits in the spirit realm if you do not have an ability that enables you to do so. But beware, as they can see the spirit light you created.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">1</set>
             <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Spirit Storm" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_SPIRIT_STORM">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>Choose a point within range. A dark grey storm of spirits ravages a 30-foot radius centered on that point. Creatures within the area must make a Wisdom saving throw. On a failed save, a creature takes 10d6 psychic damage, or half as much on a successful one.</p>
+        </description>
+        <setters>
+            <set name="keywords">psychic</set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Spirit Trap" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_SPIRIT_TRAP">
+        <supports>supports</supports>
+        <description>
+            <p>Make a DC 20 Intelligence (Religion) check to attract the attention of a spirit. On a failure, the spell fails. On a success, the spirit must succeed on a Charisma saving throw or be trapped within a circle you drew on the ground beforehand. Drawing the circle takes 1 hour.</p>
+            <p class="indent">The spirit breaks free when the circle is broken or if it tries to hunt its trapper.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">Touch</set>
+            <set name="duration">Permanent</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">ruby dust worth at least 250 gp</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Striking Ray" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_">
+        <supports>Spell Attack</supports>
+        <description>
+            <p>You call down four rays of branch lightning from the skies and direct them at targets within range. You can direct them at one target or several. Make a ranged spell attack for each branch. On a hit, a target takes 2d4 lightning damage.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, you create one additional branch for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">lightning</set>
+            <set name="level">2</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Sword of Kaun" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_SWORD_OF_KAUN">
+        <supports>Spell Attack, Melee</supports>
+        <description>
+            <p>You summon a longsword of flames, and it appears in your hand. You are considered proficient with this weapon and you can make both melee and ranged spell attacks with it. If you throw it, it reappears in your hand again, right after it hits the target. On a hit, the sword deals fire damage equal to 1d6 + your Charisma modifier.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>
+        </description>
+        <setters>
+            <set name="keywords">fire</set>
+            <set name="level">1</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Treacherous Bonds" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_TREACHEROUS_BONDS">
+        <supports>Spell saving Throw</supports>
+        <description>
+            <p>You choose two creatures within range and provoke their spirits, creating a bond of hatred between them. Both of them must make a Wisdom saving throw. If they both fail, they attack one another and try their best to kill each other. If none or only one of them succeeds, the spell fails.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Under they Eyes of the Allfather" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_UNDER_THE_EYES_OF_THE_ALLFATHER">
+        <supports>supports</supports>
+        <description>
+            <p>Odin the Allfather looks at a 30-foot radius centered on a point you choose within range and reveals all the secrets within. All invisible creatures, invisible items, secret doors, traps, spirits, magic items, and runes start to glow with magical energy. Spells and other magical effects, like invisibility, within the area are not dispelled but are suppressed for the duration.</p>
+            <p class="indent">Invisible creatures, invisible items, secret doors, traps, spirits, magic items, and runes that have total cover are also revealed if the cover is no thicker than 3 feet.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the thickness of the cover that can be penetrated by the spell increases by 3 feet for each 2 slot levels above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Divination</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Under the Wings of Valkyrie" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_UNDER_THE_WINGS_OF_VALKYRIE">
+        <supports>supports</supports>
+        <description>
+            <p>Behind you, you spread the glorious wings of a valkyrie. Up to three creatures of your choice within 15 feet of you gain a +1 bonus to AC and regain 2 hit points at the start of each of their turns for the duration.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the hit points regained increases by 1 for each slot level above 4th.</p>
+        </description>
+        <setters>
+            <set name="keywords">heal</set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Verdict" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_VERDICT">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>The followers of Tyr are known for their good deeds and just decisions. It is their duty to bring justice by punishing those who deserve it. But this must be done with proper doctrines. At the moment of judgement, all sinners must know what they have done and what will happen to them.</p>
+            <p class="indent">You point a creature within range and bring Tyr’s justice upon it. The target must succeed on a Wisdom saving throw or face the evil deeds it has done and see what it will become in the afterlife. With the weight of those visions, it is stunned. The target must be of evil alignment or the spell fails. It can repeat the saving throw at the end of each of its turns, ending the spell on a successful one.</p>
+        </description>
+        <setters>
+            <set name="keywords">stun</set>
+            <set name="level">4</set>
+            <set name="school">Divination</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Virtue's Grasp" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_VIRTUES_GRASP">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>The next time you hit a creature with a melee weapon attack during the spell’s duration, the attack deals an extra 1d6 radiant damage. The target must also succeed on a Strength saving throw or be surrounded by radiant light and be grappled until the end of its next turn.</p>
+        </description>
+        <setters>
+            <set name="keywords">radiant</set>
+            <set name="level">1</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Voice of Despair" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_VOICE_OF_DESPAIR">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You utter a word that is most depressing. Enemies within 30 feet of you that can hear you must succeed on a Wisdom saving throw or be stunned until the end of their next turn.</p>
+        </description>
+        <setters>
+            <set name="keywords">stun</set>
+            <set name="level">5</set>
+            <set name="school">Enchantment</set>
             <set name="time">1 action</set>
             <set name="range">Self</set>
             <set name="duration">Instantaneous</set>
@@ -1695,4 +1968,145 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    -->
+    <element name="War Chant" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_WAR_CHANT">
+        <supports>supports</supports>
+        <description>
+            <p>You start a war chant to bolster your allies’ courage. All allies within 10 feet of you that can hear you have advantage on saving throws against spells and other magical effects.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">4</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Weaken Blade" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_WEAKEN_BLADE">
+        <supports>Spell Attack</supports>
+        <description>
+            <p>You choose a target within range and send a bolt of decay its way. Make a ranged spell attack. On a hit, a weapon of your choice that the target is wielding becomes weaker. The weapon breaks after the target successfully hits 3 times or scores a critical hit with the weapon.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Weapon of Lightning" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_WEAPON_OF_LIGHTNING">
+        <supports>supports</supports>
+        <description>
+            <p>You raise your weapon and shout the name of Thor. A lightning strikes your weapon and imbues it with power. The stricken weapon deals an extra 1d6 lightning damage on a hit.</p>
+        </description>
+        <setters>
+            <set name="keywords">lightning</set>
+            <set name="level">2</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">Self</set>
+            <set name="duration">1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Webs of Ice" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_WEBS_OF_ICE">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You choose a point within range. Spider webs made out of ice cover a 20-foot radius centered on that point. When a creature enters the area for the first time on a turn or ends its turn there, it must succeed on a Strength saving throw or be restrained until the end of its next turn.</p>
+        </description>
+        <setters>
+            <set name="keywords">restrain</set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 bonus action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Weeping Spirit" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_WEEPING_SPIRIT">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You choose a target within range and distort its spirit. It feels immense pain and Its eyes fill with blood. For the duration, it must succeed on a Constitution saving throw at the start of each of its turns or take 1d4 necrotic damage and be blinded until the start of its next turn.</p>
+        </description>
+        <setters>
+            <set name="keywords">necrotic, blind</set>
+            <set name="level">2</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Wolves Within" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_WOLVES_WITHIN">
+        <supports>Melee, Spell Attack</supports>
+        <description>
+            <p>You select up to five creatures within range. You set your inner-hunter free and turn yourself into 5 wolves to strike each of these targets. You make a melee spell attack against each target. On a hit, the target takes 5d12 force damage. Also, just after the wolves attack their targets, you can regroup and merge together in an unoccupied space within 5 feet of one of the targets.</p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">5</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Word of Surtr" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_WORD_OF_SURTR">
+        <supports>Spell Saving Throw</supports>
+        <description>
+            <p>You invoke the fire of legends, and it rains down on the land in the form of the legendary fire-jotunn Surtr’s sword. You summon four fiery swords, designating a target for each of them. A target can succeed on a Dexterity saving throw, or take 1d12 fire damage.</p>
+            <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, you summon an additional sword for each slot above 3rd.</p>
+        </description>
+        <setters>
+            <set name="keywords">fire</set>
+            <set name="level">3</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+</elements>
