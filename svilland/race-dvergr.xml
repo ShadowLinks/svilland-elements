@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dvergr</name>
+		<description></description>
+		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
+		<update version="0.0.1">
+			<file name="race-dvergr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/race-dvergr.xml" />
+		</update>
+	</info>
+    <element name="Dvergr" type="Race" source="Svilland" id="ID_DRS_SVILLAND_RACE_DVERGR">
+        <description>
+            <p class="flavor">Dvergrs are also known as Dark Elves in Svilland.</p>
+            <p>Their home realm is Svartalfheim in Austris, or “Nidavellir" in their language, Dvergmer. They are the crafters of the legendary spear Oddbane, and the heroes of countless stories in Svilland.</p>
+            <h4>CRAFTERS FROM ANOTHER REALM</h4>
+            <p>Dvergrs are famous for their blacksmithing, stone masonry, and runic knowledge. They are masters of armor and weapons, builders of cities, and creators of many runic spells.</p>
+            <p class="indent">The great dvergr ancestors, Brokkr and Eitri, are the blacksmiths of the Gods and Goddesses. They crafted the legendary spear, Oddbane, that struck down Odd, the frost jotunn who was powerful enough to try to defy the Gods and Goddesses. In return, they demanded a gate from Balder, through which they could travel to Svilland and then go back to Svartalfheim. They knew that there was an immense amount of black ice, a highly valuable and very rare material, under the mountains called Ymir’s Lash. They also knew that dvergrs are immune to its effects. Balder accepted the deal and built the gate under Ymir’s Lash. The gate worked perfectly until Balder’s death, which was due to Loki’s trickeries. When Balder died, the power of the gate also vanished and it stopped working.</p>
+            <p class="indent"></p>
+            <h4>RELATIONS</h4>
+            <p class="indent"><strong><em>Austri.</em></strong> Some of them even think that they are better crafters than us. However, they are too militaristic. If they come for us one day, we will be prepared.</p>
+            <p class="indent"><strong><em>Half-Jotunn.</em></strong> A folk of outcasts, just like us. We do not think much of their problems, but can’t help them because they are always on the move. Our door is always open to the half-jotunns, if they are not following Odd, but they need to stop being so reckless all the time.</p>
+            <p class="indent"><strong><em>Mithal.</em></strong> They took us in, gave us places to stay, started trade with us, and let us be. What more can a dvergr ask for?</p>
+            <p class="indent"><strong><em>Kuning.</em></strong> They have done much for Svilland but experienced undeserved bloodshed. They may not follow our Gods but that doesn’t mean they are bad people at heart.</p>
+            <p class="indent"><strong><em>Vestri.</em></strong> The Vestri have always treated us as equals. Sometimes, we think they don’t even notice that we are blue and small. On the other hand, they may not be so bright themselves...</p>
+            <h4>DVERGR NAMES</h4>
+            <p class="indent"><strong><em>Male Names.</em></strong> Brokkr, Dudri, Egil, Eitri, Gangr, Hemer, Idi, Kori, Kuldi, Maggin, Nidrr, Ori, Sindri, Tingi, Wandr</p>
+            <p class="indent"><strong><em>Female Names.</em></strong> Ai, Bendr, Durri, Duma, Forgi, Glori, Gominn, Idunn, Konnin, Mokku, Pemm, Rugga, Sokki, Tilwa, Uminn, Ylda</p>
+            <h4>DVERGR TRAITS</h4>
+            <p>Dvergrs are a tough folk and are born with the hands of a master crafter. However, different clans can have different teachings.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2. </p>
+            <p class="indent"><strong><em>Age.</em></strong>  Dvergrs live to be about 180-190 years old and reach adulthood in their fiftieth year.</p>
+            <p class="indent"><strong><em>Alignment.</em></strong> You can find all kinds of dvergr in Svilland but, they usually live by a code and thus tend to be lawful.</p>
+            <p class="indent"><strong><em>Size.</em></strong> Dvergrs stand between 4-5 feet tall and weigh about 125-250 pounds. Your size is Medium</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 25 feet.</p>
+            <p class="indent"><strong><em>Darvision.</em></strong> Living underground for generations can alter your vision. You can see within 60 feet in dim light as if it were bright light, and you can see in darkness as if it were dim light. You can’t see colors in the dark, only shades of gray.</p>
+            <p class="indent"><strong><em>Runic Sense.</em></strong> Svartalfheim is a realm full of magic and dvergrs are used to it. You can sense the presence of a rune in a 15-foot radius, but can’t identify which rune it is.</p>
+            <p class="indent"><strong><em>Black Ice Immunity.</em></strong> Black ice normally harms those who touch it, but you have developed an immunity to it. Black ice does not harm you unless it is refined and worked into a weapon.</p>
+            <p class="indent"><strong><em>Tool Proficiency.</em></strong> Your ancestors worked with all kinds of metals as well as black ice. You gain proficiency with smith’s tools.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, write, and understand Dvergmer and Austris (Common) fluently</p>
+            <p class="indent"><strong><em>Clans.</em></strong> Clans are ancestral subcultures for dvergrs. Although three clans were the first to arrive in Svilland, there are many others right now. Dvergrs can take a different clan name according to their deeds or aims in life. Although traits for the original three are listed here, you can build your own clan with new traits with the GM’s permission.</p>
+        </description>
+        <setters>
+            <set name="names" type="male">Brokkr, Dudri, Egil, Eitri, Gangr, Hemer, Idi, Kori, Kuldi, Maggin, Nidrr, Ori, Sindri, Tingi, Wandr</set>
+            <set name="names" type="female">Ai, Bendr, Durri, Duma, Forgi, Glori, Gominn, Idunn, Konnin, Mokku, Pemm, Rugga, Sokki, Tilwa, Uminn, Ylda</set>
+            <set name="names" type="clan"></set>
+            <set name="names-format">{{name}}</set>
+            <set name="height" modifier="2d8">4'6"</set>
+			<set name="weight" modifier="2d6">180 lb.</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Dvergr)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Dvergr)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="25" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Racial Trait" id="ID_DRS_SVILLAND_DVERGR_RACIAL_TRAIT_RUNIC_SENSE" />
+            <grant type="Racial Trait" id="ID_DRS_SVILLAND_DVERGR_RACIAL_TRAIT_BLACK_ICE_IMMUNITY" />
+            <select type="Sub Race" name="Dvergr Clan" supports="dvergr-clan" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+            <grant type="Language" id="ID_LANGUAGE_DVERGMER" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+        </rules>
+    </element>
+    <element name="Runic Sense" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_DVERGR_RACIAL_TRAIT_RUNIC_SENSE">
+        <description>
+            <p>Svartalfheim is a realm full of magic and dvergrs are used to it. You can sense the presence of a rune in a 15-foot radius, but can’t identify which rune it is.</p>
+        </description>
+        <sheet>
+            <description>You can sense the presence of a rune in a 15-foot radius, but can’t identify which rune it is.</description>
+        </sheet>
+    </element>
+    <element name="Black Ice Immunity" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_DVERGR_RACIAL_TRAIT_BLACK_ICE_IMMUNITY">
+        <description>
+            <p> Black ice normally harms those who touch it, but you have developed an immunity to it. Black ice does not harm you unless it is refined and worked into a weapon.</p>
+        </description>
+        <sheet>
+            <description>Black ice does not harm you unless it is refined and worked into a weapon.</description>
+        </sheet>
+    </element>
+    <element name="Clan Goldglance" type="Sub Race" source="Svilland" id="ID_DRS_SVILLAND_DVERGR_SUBRACE_GOLDGLANCE">
+        <supports>dvergr-clan</supports>
+        <description>
+            <p>Clan Goldglance dvergrs are the masters of appraisal, mining techniques, and gold.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence or Charisma score increases by 1.</p>
+            <p class="indent"><strong><em>Master of the Appraise.</em></strong> You are an expert in estimating prices, even for the things you see for the first time. You can guess the exact price or rarity of an item with a successful DC 13 Intelligence check.</p>
+        </description>
+        <sheet>
+            <description>Master of the Appraise.
+            You are an expert in estimating prices, even for the things you see for the first time. You can guess the exact price or rarity of an item with a successful DC 13 Intelligence check.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Clan Goldglance)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_CHARISMA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+        </rules>
+    </element>
+    <element name="Clan Runebearer" type="Sub Race" source="Svilland" id="ID_DRS_SVILLAND_DVERGR_SUBRACE_RUNEBEARER">
+        <supports>dvergr-clan</supports>
+        <description>
+            <p>Clan Runebearer dvergrs are masters of knowledge and runes.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence or Wisdom score increases by 1.</p>
+            <p class="indent"><strong><em>Master of the Tomes.</em></strong> You can choose to have advantage on an Intelligence (Arcana, History, Nature, or Religion) check. Once you use this feature, you must finish a short or long rest to use it again.</p>
+        </description>
+        <sheet>
+            <description>Master of the Tomes.
+            You can choose to have advantage on an Intelligence (Arcana, History, Nature, or Religion) check. Once you use this feature, you must finish a short or long rest to use it again.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Clan Runebearer)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+        </rules>
+    </element>
+    <element name="Clan Stoneborn" type="Sub Race" source="Svilland" id="ID_DRS_SVILLAND_DVERGR_SUBRACE_STONEBORN">
+        <supports>dvergr-clan</supports>
+        <description>
+            <p>Clan Stoneborn is made up of excellent miners and warriors.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength or Dexterity score increases by 1.</p>
+            <p class="indent"><strong><em>Mining Weapon Proficiency.</em></strong> You are proficient with the maul, warhammer, and war pick.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WAR_PICK" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Clan Stoneborn)" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+        </rules>
+    </element>
+
+</elements>
