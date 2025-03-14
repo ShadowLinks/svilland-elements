@@ -9,11 +9,11 @@
 		</update>
 	</info>
 	
-	<element name="Austri" type="Race" source="Svilland" id="ID_RACE_AUSTRI">
+	<element name="Austri" type="Race" source="Svilland" id="ID_DRS_SVILLAND_RACE_AUSTRI">
 		<description>
 			<p class="flavor">Proud Austris mostly live in Green Lights of the East. Behind the walls of the capital city Thorath, they built a civilization, the likes of which was never before seen in Svilland. Here, armies in green cloaks wander in the wild to protect the people of the kingdom. They are a proud folk; proud of their Gods and Goddesses, lives, and kingdom.</p>
 			<h4>LONG LIVE THE KINGDOM</h4>
-			<p class="indent">compared to other regions. People’s struggles are not with nature, but with other people. In this region, you can easily buy the pelt of a wild animal instead of hunting it, but bargaining can be just as hard as hunting. Bureaucracy keeps things in order in the cities of the region, but it also slows things down.</p>
+			<p class="indent">Life in Green Lights of the East has different hardships, compared to other regions. People’s struggles are not with nature, but with other people. In this region, you can easily buy the pelt of a wild animal instead of hunting it, but bargaining can be just as hard as hunting. Bureaucracy keeps things in order in the cities of the region, but it also slows things down.</p>
 			<p class="indent">Once called the Kingdom of Eastern Horn, Green Lights of the East has always been in war with the people who opposed them. Their crusade in the name of Odin, Tyr, and Thor is still going strong.</p>
 			<h4>RELATIONS</h4>
 			<p class="indent"><strong>Dvergr:</strong> “Good blacksmiths, but a strange folk. They are from another realm, so they should let us keep this one for ourselves.”</p>
@@ -52,9 +52,9 @@
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language" number="1"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-			<grant type="Racial Trait" id="Quick Thinking" />
-			<grant type="Racial Trait" id="Kingdom’s Arsenal"/>
-			<grant type="Racial Trait" id="Civilised"/>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_QUICK_THINKING" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_KINGDOMS_ARSENAL"/>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_CIVILISED"/>
 		</rules>
 	</element>
 	<element name="Quick Thinking" type="Racial Trait" source="Svilland" id="ID_RACIAL_TRAIT_QUICK_THINKING">
