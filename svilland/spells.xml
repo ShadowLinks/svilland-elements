@@ -7,7 +7,7 @@
         </update>
     </info>
     <element name="Avalanche" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_AVALANCHE">
-        <supports>Spell Saving Throw</supports>
+        <supports>Spell Saving Throw, Seidr</supports>
         <description>
             <p>You choose a point within range, and cause an avalanche to fall, covering a 50-foot radius. Creatures in the area must make a Dexterity saving throw. On a failed save, a creature takes 6d8 bludgeoning damage and 6d8 cold damage. Large or smaller creatures must succeed on another Strength saving throw or be buried under the snow. If so, it takes a creature 10 Actions to reach the surface. On a successful save, a creature is not buried in the snow and takes half damage.</p>
             <p class="indent">The avalanche deals maximum damage to constructs, structures, and terrain features (trees, vegetation, etc.). The avalanche remains until it melts naturally. If the avalanche melts instantly, this causes a flood that acts as a river with a width of 20 feet. A creature in contact with the ground within the area must succeed on a Strength saving throw to keep from falling into the flood, or on a Dexterity saving throw to avoid it, or be carried 30 feet away and take 1d6 bludgeoning damage.</p>
@@ -28,7 +28,7 @@
         </setters>
     </element>
     <element name="Betraying Snow" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_BETRAYING_SNOW">
-        <supports>supports</supports>
+        <supports>Ranger</supports>
         <description>
             <p>You choose a point within range. Ice and snow within a 20-foot radius centered on the designated point become brittle and make loud noises when stepped on. A creature has disadvantage on Dexterity (Stealth) checks while walking in the area.</p>
         </description>
@@ -48,7 +48,7 @@
         </setters>
     </element>
     <element name="Bitter Touch of Helheim" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_BITTER_TOUCH_OF_HELHEIM">
-        <supports>Spell Saving Throw</supports>
+        <supports>Spell Saving Throw, Cleric</supports>
         <description>
             <p>You touch your target, and have it experience the unholy cold of Helheim. The target must succeed on a Constitution saving throw or become as pale as death and take an extra 1d8 cold damage from your attacks for the duration of the spell.</p>
             <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the cold damage increases by 1d8 for every two slot levels above 3rd.</p>
@@ -69,7 +69,7 @@
         </setters>
     </element>
     <element name="Blinding Radiance" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_BLINDING_RADIANCE">
-        <supports>Spell Saving Throw</supports>
+        <supports>Spell Saving Throw, Cleric</supports>
         <description>
             <p>You choose a point within range and cause an explosion of radiant light. Creatures within a 10-foot radius sphere centered on that point must make a Constitution saving throw. On a failed save, a creature takes 2d8 radiant damage and is blinded until the end of its next turn. On a successful save, the damage is halved and the creature is not blinded.</p>
             <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.</p>
@@ -90,7 +90,7 @@
         </setters>
     </element>
     <element name="Bolt of Watery Death" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_BOLD_OF_WATERY_DEATH">
-        <supports>Spell Attack, Spell Saving Throw</supports>
+        <supports>Spell Attack, Spell Saving Throw, Cleric</supports>
         <description>
             <p>Make a ranged spell attack. On a hit, a bolt of water streaks towards a creature of your choice within range, dealing 3d8 cold damage to the target. The target must succeed on a Wisdom saving throw or is charmed until the end of its next turn.</p>
             <p class="indent">At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>
@@ -111,7 +111,7 @@
         </setters>
     </element>
     <element name="Boon of Sacrifice" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_BOON_OF_SACRIFICE">
-        <supports>supports</supports>
+        <supports>supports, Cleric</supports>
         <description>
             <p>When you make a hit that kills a creature with a challenge rating of 2 or higher, you can dedicate the kill to your deity. As a reward, your deity sends a guardian to your aid.</p>
             <p class="indent">The guardian shares your initiative count, but it takes its turn immediately after yours. It has AC 16 and 40 hit points. On each of its turns, it must spend its action to make one melee spell attack dealing 1d10 force damage, or to cast the cure wounds spell healing 2d8 + 4 hit points.</p>
@@ -134,7 +134,7 @@
         </setters>
     </element>
     <element name="Borrowed Hand" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_BORROWED_HAND">
-        <supports>supports</supports>
+        <supports>Paladin</supports>
         <description>
             <p>This spell is considered to be extreme and unnecessary by most Svillanders, but the alle of Hel think that every part of a person (soul and body) should serve a purpose, even after death.</p>
             <p class="indent">By devouring the flesh of a dead humanoid creature, you gain proficiency in the skills in which the creature itself was proficient. In addition, compare your proficiency bonus with that of the creature, and use the higher number as your new proficiency bonus. Also, you can gain access to specific pieces of knowledge the dead creature knew about, such as the place of a specific item or the name of a specific person, at the GM’s discretion.</p>
@@ -156,7 +156,7 @@
         </setters>
     </element>
     <element name="Cage of Bones" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_CAGE_OF_BONES">
-        <supports>Spell Saving Throw</supports>
+        <supports>Spell Saving Throw, Paladin</supports>
         <description>
             <p>You choose a creature within range. It must succeed on a Dexterity saving throw or is caged inside shifting spiked bones that pierce its body. While caged, the target is restrained and takes 2d4 piercing damage at the end of each of its turns.</p>
             <p class="indent">The cage can be destroyed. It has AC 15, 40 Hit Points, immunity to poison and psychic damage, and vulnerability to bludgeoning damage.</p>
@@ -177,7 +177,7 @@
         </setters>
     </element>
     <element name="Cage of Water" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_CAGE_OF_WATER">
-        <supports>Spell Saving Throw</supports>
+        <supports>Spell Saving Throw, Cleric</supports>
         <description>
             <p>A ball of water bursts toward a target of your choice within range and explodes, expanding to form a spherical ball of water. The target must succeed on a Dexterity saving throw or become caged inside. The target repeats its saving throw at the end of each of its turns, ending the effects of the spell on a successful save.</p>
             <p class="indent">A caged creature is restrained for the duration of the spell. In addition, as a bonus action, you can telepathically move the cage 30 feet.</p>
@@ -198,7 +198,7 @@
         </setters>
     </element>
     <element name="Cold of Hel" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_COLD_OF_HEL">
-        <supports>supports</supports>
+        <supports>Paladin</supports>
         <description>
             <p>You infuse a 30-foot radius centered on a point you touch with the unholy powers of Helheim. The area becomes desecrated and undead creatures have advantage on Wisdom saving throws within the area.</p>
         </description>
@@ -218,7 +218,7 @@
         </setters>
     </element>
     <element name="Cold's Embrace" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_">
-        <supports>Spell Saving Throw</supports>
+        <supports>Spell Saving Throw, Ranger</supports>
         <description>
             <p>The best defense against the cold is cold itself. You clean a creature’s body with snow, and it makes a Constitution saving throw. On a successful save, it gains resistance against cold damage for the duration. On a failed save, it takes 1d6 cold damage and suffers one level of exhaustion.</p>
         </description>
@@ -238,7 +238,7 @@
         </setters>
     </element>
     <element name="Control Spirit" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_CONTROL_SPIRIT">
-        <supports>supports</supports>
+        <supports>Seidr</supports>
         <description>
             <p>You choose a spirit within range. It must succeed on a Charisma saving throw, or you can control its actions for the duration. While you are in control of the spirit, you are aware of its abilities and can command the spirit to use them. It rolls its own initiative and acts on its own turn, and you can give one new order to the spirit on each of your turns as a bonus action.</p>
             <p class="indent">The spirit can repeat its saving throw at the end of each of its turns, ending the effects of the spell on a successful save.</p>
@@ -260,7 +260,7 @@
         </setters>
     </element>
     <element name="Crippling Spirits" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_CRIPPLING_SPIRITS">
-        <supports>Spell Saving Throw</supports>
+        <supports>Spell Saving Throw, Seidr</supports>
         <description>
             <p>You choose a creature in contact with the ground within range. It must succeed on a Strength saving throw, or spirits of the earth rise from the ground and wrap around the target’s legs (or any other limbs the creature might have that serve the same purpose), halving its speed</p>
         </description>
@@ -280,7 +280,7 @@
         </setters>
     </element>
     <element name="Cursed Tongue" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_CURSED_TONGUE">
-        <supports>Spell Saving Throw</supports>
+        <supports>Spell Saving Throw, Cleric</supports>
         <description>
             <p>You choose a creature within range and following in the footsteps of Loki and his mockeries, you twist its tongue. The creature must succeed on a Charisma saving throw, or Hellic becomes the only spoken language it can speak for the duration, even if the target does not know the language.</p>
         </description>
@@ -300,7 +300,7 @@
         </setters>
     </element>
     <element name="Dagger of Agony" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_DAGGER_OF_AGONY">
-        <supports>Spell Saving Throw</supports>
+        <supports>Spell Saving Throw, Cleric</supports>
         <description>
             <p>You plunge a dagger into the chest of an unconscious creature while you are crying in agony. The target must succeed on a Constitution saving throw or its eyes melt, blood gushes out from its ears, its tongue twists, and it dies making indiscernible sounds as it drowns in its own blood. A creature who is within 30 feet of the target and who can see or hear it must succeed on a Wisdom saving throw or become frightened of you until the end of its next turn.</p>
         </description>
@@ -320,7 +320,7 @@
         </setters>
     </element>
     <element name="Deprivation of Sleep" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_DEPRIVATION_OF_SLEEP">
-        <supports>Spell Saving Throw</supports>
+        <supports>Spell Saving Throw, Cleric</supports>
         <description>
             <p>You think of a creature you have seen before. Then, you create horrors in your mind and unleash them into the mind of the creature, offering your own peace as payment. To do this, you chant incantations for 1 hour. The target must make a Wisdom saving throw. On a failed save, neither you nor the target can rest for the next 8 hours. On a successful save, both you and the target can rest normally.</p>
         </description>
@@ -340,7 +340,7 @@
         </setters>
     </element>
     <element name="Devitalizing Smite" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_DEVITALIZING_SMITE">
-        <supports>Spell Saving Throw</supports>
+        <supports>Spell Saving Throw, Cleric</supports>
         <description>
             <p>The next time you hit a creature with a melee weapon attack before the spell ends, you deal an extra 4d8 damage of the weapon’s damage type. If your weapon has more than one damage type, you choose the damage type of the extra damage. The target must also succeed on a Constitution saving throw or gain vulnerability against the damage type of the extra damage dealt with this spell until the end of its next turn.</p>
         </description>
