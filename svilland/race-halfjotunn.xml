@@ -1,61 +1,129 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Half Jotunn</name>
+		<name>Half-Jotunn</name>
 		<description></description>
 		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
 		<update version="0.0.1">
 			<file name="race-halfjotunn.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/race-halfjotunn.xml" />
 		</update>
 	</info>
-    <element name="Halfjotunn" type="Race" source="Svilland" id="ID_DRS_SVILLAND_RACE_HALFJOTUNN">
+    <element name="Half-Jotunn" type="Race" source="Svilland" id="ID_DRS_SVILLAND_RACE_HALFJOTUNN">
         <description>
-            <p></p>
-            <h4>HEADING</h4>
-            <p></p>
-            <p class="indent"></p>
-            <h4>HEADING</h4>
-            <p></p>
-            <p class="indent"></p>
-            <h4>name Traits</h4>
-            <p></p>
-            <p class="indent"><strong><em>Ability Score Increase.</em></strong> _______</p>
-            <p class="indent"><strong><em>Age.</em></strong> _______</p>
-            <p class="indent"><strong><em>Alignment.</em></strong> _______</p>
-            <p class="indent"><strong><em>Size.</em></strong> _______</p>
-            <p class="indent"><strong><em>Speed.</em></strong> _______</p>
-            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
-            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
-            <p class="indent"><strong><em>Languages.</em></strong> _______</p>
+            <p class="flavor">The half giants of Svilland</p>
+            <p>Jotunns are some of the biggest, strongest and oldest beings in the Nine Realms. In fact, it is said that Odin the Allfather and his two brothers made Svilland and the land surrounding it from the body of a jotunn named Ymir. From that point on, it seems the jotunns have been one of the most prominent enemies of Odin and his pantheon, as well as of most of the people of Svilland; most, but not all.</p>
+            <h4>THE FIRST MOUNTIAN HALF-JOTUNN</h4>
+            <p>Mountain Jotunns, unlike frost jotunns, are and have always been a peaceful folk. Living in the mountains of Svilland, they do not have a reputation of attacking unless provoked.</p>
+            <p class="indent">It is said that the first mountain half jotunn was born when the mountain jotunns descended from their homes and met with the ancestors of Svillanders. Since the mountain jotunns are not similar to their frosty counterparts in spirit, they are said to have never had much problem with the humans; that is, until most Svillanders began to see all jotunns as their enemies.</p>
+            <h4>THE FIRST FROST HALF-JOTUNNS</h4>
+            <p>The Legend of Oddbane, a tale told from one generation to the next, tells the story of how the frost jotunn tyrant Odd came from Jotunnheim to the lands north of Svilland, and unleashed the first signs of Black Winter with the intention of invasion. With his growing army of mighty frost jotunns and the power of frost in his breath, Odd even convinced some humans to join his cause. This new-found alliance gave way to the first frost half-jotunns, as a product of the love between some of the humans and frost jotunns in this army. However, neither human societies nor that of jotunns were accepting of the half jotunns, who were thought to be an abomination by most.</p>
+            <h4>RELATIONSHIPS</h4>
+            <p>These are the common thoughts of most half-jotunns about other folks. They do not, however, reflect how each and every half-jotunn must think.</p>
+            <p class="indent"><strong><em>Austri.</em></strong> “They think that they are the best.The best warriors, the best crafters, the best sorcerers, the best kingdom. At least we are welcome in their big cities.”</p>
+            <p class="indent"><strong><em>Dvergr.</em></strong> “Funny folk. They create wonders out of metals. They are just like us, not accepted by many. Yet, their way of living shows just how different we are. They are also quite easy to anger."</p>
+            <p class="indent"><strong><em>Mithal.</em></strong> “They need to realize that we are not Odd’s jotunns. Their ancestors massacred the High Seidr Council to stop Black Winter, we hope that they don’t repeat the same mistake against us.”</p>
+            <p class="indent"><strong><em>Kuning.</em></strong> “Honorable folk. The great sages of the North protected our land, even in the face of death. They never saw us as monsters, but accepted us to be the sentient beings that we are.”</p>
+            <p class="indent"><strong><em>Vestri.</em></strong> “The Vestri treat us like we are some kind of worker who never gets tired. But still, they pay us and shelter us. We must not bite the hands that feed.”</p>
+            <h4>HALF-JOTUNN NAMES</h4>
+            <p class="indent"><strong><em>Male Names.</em></strong> Atul, Byrun, Baugi, Durni, Eld, Fernjlöt, Gangr, Hörn, Jarngi, Kott, Lantul, Morn, Ongar, Skoll, Ver, Ymsi</p>
+            <p class="indent"><strong><em>Female Names.</em></strong> Ama, Dufa, Eist, Eyrjafa, Guma, Imgi, Jörnna, Kolma, Ljota, Nena, Panyg, Rüna, Tolfa, Unn, Vyra</p>
+            <h4>HALF-JOTUNN TRAITS</h4>
+            <p>Half-jotunns are strong folk who adapted themselves to a life of seclusion.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 2.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Half-jotunns can live to be 100-120 years old and they reach adulthood when they are 30.</p>
+            <p class="indent"><strong><em>Alignment.</em></strong>  Half-jotunns never lived under a ruler of their own. They settled together in the wild and the only rule they had was to stay alive. Therefore, many of them tend to be chaotic.</p>
+            <p class="indent"><strong><em>Size.</em></strong>  A half-jotunn usually weighs around 200-300 pounds and can be 7-8 feet tall. Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet</p>
+            <p class="indent"><strong><em>Blue Blood Rush.</em></strong> You gain proficiency in the Athletics skill. Also, you can choose to have advantage on a Strength (Athletics) check. Once you use this feature, you need to take a short or long rest to use it again.</p>
+            <p class="indent"><strong><em>Ancestry.</em></strong> Two ancestries of half-jotunn are found in the Svilland: Mountain half-jotunn and Frost half-jotunn.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> They can speak, write, and understand Austris (Common), as well as the language commonly spoken in their place of birth.</p>
         </description>
         <setters>
-            <set name="names" type="male"></set>
-            <set name="names" type="female"></set>
+            <set name="names" type="male">Atul, Byrun, Baugi, Durni, Eld, Fernjlöt, Gangr, Hörn, Jarngi, Kott, Lantul, Morn, Ongar, Skoll, Ver, Ymsi</set>
+            <set name="names" type="female">Ama, Dufa, Eist, Eyrjafa, Guma, Imgi, Jörnna, Kolma, Ljota, Nena, Panyg, Rüna, Tolfa, Unn, Vyra</set>
             <set name="names" type="clan"></set>
-            <set name="names-format">{{name}} {{clan}}</set>
-            <set name="height" modifier="2d8">6'0"</set>
-			<set name="weight" modifier="2d6">180 lb.</set>
+            <set name="names-format">{{name}}</set>
+            <set name="height" modifier="2d8">7'0"</set>
+			<set name="weight" modifier="2d6">250 lb.</set>
         </setters>
         <sheet display="false" />
         <rules>
-            <grant type="Racial Trait" id="ID_DRS_SVILLAND_HALFJOTUNN_RACIAL_TRAIT_" />
-            <grant type="Racial Trait" id="ID_DRS_SVILLAND_HALFJOTUNN_RACIAL_TRAIT_" />
+            <stat name="strength" value="2" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <select type="Language" name="Language, Half-Jotunn" supports="Standard||Exotic" />
+            <grant type="Racial Trait" id="ID_DRS_SVILLAND_HALFJOTUNN_RACIAL_TRAIT_BLUE_BLOOD_RUSH" />
+            <select type="Sub Race" name="Ancestry" supports="halfjotunn-ancestry" />
         </rules>
     </element>
-    <element name="name" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_HALFJOTUNN_RACIAL_TRAIT_">
+    <element name="Blue Blood Rush" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_HALFJOTUNN_RACIAL_TRAIT_BLUE_BLOOD_RUSH">
         <description>
-            <p></p>
+            <p>You gain proficiency in the Athletics skill. Also, you can choose to have advantage on a Strength (Athletics) check. Once you use this feature, you need to take a short or long rest to use it again.</p>
+        </description>
+        <sheet>
+            <description>You can choose to have advantage on a Strength (Athletics) check. Once you use this feature, you need to take a short or long rest to use it again.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+        </rules>
+    </element>
+    <element name="Mountain Half-Jotunn" type="Sub Race" source="Svilland" id="ID_DRS_SVILLAND_HALFJOTUNN_SUBRACE_MOUNTAIN">
+        <supports>halfjotunn-ancestry</supports>
+        <description>
+            <p>Mountain jotunns are some of the strongest beings in the world. Their intelligence is lower than frost jotunns and they are much more primitive than other beings. Most of them do not like big cities or crowded societies.</p>
+            <p class="indent">Human jarls or thanes ask mountain half-jotunns to be their gatekeepers and most of the karl’s champions are mountain half-jotunns. They are glorious warriors and have strong bonds with their families.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1.</p>
+            <p class="indent"><strong><em>Giant Side.</em></strong> You can throw Small or Tiny objects on a target within 20 feet without disadvantage or 60 feet with disadvantage, dealing 1d8 bludgeoning damage for Small objects, and 1d6 bludgeoning damage for Tiny objects. You can also throw Small or Tiny creatures if you are grappling them.</p>
+            <p class="indent"><strong><em>Rock Walk.</em></strong> Mountain terrain is not difficult terrain for you.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
-    </element>
-    <element name="name" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_HALFJOTUNN_RACIAL_TRAIT_">
+        <rules>
+            <grant type="Racial Trait" id="ID_DRS_SVILLAND_HALFJOTUNN_RACIAL_TRAIT_GIANT_SIDE" />
+            <grant type="Racial Trait" id="ID_DRS_SVILLAND_HALFJOTUNN_RACIAL_TRAIT_ROCK_WALK" />
+            <stat name="constitution" value="1" />
+        </rules>
+    </element>    
+    <element name="Giant Side" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_HALFJOTUNN_RACIAL_TRAIT_GIANT_SIDE">
         <description>
             <p></p>
         </description>
         <sheet>
+            <description>You can throw Small or Tiny objects on a target within 20 feet without disadvantage or 60 feet with disadvantage, dealing 1d8 bludgeoning damage for Small objects, and 1d6 bludgeoning damage for Tiny objects. You can also throw Small or Tiny creatures if you are grappling them.</description>
+        </sheet>
+    </element>
+    <element name="Rock Walk" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_HALFJOTUNN_RACIAL_TRAIT_ROCK_WALK">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>Mountain terrain is not difficult terrain for you.</description>
+        </sheet>
+    </element>
+    <element name="Frost Half-Jotunn" type="Sub Race" source="Svilland" id="ID_DRS_SVILLAND_HALFJOTUNN_SUBRACE_FROST">
+        <supports>halfjotunn-ancestry</supports>
+        <description>
+            <p>The number of frost jotunns in Svilland is less than the mountain jotunn but are not too bothered by this fact since Svilland is not their home realm. They are creatures of winter and ice whose ancestors hail from Jotunnheim. They are much smarter than mountain jotunns as well as most of the humans. Frost jotunns are hateful creatures, and humans are rightfully afraid of them.</p>
+            <p class="indent">Some frost half-jotunns see the Odd as their true leader and decide to join the ranks of Odd’s Oath, and some of them wander in Svilland and live with Svillanders.</p>
+            <p class="indent"><strong><em>Ability Score Increase</em></strong> Your Charisma score increases by 1.</p>
+            <p class="indent"><strong><em>Frost Affinity</em></strong> Because of your frost jotunn ancestors, you have resistance to cold damage.</p>
+        </description>
+        <sheet>
             <description></description>
+        </sheet>
+        <rules>
+            <stat name="charisma" value="1" />
+            <grant type="Racial Trait" id="ID_DRS_SVILLAND_HALFJOTUNN_RACIAL_TRAIT_FROST_AFFINITY" />
+        </rules>
+    </element>
+    <element name="Frost Affinity" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_HALFJOTUNN_RACIAL_TRAIT_FROST_AFFINITY">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>Because of your frost jotunn ancestors, you have resistance to cold damage.</description>
         </sheet>
     </element>
 </elements>
