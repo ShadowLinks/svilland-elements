@@ -10,52 +10,64 @@
 	</info>
     <element name="Vestri" type="Race" source="Svilland" id="ID_DRS_SVILLAND_RACE_VESTRI">
         <description>
-            <p></p>
-            <h4>HEADING</h4>
-            <p></p>
-            <p class="indent"></p>
-            <h4>HEADING</h4>
-            <p></p>
-            <p class="indent"></p>
-            <h4>name Traits</h4>
-            <p></p>
-            <p class="indent"><strong><em>Ability Score Increase.</em></strong> _______</p>
-            <p class="indent"><strong><em>Age.</em></strong> _______</p>
-            <p class="indent"><strong><em>Alignment.</em></strong> _______</p>
-            <p class="indent"><strong><em>Size.</em></strong> _______</p>
-            <p class="indent"><strong><em>Speed.</em></strong> _______</p>
-            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
-            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
-            <p class="indent"><strong><em>Languages.</em></strong> _______</p>
+            <p>Vestris live on the western shore of Svilland, Nionaem. They are mostly naval raiders, sailors, and ship builders, which is why they do not choose to live within the woods.</p>
+            <p class="indent">Family means a lot to Vestris and they believe that those without a family are without honor. They often tattoo their bodies with their family symbols.</p>
+            <h4>BLESSINGS OF THE SEA</h4>
+            <p>The sea is the core of the life of Vestris. They pray to the sea, hunt at sea, and have their battles in the sea. Nionaem is famous for their fishers and naval raiders. Svillanders know that nothing can defeat a Vestri on water.</p>
+            <p class="indent">It is said that Aegir and Ran blessed Vestris and Nionaem with their generous gifts. One of them is the king of Nionaem, the prophet, Aleson the Arisen, who was reborn in the sea and came to rule the land. From that moment forth the Vestri knew that their destiny was not set in stone like others, but was written on the seas by storms.</p>
+            <h4>RELATIONSHIPS</h4>
+            <p>Being a folk of the seas and of survival in harsh conditions, Vestris highly value warriors and hunters. Their general attitudes towards folk of other ancestries are given below. However, the views stated below are not necessarily shared by every Vestri.</p>
+            <p class="indent"><strong><em>Austri</em></strong> “They believe in their kingdom far too much, sometimes even fanatically. But not all of them think in the same way. Having big cities and ‘being civilized’ are not what makes a warrior.” </p>
+            <p class="indent"><strong><em>Dvergr</em></strong> “Although stubborn and grumpy, they are the best crafters one can find. If you don’t anger them, they might even be friendly, although I wouldn’t get my hopes up too much..” </p>
+            <p class="indent"><strong><em>Half-Jotunn</em></strong> “A different and dangerous folk. But being friends with one could save your life in the wilderness.” </p>
+            <p class="indent"><strong><em>Mithal</em></strong> “Mithals made poor decisions and found themselves in conflict, stuck between two rulers. We pity them. They have so much in common with us.” </p>
+            <p class="indent"><strong><em>Kuning</em></strong> “A folk on their own and who are better if left alone. They are just different from the rest of us here in Svilland. Some think their connections with the spirits defy our Gods and Goddesses, and that they are just as heretical as the mythical Vanir. Still, I have not seen them do any harm.” </p>
+            <h4>VESTRI NAMES</h4>
+            <p class="indent"><strong><em>Male Names:</em></strong> Agnar, Bodvar, Dag, Forni, Gauk, Holmfast, Kabbi, Ljot, Manni, Orn, Ref, Skap, Tofi, Trud, Unn </p>
+            <p class="indent"><strong><em>Female Names:</em></strong> Annete, Asa, Brida, Dagny, Ella, Grima, Hella, Ingrid, Karin, Mathilda, Ruth, Synne, Thorhalla, Vilde, Yvonne </p>
+            <h4>VESTRI TRAITS</h4>
+            <p>Harsh wilderness and sea life makes Vestris excellent survivalists.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2, and your Wisdom score increases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> The Vestri live about 70-90 years and reach adulthood when they are 16.</p>
+            <p class="indent"><strong><em>Alignment.</em></strong> Vestris want to live their life without hesitation or remorse. Survival is their utmost priority, so they tend to be neutral.</p>
+            <p class="indent"><strong><em>Size.</em></strong> They are around 5-6 feet tall and weigh 125-250 pounds on average. Your size is Medium</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Aegir's Blessing.</em></strong> You have proficiency with the Svillander javelin, svardstav, and yew longbow.</p>
+            <p class="indent"><strong><em>Survive.</em></strong> You gain proficiency in the Stealth or Survival skill (of your choice).</p>
+            <p class="indent"><strong><em>Too Stubborn to Die.</em></strong> Once per long rest, you die when you fail your death saving throw four times instead of three.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> They can speak, write, and understand Austris (Common), and Vestris fluently.</p>
         </description>
         <setters>
-            <set name="names" type="male"></set>
-            <set name="names" type="female"></set>
+            <set name="names" type="male">Agnar, Bodvar, Dag, Forni, Gauk, Holmfast, Kabbi, Ljot, Manni, Orn, Ref, Skap, Tofi, Trud, Unn</set>
+            <set name="names" type="female">Annete, Asa, Brida, Dagny, Ella, Grima, Hella, Ingrid, Karin, Mathilda, Ruth, Synne, Thorhalla, Vilde, Yvonne</set>
             <set name="names" type="clan"></set>
-            <set name="names-format">{{name}} {{clan}}</set>
+            <set name="names-format">{{name}}</set>
             <set name="height" modifier="2d8">6'0"</set>
 			<set name="weight" modifier="2d6">180 lb.</set>
         </setters>
         <sheet display="false" />
         <rules>
-            <grant type="Racial Trait" id="ID_DRS_SVILLAND_VESTRI_RACIAL_TRAIT_" />
-            <grant type="Racial Trait" id="ID_DRS_SVILLAND_VESTRI_RACIAL_TRAIT_" />
+            <grant type="Racial Trait" id="ID_DRS_SVILLAND_VESTRI_RACIAL_TRAIT_TOO_STUBBORN_TO_DIE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SVILLANDER_JAVELIN" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_YEW_LONGBOW" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SVARDSTAV" />
+            <select type="Proficiency" name="Skill Proficiency, Survive" supports="ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <stat name="Constitution" value="2"  requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <stat name="Wisdom" value="1"  requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Vestri)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Vestri)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_LANGUAGE_VESTRIS" />
         </rules>
     </element>
-    <element name="name" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_VESTRI_RACIAL_TRAIT_">
+    <element name="Too Stubborn to Die" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_VESTRI_RACIAL_TRAIT_TOO_STUBBORN_TO_DIE">
         <description>
-            <p></p>
+            <p>Once per long rest, you die when you fail your death saving throw four times instead of three.</p>
         </description>
         <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="name" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_VESTRI_RACIAL_TRAIT_">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+            <description>Once per long rest, you die when you fail your death saving throw four times instead of three.</description>
         </sheet>
     </element>
 </elements>

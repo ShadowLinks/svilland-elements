@@ -48,7 +48,9 @@
         </setters>
         <sheet display="false" />
         <rules>
-            <stat name="strength" value="2" />
+            <stat name="strength" value="2"  requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Half-Jotunn)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Half-Jotunn)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />/>
             <grant type="Size" id="ID_SIZE_MEDIUM" />
             <stat name="innate speed" value="30" bonus="base" />
             <grant type="Language" id="ID_LANGUAGE_COMMON" />
@@ -83,7 +85,7 @@
         <rules>
             <grant type="Racial Trait" id="ID_DRS_SVILLAND_HALFJOTUNN_RACIAL_TRAIT_GIANT_SIDE" />
             <grant type="Racial Trait" id="ID_DRS_SVILLAND_HALFJOTUNN_RACIAL_TRAIT_ROCK_WALK" />
-            <stat name="constitution" value="1" />
+            <stat name="constitution" value="1"  requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
         </rules>
     </element>    
     <element name="Giant Side" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_HALFJOTUNN_RACIAL_TRAIT_GIANT_SIDE">
@@ -114,7 +116,7 @@
             <description></description>
         </sheet>
         <rules>
-            <stat name="charisma" value="1" />
+            <stat name="charisma" value="1"  requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
             <grant type="Racial Trait" id="ID_DRS_SVILLAND_HALFJOTUNN_RACIAL_TRAIT_FROST_AFFINITY" />
         </rules>
     </element>

@@ -10,52 +10,69 @@
 	</info>
     <element name="Kuning" type="Race" source="Svilland" id="ID_DRS_SVILLAND_RACE_KUNING">
         <description>
-            <p></p>
-            <h4>HEADING</h4>
-            <p></p>
+            <p>Kunings are the most spiritual culture of Svilland. They live in the forests and mountains as nomads. They recognize the Gods and Goddesses of Asgard, not as deities but beings from another realm and great spirits. Their language, Kun, is the oldest spoken language in Svilland.</p>
+            <h4>DAYS OF THE HIGH COUNCIL</h4>
+            <p>Once, The Kuning lived in peace with the other cultures living in their communities and villages. Their ways were respected and sometimes even feared. They walked freely in cities and helped people who were in need. When the first signs of Black Winter threatened all of Svilland, the High Seidr Council gathered. The High Council tried to stop Black Winter through a ritual in which they convened with the spirits every 6 months; but were slain by the Bear King’s army as they were in the midst of it. Some Kunings say that the High Seidr Council already knew that this was going to happen, and some say that they were ambushed.</p>
             <p class="indent"></p>
-            <h4>HEADING</h4>
-            <p></p>
-            <p class="indent"></p>
-            <h4>name Traits</h4>
-            <p></p>
-            <p class="indent"><strong><em>Ability Score Increase.</em></strong> _______</p>
-            <p class="indent"><strong><em>Age.</em></strong> _______</p>
-            <p class="indent"><strong><em>Alignment.</em></strong> _______</p>
-            <p class="indent"><strong><em>Size.</em></strong> _______</p>
-            <p class="indent"><strong><em>Speed.</em></strong> _______</p>
-            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
-            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
-            <p class="indent"><strong><em>Languages.</em></strong> _______</p>
+            <h4>RELATIONSHIPS</h4>
+            <p>The general attitudes of Kunings towards other ancestries are given below. However, keep in mind that there can be those who think differently as well.</p>
+            <p class="indent"><strong><em>Austri.</em></strong> “Unlike us, they came together and formed cities with walls. The Austri believe that their strength is immeasurably higher than ours, because we are nomads. They do not realize that they have become one while we are still many, and that we are not alone.”</p>
+            <p class="indent"><strong><em>Dvergr.</em></strong> “Dvergrs had their problems while we were dealing with our own. We can relate to them, but their ways are quite different from ours, so we must act with caution in their presence.”</p>
+            <p class="indent"><strong><em>Half-Jotunn.</em></strong> “Just like us, they were hunted down and killed, and are still shunned by society. Everyone believes that they are monsters but there are no monsters in real life; only those you deem your enemies and their swords against your neck." </p>
+            <p class="indent"><strong><em>Mithal.</em></strong> “Damn those ignorant fools!They were so full of hate that they could not see the difference between Kunings and seidrs. There will come a time when they need our help. That day, it shall be us who weave their fate.” </p>
+            <p class="indent"><strong><em>Vestri.</em></strong> “They were kind to us at first, but after the massacre, they did not help us. This makes them no better than those who slaughtered us.” </p>
+            <h4>KUNING NAMES</h4>
+            <p class="indent"><strong><em>Male Names.</em></strong> Aigin, Ano, Benne, Doavi, Erke, Hanno, Heige, Juho, Mavnos, Mokko, Rija, Skarild, Vide</p>
+            <p class="indent"><strong><em>Female Names.</em></strong> Bija, Birta, Cuvie, Delle, Erva, Girsa, Heide, Hilda, Ingir, Lota, Olga, Salla, Solja, Tua, Ulla</p>
+            <h4>KUNING TRAITS</h4>
+            <p>Kunings are a spiritual folk who are used to living in the wild.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2 and your Dexterity score increases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Kunings live to be nearly 70 years old and they become adults when they turn 15. Kunings that live together celebrate each coming of age ceremony with feasts, stories, and meditation.</p>
+            <p class="indent"><strong><em>Alignment.</em></strong> Before the Relentless Hunt, Kunings lived without human-made rules. Now, many of them choose to remain neutral.</p>
+            <p class="indent"><strong><em>Size.</em></strong> Kunings are around 5-6 feet tall and weigh 125-250 pounds on average. Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet. </p>
+            <p class="indent"><strong><em>Eye of the Heart.</em></strong> You gain proficiency in the Insight skill.</p>
+            <p class="indent"><strong><em>Nomadic Vitality.</em></strong> You are familiar with long walks and tiring days. You ignore the penalties of the first level of exhaustion</p>
+            <p class="indent"><strong><em>Spirit Ancestors.</em></strong> Kunnings have an affinity to spirits and the undead. As a result, you have immunity against being frightened by spirits and the undead.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> They can speak, write, and understand Austris (Common), and Kun fluently.</p>
         </description>
         <setters>
-            <set name="names" type="male"></set>
-            <set name="names" type="female"></set>
+            <set name="names" type="male">Aigin, Ano, Benne, Doavi, Erke, Hanno, Heige, Juho, Mavnos, Mokko, Rija, Skarild, Vide</set>
+            <set name="names" type="female">Bija, Birta, Cuvie, Delle, Erva, Girsa, Heide, Hilda, Ingir, Lota, Olga, Salla, Solja, Tua, Ulla</set>
             <set name="names" type="clan"></set>
-            <set name="names-format">{{name}} {{clan}}</set>
-            <set name="height" modifier="2d8">6'0"</set>
+            <set name="names-format">{{name}}</set>
+            <set name="height" modifier="2d8">5'0"</set>
 			<set name="weight" modifier="2d6">180 lb.</set>
         </setters>
         <sheet display="false" />
         <rules>
-            <grant type="Racial Trait" id="ID_DRS_SVILLAND_KUNING_RACIAL_TRAIT_" />
-            <grant type="Racial Trait" id="ID_DRS_SVILLAND_KUNING_RACIAL_TRAIT_" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_LANGUAGE_KUN" />
+            <stat name="wisdom" value="2"  requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <stat name="dexterity" value="1"  requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Kuning)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Kuning)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <grant type="Racial Trait" id="ID_DRS_SVILLAND_KUNING_RACIAL_TRAIT_NOMADIC_VITALITY" />
+            <grant type="Racial Trait" id="ID_DRS_SVILLAND_KUNING_RACIAL_TRAIT_SPIRIT_ANCESTORS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
         </rules>
     </element>
-    <element name="name" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_KUNING_RACIAL_TRAIT_">
+    <element name="Nomadic Vitality" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_KUNING_RACIAL_TRAIT_NOMADIC_VITALITY">
         <description>
             <p></p>
         </description>
         <sheet>
-            <description></description>
+            <description>You are familiar with long walks and tiring days. You ignore the penalties of the first level of exhaustion.</description>
         </sheet>
     </element>
-    <element name="name" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_KUNING_RACIAL_TRAIT_">
+    <element name="Spirit Ancestors" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_KUNING_RACIAL_TRAIT_SPIRIT_ANCESTORS">
         <description>
             <p></p>
         </description>
         <sheet>
-            <description></description>
+            <description>Kunnings have an affinity to spirits and the undead. As a result, you have immunity against being frightened by spirits and the undead.</description>
         </sheet>
     </element>
 </elements>

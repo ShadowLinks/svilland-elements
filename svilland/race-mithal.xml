@@ -10,52 +10,101 @@
 	</info>
     <element name="Mithral" type="Race" source="Svilland" id="ID_DRS_SVILLAND_RACE_MITHRAL">
         <description>
-            <p></p>
-            <h4>HEADING</h4>
-            <p></p>
-            <p class="indent"></p>
-            <h4>HEADING</h4>
-            <p></p>
-            <p class="indent"></p>
-            <h4>name Traits</h4>
-            <p></p>
-            <p class="indent"><strong><em>Ability Score Increase.</em></strong> _______</p>
-            <p class="indent"><strong><em>Age.</em></strong> _______</p>
-            <p class="indent"><strong><em>Alignment.</em></strong> _______</p>
-            <p class="indent"><strong><em>Size.</em></strong> _______</p>
-            <p class="indent"><strong><em>Speed.</em></strong> _______</p>
-            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
-            <p class="indent"><strong><em>RACIAL_TRAIT.</em></strong> _______</p>
-            <p class="indent"><strong><em>Languages.</em></strong> _______</p>
+            <p>In the Second Age, they were the followers of the Bear King. Now they are caught between lands, fighting everything on every front. Armies of Green Lights of the East stand ready to claim their lands and hunters of Nionaem always harass their people.</p>
+            <h4>UNENDING CONFLICT</h4>
+            <p>The people of Alsvartr, also known as Mithal, have found themselves in the midst of a conflict that never seems to end..</p>
+            <p class="indent">The Armies of the North Assembly (p. 55) lie in the North of Alsvartr. They try to keep the peace both in Alsvartr and with those on the outside. Meanwhile, the Armies of Enkleistra (p. 51) prepare to take over Alsvartr and end this conflict through a glorious victory. They may be in battle, but Northern Mithals and Southern Mithals share many similarities.</p>
+            <p class="indent">The unending conflict has left a permanent scar in the hearts of the Mithal. As they have a limited supply of resources, they are used to suffering from hunger and other hardships.</p>
+            <h4>RELATIONSHIPS</h4>
+            <p>The general attitudes of the Mithal towards others are given below. However, keep in mind that there may be some Mithal who think differently.</p>
+            <p class="indent"><strong><em>Austri.</em></strong> “Hunters and fishers. Nothing more, nothing less. Once we get Alsvartr back on its feet the Austri better watch out.” </p>
+            <p class="indent"><strong><em>Dvergr.</em></strong> “Northern Mithal: A different but loyal folk. They helped us in our righteous fight against the false king. We know that they are stuck here but that does not mean they have to suffer. Southern Mithal: They do not belong here, and they don’t deserve anything from us. Everything they own here is ours to take.” </p>
+            <p class="indent"><strong><em>Half-Jotunn.</em></strong> “They can sometimes act like monsters who have the ability to talk and fight. Not all of them are bad but we must be cautious around them all the time. Having them around our homes is out of the question.” </p>
+            <p class="indent"><strong><em>Kuning.</em></strong> “ The Gods and Goddesses may not be on their side, but they were still able to survive, and that in itself is honorable.” </p>
+            <p class="indent"><strong><em>Vestri.</em></strong> “They are forcing us to be the bad guys but, in this story, they are the oppressors. They’re ignorant fools who think we can’t fight, but without us, Svilland would be no more.” </p>
+            <h4>MITHAL NAMES</h4>
+            <p class="indent"><strong><em>Male Names.</em></strong> Björn, Bjarki, Carmund, Davel, Gjabard, Hatnar, Hjalki, Jokrar, Kasark, Ljand, Mavra, Otark, Ramel, Sorma </p>
+            <p class="indent"><strong><em>Female Names.</em></strong> Arna, Arja, Cathil, Derkha, Elira, Genma, Hilde, Irena, Naselja, Orma, Salin, Tulja, Uma </p>
+            <h4>MITHAL TRAITS</h4>
+            <p>Mithals are accustomed to war and hardship. They can thus accommodate themselves to different situations.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Ability Score Increase. Your Dexterity score increases by 2 and one other ability score of your choice increases by 1</p>
+            <p class="indent"><strong><em>Age.</em></strong> The Mithal live 70-90 years and they reach adulthood at the age of 16.</p>
+            <p class="indent"><strong><em>Alignment.</em></strong> After the Bear King, Mithals were scattered and got used to living without a ruler. While most Southern Mithals tend to be more chaotic, Northern Mithals tend to be lawful.</p>
+            <p class="indent"><strong><em>Size.</em></strong> They are around 5-7 feet tall and weigh 125-250 pounds on average. Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong>  Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>In the Middle.</em></strong> You can choose an extra language between the Dvergmer, Kun, or Vestris languages. You are also proficient in the History skill related to your chosen language; meaning you are proficient in Kuning history if you choose Kun as a language, or Vestri history if you choose Vestris as a language.</p>
+            <p class="indent"><strong><em>Feat.</em></strong> You take one feat of your choice.</p>
+            <p class="indent"><strong><em>Languages.</em></strong>  They can speak, write, and understand Austris (Common), and Mithal fluently</p>
         </description>
         <setters>
-            <set name="names" type="male"></set>
-            <set name="names" type="female"></set>
+            <set name="names" type="male">Björn, Bjarki, Carmund, Davel, Gjabard, Hatnar, Hjalki, Jokrar, Kasark, Ljand, Mavra, Otark, Ramel, Sorma</set>
+            <set name="names" type="female">Arna, Arja, Cathil, Derkha, Elira, Genma, Hilde, Irena, Naselja, Orma, Salin, Tulja, Uma</set>
             <set name="names" type="clan"></set>
-            <set name="names-format">{{name}} {{clan}}</set>
+            <set name="names-format">{{name}}</set>
             <set name="height" modifier="2d8">6'0"</set>
 			<set name="weight" modifier="2d6">180 lb.</set>
         </setters>
         <sheet display="false" />
         <rules>
-            <grant type="Racial Trait" id="ID_DRS_SVILLAND_MITHRAL_RACIAL_TRAIT_" />
-            <grant type="Racial Trait" id="ID_DRS_SVILLAND_MITHRAL_RACIAL_TRAIT_" />
+            <grant type="Racial Trait" id="ID_DRS_SVILLAND_MITHRAL_RACIAL_TRAIT_IN_THE_MIDDLE" />
+            <select type="Feat" name="Feat (Mithal)"/>
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <stat name="dexterity" value="2"  requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Mithal)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Mithal)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_LANGUAGE_MITHAL" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Mithal)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_CHARISMA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
         </rules>
     </element>
-    <element name="name" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_MITHRAL_RACIAL_TRAIT_">
+    <element name="In the Middle" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_MITHRAL_RACIAL_TRAIT_IN_THE_MIDDLE">
         <description>
-            <p></p>
+            <p>You can choose an extra language between the Dvergmer, Kun, or Vestris languages. You are also roficient in the History skill related to your chosen language; meaning you are proficient in Kuning history if you choose Kun as a language, or Vestri history if you choose Vestris as a language.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Racial Trait" name="In the Middle" supports="mithal-lang" />
+        </rules>
     </element>
-    <element name="name" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_MITHRAL_RACIAL_TRAIT_">
+    <element name="Dvergmer" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_MITHRAL_RACIAL_TRAIT_DVERGMER">
+        <supports>mithal-lang</supports>
         <description>
-            <p></p>
+            <p>You know Dvergmer and you are also proficient in the History skill related to your chosen language.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You know Dvergmer and you are also proficient in the History skill related to your chosen language.</description>
         </sheet>
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_DVERGMER" />
+        </rules>
+    </element>
+
+    <element name="Kun" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_MITHRAL_RACIAL_TRAIT_KUN">
+        <supports>mithal-lang</supports>
+        <description>
+            <p>You know Kun and you are also proficient in the History skill related to your chosen language.</p>
+        </description>
+        <sheet>
+            <description>You know Kun and you are also proficient in the History skill related to your chosen language.</description>
+        </sheet>
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_KUN" />
+        </rules>
+    </element>
+
+    <element name="Vestris" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_MITHRAL_RACIAL_TRAIT_VESTRIS">
+        <supports>mithal-lang</supports>
+        <description>
+            <p>You know Vestris and you are also proficient in the History skill related to your chosen language.</p>
+        </description>
+        <sheet>
+            <description>You know Vestris and you are also proficient in the History skill related to your chosen language.</description>
+        </sheet>
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_VESTRIS" />
+        </rules>
     </element>
 </elements>
