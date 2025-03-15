@@ -21,6 +21,7 @@
 		<file name="race-mithral.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/race-mithral.xml" />
 		<file name="race-vestri.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/race-vestri.xml" />
 		<!-- Classes -->
+		<file name="barbarian-berserkr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/berserkr.xml" />
 		
 		
 		<!-- Spells -->

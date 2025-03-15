@@ -1,61 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of Berserkr</name>
+		<description></description>
+		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
+		<update version="0.0.1">
+			<file name="barbarian-berserkr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/berserkr.xml" />
+		</update>
+	</info>
+	<element name="Path of Berserkr" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_BARBARIAN_BERSERKR">
+        <supports>Primal Path</supports>		
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<p>Berserkrs (Bearskins) are strong, gritty and protective of their lands. Whether guarding their village from the warbands, or ruling their own warband with pure fortitude, they are those who bind their hearts to the path of the bear for various reasons. They accept the spirit of bears as their guide and seek to learn from the movements and habits of bears in nature.</p>
+			<p class="indent">Berserkrs are hard to bring down in a fight. They enter the battlefield intending to be the last warrior standing.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_BERSERKR_WEARING_THE_BEARS_SKIN" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_BERSERKR_MAULING_BEAR" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_BERSERKR_BER_STRENGTH" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_BERSERKR_BERSERK" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_BERSERKR_WEARING_THE_BEARS_SKIN" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_BERSERKR_MAULING_BEAR" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_BERSERKR_BER_STRENGTH" level="10" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_BERSERKR_BERSERK" level="14" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="Wearing the Bear's Skin" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_BERSERKR_WEARING_THE_BEARS_SKIN">
 		<description>
-			<p></p>
+			<p>Starting at 3rd level, you can carry the essence of a bear with you by wearing pieces of its fur and bones. While wearing a bear fur, you gain a +1 bonus to AC. The fur does not count as armor.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>While wearing a bear fur, you gain a +1 bonus to AC. The fur does not count as armor.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="Mauling Bear" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_BERSERKR_MAULING_BEAR">
 		<description>
-			<p></p>
+			<p>At 6th level, you gain the ability to rear up like the bear and to throw your weight, or jump, onto a hostile creature that is one size larger than you at most, and force it down to the ground. You make a Strength (Athletics) check with advantage contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check, which it makes to avoid the effect. If the target fails the contest, it takes 3d6 bludgeoning damage, is knocked prone, and is grappled by you.</p>
+			<p class="indent">You can use this feature a number of times equal to your Strength modifier (minimum of once). You regain any expended uses when you finish a long rest</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="{{strength:modifier}}/Long Rest">
+			<description>You gain the ability to rear up like the bear and to throw your weight, or jump, onto a hostile creature that is one size larger than you at most, and force it down to the ground. You make a Strength (Athletics) check with advantage contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check, which it makes to avoid the effect. If the target fails the contest, it takes 3d6 bludgeoning damage, is knocked prone, and is grappled by you.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+	<element name="Ber Strength" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_BERSERKR_BER_STRENGTH">
 		<description>
-			<p></p>
+			<p>Starting at 10th level, while raging, you can summon the true strength of a bear. When you make a successful unarmed, melee, or ranged weapon attack, you can add a number of d4s equal to your Strength modifier to the damage roll as a reaction.</p>
+			<p class="indent">Additionally, the target’s speed is halved until the end of its next turn.</p>
+			<p class="indent">You can use this feature a number of times equal to your Strength modifier (minimum of once). You regain any expended uses after you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="{{strength:modifier}}/Long Rest">
+			<description>While raging, when you make a successful unarmed, melee, or ranged weapon attack, you can add a number of d4s equal to your Strength modifier to the damage roll as a reaction.
+			Additionally, the target’s speed is halved until the end of its next turn.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
+	<element name="Berserk" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_BERSERKR_BERSERK">
 		<description>
-			<p></p>
+			<p>Starting at 14th level, a bear spirit’s power fuels your rage. You gain the following benefits while raging</p>
+			<ul>
+                <li>You have resistance to all damage types except for psychic.</li>
+                <li>You have advantage on Constitution saving throws.</li>
+                <li>You can’t be charmed or frightened.</li>
+            </ul>
 		</description>
 		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+			<description>You gain the following benefits while raging:
+			You have resistance to all damage types except for psychic.			
+			You have advantage on Constitution saving throws.
+			You can’t be charmed or frightened.</description>
 		</sheet>
 	</element>
 </elements>
