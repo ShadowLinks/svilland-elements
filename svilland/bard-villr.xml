@@ -1,61 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Tradition of Villr</name>
+		<description></description>
+		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
+		<update version="0.0.1">
+			<file name="bard-villr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/bard-villr.xml" />
+		</update>
+	</info>
+	<element name="Tradition of Villr" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_BARD_VILLR">
+        <supports>Bard College</supports>
 		<description>
 			<p></p>
 			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_VILLR_BONUS_PROFICIENCIES" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_VILLR_FRIEND_OF_THE_WILDERNESS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_VILLR_INSPIRED_TO_SURVIVE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_VILLR_SONG_OF_AWAKENING" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_VILLR_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_VILLR_FRIEND_OF_THE_WILDERNESS" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_VILLR_INSPIRED_TO_SURVIVE" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_VILLR_SONG_OF_AWAKENING" level="14" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_VILLR_BONUS_PROFICIENCIES">
 		<description>
-			<p></p>
+			<p>When you choose this tradition at 3rd level, you become proficient in the Animal Handling, Nature and Survival skills.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="Friend of the Wilderness" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_VILLR_FRIEND_OF_THE_WILDERNESS">
 		<description>
-			<p></p>
+			<p>Also starting at 3rd level, you can use your bardic powers to tap into the forces of nature. You gain the following benefits:</p>
+			<ul>
+                <li>You can cast the animal friendship spell as a cantrip.</li>
+                <li>As an action, you can summon a beast with a challenge rating of 1/4 or lower in an unoccupied space of your choice within 30 feet of you. The summoned beast is friendly to you and your companions. Roll initiative for the summoned beast, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don’t issue any commands to the beast, it defends itself from hostile creatures, but otherwise takes no actions. The GM has the creature’s statistics. Starting at 6th level, you can summon one beast of challenge rating 2, two beasts of challenge rating 1, four beasts of challenge rating 1/2, or eight beasts of challenge rating 1/4 with this feature</li>
+            </ul>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast the animal friendship spell as a cantrip. 
+			As an action, you can summon a beast with a challenge rating of 1/4 or lower in an unoccupied space of your choice within 30 feet of you. The summoned beast is friendly to you and your companions. Roll initiative for the summoned beast, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don’t issue any commands to the beast, it defends itself from hostile creatures, but otherwise takes no actions. The GM has the creature’s statistics.</description>
+			<description level="6">You can cast the animal friendship spell as a cantrip. 
+			As an action, you can summon one beast of challenge rating 2, two beasts of challenge rating 1, four beasts of challenge rating 1/2, or eight beasts of challenge rating 1/4 with this feature in an unoccupied space of your choice within 30 feet of you. The summoned beast is friendly to you and your companions. Roll initiative for the summoned beast, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don’t issue any commands to the beast, it defends itself from hostile creatures, but otherwise takes no actions. The GM has the creature’s statistics.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMAL_FRIENDSHIP" />
+		</rules>
+	</element>
+	<element name="Inspired to Survive" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_VILLR_INSPIRED_TO_SURVIVE">
+		<description>
+			<p>Starting at 6th level, by expending one use of your Bardic Inspiration as an action, you can end one condition that gives you a disadvantage on yourself.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>By expending one use of your Bardic Inspiration as an action, you can end one condition that gives you a disadvantage on yourself.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+	<element name="Song of Awakening" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_VILLR_SONG_OF_AWAKENING">
 		<description>
-			<p></p>
+			<p>At 14th level, you learn to play the Song of Awakening. As an action, you can start playing or singing the song. Nature within 150 feet of you heeds your call and is awakened for 1 minute. On each of your turns within the duration, you can create one of the following effects as a bonus action:</p>
+			<ul>
+                <li>You choose a point in the area. A 20-foot-radius area centered on that point becomes difficult terrain for the duration.</li>
+                <li>You choose a target in the area. Roots sprout out and attempt to trip it, or restrain it if it is already prone. The target must succeed on a Strength or Dexterity saving throw (of its choice) against your spell save DC or be restrained for the duration. It can repeat the saving throw at the end of each of its turns, ending the effects of this feature on itself on a successful one.</li>
+                <li>You choose a target in the area. If there is a Large tree within 20 feet of it, you can move the tree’s branches either to provide it with half cover until the start of your next turn, or to make a melee spell attack against it, dealing 3d6 bludgeoning damage on a hit.</li>
+            </ul>
+			<p class="indent">As stated above, the feature stays active for 1 minute. However, you need to keep playing or singing the song, which requires you to maintain concentration as if you were concentrating on a spell.</p>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you can start playing or singing the song. Nature within 150 feet of you heeds your call and is awakened for 1 minute. On each of your turns within the duration, you can create one of the following effects as a bonus action:
+			You choose a point in the area. A 20-foot-radius area centered on that point becomes difficult terrain for the duration.
+			You choose a target in the area. Roots sprout out and attempt to trip it, or restrain it if it is already prone. The target must succeed on a Strength or Dexterity saving throw (of its choice) against your spell save DC or be restrained for the duration. It can repeat the saving throw at the end of each of its turns, ending the effects of this feature on itself on a successful one.
+			You choose a target in the area. If there is a Large tree within 20 feet of it, you can move the tree’s branches either to provide it with half cover until the start of your next turn, or to make a melee spell attack against it, dealing 3d6 bludgeoning damage on a hit.
+			The feature stays active for 1 minute. However, you need to keep playing or singing the song, which requires you to maintain concentration as if you were concentrating on a spell.</description>
 		</sheet>
 	</element>
 </elements>

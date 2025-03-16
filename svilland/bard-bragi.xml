@@ -1,61 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Tradition of Bragi</name>
+		<description></description>
+		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
+		<update version="0.0.1">
+			<file name="bard-bragi.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/bard-bragi.xml" />
+		</update>
+	</info>
+	<element name="Tradition of Bragi" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_BARD_BRAGI">
+        <supports>Bard College</supports>
 		<description>
-			<p></p>
+			<p>Bards that follow the Tradition of Bragi are the classical bardsthat one can see in taverns everywhere. They voyage from town to town and perform to locals in exchange for a place to stay and/or money. They try to learn as many tales, sayings and stories stretching back to eras before Svilland. They are also known for being social chameleons. Bragi bards can be seen as advisers, diplomats, tutors, and even spies of nobles.</p>
 			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_BONUS_PROFICIENCIES" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_TAVERN_PERFORMANCE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_QUICK_PERFORMANCE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_SOCIAL_IMPRESSION" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_IRRESISTIBLE_PERFORMANCE" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_TAVERN_PERFORMANCE" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_QUICK_PERFORMANCE" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_SOCIAL_IMPRESSION" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_IRRESISTIBLE_PERFORMANCE" level="14" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_BONUS_PROFICIENCIES">
 		<description>
-			<p></p>
+			<p>When you choose this tradition at 3rd level, you gain proficiency with one of the following skills of your choice: Deception, Performance, or Persuasion. If you are already proficient with your choice, you can choose to use your Bardic Inspiration on yourself while making a check of this skill.</p>
 		</description>
 		<sheet>
 			<description></description>
 		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Bonus Proficiencies" supports="bragi-prof" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="Bonus Proficiencies Deception" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_BONUS_PROFICIENCIES1">
+		<supports>bragi-prof</supports>
+		<requirements>!ID_PROFICIENCY_SKILL_DECEPTION</requirements>
 		<description>
-			<p></p>
+			<p>When you choose this tradition at 3rd level, you gain proficiency with one of the following skills of your choice: Deception, Performance, or Persuasion. If you are already proficient with your choice, you can choose to use your Bardic Inspiration on yourself while making a check of this skill.</p>
 		</description>
 		<sheet>
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+	<element name="Bonus Proficiencies Performance" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_BONUS_PROFICIENCIES2">
+		<supports>bragi-prof</supports>
+		<requirements>!ID_PROFICIENCY_SKILL_PERFORMANCE</requirements>
 		<description>
-			<p></p>
+			<p>When you choose this tradition at 3rd level, you gain proficiency with one of the following skills of your choice: Deception, Performance, or Persuasion. If you are already proficient with your choice, you can choose to use your Bardic Inspiration on yourself while making a check of this skill.</p>
 		</description>
 		<sheet>
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
+	<element name="Bonus Proficiencies Persuasion" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_BONUS_PROFICIENCIES3">
+		<supports>bragi-prof</supports>
+		<requirements>!ID_PROFICIENCY_SKILL_PERSUASION</requirements>
 		<description>
-			<p></p>
+			<p>When you choose this tradition at 3rd level, you gain proficiency with one of the following skills of your choice: Deception, Performance, or Persuasion. If you are already proficient with your choice, you can choose to use your Bardic Inspiration on yourself while making a check of this skill.</p>
 		</description>
 		<sheet>
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
+	<element name="Bonus Proficiencies Deception" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_BONUS_PROFICIENCIES4">
+		<supports>bragi-prof</supports>
+		<requirements>ID_PROFICIENCY_SKILL_DECEPTION</requirements>
 		<description>
-			<p></p>
+			<p>You are already proficient with your choice, you can choose to use your Bardic Inspiration on yourself while making a check of this skill.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>you can choose to use your Bardic Inspiration on yourself while making a Deception check.</description>
+		</sheet>
+	</element>
+	<element name="Bonus Proficiencies Performance" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_BONUS_PROFICIENCIES5">
+		<supports>bragi-prof</supports>
+		<requirements>ID_PROFICIENCY_SKILL_PERFORMANCE</requirements>
+		<description>
+			<p>You are already proficient with your choice, you can choose to use your Bardic Inspiration on yourself while making a check of this skill.</p>
+		</description>
+		<sheet>
+			<description>you can choose to use your Bardic Inspiration on yourself while making a Performance check.</description>
+		</sheet>
+	</element>
+	<element name="Bonus Proficiencies Persuasion" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_BONUS_PROFICIENCIES6">
+		<supports>bragi-prof</supports>
+		<requirements>ID_PROFICIENCY_SKILL_PERSUASION</requirements>
+		<description>
+			<p>You are already proficient with your choice, you can choose to use your Bardic Inspiration on yourself while making a check of this skill.</p>
+		</description>
+		<sheet>
+			<description>you can choose to use your Bardic Inspiration on yourself while making a Persuasion Check</description>
+		</sheet>
+	</element>
+	<element name="Tavern Performance" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_TAVERN_PERFORMANCE">
+		<description>
+			<p>Starting at 3rd level, you can affect your audience magically. When you perform for 1 minute, the creatures within 30 feet of you that can hear you are affected by one of the following effects of your choice;</p>
+			<p class="indent"><strong><em>Fascinating Performance.</em></strong> You choose a target in the audience. You have advantage on the next Charisma (Deception, Intimidation, Persuasion) check you make against an affected target</p>
+			<p class="indent"><strong><em>Tavern Snarl.</em></strong> You have advantage on Dexterity (Sleight of Hand) checks against an affected target.</p>
+			<p class="indent">Once you use this feature, you cannot use it again until you finish a short or long rest</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When you perform for 1 minute, the creatures within 30 feet of you that can hear you are affected by one of the following effects of your choice;
+			Fascinating Performance. You choose a target in the audience. You have advantage on the next Charisma (Deception, Intimidation, Persuasion) check you make against an affected target.
+			Tavern Snarl. You have advantage on Dexterity (Sleight of Hand) checks against an affected target.</description>
+		</sheet>
+	</element>
+	<element name="Quick Performance" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_QUICK_PERFORMANCE">
+		<description>
+			<p>Starting at 3rd level, you can rally your allies with a quick performance. When you roll initiative, you can expend one use of your Bardic Inspiration to grant up to 3 allies of your choice within 30 feet of you quickness in combat; a +2 bonus on their next initiative.</p>
+		</description>
+		<sheet>
+			<description>When you roll initiative, you can expend one use of your Bardic Inspiration to grant up to 3 allies of your choice within 30 feet of you quickness in combat; a +2 bonus on their next initiative.</description>
+		</sheet>
+	</element>
+	<element name="Social Impression" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_SOCIAL_IMPRESSION">
+		<description>
+			<p>Starting at 6th level, you can empower your spells more powerful by giving them a boost with your magical performance. As a bonus action, you can expend one use of your Bardic Inspiration. The target(s) of the next spell you cast within 1 minute has disadvantage on their saving throws against the spell.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>As a bonus action, you can expend one use of your Bardic Inspiration. The target(s) of the next spell you cast within 1 minute has disadvantage on their saving throws against the spell.</description>
+		</sheet>
+	</element>
+	<element name="Irresistible Performance" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_BRAGI_IRRESISTIBLE_PERFORMANCE">
+		<description>
+			<p>Starting at 14th level, your words become irresistible to others. As a bonus action, you can expend one use of your Bardic Inspiration to grant yourself a +3 bonus on the next Charisma check, spell save DC, or spell attack (of your choice) that you make within 1 minute.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>As a bonus action, you can expend one use of your Bardic Inspiration to grant yourself a +3 bonus on the next Charisma check, spell save DC, or spell attack (of your choice) that you make within 1 minute.</description>
 		</sheet>
 	</element>
 </elements>

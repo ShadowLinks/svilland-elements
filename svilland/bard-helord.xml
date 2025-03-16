@@ -1,61 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Tradition of Helord</name>
+		<description></description>
+		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
+		<update version="0.0.1">
+			<file name="bard-helord.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/bard-helord.xml" />
+		</update>
+	</info>
+	<element name="Tradition of Helord" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_BARD_HELORD">
+        <supports>Bard College</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<p>The Tradition of Helord (Hel’s Word) is quite a different bardic tradition. It is said that the founder of the tradition is a master bard who travelled to Helheim and witnessed the horrors there firsthand. Whatever they were, the horrors drove him mad and caused him to do naught but preach the story about the impending doom of Svilland upon his return; the story of Ragnarok.</p>
+			<p class="indent">Bards following this tradition can summon the powers of Hel through their performance. While many of them are inherently evil, some try to use their powers for the greater good.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_HELORD_BONUS_PROFICIENCIES" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_HELORD_VOICES_FROM_HELHEIM" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_HELORD_TERROR_OF_TORMENT" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_HELORD_MESSENGER_OF_HEL" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_HELORD_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_HELORD_VOICES_FROM_HELHEIM" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_HELORD_TERROR_OF_TORMENT" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_HELORD_MESSENGER_OF_HEL" level="14" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_HELORD_BONUS_PROFICIENCIES">
 		<description>
-			<p></p>
+			<p>When you choose this tradition at 3rd level, you gain proficiency in the Intimidation and Religion skills, and become proficient with one of the following of your choice: Martial weapons or Medium armor.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<select type="Proficiency" name="Bonus Proficiency, Helord" supports="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS|ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="Voices from Helheim" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_HELORD_VOICES_FROM_HELHEIM">
 		<description>
-			<p></p>
+			<p>Starting at 3rd level, you start to hear the faint voices of the dead and the whispers of fiends. These otherworldly whispers do not affect your actions, but provide you with gifts pertaining to their own nature. You gain the following benefits:</p>
+			<p class="indent"><strong><em>Detect Hel.</em></strong> The whispers give you hints about the presence of Hel’s forces. By expending one use of your Bardic Inspiration as an action, you can sense desecrated areas within 200 feet of you and the location of any fiend of Helheim within 60 feet of you that is not behind total cover.</p>
+			<p class="indent"><strong><em>Fiendish Toughness.</em></strong> By expending one use of your Bardic Inspiration as an action, you can protect up to 4 allies within 60 feet of you, granting 5 temporary hit points to each of them for 1 hour.</p>
+			<p class="indent"><strong><em>Unholy Visage.</em></strong> Creatures around you feel that there is something eerie about you. By expending one use of your Bardic Inspiration as an action, you can have advantage on Charisma (Intimidation) checks for 1 minute. Fiends and other creatures that are connected to Hel (such as a gothi or alle of Hel) cannot be targeted by this feature.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>Detect Hel. By expending one use of your Bardic Inspiration as an action, you can sense desecrated areas within 200 feet of you and the location of any fiend of Helheim within 60 feet of you that is not behind total cover.
+			Fiendish Toughness. By expending one use of your Bardic Inspiration as an action, you can protect up to 4 allies within 60 feet of you, granting 5 temporary hit points to each of them for 1 hour.
+			Unholy Visage. By expending one use of your Bardic Inspiration as an action, you can have advantage on Charisma (Intimidation) checks for 1 minute. Fiends and other creatures that are connected to Hel (such as a gothi or alle of Hel) cannot be targeted by this feature.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+	<element name="Terror of Torment" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_HELORD_TERROR_OF_TORMENT">
 		<description>
-			<p></p>
+			<p>Starting at 6th level, the pain and torment of the souls in Helheim fuel you and keep you going in your weakest moments. When your hit points are below your hit point maximum, you gain one of the following benefits until you regain the missing hit points;</p>
+			<ul>
+                <li>The DCs of your spells increase by 1.</li>
+                <li>You gain a +1 bonus to your attack rolls.</li>
+                <li>Your weapon and spell attacks deal an extra 1d6 necrotic damage on a hit.</li>
+            </ul>
+			<p class="indent">These bonuses double if your hit points are below half of your hit point maximum.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>When your hit points are below your hit point maximum, you gain one of the following benefits until you regain the missing hit points and double if you are below half max hp;
+			The DCs of your spells increase by 1.
+			You gain a +1 bonus to your attack rolls.
+			Your weapon and spell attacks deal an extra 1d6 necrotic damage on a hit.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
+	<element name="Messenger of Hel" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_HELORD_MESSENGER_OF_HEL">
 		<description>
-			<p></p>
+			<p>At 14th level, you learn how to materialize the noises of Helheim and summon a fiend. As an action, you summon a Hel tormentor (p.174) in an unoccupied space of your choice within 90 feet of you. The summoned Hel tormentor is under your control for 1 hour, and it disappears when it drops to 0 hit points.</p>
+			<p class="indent">Roll initiative for the Hel tormentor, which has its own turns. When you summon it and on each of your turns thereafter, you can issue a verbal command to it (requiring no action on your part). If you issue no commands, it spends its turn attacking any creature that has attacked it. If there is no such creature, the creature defends itself against possible threats.</p>
+			<p class="indent">At the end of 1 hour, the Hel tormentor makes a Charisma saving throw. On a failed save, it is banished and disappears. On a successful save, it is not banished and it spends its turns pursuing and attacking the nearest creatures for 1 more minute.</p>
+			<p class="indent">When you use this feature, you must finish a short or long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Short Rest">
+			<description>As an action, you summon a Hel tormentor (p.174) in an unoccupied space of your choice within 90 feet of you. The summoned Hel tormentor is under your control for 1 hour, and it disappears when it drops to 0 hit points.
+			Roll initiative for the Hel tormentor, which has its own turns. When you summon it and on each of your turns thereafter, you can issue a verbal command to it (requiring no action on your part). If you issue no commands, it spends its turn attacking any creature that has attacked it. If there is no such creature, the creature defends itself against possible threats.
+			At the end of 1 hour, the Hel tormentor makes a Charisma saving throw. On a failed save, it is banished and disappears. On a successful save, it is not banished and it spends its turns pursuing and attacking the nearest creatures for 1 more minute.</description>
 		</sheet>
 	</element>
 </elements>

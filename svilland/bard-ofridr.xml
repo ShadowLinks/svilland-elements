@@ -1,61 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Tradition of Ofridr</name>
+		<description></description>
+		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
+		<update version="0.0.1">
+			<file name="bard-ofridr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/bard-ofridr.xml" />
+		</update>
+	</info>
+	<element name="Tradition of Ofridr" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_BARD_OFRIDR">
+        <supports>Bard College</supports>
 		<description>
-			<p></p>
+			<p>Bards from the Tradition of Ofridr are warrior-bards and battle chanters. They see fighting as a type of performance like any other artform; or more truthfully the best of them all. They find themselves happily lost in the throes of ecstasy when in battle, and they share this feeling with their allies. Although they are not trained like fighters or raised like barbarians, their unique gift for performance makes them invaluable in battle. A charge of Svillanders is a horrific and glorious sight but an attack accompanied with an Ofridr bard is a display that the valkyries would definitely take notice of.</p>
 			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_OFRIDR_BONUS_PROFICIENCY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_OFRIDR_WARBAND_WARRIOR" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_OFRIDR_SONG_OF_SVILLANDER" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_OFRIDR_SONG_OF_VALHALLA" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_OFRIDR_BONUS_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_OFRIDR_WARBAND_WARRIOR" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_OFRIDR_SONG_OF_SVILLANDER" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_OFRIDR_SONG_OF_VALHALLA" level="14" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_OFRIDR_BONUS_PROFICIENCY">
 		<description>
-			<p></p>
+			<p>When you choose this tradition at 3rd level, you gain proficiency with either the horn or the drum. Additionally, you become proficient with martial weapons and shields.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<select type="Proficiency" name="Bonus Proficiency, Ofridr" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_HORN|ID_PROFICIENCY_TOOL_PROFICIENCY_DRUM" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="Warband Warrior" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_OFRIDR_WARBAND_WARRIOR">
 		<description>
-			<p></p>
+			<p>At 3rd level, you become an essential member of your warband and create a unique dynamic within it. You and up to five warband members within 60 feet of you, gain a +1 bonus to AC.</p>
+			<p class="indent">You have to share a deep connection with a creature to count them as warband members. This means that this feature only involves other PCs in your party, and perhaps a couple of NPCs and animal companions outside your party (at the GM’s discretion).</p>
+			<p class="indent">This bonus increases to +2 at 10th level.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description> You and up to five warband members within 60 feet of you, gain a +1 bonus to AC.</description>
+			<description level="10"> You and up to five warband members within 60 feet of you, gain a +2 bonus to AC.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+	<element name="Song of Svillander" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_OFRIDR_SONG_OF_SVILLANDER">
 		<description>
-			<p></p>
+			<p>At 6th level, you learn the Song of the Svillander. By expending one use of your Bardic Inspiration and playing the Song of the Svillander with your drum or horn as an action, you create one of the following effects of your choice:</p>
+			<ul>
+                <li>The song makes your allies feel excited. Roll a d6. Each ally within 150 feet of you that can hear you gains temporary hit points equal to the result of the die for 1 minute.</li>
+                <li>With your song, your allies lose themselves in the heat of battle. Roll a d6. Each ally within 60 feet of you that can hear you adds the result of the die to their damage rolls for the next 3 rounds and their attacks become magical for the duration.</li>
+            </ul>
 		</description>
 		<sheet>
-			<description></description>
+			<description>By expending one use of your Bardic Inspiration and playing the Song of the Svillander with your drum or horn as an action, you create one of the following effects of your choice:
+			The song makes your allies feel excited. Roll a d6. Each ally within 150 feet of you that can hear you gains temporary hit points equal to the result of the die for 1 minute.
+			With your song, your allies lose themselves in the heat of battle. Roll a d6. Each ally within 60 feet of you that can hear you adds the result of the die to their damage rolls for the next 3 rounds and their attacks become magical for the duration.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
+	<element name="Song of Valhalla" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARD_OFRIDR_SONG_OF_VALHALLA">
 		<description>
-			<p></p>
+			<p>At 14th level, you learn the Song of Valhalla. By playing Song of Valhalla with your drum or horn as an action, you strip your allies of the fear of death. For 1 minute, each ally within 150 feet of you that can hear you has advantage on saving throws against being charmed and frightened.</p>
+			<p class="indent">Also, you and {{charisma:modifier}} of other creatures of your choice within 150 feet of you are affected by the haste spell. This effect lasts for 1 minute, and you have to concentrate on it as if you were concentrating on a spell.</p>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>By playing Song of Valhalla with your drum or horn as an action, you strip your allies of the fear of death. For 1 minute, each ally within 150 feet of you that can hear you has advantage on saving throws against being charmed and frightened.
+			Also, you and a number of other creatures of your choice equal to your Charisma modifier (minimum of 1) within 150 feet of you are affected by the haste spell. This effect lasts for 1 minute, and you have to concentrate on it as if you were concentrating on a spell.</description>
 		</sheet>
 	</element>
 </elements>
