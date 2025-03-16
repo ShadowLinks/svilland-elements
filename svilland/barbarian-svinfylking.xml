@@ -1,61 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of Svinfylking</name>
+		<description></description>
+		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
+		<update version="0.0.1">
+			<file name="barbarian-svinfylking.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/barbarian-svinfylking.xml" />
+		</update>
+	</info>
+	<element name="Path of Svinfylking" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_BARBARIAN_SVINFYLKING">
+        <supports>Primal Path</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<p>Svinfylkings are barbarians who find strength in the spirit of the boar. Sometime in their lives, they snap and prefer to delve into things head on. Whether they decide on revenge against all odds on the raiders who sacked their village, or just get too bored with the rural life and completely abandon it for an unknown journey, they find their answers in a manner of moving ahead by force. They believe in the spirit of the boar as their guide and learn from the movements and habits of these wild creatures.</p>
+			<p class="indent">In terms of tactics, they prefer to be the wrecking edge of the axe, charging in before anyone else.The one thing that must be kept in mind about Svinfylkings is their fury; for boars may be angry, but Svinfylkings are angrier.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_SVINFYLKING_BOARS_CHARGE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_SVINFYLKING_GORE_STRIKES" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_SVINFYLKING_FEARFUL_CHARGE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_SVINFYLKING_BOARS_ENDURANCE" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_SVINFYLKING_BOARS_CHARGE" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_SVINFYLKING_GORE_STRIKES" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_SVINFYLKING_FEARFUL_CHARGE" level="10" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_SVINFYLKING_BOARS_ENDURANCE" level="14" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="Boar's Charge" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_SVINFYLKING_BOARS_CHARGE">
 		<description>
-			<p></p>
+			<p>At 3rd level, once per turn, if you move at least 10 feet towards a creature and hit it with a melee weapon attack, you deal an additional 1d6 damage of your weapon’s damage type.</p>
+			<p class="indent">This damage increases to 1d8 at 6th, 2d6 at 10th and 3d6 at 14th level.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Turn">
+			<description>Once per turn, if you move at least 10 feet towards a creature and hit it with a melee weapon attack, you deal an additional 1d6 damage of your weapon’s damage type.</description>
+			<description level="6">Once per turn, if you move at least 10 feet towards a creature and hit it with a melee weapon attack, you deal an additional 1d8 damage of your weapon’s damage type.</description>
+			<description level="10">Once per turn, if you move at least 10 feet towards a creature and hit it with a melee weapon attack, you deal an additional 2d6 damage of your weapon’s damage type.</description>
+			<description level="14">Once per turn, if you move at least 10 feet towards a creature and hit it with a melee weapon attack, you deal an additional 3d6 damage of your weapon’s damage type.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="Gore Strikes" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_SVINFYLKING_GORE_STRIKES">
 		<description>
-			<p></p>
+			<p>At 6th level, your rage becomes even more destructive. While raging, your Rage Damage increases by 2, and by an additional 1 at 10th and 14th levels.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>While raging, your Rage Damage increases by 2.</description>
+			<description level="10">While raging, your Rage Damage increases by 3.</description>
+			<description level="14">While raging, your Rage Damage increases by 4.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+	<element name="Fearful Charge" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_SVINFYLKING_FEARFUL_CHARGE">
 		<description>
-			<p></p>
+			<p>Starting at 10th level, the creature you target with your Boar’s Charge feature and another creature of your choice within 30 feet of you must succeed on a Wisdom saving throw (DC = 10 + your Strength modifier) or be frightened of you until the end of their next turn.</p>
+			<p class="indent">If you successfully hit a creature frightened of you in this way, you score a critical hit.</p>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>The creature you target with your Boar’s Charge feature and another creature of your choice within 30 feet of you must succeed on a Wisdom saving throw DC {{boar-charge:dc}} or be frightened of you until the end of their next turn.
+			If you successfully hit a creature frightened of you in this way, you score a critical hit</description>
 		</sheet>
+		<rules>
+			<stat name="boar-charge:dc" value="10" bonus="base" />
+			<stat name="boar-charge:dc" value="strength:modifier" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
+	<element name="Boar's Endurance" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_SVINFYLKING_BOARS_ENDURANCE">
 		<description>
-			<p></p>
+			<p>Starting at 14th level, whenever you succeed on a Constitution saving throw to remain conscious with your Relentless Rage feature, you regain a number of hit points equal to 1d10 + your barbarian levels. Additionally, you cannot be killed instantly because of massive damage while raging.</p>
 		</description>
 		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+			<description>Whenever you succeed on a Constitution saving throw to remain conscious with your Relentless Rage feature, you regain a number of hit points equal to 1d10 + {{level:barbarian}}. Additionally, you cannot be killed instantly because of massive damage while raging.</description>
 		</sheet>
 	</element>
 </elements>

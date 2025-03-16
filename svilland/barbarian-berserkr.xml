@@ -5,7 +5,7 @@
 		<description></description>
 		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
 		<update version="0.0.1">
-			<file name="barbarian-berserkr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/berserkr.xml" />
+			<file name="barbarian-berserkr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/barbarian-berserkr.xml" />
 		</update>
 	</info>
 	<element name="Path of Berserkr" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_BARBARIAN_BERSERKR">

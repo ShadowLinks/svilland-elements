@@ -1,61 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of Ufhednar</name>
+		<description></description>
+		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
+		<update version="0.0.1">
+			<file name="barbarian-ufhednar.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/barbarian-ufhednar.xml" />
+		</update>
+	</info>
+	<element name="Path of Ufhednar" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_BARBARIAN_UFHEDNAR">
+        <supports>Primal Path</supports>
 		<description>
-			<p></p>
+			<p>Ulfhednars, those who follow the path of the wolves, are cunning, aware of their surroundings and loyal to their packs. They see value in being in a pack and in thinking on behalf of one’s community rather than thinking selfishly. Whether they got on the path of the wolf by hanging out as bandits or by hunting foes with their warrior brethren, they see their party members as the members of their pack and try to give them advantages in combat. They believe in the spirit of the wolf to be their guide, and learn from the movements and habits of these wild brethren.</p>
 			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_UFHEDNAR_PACK_FIGHTING" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_UFHEDNAR_PACK_SURVIVAL" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_UFHEDNAR_SIDE_BITE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_UFHEDNAR_PACKS_OPPORTUNITY" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_UFHEDNAR_PACK_FIGHTING" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_UFHEDNAR_PACK_SURVIVAL" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_UFHEDNAR_SIDE_BITE" level="10" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_UFHEDNAR_PACKS_OPPORTUNITY" level="14" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="Pack Fighting" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_UFHEDNAR_PACK_FIGHTING">
 		<description>
-			<p></p>
+			<p>Starting at 3rd level, whenever an ally adjacent to you makes a weapon or spell attack, you can use your reaction to divert the enemy and provide your ally with an advantage on its attack roll.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet action="Reaction">
+			<description>Whenever an ally adjacent to you makes a weapon or spell attack, you can use your reaction to divert the enemy and provide your ally with an advantage on its attack roll.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="Pack Survival" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_UFHEDNAR_PACK_SURVIVAL">
 		<description>
-			<p></p>
+			<p>Starting at 6th level, whenever an ally within 10 feet of you is targeted by a weapon or spell attack, you can choose to jump in front of the strike and take the damage yourself.</p>
+			<p class="indent">Once you use this feature, you must finish a short or long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Short Rest">
+			<description>Whenever an ally within 10 feet of you is targeted by a weapon or spell attack, you can choose to jump in front of the strike and take the damage yourself.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+	<element name="Side Bite" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_UFHEDNAR_SIDE_BITE">
 		<description>
-			<p></p>
+			<p>At 10th level, you become a master at fighting with a pack of comrades. You can wait in ambush for prey that are diverted. Whenever you are flanking a hostile creature and one of your allies hits it, you can use your reaction to make an opportunity attack against that creature.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet action="Reaction">
+			<description>Whenever you are flanking a hostile creature and one of your allies hits it, you can use your reaction to make an opportunity attack against that creature.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
+	<element name="Pack's Opportunity" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_BARBARIAN_UFHEDNAR_PACKS_OPPORTUNITY">
 		<description>
-			<p></p>
+			<p>At 14th level, you learn how to divert your foes and create openings for your allies against them. Whenever you make a successful melee weapon attack or an unarmed attack against a target, you can use your bonus action to try and unbalance it. The target must succeed on a Strength (Athletics) or Dexterity (Acrobatics) check against your Strength (Athletics) check or your allies gain an opportunity attack against it if they are able to make one.</p>
 		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+		<sheet action="Bonus Action">
+			<description>Whenever you make a successful melee weapon attack or an unarmed attack against a target, you can use your bonus action to try and unbalance it. The target must succeed on a Strength (Athletics) or Dexterity (Acrobatics) check against your Strength (Athletics) check or your allies gain an opportunity attack against it if they are able to make one.</description>
 		</sheet>
 	</element>
 </elements>
