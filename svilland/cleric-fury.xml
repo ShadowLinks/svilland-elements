@@ -11,105 +11,139 @@
 	<element name="Fury Domain" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_CLERIC_FURY">
         <supports>Divine Domain</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
-			<div element="ID_______" />
-			<div element="ID________" />
+			<p>The Fury domain belongs to Fenrir. It focuses on the savage anger that lies within; even inside the most civilized. It promises harmony at the end, when all the beasts serve Fenrir, in return for the aid of the destruction he will cause in Ragnarok.</p>
+			<p class="indent">Those devoted to the Fury domain are aware of their savage nature, yearning to hunt and rampage in divine bliss. They are instinctual warriors of nature, no different from the direst of wolves and the largest of bears.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_SPELLS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_BONUS_PROFICIENCY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_BEASTS_SURVIVAL" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_CD_DROMI" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_LEYDING" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_CD_BESTIAL_FURY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_FORM_OF_FENRIR" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="2" />
-			<grant type="Archetype Feature" id="ID______" level="6" />
-			<grant type="Archetype Feature" id="ID_______" level="8" />
-			<grant type="Archetype Feature" id="ID________" level="17" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_BONUS_PROFICIENCY" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_BEASTS_SURVIVAL" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_CD_DROMI" level="2" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_LEYDING" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_CD_BESTIAL_FURY" level="8" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_FORM_OF_FENRIR" level="17" />
 		</rules>
 	</element>
-	<element name="name Domain Spells" type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Fury Domain Spells" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_SPELLS">
 		<description>
 			<p>At each indicated gothi level, you add the listed spells to your spells prepared. These spells are always prepared and do not count against the number of spells you can prepare.</p>
             <table>
                 <thead>
                     <tr><td>Gothi Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>spells</td></tr>
-                <tr><td>3rd</td><td>spells</td></tr>
-                <tr><td>5th</td><td>spells</td></tr>
-                <tr><td>7th</td><td>spells</td></tr>
-                <tr><td>9th</td><td>spells</td></tr>
+                <tr><td>1st</td><td>animal friendship, speak with animals</td></tr>
+                <tr><td>3rd</td><td>barkskin, flame blade</td></tr>
+                <tr><td>5th</td><td>conjure animals, haste</td></tr>
+                <tr><td>7th</td><td>dominate beast, faithful hound</td></tr>
+                <tr><td>9th</td><td>commune with nature, tree stride</td></tr>
             </table>
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
         <rules>
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_ANIMAL_FRIENDSHIP" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_BARKSKIN" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_FLAME_BLADE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_CONJURE_ANIMALS" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_HASTE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_DOMINATE_BEAST" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_MORDENKAINENS_FAITHFUL_HOUND" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_TREE_STRIDE" spellcasting="Cleric" prepared="true" />
         </rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_BONUS_PROFICIENCY">
 		<description>
-			<p></p>
+			<p>When you choose the Fury domain at 1st level, you gain proficiency in the Animal Handling and Survival skills.</p>
+			<p class="indent">Your proficiency bonus is doubled for any ability check you make that uses either of those skills.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" bonus="double"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" bonus="double"/>
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Beast's Survival" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_BEASTS_SURVIVAL">
 		<description>
-			<p></p>
+			<p>Also starting at 1st level, your domain grants you the ability to survive in nature like a beast. You say a prayer that takes 1 hour, after which you and a number of allies of your choice within 30 feet of you equal to your Wisdom modifier (minimum of once) gain the following benefits for 8 hours:</p>
+			<ul>
+                <li>You can successfully forage from sources like half-rotten meat, raw plants, or simple leaves. This ability does not let you consume things that are deliberately poisonous or magically affected by a disease.</li>
+                <li>You don’t need a sleeping mattress or bedroll to rest.</li>
+            </ul>
+			<p class="indent">Once you use this feature, you cannot do so again until you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>You say a prayer that takes 1 hour, after which you and {{wisdom:modifier}} allies of your choice within 30 feet of you gain the following benefits for 8 hours:
+			You can successfully forage from sources like half-rotten meat, raw plants, or simple leaves. This ability does not let you consume things that are deliberately poisonous or magically affected by a disease.
+			You don’t need a sleeping mattress or bedroll to rest.</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Channel Divinity: Dromi" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_CD_DROMI">
 		<description>
-			<p></p>
+			<p>Starting at 2nd level, you can use your Channel Divinity to awaken the beast within a target</p>
+			<p class="indent">As an action, you present your holy symbol and awaken the beast within an ally of your choice within 60 feet of you. When you do so, a temporary condition of your choice such as blinded, charmed, frightened, paralyzed, or stunned ends on the target. It also becomes immune to that specific condition for 1 minute.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Dromi">
+			<description>As an action, you present your holy symbol and awaken the beast within an ally of your choice within 60 feet of you. When you do so, a temporary condition of your choice such as blinded, charmed, frightened, paralyzed, or stunned ends on the target. It also becomes immune to that specific condition for 1 minute.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Leyding" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_LEYDING">
 		<description>
-			<p></p>
+			<p>Starting at 6th level, wild beasts recognize you as their kin. As an action, you target a beast within 60 feet of you. The beast must succeed on a Wisdom saving throw or become your ally for 1 minute. If you or your allies are fighting it, it has advantage on the saving throw.</p>
+			<p class="indent">When the duration ends, the beast becomes hostile to you if it has a master that is hostile to you. If it is independent, it simply goes away.</p>
+			<p class="indent">You can affect a beast with a challenge rating of 2 or lower. The maximum challenge rating of the beast becomes 3 when you reach 11th level in this class, 4 at 14th, and 5 at 18th.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain any expended uses when you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="{{wisdom:modifier}}/Long Rest">
+			<description>As an action, you target a beast within 60 feet of you. The beast must succeed on a Wisdom saving throw or become your ally for 1 minute. If you or your allies are fighting it, it has advantage on the saving throw.
+			When the duration ends, the beast becomes hostile to you if it has a master that is hostile to you. If it is independent, it simply goes away.
+			You can affect a beast with a challenge rating of 2 or lower.</description>
+			<description level="11">As an action, you target a beast within 60 feet of you. The beast must succeed on a Wisdom saving throw or become your ally for 1 minute. If you or your allies are fighting it, it has advantage on the saving throw.
+			When the duration ends, the beast becomes hostile to you if it has a master that is hostile to you. If it is independent, it simply goes away.
+			You can affect a beast with a challenge rating of 3 or lower.</description>
+			<description level="14">As an action, you target a beast within 60 feet of you. The beast must succeed on a Wisdom saving throw or become your ally for 1 minute. If you or your allies are fighting it, it has advantage on the saving throw.
+			When the duration ends, the beast becomes hostile to you if it has a master that is hostile to you. If it is independent, it simply goes away.
+			You can affect a beast with a challenge rating of 4 or lower.</description>
+			<description level="18">As an action, you target a beast within 60 feet of you. The beast must succeed on a Wisdom saving throw or become your ally for 1 minute. If you or your allies are fighting it, it has advantage on the saving throw.
+			When the duration ends, the beast becomes hostile to you if it has a master that is hostile to you. If it is independent, it simply goes away.
+			You can affect a beast with a challenge rating of 5 or lower.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_______">
+	<element name="Channel Divinity: Bestial Fury" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_CD_BESTIAL_FURY">
 		<description>
-			<p></p>
+			<p>Starting at 8th level, you can use your Channel Divinity to invoke the bestial fury within your allies.</p>
+			<p class="indent">As an action, you present your holy symbol and target up to a number of creatures equal to your Wisdom modifier (minimum of one creature) within 60 feet of you. The targets are under the effect of a bestial fury for 1 minute.</p>
+			<p class="indent">Once per turn for the duration of this feature, when an affected creature hits with a weapon attack, it can deal extra damage equal to your Wisdom modifier (minimum of one) of the same type dealt by the weapon to the target.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Bestial Fury">
+			<description>As an action, you present your holy symbol and target up to {{wisdom:modifier}} creatures within 60 feet of you. The targets are under the effect of a bestial fury for 1 minute.
+			Once per turn for the duration of this feature, when an affected creature hits with a weapon attack, it can deal {{wisdom:modifier}} extra damage of the same type dealt by the weapon to the target.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID________">
+	<element name="Form of Fenrir" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_FORM_OF_FENRIR">
 		<description>
-			<p></p>
+			<p>At 17th level, you gain the ability to transform into the form of your beast God. You become a Large, furious half-wolf half-yourself for 1 minute. The statistics of this form is as follows: You become a Large beast. You gain 6d10 temporary hit points (8d10 temporary hit points instead if you are a werevargr). You cannot wear items that is not suitable for your new shape and size. Such equipments doesn’t change size or shape to match the new form, and any equipment that you can’t wear in this form must merge with it. Equipment that merges with the form has no effect until you leave the form.</p>
+			<p class="indent">While in this form, you can make one bite and two claw attacks as an action. Your bite deals 2d10 piercing damage, and claw deals 2d6 slashing damage.</p>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>you gain the ability to transform into the form of your beast God. You become a Large, furious half-wolf half-yourself for 1 minute. The statistics of this form is as follows: 
+			You become a Large beast. You gain 6d10 temporary hit points (8d10 temporary hit points instead if you are a werevargr). You cannot wear items that is not suitable for your new shape and size. Such equipments doesn’t change size or shape to match the new form, and any equipment that you can’t wear in this form must merge with it. Equipment that merges with the form has no effect until you leave the form.
+			While in this form, you can make one bite and two claw attacks as an action. Your bite deals 2d10 piercing damage, and claw deals 2d6 slashing damage.</description>
 		</sheet>
 	</element>
 </elements>
