@@ -95,9 +95,5 @@ Thank you to The-Multitud-e for starting the project I forked from.
 - Armor COMPLETE
 - Magic Items/Armor/Weapons
 
-### Equipment
-- Some armour types
-- Some weapons
-- lots of magic items
 
 
