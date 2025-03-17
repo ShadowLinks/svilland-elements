@@ -11,105 +11,123 @@
 	<element name="Kaldr Domain" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_CLERIC_KALDR">
         <supports>Divine Domain</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
-			<div element="ID_______" />
-			<div element="ID________" />
+			<p>The Kaldr domain involves not only the usual cold or essence of cold in the realm, but also the unearthly and unholy cold of Helheim. It is related to Black Winter, the event feared by all of Svilland.</p>
+			<p class="indent">Through this domain, Hel unleashes her frost onto the realm to make her victims suffer. Those who are devoted to this domain care about freezing all their foes to death, and imprisoning them in an eternal struggle.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_SPELLS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_BONUS_PROFICIENCY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_CHILD_OF_BLACK_WINTER" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_CD_FREEZING_COLD" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_FEED_FROM_BLACK_WINTER" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_SACRED_COLD" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_STORM_OF_HEL" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="2" />
-			<grant type="Archetype Feature" id="ID______" level="6" />
-			<grant type="Archetype Feature" id="ID_______" level="8" />
-			<grant type="Archetype Feature" id="ID________" level="17" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_BONUS_PROFICIENCY" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_CHILD_OF_BLACK_WINTER" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_CD_FREEZING_COLD" level="2" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_FEED_FROM_BLACK_WINTER" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_SACRED_COLD" level="8" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_STORM_OF_HEL" level="17" />
 		</rules>
 	</element>
-	<element name="name Domain Spells" type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Kaldr Domain Spells" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_SPELLS">
 		<description>
 			<p>At each indicated gothi level, you add the listed spells to your spells prepared. These spells are always prepared and do not count against the number of spells you can prepare.</p>
             <table>
                 <thead>
                     <tr><td>Gothi Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>spells</td></tr>
-                <tr><td>3rd</td><td>spells</td></tr>
-                <tr><td>5th</td><td>spells</td></tr>
-                <tr><td>7th</td><td>spells</td></tr>
-                <tr><td>9th</td><td>spells</td></tr>
+                <tr><td>1st</td><td>false life, fog cloud</td></tr>
+                <tr><td>3rd</td><td>gust of wind, ray of enfeeblement</td></tr>
+                <tr><td>5th</td><td>bitter touch of helheim, vampiric touch</td></tr>
+                <tr><td>7th</td><td>compulsion, ice storm</td></tr>
+                <tr><td>9th</td><td>cone of cold, contact other plane</td></tr>
             </table>
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
         <rules>
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" SPELLCASTING="CLERIC" PREPARED="TRUE" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_FALSE_LIFE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_FOG_CLOUD" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_GUST_OF_WIND" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_DRS_SVILLAND_SPELL_BITTER_TOUCH_OF_HELHEIM" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_VAMPIRIC_TOUCH" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_COMPULSION" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_ICE_STORM" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_CONE_OF_COLD" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_CONTACT_OTHER_PLANE" SPELLCASTING="CLERIC" PREPARED="TRUE" />
         </rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_BONUS_PROFICIENCY">
 		<description>
-			<p></p>
+			<p>When you choose the Kaldr domain at 1st level, you gain proficiency with heavy armor.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Child of Black Winter" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_CHILD_OF_BLACK_WINTER">
 		<description>
-			<p></p>
+			<p>Starting at 1st level, the essence of Hel protects you from the cold. You gain resistance against cold damage.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Channel Divinity: Freezing Cold" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_CD_FREEZING_COLD">
 		<description>
-			<p></p>
+			<p>Starting at 2nd level, you can use your Channel Divinity to freeze an opponent with the frost of Hel.</p>
+			<p class="indent">As an action, you present your holy symbol, summon a freezing cold and unleash it onto a creature within 30 feet of you.</p>
+			<p class="indent">The target must make a Constitution saving throw. On a failed save, it takes 2d10 cold damage and its speed is reduced by 15 feet. It takes half as much damage and its speed is not reduced on a successful save.</p>
+			<p class="indent">If the target fails the saving throw with a difference of more than 5, it is frozen by Hel’s ice, becoming restrained for a number of rounds equal to your Wisdom modifier (minimum of one round).</p>
+			<p class="indent">The creature can repeat its saving throws to break free from this effect at the end of each of its turns.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Freezing Cold">
+			<description>As an action, you present your holy symbol, summon a freezing cold and unleash it onto a creature within 30 feet of you.
+			The target must make a Constitution saving throw. On a failed save, it takes 2d10 cold damage and its speed is reduced by 15 feet. It takes half as much damage and its speed is not reduced on a successful save.
+			If the target fails the saving throw with a difference of more than 5, it is frozen by Hel’s ice, becoming restrained for {{wisdom:modifier}} rounds.
+			The creature can repeat its saving throws to break free from this effect at the end of each of its turns.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Feed From Black Winter" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_FEED_FROM_BLACK_WINTER">
 		<description>
-			<p></p>
+			<p>At 6th level, you gain the ability to consume some of the essences of your spells related to the cold. Whenever you cast a spell of 1st level or higher that deals cold damage, you regain hit points equal to 2 + the spell’s level. If you cast such a spell that is 5th-level or higher, your exhaustion level decreases by 1.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>Whenever you cast a spell of 1st level or higher that deals cold damage, you regain hit points equal to 2 + the spell’s level. If you cast such a spell that is 5th-level or higher, your exhaustion level decreases by 1.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_______">
+	<element name="Sacred Cold" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_SACRED_COLD">
 		<description>
-			<p></p>
+			<p>At 8th level, you gain the ability to convert your spells’ essence into the frost of Hel. Whenever you cast a spell that deals damage, you can choose to convert that spell’s damage type to cold damage.</p>
+			<p class="indent">Whenever you cast a spell that normally deals cold damage (not a spell where you convert the damage), it ignores resistance. If the target is immune to cold damage, the spell deals damage to the target as if it had resistance instead.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>Whenever you cast a spell that deals damage, you can choose to convert that spell’s damage type to cold damage.
+			Whenever you cast a spell that normally deals cold damage (not a spell where you convert the damage), it ignores resistance. If the target is immune to cold damage, the spell deals damage to the target as if it had resistance instead.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID________">
+	<element name="Storm of Hel" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_KALDR_STORM_OF_HEL">
 		<description>
-			<p></p>
+			<p>At 17th level, you gain the ability to summon a deadly storm from Helheim itself. As an action, you unleash the storm from your hands in a 60-feet cone. The storm is made of the unholy screams of agonized souls in Helheim, as well as of freezing cold. Its effect remains intact a number of turns equal to your Wisdom modifier (minimum of once). Creatures that start their turn in the area of the effect must make Dexterity saving throws. A creature takes 8d6 cold damage and 4d6 psychic damage on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent">You can rotate the direction of the storm to the nearest 60-foot cone (not towards your back, for example) as a bonus action at the start of your next turn.</p>
+			<p class="indent">Once you use this feature, you cannot do so again until you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you unleash the storm from your hands in a 60-feet cone. The storm is made of the unholy screams of agonized souls in Helheim, as well as of freezing cold. Its effect remains intact for {{wisdom:modifier}} turns. Creatures that start their turn in the area of the effect must make Dexterity saving throws. A creature takes 8d6 cold damage and 4d6 psychic damage on a failed save, or half as much damage on a successful one.
+			You can rotate the direction of the storm to the nearest 60-foot cone (not towards your back, for example) as a bonus action at the start of your next turn.</description>
 		</sheet>
 	</element>
 </elements>

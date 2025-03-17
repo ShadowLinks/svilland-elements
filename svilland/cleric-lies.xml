@@ -11,105 +11,135 @@
 	<element name="Lies Domain" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_CLERIC_LIES">
                 <supports>Divine Domain</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
-			<div element="ID_______" />
-			<div element="ID________" />
+			<p>The Lies domain serves Loki’s biggest purpose of acquiring power and chaos through trickery and mischief. Loki surrounds himself with magical tools of illusion, and unpleasant dreams. His hold over distorted reality is one of the things he is most proud of.</p>
+			<p class="indent">Those devoted to this domain seek to disrupt anything that has to do with the Allfather. They find and exploit secrets, causing disorder and humiliation among peasants and jarls alike. They are also hard to identify as they hide behind layers of illusions and lies, just as their God does.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_SPELLS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_BONUS_PROFICIENCY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_DIVINE_TRICKSTER" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_CD_ENSNARING_VISIONS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_DECEITFUL_ESC" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_CD_NIGHTMARE_HORDE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_ILLUSIONARY_DOUBLE" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="2" />
-			<grant type="Archetype Feature" id="ID______" level="6" />
-			<grant type="Archetype Feature" id="ID_______" level="8" />
-			<grant type="Archetype Feature" id="ID________" level="17" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_BONUS_PROFICIENCY" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_DIVINE_TRICKSTER" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_CD_ENSNARING_VISIONS" level="2" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_DECEITFUL_ESC" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_CD_NIGHTMARE_HORDE" level="8" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_ILLUSIONARY_DOUBLE" level="17" />
 		</rules>
 	</element>
-	<element name="name Domain Spells" type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Lies Domain Spells" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_SPELLS">
 		<description>
 			<p>At each indicated gothi level, you add the listed spells to your spells prepared. These spells are always prepared and do not count against the number of spells you can prepare.</p>
             <table>
                 <thead>
                     <tr><td>Gothi Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>spells</td></tr>
-                <tr><td>3rd</td><td>spells</td></tr>
-                <tr><td>5th</td><td>spells</td></tr>
-                <tr><td>7th</td><td>spells</td></tr>
-                <tr><td>9th</td><td>spells</td></tr>
+                <tr><td>1st</td><td>disguise self, silent image</td></tr>
+                <tr><td>3rd</td><td>cursed tongue, invisibility</td></tr>
+                <tr><td>5th</td><td>nondetection, vampiric touch</td></tr>
+                <tr><td>7th</td><td>greater invisibility, phantasmal killer</td></tr>
+                <tr><td>9th</td><td>dream, mislead</td></tr>
             </table>
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
         <rules>
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" SPELLCASTING="CLERIC" PREPARED="TRUE" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_DISGUISE_SELF" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_SILENT_IMAGE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_DRS_SVILLAND_SPELL_CURSED_TONGUE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_INVISIBILITY" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_NONDETECTION" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_VAMPIRIC_TOUCH" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_GREATER_INVISIBILITY" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_PHANTASMAL_KILLER" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_DREAM" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_MISLEAD" SPELLCASTING="CLERIC" PREPARED="TRUE" />
         </rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_BONUS_PROFICIENCY">
 		<description>
-			<p></p>
+			<p>When you choose Lies domain at 1st level, you gain proficiency in the Deception skill, and become proficient with the disguise kit.</p>
+			<p class="indent">Your proficiency bonus is doubled for any ability check you make that uses that skill or kit.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>You have expertise with the disguise kit.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" bonus="double" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" bonus="double"/>
+		</rules>
+	</element>
+	<element name="Divine Trickster" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_DIVINE_TRICKSTER">
+		<description>
+			<p>Starting at 1st level, you learn two cantrips from the school of Illusion.</p>
+			<p class="indent">Additionally, you can cast such a cantrip as a bonus action a number of times equal to your Wisdom modifier (minimum of once). You regain any expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{wisdom:modifier}}/Long Rest">
+			<description>You can cast illusion cantrips as a bonus action.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Divine Trickster" supports="Illusion,0" number="2" />
+		</rules>
+	</element>
+	<!-- fixed source typo-->
+	<element name="Channel Divinity: Ensnaring Visions" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_CD_ENSNARING_VISIONS">
+		<description>
+			<p>Starting at 2nd level, you can use your Channel Divinity to create a field of illusion that psychically affects those who get struck by it.</p>
+			<p class="indent">As an action, you present your holy symbol. Each hostile creature within 30 feet of you must make a Wisdom saving throw. On a failed save, a target sees illusionary horrors, taking 2d6 psychic damage, and becoming frightened of you for 1 minute. On a successful save, the damage is halved, and the target is not frightened.</p>
+			<p class="indent">An affected creature can repeat its saving throw at the end of each of its turns, ending the effect on itself on a success. A creature with truesight is immune to the effects of this feature.</p>
+		</description>
+		<sheet usage="Channel Divinity" alt="Ensnaring Visions">
+			<description>As an action, you present your holy symbol. Each hostile creature within 30 feet of you must make a Wisdom saving throw. On a failed save, a target sees illusionary horrors, taking 2d6 psychic damage, and becoming frightened of you for 1 minute. On a successful save, the damage is halved, and the target is not frightened.
+			An affected creature can repeat its saving throw at the end of each of its turns, ending the effect on itself on a success. A creature with truesight is immune to the effects of this feature.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Deceitful Escape" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_DECEITFUL_ESC">
 		<description>
-			<p></p>
+			<p>At 6th level, you gain the ability to teleport to a safe location nearby when you are in danger, and to leave an illusion of yourself behind.</p>
+			<p class="indent">Whenever a creature hits you with a weapon or spell attack, you can use your reaction to teleport to an unoccupied space that you can see within 30 feet of you.</p>
+			<p class="indent">You leave an illusion of yourself behind, which attacks the creature. The target must succeed on a Wisdom saving throw or thinks it is hit, taking 2d6 psychic damage. A creature with truesight is immune to the effects of this feature.</p>
+			<p class="indent">Right after it attacks, the illusion disappears. When you use this feature, you cannot use it again until you finish a short or long rest.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet action="Reation" usage="1/Short Rest">
+			<description>Whenever a creature hits you with a weapon or spell attack, you can use your reaction to teleport to an unoccupied space that you can see within 30 feet of you.
+			You leave an illusion of yourself behind, which attacks the creature. The target must succeed on a Wisdom saving throw or thinks it is hit, taking 2d6 psychic damage. After which, it disappears. A creature with truesight is immune to the effects of this feature.</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Channel Divinity: Nightmare Horde" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_CD_NIGHTMARE_HORDE">
 		<description>
-			<p></p>
+			<p>At 8th level, you gain the ability to create a field of illusion where many reflections of yourself materialize as illusions and harass the hostile creatures that fail to recognize the illusion.</p>
+			<p class="indent">As an action, you present your holy symbol. A number of creatures of your choice equal to your Wisdom modifier within 60 feet of you must succeed on a Wisdom saving throw or are deceived by the illusionary field: They see many of your copies moving away from your location, randomly appearing and disappearing in the field for 1 minute.</p>
+			<p class="indent">For the duration, whenever you make a successful attack, one of your copies appears near each affected creature and attacks them, dealing 1d6 + your Wisdom modifier amount of psychic damage.</p>
+			<p class="indent">Additionally, an affected creature must make a Wisdom (Perception) check against your spell save DC to figure out which of the copies is the real you. A creature with truesight is immune to the effects of this feature.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Nightmare Horde">
+			<description>As an action, you present your holy symbol. A number of creatures of your choice equal to your Wisdom modifier within 60 feet of you must succeed on a Wisdom saving throw or are deceived by the illusionary field: They see many of your copies moving away from your location, randomly appearing and disappearing in the field for 1 minute.
+			For the duration, whenever you make a successful attack, one of your copies appears near each affected creature and attacks them, dealing 1d6 + your Wisdom modifier amount of psychic damage.
+			Additionally, an affected creature must make a Wisdom (Perception) check against your spell save DC to figure out which of the copies is the real you. A creature with truesight is immune to the effects of this feature.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Illusionary Double" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_LIES_ILLUSIONARY_DOUBLE">
 		<description>
-			<p></p>
+			<p>At 17th level, you can create an illusionary double of yourself as a bonus action. You can choose to create it in your space or in an unoccupied space within 5 feet of you.</p>
+			<p class="indent">When you create the double, roll initiative for it. It has the same statistics as you, and it can only make weapon or spell attacks. If it casts a spell that requires a spell attack, you expend the spell slot instead. Whether it makes a weapon or spell attack, it deals half the normal damage the attack would deal, and the damage type is psychic. Also, it cannot physically interact with objects.</p>
+			<p class="indent">A creature must make a successful Wisdom (Perception) check against your spell save DC to figure out the real you.</p>
+			<p class="indent">Additionally, if it is within 30 feet of you, you can use your Deceitful Escape feature to swap places with your double and make it attack a creature of your choice.</p>
+			<p class="indent">The illusionary double remains for 10 minutes or until you dismiss it. Once you use this feature, you must finish a long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_______">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID________">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You can create an illusionary double of yourself as a bonus action. You can choose to create it in your space or in an unoccupied space within 5 feet of you.
+			When you create the double, roll initiative for it. It has the same statistics as you, and it can only make weapon or spell attacks. If it casts a spell that requires a spell attack, you expend the spell slot instead. Whether it makes a weapon or spell attack, it deals half the normal damage the attack would deal, and the damage type is psychic. Also, it cannot physically interact with objects.
+			A creature must make a successful Wisdom (Perception) check against your spell save DC to figure out the real you.
+			Additionally, if it is within 30 feet of you, you can use your Deceitful Escape feature to swap places with your double and make it attack a creature of your choice.
+			The illusionary double remains for 10 minutes or until you dismiss it. Once you use this feature, you must finish a long rest to use it again.</description>
 		</sheet>
 	</element>
 </elements>
