@@ -36,7 +36,9 @@
 		<file name="cleric-lies.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/cleric-lies.xml" />
 		<file name="cleric-mein.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/cleric-mein.xml" />
 		<file name="cleric-ran.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/cleric-ran.xml" />
+		<file name="cleric-run.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/cleric-run.xml" />
 		
+
 		<!-- Spells -->
 		<file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/spells.xml"/>
 		

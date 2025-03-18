@@ -1,115 +1,164 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Run Domain</name>
+		<name>Rûn Domain</name>
 		<description></description>
 		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
 		<update version="0.0.1">
 			<file name="cleric-run.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/cleric-run.xml" />
 		</update>
 	</info>
-	<element name="Run Domain" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_CLERIC_RUN">
+	<element name="Rûn Domain" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_CLERIC_RUN">
                 <supports>Divine Domain</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
-			<div element="ID_______" />
-			<div element="ID________" />
+			<p class="flavor">The Rune Domain</p>
+			<p>The Rûn domain taps into the powers of the master of runes; Odin the Allfather. Although this domain does not concern rune magic used by other rune casters, it does involve the magical essence within runes. The very connection between magic and the divine is imitated by this domain</p>
+			<p class="indent">Those devoted to this domain wander the realm to train themselves in the mystical ways of Odin and act as wardens of the reign of magic in Svilland. They look for all kinds of magic to understand their nature, and use them to their advantage in the Allfather’s name.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_SPELLS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_RUNIC_PROFICIENCY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_RUNS_PROTECTION" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_CD_RUNS_POWER" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_MAGICAL_FAMILIARITY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_MAGICAL_LONGEVITY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_SUPPRESS_MAGIC" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="2" />
-			<grant type="Archetype Feature" id="ID______" level="6" />
-			<grant type="Archetype Feature" id="ID_______" level="8" />
-			<grant type="Archetype Feature" id="ID________" level="17" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_RUNIC_PROFICIENCY" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_RUNS_PROTECTION" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_CD_RUNS_POWER" level="2" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_MAGICAL_FAMILIARITY" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_MAGICAL_LONGEVITY" level="8" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_SUPPRESS_MAGIC" level="17" />
 		</rules>
 	</element>
-	<element name="name Domain Spells" type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Rûn Domain Spells" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_SPELLS">
 		<description>
 			<p>At each indicated gothi level, you add the listed spells to your spells prepared. These spells are always prepared and do not count against the number of spells you can prepare.</p>
             <table>
                 <thead>
                     <tr><td>Gothi Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>spells</td></tr>
-                <tr><td>3rd</td><td>spells</td></tr>
-                <tr><td>5th</td><td>spells</td></tr>
-                <tr><td>7th</td><td>spells</td></tr>
-                <tr><td>9th</td><td>spells</td></tr>
+                <tr><td>1st</td><td>mage armor, magic missle</td></tr>
+                <tr><td>3rd</td><td>magic weapon, see invisibility</td></tr>
+                <tr><td>5th</td><td>dispel magic, counterspell</td></tr>
+                <tr><td>7th</td><td>arcane eye, polymorph</td></tr>
+                <tr><td>9th</td><td>animate objects, teleportation circle</td></tr>
             </table>
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
         <rules>
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" SPELLCASTING="CLERIC" PREPARED="TRUE" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_MAGE_ARMOR" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_MAGIC_MISSILE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_MAGIC_WEAPON" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_SEE_INVISIBILITY" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_DISPEL_MAGIC" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_COUNTERSPELL" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_ARCANE_EYE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_POLYMORPH" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_ANIMATE_OBJECTS" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_TELEPORTATION_CIRCLE" SPELLCASTING="Cleric" PREPARED="true" />
         </rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Runic Proficiency" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_RUNIC_PROFICIENCY">
 		<description>
-			<p></p>
+			<p>When you choose the Rûn domain at 1st level, you gain proficiency in the Arcana skill. Your proficiency bonus is doubled for any ability check you make using this skill.</p>
+			<p class="indent">Additionally, you learn to cast two cantrips of your choice from the runewalker spell list.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<select type="Spell" name="Runic Proficiency" supports="Runewalker,0" number="2" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Rûn's Protection" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_RUNS_PROTECTION">
 		<description>
-			<p></p>
+			<p>Also starting at 1st level, you gain the ability to use the power of runes and protect yourself against a type of damage for 1 minute. For the duration, you become resistant to one of the following damage types of your choice:</p>
+			<table>
+				<thead>
+					<tr><td>Rune</td><td>Resistance</td></tr>
+				</thead>
+				<tr><td>Kaun</td><td>Fire</td></tr>
+				<tr><td>Isa</td><td>Cold</td></tr>
+				<tr><td>Sol</td><td>Lightning</td></tr>
+				<tr><td>Ihwar</td><td>Necrotic</td></tr>
+				<tr><td>Hagal</td><td>Force</td></tr>
+				<tr><td>Raido</td><td>Radiant</td></tr>
+				<tr><td>Bjarkan</td><td>Poison</td></tr>
+				<tr><td>Laugr</td><td>Acid</td></tr>
+			</table>
+			<p class="indent">Once used, you must finish a long rest before you can use this feature again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>For 1 minute you can choose to be resistant to one of the following damage types: Fire, Cold, Lightning, Necrotic, Force, Radiant, Poison, or Acid.</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Channel Divinity: Rûn's Power" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_CD_RUNS_POWER">
 		<description>
-			<p></p>
+			<p>Starting at 2nd level, you can use your Channel Divinity to conjure the power of runes and channel it for the destruction of your foes. As an action, you present your holy symbol and call out the name of the rune you want to use. You release the power of your chosen rune against the hostile creatures within a 30-foot radius. The creatures must succeed on the relevant saving throws or be affected according to the rune you chose. The runes you can choose, and their effects are given below. The effects on creatures end at the end of their next turn.</p>
+			<p class="indent"><strong><em>Kaun’s Flames. </em></strong>The creature takes 2d8 fire damage on a failed Dexterity saving throw. You can also ignite flammable objects with this rune. </p>
+			<p class="indent"><strong><em>Isa’s Cold.</em></strong> The creature takes 2d6 cold damage and its speed is reduced by 10 feet on a failed Dexterity saving throw. </p>
+			<p class="indent"><strong><em>Sol’s Lightning.</em></strong> The creature takes 2d6 lightning damage and can’t use reactions on a failed Dexterity saving throw. </p>
+			<p class="indent"><strong><em>Hagal’s Blast.</em></strong> The creature takes 2d6 force damage and is knocked prone on a failed Strength saving throw. </p>
+			<p class="indent"><strong><em>Bjarkan’s Poison.</em></strong> The creature takes 2d6 poison damage and is poisoned on a failed Constitution saving throw. </p>
+			<p class="indent"><strong><em>Laugr’s Acid.</em></strong> On a failed Dexterity saving throw, the creature first takes 2d6 acid damage, and an additional 1d6 acid damage at the start of its next turn. </p>
+			<p class="indent"><strong><em>Ihwar’s Rot.</em></strong> The creature takes 2d6 necrotic damage and suffers one level of exhaustion on a failed Constitution saving throw </p>
+			<p class="indent"><strong><em>Raido’s Light.</em></strong> The creature takes 2d6 radiant damage on a failed Constitution saving throw. Also, you radiate bright light in a 20-foot-radius and dim light for an additional 20 feet. </p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Rûn's Power">
+			<description>As an action, you present your holy symbol and call out the name of the rune you want to use. You release the power of your chosen rune against the hostile creatures within a 30-foot radius. The creatures must succeed on the relevant saving throws or be affected according to the rune you chose. The runes you can choose, and their effects are given below. The effects on creatures end at the end of their next turn.
+			Kaun’s Flames. The creature takes 2d8 fire damage on a failed Dexterity saving throw. You can also ignite flammable objects with this rune.
+			Isa’s Cold. The creature takes 2d6 cold damage and its speed is reduced by 10 feet on a failed Dexterity saving throw.
+			Sol’s Lightning. The creature takes 2d6 lightning damage and can’t use reactions on a failed Dexterity saving throw.
+			Hagal’s Blast. The creature takes 2d6 force damage and is knocked prone on a failed Strength saving throw.
+			Bjarkan’s Poison. The creature takes 2d6 poison damage and is poisoned on a failed Constitution saving throw.
+			Laugr’s Acid. On a failed Dexterity saving throw, the creature first takes 2d6 acid damage, and an additional 1d6 acid damage at the start of its next turn.
+			Ihwar’s Rot. The creature takes 2d6 necrotic damage and suffers one level of exhaustion on a failed Constitution saving throw.
+			Raido’s Light. The creature takes 2d6 radiant damage on a failed Constitution saving throw. Also, you radiate bright light in a 20-foot-radius and dim light for an additional 20 feet.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Magical Familiarity" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_MAGICAL_FAMILIARITY">
 		<description>
-			<p></p>
+			<p>Starting at 6th level, you can learn the essence of a form of magic that has been cast near you and attune yourself to it for the day. When a spell which was previously unknown to you is cast within 100 feet of you, you can use this feature to become able to cast that spell for 24 hours if you have the spell slot of the appropriate level.</p>
+			<p class="indent">Once you use this feature, you must finish a long rest to do so again. If you learn another in this way before the duration of the previous one expires, the new spell replaces the old one.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>When a spell which was previously unknown to you is cast within 100 feet of you, you can use this feature to become able to cast that spell for 24 hours if you have the spell slot of the appropriate level.
+			If you learn another in this way before the duration of the previous one expires, the new spell replaces the old one.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_______">
+	<element name="Magical Longevity" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_MAGICAL_LONGEVITY">
 		<description>
-			<p></p>
+			<p>Starting at 8th level, your magical essence becomes stronger with your connection to the Rûn domain. As a result, the number of your spell slots of 3rd level and lower increase by 1.</p>
+			<p class="indent">When you become a 11th level gothi, the number of 4th and 5th level spell slots increase by 1.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>You have additional spell slots.</description>
 		</sheet>
+		<rules>
+			<stat name="cleric:spellcasting:slots:1" value="1" />
+			<stat name="cleric:spellcasting:slots:2" value="1" />
+			<stat name="cleric:spellcasting:slots:3" value="1" level="11"/>
+			<stat name="cleric:spellcasting:slots:4" value="1" level="11" />
+			<stat name="cleric:spellcasting:slots:5" value="1" level="11" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID________">
+	<element name="Suppress Magic" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RUN_SUPPRESS_MAGIC">
 		<description>
-			<p></p>
+			<p>At 17th level, you gain the ability to suppress the effects of magic on yourself and your allies. As an action, you grant to your allies within 30 feet of you advantage on their saving throws against spells for 1 minute.</p>
+			<p class="indent">You also suppress the magic on hostile creatures. The creatures within 30 feet of you lose any benefits provided by spells or other magical effects, and a spellcaster creature must first maintain its concentration by making a Constitution saving throw. On a failed save, the creature’s spell fails.</p>
+			<p class="indent">Once you use this feature, you must finish a long rest before you can do so again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you grant to your allies within 30 feet of you advantage on their saving throws against spells for 1 minute.
+			You also suppress the magic on hostile creatures. The creatures within 30 feet of you lose any benefits provided by spells or other magical effects, and a spellcaster creature must first maintain its concentration by making a Constitution saving throw. On a failed save, the creature’s spell fails.</description>
 		</sheet>
 	</element>
 </elements>
