@@ -89,7 +89,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Bolt of Watery Death" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_BOLD_OF_WATERY_DEATH">
+    <element name="Bolt of Watery Death" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_BOLT_OF_WATERY_DEATH">
         <supports>Spell Attack, Spell Saving Throw, Cleric</supports>
         <description>
             <p>Make a ranged spell attack. On a hit, a bolt of water streaks towards a creature of your choice within range, dealing 3d8 cold damage to the target. The target must succeed on a Wisdom saving throw or is charmed until the end of its next turn.</p>
