@@ -9,107 +9,126 @@
 		</update>
 	</info>
 	<element name="Mein Domain" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_CLERIC_MEIN">
-                <supports>Divine Domain</supports>
+        <supports>Divine Domain</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
-			<div element="ID_______" />
-			<div element="ID________" />
+			<p class="flavor">The Agony Domain</p>
+			<p>The Mein domain focuses on the struggle of Balder in Helheim. The domain came to be once Balder fell to Helheim. It involves the spreading of the pain and suffering that a God himself is subject to.</p>
+			<p class="indent">His followers do not run away from pain; they endure it to understand the essence of Balder. Those who follow the Mein domain can channel this pain onto others, and make them experience and understand it as well.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_SPELLS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_BONUS_PROFICIENCY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_SPREAD_OF_AGONY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_CD_UNLEASH_AGONY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_UNLEASH_REFLECT_THE_PAIN" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_UNLEASH_ADOPT_THE_FRIENDS_PAIN" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_UNLEASH_ETERNAL_AGONY" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="2" />
-			<grant type="Archetype Feature" id="ID______" level="6" />
-			<grant type="Archetype Feature" id="ID_______" level="8" />
-			<grant type="Archetype Feature" id="ID________" level="17" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_BONUS_PROFICIENCY" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_SPREAD_OF_AGONY" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_CD_UNLEASH_AGONY" level="2" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_UNLEASH_REFLECT_THE_PAIN" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_UNLEASH_ADOPT_THE_FRIENDS_PAIN" level="8" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_UNLEASH_ETERNAL_AGONY" level="17" />
 		</rules>
 	</element>
-	<element name="name Domain Spells" type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Mein Domain Spells" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_SPELLS">
 		<description>
 			<p>At each indicated gothi level, you add the listed spells to your spells prepared. These spells are always prepared and do not count against the number of spells you can prepare.</p>
             <table>
                 <thead>
                     <tr><td>Gothi Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>spells</td></tr>
-                <tr><td>3rd</td><td>spells</td></tr>
-                <tr><td>5th</td><td>spells</td></tr>
-                <tr><td>7th</td><td>spells</td></tr>
-                <tr><td>9th</td><td>spells</td></tr>
+                <tr><td>1st</td><td>expeditious retreat, heroism</td></tr>
+                <tr><td>3rd</td><td>draining gaze, frustration of Balder</td></tr>
+                <tr><td>5th</td><td>haste, insults to spirit</td></tr>
+                <tr><td>7th</td><td>dagger of agony, stoneskin</td></tr>
+                <tr><td>9th</td><td>dream, seeds of agony</td></tr>
             </table>
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
         <rules>
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" SPELLCASTING="CLERIC" PREPARED="TRUE" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_HEROISM" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_DRS_SVILLAND_SPELL_DRAINING_GAZE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_DRS_SVILLAND_SPELL_FRUSTRATION_OF_BALDER" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_HASTE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_DRS_SVILLAND_SPELL_INSULTS_TO_SPIRIT" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_DRS_SVILLAND_SPELL_DAGGER_OF_AGONY" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_STONESKIN" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_DREAM" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_DRS_SVILLAND_SPELL_SEEDS_OF_AGONY" SPELLCASTING="CLERIC" PREPARED="TRUE" />
         </rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_BONUS_PROFICIENCY">
 		<description>
-			<p></p>
+			<p>When you choose the Mein domain at 1st level, you gain proficiency in the Insight skill, and with healer’s kit.</p>
+			<p class="indent">Your proficiency bonus is doubled for any ability check you make that uses that skill or kit.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>Your proficiency bonus is doubled for any ability check you make that uses the healers kit.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT"  bonus="double" />
+		</rules>
+	</element>
+	<element name="Spread of Agony" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_SPREAD_OF_AGONY">
+		<description>
+			<p>At 1st level, you can channel Balder’s agony. When you are hit by an attack, you can use your reaction to reflect your agony to creatures of your choice within 15 feet of you. The creatures must succeed on a Wisdom saving throw or take 1d4 psychic damage. This damage becomes 2d4 when you reach 6th level in this class, 3d4 at 8th, and 5d4 at 17th.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{wisdom:modifier}}/Long Rest">
+			<description>When you are hit by an attack, you can use your reaction to reflect your agony to creatures of your choice within 15 feet of you. The creatures must succeed on a Wisdom saving throw or take 1d4 psychic damage.</description>
+			<description level="6">When you are hit by an attack, you can use your reaction to reflect your agony to creatures of your choice within 15 feet of you. The creatures must succeed on a Wisdom saving throw or take 2d4 psychic damage.</description>
+			<description level="8">When you are hit by an attack, you can use your reaction to reflect your agony to creatures of your choice within 15 feet of you. The creatures must succeed on a Wisdom saving throw or take 3d4 psychic damage.</description>
+			<description level="17">When you are hit by an attack, you can use your reaction to reflect your agony to creatures of your choice within 15 feet of you. The creatures must succeed on a Wisdom saving throw or take 5d4 psychic damage.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Channel Divinity: Unleash Agony" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_CD_UNLEASH_AGONY">
 		<description>
-			<p></p>
+			<p>Starting at 2nd level, you can use your Channel Divinity to unleash the agony of Balder onto others. As an action, you present your holy symbol and cause creatures to feel intense pain.</p>
+			<p class="indent">Hostile creatures within 30 feet of you must succeed on a Constitution saving throw or become wracked with pain, taking 1d6 psychic damage and becoming agonized (see Condition: Agonized) for 1 minute.</p>
+			<p class="indent">An affected creature can repeat its Constitution saving throw at the end of its turns, ending the effect on itself on a successful one.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Unleash Agony">
+			<description>As an action you can present your holy symbol, hostile creatures within 30 feet of you must succeed on a Constitution saving throw or become wracked with pain, taking 1d6 psychic damage and becoming agonized (see Condition: Agonized) for 1 minute.
+			An affected creature can repeat its Constitution saving throw at the end of its turns, ending the effect on itself on a successful one.</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Refelect the Pain" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_UNLEASH_REFLECT_THE_PAIN">
 		<description>
-			<p></p>
+			<p>Starting at 6th level, you can make an attacker feel the pain it inflicted on you. As an action, you activate this feature for 1 minute.</p>
+			<p class="indent">Whenever a creature within 10 feet of you makes a successful attack against you, it must succeed on a Wisdom saving throw or take half of the damage it dealt to you as psychic damage.</p>
+			<p class="indent">Once you use this feature, you cannot do so again until you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action you can activate this feature for 1 minute. Whenever a creature within 10 feet of you makes a successful attack against you, it must succeed on a Wisdom saving throw or take half of the damage it dealt to you as psychic damage.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Adopt the Friend's Pain" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_UNLEASH_ADOPT_THE_FRIENDS_PAIN">
 		<description>
-			<p></p>
+			<p>At 8th level, you gain the ability to take on some of the pain of your ally onto yourself. When an ally within 30 feet of you takes damage, you can use your reaction to take half of the damage yourself (this damage ignores resistance and immunity). This results in your ally to take only half the damage it would have taken.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="{{wisdom:modifier}}/Long Rest" action="Reaction">
+			<description>When an ally within 30 feet of you takes damage, you can use your reaction to take half of the damage yourself (this damage ignores resistance and immunity). This results in your ally to take only half the damage it would have taken.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_______">
+	<element name="Unleash Eternal Agony" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_UNLEASH_ETERNAL_AGONY">
 		<description>
-			<p></p>
+			<p>At 17th level, you gain the ability to summon the entirety of Balder ‘s agony in Helheim, and cast it down to others. As an action, you unleash this agony, and all hostile creatures within 60 feet of you must make a Constitution saving throw against your spell save DC. On a failed save, a creature suffers three levels of exhaustion. On a successful save, it suffers one level of exhaustion.</p>
+			<p class="indent">If another gothi of Mein domain uses this feature on the same creature, the creature does not suffer additional levels of exhaustion, but takes 3d10 necrotic damage on a failed save, or 1d10 necrotic damage on a successful one. This damage cannot be reduced by any means.</p>
+			<p class="indent">When activated, this effect lasts 1 minute. Afterwards, creatures’ exhaustion levels decrease to what they were before you used this feature on them. Once you use this feature, you cannot do so again until you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID________">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you unleash this agony, and all hostile creatures within 60 feet of you must make a Constitution saving throw against your spell save DC. On a failed save, a creature suffers three levels of exhaustion. On a successful save, it suffers one level of exhaustion.
+			If another gothi of Mein domain uses this feature on the same creature, the creature does not suffer additional levels of exhaustion, but takes 3d10 necrotic damage on a failed save, or 1d10 necrotic damage on a successful one. This damage cannot be reduced by any means.
+			When activated, this effect lasts 1 minute. Afterwards, creatures’ exhaustion levels decrease to what they were before you used this feature on them.</description>
 		</sheet>
 	</element>
 </elements>
