@@ -11,105 +11,149 @@
 	<element name="Ran Domain" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_CLERIC_RAN">
                 <supports>Divine Domain</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
-			<div element="ID_______" />
-			<div element="ID________" />
+			<p>Ran is the Lady of the Depths. She rules the seas with her husband, Aegir, and yet, she is different from Aegir; her methods are hollower and probably more wicked.</p>
+			<p class="indent">She likes to carry unaware sailors into the seas’ depths, convert them into undead servants for eternity, and loot their treasure to put them into Aegir’s treasure.</p>
+			<p class="indent">Her domain focuses on the haunting charm of the depths she controls, causing bodies to wither and minds to melt with the charm of the Lady of the Depths. Her devotees spread her presence wherever possible, and trade power for Aegir’s Gold, which they sacrifice to their lady.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_SPELLS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_BONUS_PROFICIENCY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_AEGIRS_GOLD" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_CD_VISAGE_OF_THE_DEPTHS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_RANS_NET" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_LULLABY_OF_THE_DEPTHS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_ACOLYTE_OF_THE_DEPTHS" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="2" />
-			<grant type="Archetype Feature" id="ID______" level="6" />
-			<grant type="Archetype Feature" id="ID_______" level="8" />
-			<grant type="Archetype Feature" id="ID________" level="17" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_BONUS_PROFICIENCY" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_AEGIRS_GOLD" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_CD_VISAGE_OF_THE_DEPTHS" level="2" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_RANS_NET" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_LULLABY_OF_THE_DEPTHS" level="8" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_ACOLYTE_OF_THE_DEPTHS" level="17" />
 		</rules>
 	</element>
-	<element name="name Domain Spells" type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Ran Domain Spells" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_SPELLS">
 		<description>
 			<p>At each indicated gothi level, you add the listed spells to your spells prepared. These spells are always prepared and do not count against the number of spells you can prepare.</p>
             <table>
                 <thead>
                     <tr><td>Gothi Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>spells</td></tr>
-                <tr><td>3rd</td><td>spells</td></tr>
-                <tr><td>5th</td><td>spells</td></tr>
-                <tr><td>7th</td><td>spells</td></tr>
-                <tr><td>9th</td><td>spells</td></tr>
+                <tr><td>1st</td><td>bolt of watery death, charm person</td></tr>
+                <tr><td>3rd</td><td>web, see invisibility</td></tr>
+                <tr><td>5th</td><td>water breathing, water walk</td></tr>
+                <tr><td>7th</td><td>polymorph, hallucinatory terrain</td></tr>
+                <tr><td>9th</td><td>dominate person, hold monster</td></tr>
             </table>
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
         <rules>
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" SPELLCASTING="CLERIC" PREPARED="TRUE" />
+            <grant type="Spell" level="1" id="ID_DRS_SVILLAND_SPELL_BOLT_OF_WATERY_DEATH" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_CHARM_PERSON" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_WEB" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_SEE_INVISIBILITY" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_WATER_BREATHING" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_WATER_WALK" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_POLYMORPH" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_DOMINATE_PERSON" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_HOLD_MONSTER" SPELLCASTING="CLERIC" PREPARED="TRUE" />
         </rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_BONUS_PROFICIENCY">
 		<description>
-			<p></p>
+			<p>When you choose the Ran domain at 1st level, you gain proficiency in the Deception and Intimidation skills.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Aegir's Gold" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_AEGIRS_GOLD">
 		<description>
-			<p></p>
+			<p>Starting at 1st level, you learn the sacred ritual of sailors that blesses you with gold from Aegir’s treasures.</p>
+			<p class="indent">By expending a spell slot and performing a 10-minute ritual in which you paint the gold pieces with your own blood, you convert a number of gold pieces that are equal to the expended slot level into a special token called Aegir’s Gold.</p>
+			<p class="indent">You can then trade these gold pieces with Ran in exchange for her aid and gain one of the following benefits;</p>
+			<ul>
+				<li>By spending 1 Aegir’s Gold as a reaction, you can increase the spell save DC or spell attack modifier of your next spell by 2.</li>
+				<li>By spending 1 Aegir’s Gold as a reaction, you can cast a spell that requires a material component worth less than or equal to 50 gold pieces without using the material component.</li>
+				<li>By spending 1 Aegir’s Gold as a bonus action, you can make a weapon attack as a part of the same action.</li>
+			</ul>
+			<p class="indent">An Aegir’s gold can only be used by the gothi who created them. For others, they carry the same monetary value as a normal gold piece. Aegir’s Gold slightly shines with a silvery light that can be perceived easily. An Aegir’s Gold loses its properties and becomes a normal gold piece at the next dawn.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>By expending a spell slot and performing a 10-minute ritual in which you paint the gold pieces with your own blood, you convert a number of gold pieces that are equal to the expended slot level into a special token called Aegir’s Gold.
+			By spending 1 Aegir’s Gold as a reaction, you can increase the spell save DC or spell attack modifier of your next spell by 2.
+			By spending 1 Aegir’s Gold as a reaction, you can cast a spell that requires a material component worth less than or equal to 50 gold pieces without using the material component.
+			By spending 1 Aegir’s Gold as a bonus action, you can make a weapon attack as a part of the same action.
+			An Aegir’s gold can only be used by the gothi who created them. For others, they carry the same monetary value as a normal gold piece. Aegir’s Gold slightly shines with a silvery light that can be perceived easily. An Aegir’s Gold loses its properties and becomes a normal gold piece at the next dawn.</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Channel Divinity: Visage of the Depths" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_CD_VISAGE_OF_THE_DEPTHS">
 		<description>
-			<p></p>
+			<p>Starting at 2nd level, you can use your Channel Divinity to conjure the darkness of the deep seas.</p>
+			<p class="indent">As an action, you present your holy symbol and invoke the power of the deep seas. Colors and sounds are distorted as if they were coming from dozens of feet beneath the water surface within a 60-foot radius centered on you. Up to 5 creatures you select in the area must make Wisdom saving throws. On a failed save, a creature takes 1d10 necrotic damage and becomes frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effects on itself on a successful one. On a successful save, it takes half as much damage and is not frightened.</p>
+			<p class="indent">Also, you can spend 4 Aegir’s Gold as an action to regain one use of your Channel Divinity.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Visage of the Depths">
+			<description>As an action, you present your holy symbol and invoke the power of the deep seas. Colors and sounds are distorted as if they were coming from dozens of feet beneath the water surface within a 60-foot radius centered on you. Up to 5 creatures you select in the area must make Wisdom saving throws. On a failed save, a creature takes 1d10 necrotic damage and becomes frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effects on itself on a successful one. On a successful save, it takes half as much damage and is not frightened.
+			Also, you can spend 4 Aegir’s Gold as an action to regain one use of your Channel Divinity.</description>
+			<description level="17">As an action, you present your holy symbol and invoke the power of the deep seas. Colors and sounds are distorted as if they were coming from dozens of feet beneath the water surface within a 60-foot radius centered on you. Up to 5 creatures you select in the area must make Wisdom saving throws. On a failed save, a creature takes 3d10 necrotic damage and becomes frightened for 1 minute. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effects on itself on a successful one. On a successful save, it takes half as much damage and is not frightened.
+			Also, you can spend 4 Aegir’s Gold as an action to regain one use of your Channel Divinity.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Ran's Net" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_RANS_NET">
 		<description>
-			<p></p>
+			<p>Starting at 6th level, you can conjure Ran’s Net.</p>
+			<p class="indent">As an action, you make a ranged spell attack against a creature within 15 feet of you and throw a conjured net on it. On a hit, the target is restrained for 1 minute and takes 1d6 + your Wisdom modifier necrotic damage at the end of each turn it is restrained this way.</p>
+			<p class="indent">As an action, the creature can try to rip off the net by making a DC 15 Strength (Athletics) check to, or get out of it by making a DC 15 Dexterity (Acrobatics) check. The net can also be torn; it has 13 AC, 40 hit points, resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks, immunity to poison and psychic damage, and vulnerability to radiant damage.</p>
+			<p class="indent">If a creature dies within the net, it magically disappears, as if pulled into the sea. Any valuable items the creature carries remain on the ground, with splatters of dried, greenish blood on them.</p>
+			<p class="indent">Additionally, Ran accepts the slain creature as a sacrifice and grants you 1 Aegir’s Gold that is found in the net after the creature disappears.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain any expended uses when you finish a long rest. You can also spend 3 Aegir’s Gold to regain one use.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="{{wisdom:modifier}}/Long Rest">
+			<description>As an action, you make a ranged spell attack against a creature within 15 feet of you and throw a conjured net on it. On a hit, the target is restrained for 1 minute and takes 1d6 + {{wisdom:modifier}} necrotic damage at the end of each turn it is restrained this way.
+			As an action, the creature can try to rip off the net by making a DC 15 Strength (Athletics) check to, or get out of it by making a DC 15 Dexterity (Acrobatics) check. The net can also be torn; it has 13 AC, 40 hit points, resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks, immunity to poison and psychic damage, and vulnerability to radiant damage.
+			If a creature dies within the net, it magically disappears, as if pulled into the sea. Any valuable items the creature carries remain on the ground, with splatters of dried, greenish blood on them.
+			Additionally, Ran accepts the slain creature as a sacrifice and grants you 1 Aegir’s Gold that is found in the net after the creature disappears.</description>
+			<description level="17">As an action, you make a ranged spell attack against a creature within 15 feet of you and throw a conjured net on it. On a hit, the target is restrained for 1 minute and takes 3d6 + {{wisdom:modifier}} necrotic damage at the end of each turn it is restrained this way.
+			As an action, the creature can try to rip off the net by making a DC 15 Strength (Athletics) check to, or get out of it by making a DC 15 Dexterity (Acrobatics) check. The net can also be torn; it has 13 AC, 40 hit points, resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks, immunity to poison and psychic damage, and vulnerability to radiant damage.
+			If a creature dies within the net, it magically disappears, as if pulled into the sea. Any valuable items the creature carries remain on the ground, with splatters of dried, greenish blood on them.
+			Additionally, Ran accepts the slain creature as a sacrifice and grants you 1 Aegir’s Gold that is found in the net after the creature disappears.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_______">
+	<element name="Lullaby of the Depths" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_LULLABY_OF_THE_DEPTHS">
 		<description>
-			<p></p>
+			<p>Starting at 8th level, you can chant the Lullaby of the Depths.</p>
+			<p class="indent">As an action, you sing a melancholic, haunting but also inviting lullaby that feels like coming from afar and that is heard only slightly. Up to three creatures of your choice within 60 feet of you and that can hear you must succeed on a Wisdom saving throw or their speed decreases by 10 feet, they have disadvantage on attack rolls against you, and take 1d6 necrotic damage at the start of each one of their turns for 1 minute.</p>
+			<p class="indent">An affected creature can repeat the saving throw at the end of each of its turns, ending the effects on itself on a successful one.</p>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you sing a melancholic, haunting but also inviting lullaby that feels like coming from afar and that is heard only slightly. Up to three creatures of your choice within 60 feet of you and that can hear you must succeed on a Wisdom saving throw or their speed decreases by 10 feet, they have disadvantage on attack rolls against you, and take 1d6 necrotic damage at the start of each one of their turns for 1 minute.
+			An affected creature can repeat the saving throw at the end of each of its turns, ending the effects on itself on a successful one.</description>
+			<description level="17">As an action, you sing a melancholic, haunting but also inviting lullaby that feels like coming from afar and that is heard only slightly. Up to three creatures of your choice within 90 feet of you and that can hear you must succeed on a Wisdom saving throw or their speed decreases by 10 feet, they have disadvantage on attack rolls against you, and take 3d6 necrotic damage at the start of each one of their turns for 1 minute.
+			An affected creature can repeat the saving throw at the end of each of its turns, ending the effects on itself on a successful one.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID________">
+	<element name="Acolyte of the Depths" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_RAN_ACOLYTE_OF_THE_DEPTHS">
 		<description>
-			<p></p>
+			<p>Starting at 17th level, you have proven yourself a valuable acolyte for the Lady of the Depths. She blesses you in return, and you spend 1 less Aegir’s Gold to use the Channel Divinity and Ran’s Net features.</p>
+			<p class="indent">Additionally, you gain the following benefits:</p>
+			<p class="indent">Channel Divinity: Visage of the Depths. The necrotic damage increases to 3d10.</p>
+			<p class="indent">Ran’s Net. The necrotic damage increases to 3d6 + your Wisdom modifier.</p>
+			<p class="indent"Lullaby of the Depths. You can affect creatures within 90 feet of you and the necrotic damage increases to 2d6.></p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>You spend 1 less Aegir’s Gold to use the Channel Divinity and Ran’s Net features.</description>
 		</sheet>
 	</element>
 </elements>
