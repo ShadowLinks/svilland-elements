@@ -19,11 +19,11 @@ Thank you to The-Multitud-e for starting the project I forked from.
 	- Oath to Odin
 	- Oath to Thor
 	- Oath to Tyr
-- Barbarian Paths
+- Barbarian Paths COMPLETE
 	- Path of Berserkr
 	- Path of Svinfylking
 	- Path of Ulfhednar
-- Bard Traditions (Colleges)
+- Bard Traditions (Colleges) COMPLETE
 	- Tradition of Bragi
 	- Tradition of Helord
 	- Tradition of Ofridr
@@ -32,7 +32,7 @@ Thank you to The-Multitud-e for starting the project I forked from.
 	- Rune Warrior
 	- Shieldman/Shieldmaiden
 	- Vikingr
-- Cleric Domains
+- Cleric Domains IN PROGRESS
 	- Execution Domain
 	- Fury Domain
 	- Kaldr Domain
@@ -61,23 +61,21 @@ Thank you to The-Multitud-e for starting the project I forked from.
 	- Laugr-Touched
 	- Thurisaz-Touched
 
-### Races- in progress:
-- Austri - in progress
+### Races: COMPLETE
+- Austri - 
 - Dvergr
 - Half-Jotunn
-	- Mountain Half-Jotunn
-	- Frost Half-Jotunn
 - Kuning
 - Mithal
 - Vestri
 
-### Backgrounds
+### Backgrounds COMPLETE
 - Destined
 - Thrall
 - Karl
 - Reverend
 
-### Feats
+### Feats COMPLETE
 - Blessed With Magic
 - Boon of Freyja
 - Combat Ready
@@ -90,12 +88,12 @@ Thank you to The-Multitud-e for starting the project I forked from.
 - War Cry
 - Weapon Thrower
 
-### Spells
-There's loads, cba to write all names here
+### Spells COMPLETE
 
-### Equipment
-- Some armour types
-- Some weapons
-- lots of magic items
+### Items
+- Weapons COMPLETE
+- Armor COMPLETE
+- Magic Items/Armor/Weapons
+
 
 
