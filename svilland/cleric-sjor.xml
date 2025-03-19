@@ -11,105 +11,116 @@
 	<element name="Sjor Domain" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_CLERIC_SJOR">
                 <supports>Divine Domain</supports>
 		<description>
-			<p></p>
+			<p class="flavor">Will of the Sea.</p>
+			<p>The Sjor domain focuses on the vast waters and seas surrounding Svilland. It holds the power of Aegir, through water creatures and the might of its seas. Aegir grants this domain to his followers so that they carry the will of the sea within them. They can smite those who dare stand against the might of Aegir; who states that everything came from the water and that water can destroy just as it created; a property that is only held back by Aegir’s mercy.</p>
 			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
-			<div element="ID_______" />
-			<div element="ID________" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_SPELLS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_BONUS_PROFICIENCY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_ESSENCE_OF_WATER" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_CD_ENGULF" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_WARRIOR_OF_THE_SEAS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_MIGHT_OF_THE_SEAS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_CD_WRATH_OF_THE_SEAS" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="2" />
-			<grant type="Archetype Feature" id="ID______" level="6" />
-			<grant type="Archetype Feature" id="ID_______" level="8" />
-			<grant type="Archetype Feature" id="ID________" level="17" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_BONUS_PROFICIENCY" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_ESSENCE_OF_WATER" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_CD_ENGULF" level="2" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_WARRIOR_OF_THE_SEAS" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_MIGHT_OF_THE_SEAS" level="8" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_CD_WRATH_OF_THE_SEAS" level="17" />
 		</rules>
 	</element>
-	<element name="name Domain Spells" type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Sjor Domain Spells" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_SPELLS">
 		<description>
 			<p>At each indicated gothi level, you add the listed spells to your spells prepared. These spells are always prepared and do not count against the number of spells you can prepare.</p>
             <table>
                 <thead>
                     <tr><td>Gothi Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>spells</td></tr>
-                <tr><td>3rd</td><td>spells</td></tr>
-                <tr><td>5th</td><td>spells</td></tr>
-                <tr><td>7th</td><td>spells</td></tr>
-                <tr><td>9th</td><td>spells</td></tr>
+                <tr><td>1st</td><td>salmon form, speak with animals</td></tr>
+                <tr><td>3rd</td><td>icicle of death, misty step</td></tr>
+                <tr><td>5th</td><td>water walk, water breathing</td></tr>
+                <tr><td>7th</td><td>spiked shell, conjure minor elemental (air or water)</td></tr>
+                <tr><td>9th</td><td>cone of cold, geyser</td></tr>
             </table>
+		</description>
+		<sheet>
+			<description level="7">Conjure minor elemental spell only air or water.</description>
+		</sheet>
+        <rules>
+            <grant type="Spell" level="1" id="ID_DRS_SVILLAND_SPELL_SALMON_FORM" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_DRS_SVILLAND_SPELL_ICICLE_OF_DEATH" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_MISTY_STEP" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_WATER_WALK" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_WATER_BREATHING" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_DRS_SVILLAND_SPELL_SPIKED_SHELL" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_CONJURE_MINOR_ELEMENTALS" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_CONE_OF_COLD" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_DRS_SVILLAND_SPELL_GEYSER" SPELLCASTING="CLERIC" PREPARED="TRUE" />
+        </rules>
+	</element>
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_BONUS_PROFICIENCY">
+		<description>
+			<p>When you choose the Sjor domain at 1st level, you gain proficiency with martial weapons.</p>
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
-        <rules>
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" SPELLCASTING="CLERIC" PREPARED="TRUE" />
-        </rules>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Essence of Water" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_ESSENCE_OF_WATER">
 		<description>
-			<p></p>
+			<p>Also at 1st level, you are granted a blessing. You can navigate in water with ease, and you feel like you were born in it. You gain a swimming speed of 15 feet.</p>
 		</description>
 		<sheet>
 			<description></description>
 		</sheet>
+		<rules>
+			<stat name="speed:swim" value="15" bonus="base" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Channel Divinity: Engulf" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_CD_ENGULF">
 		<description>
-			<p></p>
+			<p>Starting at 2nd level, you can use your Channel Divinity to invoke the wrath of your God and the seas. As an action, you magically summon the mighty waves from the sea. The waves emerge from your location, move out in a 30-foot radius centered on you, and strike the hostile creatures. A creature in the area must make a Strength saving throw. On a failed save, it takes 2d10 force damage and is washed out of the area and is knocked prone. On a successful save, the damage is halved and the creature is not washed away and is not knocked prone.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Engulf">
+			<description>As an action, you magically summon the mighty waves from the sea. The waves emerge from your location, move out in a 30-foot radius centered on you, and strike the hostile creatures. A creature in the area must make a Strength saving throw. On a failed save, it takes 2d10 force damage and is washed out of the area and is knocked prone. On a successful save, the damage is halved and the creature is not washed away and is not knocked prone.</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Warrior of the Seas" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_WARRIOR_OF_THE_SEAS">
 		<description>
-			<p></p>
+			<p>Starting at 6th level, you are blessed by Aegir and your fighting techniques represent the will of the seas. When you make a weapon attack, you can choose to expend a 1st level spell slot and imbue your weapon with the power of the crashing waves. If you do so, you deal 1d6 force damage with the attack and the target must succeed on a Strength saving throw or be knocked prone. When you expend a spell slot of 2nd level or higher, the force damage increases by 1d6 for each slot level above 1st.</p>
+			<p class="indent">Also, as long as you stand in a body of water that covers half your body, you have resistance to fire damage.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>When you make a weapon attack, you can choose to expend a 1st level spell slot and imbue your weapon with the power of the crashing waves. If you do so, you deal 1d6 force damage with the attack and the target must succeed on a Strength saving throw or be knocked prone. When you expend a spell slot of 2nd level or higher, the force damage increases by 1d6 for each slot level above 1st.
+			Also, as long as you stand in a body of water that covers half your body, you have resistance to fire damage.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Might of the Seas" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_MIGHT_OF_THE_SEAS">
 		<description>
-			<p></p>
+			<p>Starting at 8th level, you gain the ability to infuse your spells with the might of the seas. When you cast a spell of 1st level or higher that deals cold damage, or a damage-dealing domain spell, you deal an extra 1d10 cold damage. Additionally, when you are within 100 feet of a sea, a river or a lake, you draw a portion of Aegir’s power and the extra damage increases to 2d10.</p>
+			<p class="indent">If the spell deals damage to more than one target, the extra damage is dealt to only one target of your choice.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>When you cast a spell of 1st level or higher that deals cold damage, or a damage-dealing domain spell, you deal an extra 1d10 cold damage. Additionally, when you are within 100 feet of a sea, a river or a lake, you draw a portion of Aegir’s power and the extra damage increases to 2d10.
+			If the spell deals damage to more than one target, the extra damage is dealt to only one target of your choice.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_______">
+	<element name="Channel Divinity: Wrath of the Seas" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SJOR_CD_WRATH_OF_THE_SEAS">
 		<description>
-			<p></p>
+			<p>Starting at 17th level, you can use your Channel Divinity to call on the wrath of the seas. As a bonus action, you present your holy symbol and say a prayer to your God. For 1 minute, whenever you cast a spell that deals cold damage or a damagedealing gothi (cleric) spell, and if the spell requires the target(s) to make a saving throw, you can use your reaction to impose disadvantage on the saving throws of a number of targets equal to your Wisdom modifier.</p>
 		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID________">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Wrath of the Seas" action="Bonus Action">
+			<description>As a bonus action, you present your holy symbol and say a prayer to your God. For 1 minute, whenever you cast a spell that deals cold damage or a damagedealing gothi (cleric) spell, and if the spell requires the target(s) to make a saving throw, you can use your reaction to impose disadvantage on the saving throws of {{wisdom:modifier}} targets.</description>
 		</sheet>
 	</element>
 </elements>

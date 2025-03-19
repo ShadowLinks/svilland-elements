@@ -11,105 +11,131 @@
 	<element name="Vengeance Domain" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_CLERIC_VENGEANCE">
                 <supports>Divine Domain</supports>
 		<description>
-			<p></p>
+			<p>Vengeance domain is about hurting those who hurt you. Gods and Goddesses like Loki and Fenrir have this domain in order to claim their rights. For Fenrir vengeance means justice and for Loki it means a show of power. The followers of the Vengeance domain usually have the same concepts of revenge as those they follow. They seek to bleed in order to make others suffer, just to show their will to their Gods and Goddesses.</p>
 			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
-			<div element="ID_______" />
-			<div element="ID________" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_SPELLS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_BONUS_PROFICIENCY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_GRUDGE_LIST" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_CD_BRING_WRATH" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_VENGEFUL_REPOSTE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_DIVINE_STRIKE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_INDESTRUCTIBLE_WRATH" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="2" />
-			<grant type="Archetype Feature" id="ID______" level="6" />
-			<grant type="Archetype Feature" id="ID_______" level="8" />
-			<grant type="Archetype Feature" id="ID________" level="17" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_BONUS_PROFICIENCY" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_GRUDGE_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_CD_BRING_WRATH" level="2" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_VENGEFUL_REPOSTE" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_DIVINE_STRIKE" level="8" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_INDESTRUCTIBLE_WRATH" level="17" />
 		</rules>
 	</element>
-	<element name="name Domain Spells" type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Vengeance Domain Spells" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_SPELLS">
 		<description>
 			<p>At each indicated gothi level, you add the listed spells to your spells prepared. These spells are always prepared and do not count against the number of spells you can prepare.</p>
             <table>
                 <thead>
                     <tr><td>Gothi Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>spells</td></tr>
-                <tr><td>3rd</td><td>spells</td></tr>
-                <tr><td>5th</td><td>spells</td></tr>
-                <tr><td>7th</td><td>spells</td></tr>
-                <tr><td>9th</td><td>spells</td></tr>
+                <tr><td>1st</td><td>hunter's mark, jump</td></tr>
+                <tr><td>3rd</td><td>darkvision, pass without trace</td></tr>
+                <tr><td>5th</td><td>haste, nondetection</td></tr>
+                <tr><td>7th</td><td>private sanctum, stoneskin</td></tr>
+                <tr><td>9th</td><td>passwall, scrying</td></tr>
             </table>
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
         <rules>
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" SPELLCASTING="CLERIC" PREPARED="TRUE" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_HUNTERS_MARK" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_JUMP" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_DARKVISION" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_HASTE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_NONDETECTION" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_PRIVATE_SANCTUM" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_STONESKIN" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_PASSWALL" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_SCRYING" SPELLCASTING="CLERIC" PREPARED="TRUE" />
         </rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_BONUS_PROFICIENCY">
 		<description>
-			<p></p>
+			<p>When you choose this domain at 1st level, you gain proficiency with martial weapons.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Grudge List" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_GRUDGE_LIST">
 		<description>
-			<p></p>
+			<p>Starting at 1st level, you have a grudge list, which is a list of targets who wronged you dearly. The list can have names, occupations, or other types of descriptions that indicate specific targets. The list itself is a wondrous item that can be used only by you, which can have different forms (leathers, parchments, book, etc.) as long as the GM approves. You can have the names of a number of creatures up to your Wisdom modifier (minimum of one creature) on the list. Adding a new target to the grudge list requires you to perform a 1-minute ritual in which you say a prayer to your deity.</p>
+			<p class="indent">You have advantage on Wisdom (Survival) checks to track the targets on the grudge list, as well as on Intelligence checks to recall information about them. Also, you deal an extra 1d6 psychic damage to those targets with successful spell and weapon attacks.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>you have a grudge list, which is a list of targets who wronged you dearly. The list can have names, occupations, or other types of descriptions that indicate specific targets. The list itself is a wondrous item that can be used only by you, which can have different forms (leathers, parchments, book, etc.) as long as the GM approves. You can have the names of {{wisdom:modifier}} creatures on the list. Adding a new target to the grudge list requires you to perform a 1-minute ritual in which you say a prayer to your deity.
+			You have advantage on Wisdom (Survival) checks to track the targets on the grudge list, as well as on Intelligence checks to recall information about them. Also, you deal an extra 1d6 psychic damage to those targets with successful spell and weapon attacks.</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Channel Divinity: Bring Wrath" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_CD_BRING_WRATH">
 		<description>
-			<p></p>
+			<p>Starting at 2nd level, you can use your Channel Divinity to punish your foes with the vengeance burning within you.</p>
+			<p class="indent">As an action, you present your holy symbol and create one of the following effects of your choice:</p>
+			<p class="indent">Bring Down the Wrath. You choose a number of creatures up to your Wisdom modifier (minimum of one creature) within 30 feet of you. A chosen creature must make a Constitution saving throw. On a failed save, it takes 1d6 force damage and suffers one level of exhaustion. On a successful save, the damage is halved and the target is not exhausted.</p>
+			<p class="indent">If you target a creature that is on your grudge list, it has disadvantage on its saving throw.</p>
+			<p class="indent">Open the Way of Vengeance. You choose a number of creatures up to your Wisdom modifier (minimum of one creature) within 30 feet of you. A chosen creature must make a Wisdom saving throw. On a failed save, it takes 1d6 psychic damage and is frightened for 1 minute. On a successful save, the damage is halved and the target is not frightened.</p>
+			<p class="indent">An affected target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful one.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Bring Wrath">
+			<description>As an action, you present your holy symbol and create one of the following effects of your choice:
+			Bring Down the Wrath. You choose up to {{wisdom:modifier}} creatures within 30 feet of you. A chosen creature must make a Constitution saving throw. On a failed save, it takes 1d6 force damage and suffers one level of exhaustion. On a successful save, the damage is halved and the target is not exhausted. If you target a creature that is on your grudge list, it has disadvantage on its saving throw.
+			Open the Way of Vengeance. You choose up to {{wisdom:modifier}} creatures within 30 feet of you. A chosen creature must make a Wisdom saving throw. On a failed save, it takes 1d6 psychic damage and is frightened for 1 minute. On a successful save, the damage is halved and the target is not frightened. An affected target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful one.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Vengeful Reposte" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_VENGEFUL_REPOSTE">
 		<description>
-			<p></p>
+			<p>Starting at 6th level, you can exact revenge upon your foes with your attacks. Whenever a creature deals damage to you, you can choose to deal maximum damage to that creature on a successful weapon attack until the end of your next turn.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses after you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="{{wisdom:modifier}}/Long Rest">
+			<description>Whenever a creature deals damage to you, you can choose to deal maximum damage to that creature on a successful weapon attack until the end of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_______">
+	<element name="Divine Strike" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_DIVINE_STRIKE">
 		<description>
-			<p></p>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with vengeance. Once on each of your turns, when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 psychic damage. When you reach 14th level, the extra damage increases to 2d8.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>Once on each of your turns, when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 psychic damage.</description>
+			<description level="14">Once on each of your turns, when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 psychic damage.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID________">
+	<element name="Indestructible Wrath" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VENGEANCE_INDESTRUCTIBLE_WRATH">
 		<description>
-			<p></p>
+			<p>Starting at 17th level, no one can stand on the path of your vengeance.</p>
+			<p class="indent">When you drop to 0 hit points, you can choose to not be knocked unconscious. When you do so, you enter a state of vengeful frenzy, and gain the following benefits for a number of rounds equal to your Wisdom modifier:</p>
+			<ul>
+				<li>You can neither be knocked unconscious nor regain hit points for the duration.</li>
+				<li>You just want to unleash the vengeful wrath of your deity upon your foes. Your successful spell and weapon attacks deal an extra 2d6 psychic damage. This damage increases to 4d6 if the target is on your grudge list.</li>
+				<li>Your speed increases by 10 feet. When a target that is on your grudge list is within 300 feet of you, your speed increases by 20 feet.</li>
+			</ul>
+			<p class="indent">At the end of the duration, you fall unconscious and start to make death saving throws normally.</p>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>When you drop to 0 hit points, you can choose to not be knocked unconscious. When you do so, you enter a state of vengeful frenzy, and gain the following benefits for {{wisdom:modifier}} rounds:
+			You can neither be knocked unconscious nor regain hit points for the duration.
+			Your successful spell and weapon attacks deal an extra 2d6 psychic damage. This damage increases to 4d6 if the target is on your grudge list.
+			Your speed increases by 10 feet. When a target that is on your grudge list is within 300 feet of you, your speed increases by 20 feet.
+			At the end of the duration, you fall unconscious and start to make death saving throws normally.</description>
 		</sheet>
 	</element>
 </elements>

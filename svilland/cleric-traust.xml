@@ -11,105 +11,125 @@
 	<element name="Traust Domain" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_CLERIC_TRAUST">
                 <supports>Divine Domain</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
-			<div element="ID_______" />
-			<div element="ID________" />
+			<p class="flavor">The Protection Domain</p>
+			<p>Traust domain focuses on the protection of the devoted from offenders. The Gods and Goddesses grant protection so that their believers survive the challenges of the realm, and so they continue to pass on their holy word.</p>
+			<p class="indent">Tyr has this domain because he guides and protects his followers in the neverending battle against injustice. Freyja has this domain to protect her followers and let her devotees protect the weak and sick in her name.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_SPELLS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_BONUS_PROFICIENCY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_PRAYER_OF_PROTECTION" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_CD_SHIELD_OF_MERCY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_WALLS_OF_ASGARD" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_CD_SHIELD_OF_SAFEKEEPING" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_ORISON_OF_PROTECTION" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="2" />
-			<grant type="Archetype Feature" id="ID______" level="6" />
-			<grant type="Archetype Feature" id="ID_______" level="8" />
-			<grant type="Archetype Feature" id="ID________" level="17" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_BONUS_PROFICIENCY" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_PRAYER_OF_PROTECTION" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_CD_SHIELD_OF_MERCY" level="2" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_WALLS_OF_ASGARD" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_CD_SHIELD_OF_SAFEKEEPING" level="8" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_ORISON_OF_PROTECTION" level="17" />
 		</rules>
 	</element>
-	<element name="name Domain Spells" type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Traust Domain Spells" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_SPELLS">
 		<description>
 			<p>At each indicated gothi level, you add the listed spells to your spells prepared. These spells are always prepared and do not count against the number of spells you can prepare.</p>
             <table>
                 <thead>
                     <tr><td>Gothi Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>spells</td></tr>
-                <tr><td>3rd</td><td>spells</td></tr>
-                <tr><td>5th</td><td>spells</td></tr>
-                <tr><td>7th</td><td>spells</td></tr>
-                <tr><td>9th</td><td>spells</td></tr>
+                <tr><td>1st</td><td>sheild, shield of faith</td></tr>
+                <tr><td>3rd</td><td>misty step, warding bond</td></tr>
+                <tr><td>5th</td><td>counterspell, slow</td></tr>
+                <tr><td>7th</td><td>guardian's slap, stoneskin</td></tr>
+                <tr><td>9th</td><td>antilife shell, wall of force</td></tr>
             </table>
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
         <rules>
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" SPELLCASTING="CLERIC" PREPARED="TRUE" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_SHIELD" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_SHIELD_OF_FAITH" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_MISTY_STEP" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_WARDING_BOND" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_COUNTERSPELL" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_SLOW" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_DRS_SVILLAND_SPELL_GUARDIANS_SLAP" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_STONESKIN" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_ANTILIFE_SHELL" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_WALL_OF_FORCE" SPELLCASTING="CLERIC" PREPARED="TRUE" />
         </rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_BONUS_PROFICIENCY">
 		<description>
-			<p></p>
+			<p>When you choose the Traust domain at 1st level, you gain proficiency with heavy armor.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Prayer of Protection" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_PRAYER_OF_PROTECTION">
 		<description>
-			<p></p>
+			<p>Also starting at 1st level, when you cast a spell of 1st level or higher from the school of abjuration, or a domain spell, the target of the spell gains a +1 bonus to AC and resistance against a type of damage you choose except psychic or radiant.</p>
+			<p class="indent">This effect lasts for 1 minute and a target can benefit from this feature only once at a time.</p>
+			<p class="indent">Once you use this feature, you must finish a short or long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Short Rest">
+			<description>When you cast a spell of 1st level or higher from the school of abjuration, or a domain spell, the target of the spell gains a +1 bonus to AC and resistance against a type of damage you choose except psychic or radiant.
+			This effect lasts for 1 minute and a target can benefit from this feature only once at a time.</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Channel Divinity: Shield of Mercy" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_CD_SHIELD_OF_MERCY">
 		<description>
-			<p></p>
+			<p>Starting at 2nd level, you can use your Channel Divinity to create a protective shield.</p>
+			<p class="indent">As an action, present your holy symbol and invoke a blissful protective shield granted by your deity. You can set the shield around yourself or a target creature within 30 feet of you.</p>
+			<p class="indent">A creature that is protected by this shield can’t have disadvantage on ability checks, attack rolls, or saving throws for 1 minute.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Shield of Mercy">
+			<description>As an action, present your holy symbol and invoke a blissful protective shield granted by your deity. You can set the shield around yourself or a target creature within 30 feet of you.
+			A creature that is protected by this shield can’t have disadvantage on ability checks, attack rolls, or saving throws for 1 minute.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Walls of Asgard" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_WALLS_OF_ASGARD">
 		<description>
-			<p></p>
+			<p>Starting at 6th level, as an action, you create a wall of radiant energy centered within 30 feet of yourself. It is 10-foot wide, 10-foot high, and 1-foot thick.</p>
+			<p class="indent">Hostile creatures within 5 feet of the wall during the turn it is created must succeed on a Wisdom saving throw or take 2d6 radiant damage. Hostile creatures that touch the wall also take 2d6 radiant damage.</p>
+			<p class="indent">Additionally, any harmful or undesirable spell of 5th level or lower that passes through the wall and that would normally affect you or your allies dissipates. The wall remains intact for a number of rounds equal to your Wisdom modifier.</p>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you create a wall of radiant energy centered within 30 feet of yourself. It is 10-foot wide, 10-foot high, and 1-foot thick.
+			Hostile creatures within 5 feet of the wall during the turn it is created must succeed on a Wisdom saving throw or take 2d6 radiant damage. Hostile creatures that touch the wall also take 2d6 radiant damage.
+			Additionally, any harmful or undesirable spell of 5th level or lower that passes through the wall and that would normally affect you or your allies dissipates. The wall remains intact for a {{wisdom:modifier}} rounds.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_______">
+	<element name="Channel Divinity: Shield of Safekeeping" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_CD_SHIELD_OF_SAFEKEEPING">
 		<description>
-			<p></p>
+			<p>Starting at 8th level, you can use your Channel Divinity to create a shield that helps a creature evade harm from magical attacks.</p>
+			<p class="indent">As an action, you present your holy symbol and point it at yourself or a target creature within 30 feet of you. A shield made of soft, changing colors of the rainbow forms around the target. If a creature protected by this shield makes a successful saving throw against a spell that deals damage to an area, it takes no damage. If it fails, it takes only half damage.</p>
+			<p class="indent">The shield remains intact for 1 minute or until a saving throw is attempted. In that case, the shield dissipates after the saving throw.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Shield of Safekeeping">
+			<description>As an action, you present your holy symbol and point it at yourself or a target creature within 30 feet of you. A shield made of soft, changing colors of the rainbow forms around the target. If a creature protected by this shield makes a successful saving throw against a spell that deals damage to an area, it takes no damage. If it fails, it takes only half damage.
+			The shield remains intact for 1 minute or until a saving throw is attempted. In that case, the shield dissipates after the saving throw.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID________">
+	<element name="Orison of Protection" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_TRAUST_ORISON_OF_PROTECTION">
 		<description>
-			<p></p>
+			<p>Starting at 17th level, you can apply the effect of Prayer of Protection to the creature you target with your Channel Divinity.</p>
+			<p class="indent">When you use Traust domain’s Channel Divinity feature of any kind, you can target a number of creatures up to your Wisdom modifier (minimum of once).</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>You can apply the effect of Prayer of Protection to the creature you target with your Channel Divinity.
+			When you use Traust domain’s Channel Divinity feature of any kind, you can target up to {{wisdom:modifier}} creatures.</description>
 		</sheet>
 	</element>
 </elements>

@@ -39,6 +39,9 @@
 		<file name="cleric-run.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/cleric-run.xml" />
 		<file name="cleric-sacrifice.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/cleric-sacrifice.xml" />
 		<file name="cleric-smidr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/cleric-smidr.xml" />
+		<file name="cleric-sjor.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/cleric-sjor.xml" />
+		<file name="cleric-traust.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/cleric-traust.xml" />
+		<file name="cleric-vengeance.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/cleric-vengeance.xml" />
 		
 
 		<!-- Spells -->
