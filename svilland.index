@@ -42,7 +42,7 @@
 		<file name="cleric-sjor.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/cleric-sjor.xml" />
 		<file name="cleric-traust.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/cleric-traust.xml" />
 		<file name="cleric-vengeance.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/cleric-vengeance.xml" />
-		
+		<file name="cleric-virtue.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/cleric-virtue.xml" />
 
 		<!-- Spells -->
 		<file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/spells.xml"/>

@@ -11,105 +11,123 @@
 	<element name="Virtue Domain" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_CLERIC_VIRTUE">
         <supports>Divine Domain</supports>
 		<description>
-			<p></p>
+			<p>In Svilland, evil lurks around every corner. Most Svillandersare too preoccupied to see it coming before it is too late. This is not true for those who follow the Virtue domain. Gothis of this domain are champions who stand between the innocent and the evildoer. They guard certain places in the name of their deities, wander the realm to find new infestations of evil and to bring them to their knees. Their ways may seem harsh, but they are prepared to do whatever it takes to banish the evil and the wicked from the realm.</p>
 			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
-			<div element="ID_______" />
-			<div element="ID________" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_SPELLS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_BONUS_PROFICIENCY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_BANE_OF_WRONGDOER" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_CD_VANQUISH_EVIL" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_RADIANCE_OF_GOOD" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_VIRTUOUS_STRIKES" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_RISE_OF_THE_GOOD_HEARTED" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="2" />
-			<grant type="Archetype Feature" id="ID______" level="6" />
-			<grant type="Archetype Feature" id="ID_______" level="8" />
-			<grant type="Archetype Feature" id="ID________" level="17" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_BONUS_PROFICIENCY" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_BANE_OF_WRONGDOER" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_CD_VANQUISH_EVIL" level="2" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_RADIANCE_OF_GOOD" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_VIRTUOUS_STRIKES" level="8" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_RISE_OF_THE_GOOD_HEARTED" level="17" />
 		</rules>
 	</element>
-	<element name="name Domain Spells" type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Virtue Domain Spells" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_SPELLS">
 		<description>
 			<p>At each indicated gothi level, you add the listed spells to your spells prepared. These spells are always prepared and do not count against the number of spells you can prepare.</p>
             <table>
                 <thead>
                     <tr><td>Gothi Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>spells</td></tr>
-                <tr><td>3rd</td><td>spells</td></tr>
-                <tr><td>5th</td><td>spells</td></tr>
-                <tr><td>7th</td><td>spells</td></tr>
-                <tr><td>9th</td><td>spells</td></tr>
+                <tr><td>1st</td><td>shield, virtue's grasp</td></tr>
+                <tr><td>3rd</td><td>see invisibility, branding smite</td></tr>
+                <tr><td>5th</td><td>blinding radiance, misty step</td></tr>
+                <tr><td>7th</td><td>overwhelming smite, under the wings of valkyrie</td></tr>
+                <tr><td>9th</td><td>devitalizing smite, overwhelming virtue</td></tr>
             </table>
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
         <rules>
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" SPELLCASTING="CLERIC" PREPARED="TRUE" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_SHIELD" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_DRS_SVILLAND_SPELL_VIRTUES_GRASP" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_SEE_INVISIBILITY" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_BRANDING_SMITE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_DRS_SVILLAND_SPELL_BLINDING_RADIANCE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_MISTY_STEP" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_DRS_SVILLAND_SPELL_OVERWHELMING_SMITE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_DRS_SVILLAND_SPELL_UNDER_THE_WINGS_OF_VALKYRIE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_DRS_SVILLAND_SPELL_DEVITALIZING_SMITE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_DRS_SVILLAND_SPELL_OVERWHELMING_VIRTUE" SPELLCASTING="Cleric" PREPARED="true" />
         </rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_BONUS_PROFICIENCY">
 		<description>
-			<p></p>
+			<p>When you choose the Virtue domain at 1st level, you gain proficiency with heavy armor.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Bane of Wrongdoer" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_BANE_OF_WRONGDOER">
 		<description>
-			<p></p>
+			<p>Starting at 1st level, your will to defeat evil is reflected in your strikes. Your weapon attacks deal an extra radiant damage equal to your Wisdom modifier to evil-aligned creatures.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>Your weapon attacks deal an extra {{wisdom:modifier}} radiant damage to evil-aligned creatures.</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Channel Divinity: Vanquish Evil" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_CD_VANQUISH_EVIL">
 		<description>
-			<p></p>
+			<p>Starting at 2nd level, you can use your Channel Divinity to wreak havoc upon creatures with wicked hearts. As an action, you present your holy symbol, and up to three hostile creatures of your choice within 30 feet of you must succeed on a Charisma saving throw or take 1d8 radiant damage and be frightened until the end of their next turn.</p>
+			<p class="indent">If an affected creature’s alignment is evil, it has disadvantage on the saving throw. If it fails the saving throw, it takes an extra 1d4 radiant damage and is stunned until the end of its next turn instead of being frightened.</p>
+			<p class="indent">The amount of radiant damage you inflict with the Vanquish Evil feature increases to 2d8 at 6th level, 3d8 at 10th level and 4d8 at 15th level.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Vanquish Evil">
+			<description>As an action, you present your holy symbol, and up to three hostile creatures of your choice within 30 feet of you must succeed on a Charisma saving throw or take 1d8 radiant damage and be frightened until the end of their next turn.
+			If an affected creature’s alignment is evil, it has disadvantage on the saving throw. If it fails the saving throw, it takes an extra 1d4 radiant damage and is stunned until the end of its next turn instead of being frightened.</description>
+			<description level="6">As an action, you present your holy symbol, and up to three hostile creatures of your choice within 30 feet of you must succeed on a Charisma saving throw or take 2d8 radiant damage and be frightened until the end of their next turn.
+			If an affected creature’s alignment is evil, it has disadvantage on the saving throw. If it fails the saving throw, it takes an extra 1d4 radiant damage and is stunned until the end of its next turn instead of being frightened.</description>
+			<description level="10">As an action, you present your holy symbol, and up to three hostile creatures of your choice within 30 feet of you must succeed on a Charisma saving throw or take 3d8 radiant damage and be frightened until the end of their next turn.
+			If an affected creature’s alignment is evil, it has disadvantage on the saving throw. If it fails the saving throw, it takes an extra 1d4 radiant damage and is stunned until the end of its next turn instead of being frightened.</description>
+			<description level="15">As an action, you present your holy symbol, and up to three hostile creatures of your choice within 30 feet of you must succeed on a Charisma saving throw or take 4d8 radiant damage and be frightened until the end of their next turn.
+			If an affected creature’s alignment is evil, it has disadvantage on the saving throw. If it fails the saving throw, it takes an extra 1d4 radiant damage and is stunned until the end of its next turn instead of being frightened.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Radiance of Good" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_RADIANCE_OF_GOOD">
 		<description>
-			<p></p>
+			<p>Starting at 6th level, you become a symbol of hope for your allies and a symbol of doom for your enemies. As an action, you chant a prayer of goodness. All allies within 30 feet of you gain a +1d4 bonus and all enemies within 30 feet of you take a -1d4 penalty on ability checks, attack rolls, and saving throws for 1 minute.</p>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you chant a prayer of goodness. All allies within 30 feet of you gain a +1d4 bonus and all enemies within 30 feet of you take a -1d4 penalty on ability checks, attack rolls, and saving throws for 1 minute.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_______">
+	<element name="Virtuous Strikes" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_VIRTUOUS_STRIKES">
 		<description>
-			<p></p>
+			<p>At 8th level, you gain the ability to infuse your weapon attacks with divine energy. Once per turn, when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage. If the creature’s alignment is evil, the radiant damage increases to 1d10.</p>
+			<p class="indent">At 14th level, the extra damage increases to 2d8 against non-evil creatures and 2d10 against evil creatures.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Turn">
+			<description>Once per turn, when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage. If the creature’s alignment is evil, the radiant damage increases to 1d10.</description>
+			<description level="14">Once per turn, when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 radiant damage. If the creature’s alignment is evil, the radiant damage increases to 2d10.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID________">
+	<element name="Rise of the Good-Hearted" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_VIRTUE_RISE_OF_THE_GOOD_HEARTED">
 		<description>
-			<p></p>
+			<p>At 17th level, you gain the ability to bring out the pure goodness in your and your friends’ hearts. As an action, you chant a prayer to your deity and choose a number of your allies within 30 feet of you equal to your Wisdom modifier (minimum one ally). You and the chosen allies gain resistance to necrotic and psychic damage.</p>
+			<p class="indent">Also, for the duration, your allies have a +1d6 bonus to their saving throws against spells or other magical effects brought forth by evil-aligned creatures.</p>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you chant a prayer to your deity and choose a number of your allies within 30 feet of you equal to your Wisdom modifier (minimum one ally). You and the chosen allies gain resistance to necrotic and psychic damage.
+			Also, for the duration, your allies have a +1d6 bonus to their saving throws against spells or other magical effects brought forth by evil-aligned creatures.</description>
 		</sheet>
 	</element>
 </elements>
