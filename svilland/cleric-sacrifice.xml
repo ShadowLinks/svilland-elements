@@ -11,105 +11,156 @@
 	<element name="Sacrifice Domain" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_CLERIC_SACRIFICE">
                 <supports>Divine Domain</supports>
 		<description>
-			<p></p>
+			<p>Most of the cultures in Svilland do not hesitate to offer sacrifices to their deities for almost every errand, spraying blood over fields for good harvest, offering meat to Freyja for a healthy child and so on. However, the Sacrifice domain focuses on sacrifices that are offered in the direst of situations; situations of combat and of life and death. Those devoted to this domain gain powers from their deities in return for sacrifices.</p>
 			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
-			<div element="ID_______" />
-			<div element="ID________" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_SPELLS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_BONUS_PROFICIENCY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_OFFER_SACRIFICE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_CD_IN_THE_NAME_OF_YOUR_DEITY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_MARK_OF_SACRIFICE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_SACRIFICIAL_GROUND" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_BLOOD_EAGLE" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="2" />
-			<grant type="Archetype Feature" id="ID______" level="6" />
-			<grant type="Archetype Feature" id="ID_______" level="8" />
-			<grant type="Archetype Feature" id="ID________" level="17" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_BONUS_PROFICIENCY" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_OFFER_SACRIFICE" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_CD_IN_THE_NAME_OF_YOUR_DEITY" level="2" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_MARK_OF_SACRIFICE" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_SACRIFICIAL_GROUND" level="8" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_BLOOD_EAGLE" level="17" />
 		</rules>
 	</element>
-	<element name="name Domain Spells" type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Sacrifice Domain Spells" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_SPELLS">
 		<description>
 			<p>At each indicated gothi level, you add the listed spells to your spells prepared. These spells are always prepared and do not count against the number of spells you can prepare.</p>
             <table>
                 <thead>
                     <tr><td>Gothi Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>spells</td></tr>
-                <tr><td>3rd</td><td>spells</td></tr>
-                <tr><td>5th</td><td>spells</td></tr>
-                <tr><td>7th</td><td>spells</td></tr>
-                <tr><td>9th</td><td>spells</td></tr>
+                <tr><td>1st</td><td>alarm, shield</td></tr>
+                <tr><td>3rd</td><td>suggestion, blur</td></tr>
+                <tr><td>5th</td><td>haste, tongues</td></tr>
+                <tr><td>7th</td><td>locate creature, boon of sacrifice</td></tr>
+                <tr><td>9th</td><td>deprivation of sleep, dominate person</td></tr>
             </table>
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
         <rules>
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" SPELLCASTING="CLERIC" PREPARED="TRUE" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_ALARM" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_SHIELD" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_SUGGESTION" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_BLUR" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_HASTE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_TONGUES" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_LOCATE_CREATURE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_DRS_SVILLAND_SPELL_BOON_OF_SACRIFICE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_DRS_SVILLAND_SPELL_DEPRIVATION_OF_SLEEP" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_DOMINATE_PERSON" SPELLCASTING="CLERIC" PREPARED="TRUE" />
         </rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_BONUS_PROFICIENCY">
 		<description>
-			<p></p>
+			<p>When you choose the Sacrifice domain at 1st level, you gain proficiency with heavy armor.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Offer Sacrifice" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_OFFER_SACRIFICE">
 		<description>
-			<p></p>
-		</description>
+			<p>Starting at 1st level, you gain the ability to offer sacrifices to your deity in exchange for gifts of power.</p>
+			<p class="indent">Whenever a creature is slain by you or by a follower of your deity within 30 feet of you, you can dedicate the kill to your deity and gain gjof (gift) points that you can use to gain rewards directly from your deity.</p>
+			<p class="indent">You gain gjof points according to the challenge rating of the slain creature. The number of gjof points gained from a creature is equal to its challenge rating. Creatures with challenge ratings of lower than 1 do not grant any gjof points. You also do not gain any gjof points from a creature whose challenge rating is 4 lower than your HD.</p>
+			<p class="indent">When you gain a gjof point, you can spend it until you finish a long rest. When you finish a long rest, the gjof points you have become 0. Also, the maximum number of gjof points you can have at a time is equal to five times your proficiency bonus.</p>
+			<p class="indent">You can gain one of the following benefits by spending gjof points;</p>
+			<ul>
+                <li>As a bonus action, you can spend a number of gjof points to regain hit points. The number of hit points regained is equal to your Wisdom modifier multiplied by the number of gjof points spent. The maximum number of gjof points that can be spent by this feature is equal to 10.</li>
+                <li>You can target a creature within 30 feet of you and spend a number of gjof points as a bonus action. The target regains a number of hit points equal to half of your Wisdom modifier multiplied by the number of gjof points spent. The maximum number of gjof points that can be spent by this feature is equal to 10.</li>
+                <li>By spending 5 gjof points as an action, you can deal an extra 1d6 radiant or necrotic damage (of your choice) with your spell and weapon attacks for 1 minute.</li>
+                <li>You can target a creature within 30 feet of you. By spending 10 gjof points as an action, you can make the target deal an extra 1d6 radiant or necrotic damage (one of your choice) with its spell and weapon attacks for 1 minute.</li>
+                <li>You can regain a spell slot of a specific slot level by spending a number of gjof points equal to 2 + spell slot level as an action.</li>
+            </ul>
+		</description> You gain gjof points according to the challenge rating of the slain creature. The number of gjof points gained from a creature is equal to its challenge rating. Creatures with challenge ratings of lower than 1 do not grant any gjof points. You also do not gain any gjof points from a creature whose challenge rating is 4 lower than your HD.
 		<sheet>
-			<description></description>
+			<description>Whenever a creature is slain by you or by a follower of your deity within 30 feet of you, you can dedicate the kill to your deity and gain gjof (gift) points. When you gain a gjof point, you can spend it until you finish a long rest. When you finish a long rest, the gjof points you have become 0. You max number of points is {{gift-points:max}}.
+			You can gain one of the following benefits by spending gjof points;
+			As a bonus action, you can spend a number of gjof points to regain hit points. The number of hit points regained is equal to {{wisdom:modifier}} multiplied by the number of gjof points spent. The maximum number of gjof points that can be spent by this feature is equal to 10.
+			You can target a creature within 30 feet of you and spend a number of gjof points as a bonus action. The target regains hp equal to {{wisdom:modifier:half}} multiplied by the number of gjof points spent. The maximum number of gjof points that can be spent by this feature is equal to 10.
+			By spending 5 gjof points as an action, you can deal an extra 1d6 radiant or necrotic damage (of your choice) with your spell and weapon attacks for 1 minute.
+			You can target a creature within 30 feet of you. By spending 10 gjof points as an action, you can make the target deal an extra 1d6 radiant or necrotic damage (one of your choice) with its spell and weapon attacks for 1 minute.
+			You can regain a spell slot of a specific slot level by spending a number of gjof points equal to 2 + spell slot level as an action.</description>
+		</sheet>
+		<rules>
+			<stat name="gift-points:max" value="proficiency" bonus="base" />
+			<stat name="gift-points:max" value="proficiency" />
+			<stat name="gift-points:max" value="proficiency" />
+			<stat name="gift-points:max" value="proficiency" />
+			<stat name="gift-points:max" value="proficiency" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: In the Name of your Deity" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_CD_IN_THE_NAME_OF_YOUR_DEITY">
+		<description>
+			<p>Starting at 2nd level, you can use your Channel Divinity to dedicate the attacks of your allies to your deity.</p>
+			<p class="indent">As an action, you present your holy symbol and say a prayer to your deity. Choose up to 5 allies within 30 feet of you. These allies deal an extra radiant or necrotic damage (of your choice) on one of their successful attacks each turn for 1 minute. The amount of extra damage is equal to your Wisdom modifier.</p>
+			<p class="indent">If a chosen ally is devoted to your deity, it deals twice your Wisdom modifier amount of extra damage</p>
+		</description>
+		<sheet usage="Channel Divinity" alt="In the Name of your Deity">
+			<description>As an action, you present your holy symbol and say a prayer to your deity. Choose up to 5 allies within 30 feet of you. These allies deal an extra {{wisdom:modifier}} radiant or necrotic damage (of your choice) on one of their successful attacks each turn for 1 minute.
+			If a chosen ally is devoted to your deity, it deals double the extra damage</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Mark of Sacrifice" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_MARK_OF_SACRIFICE">
 		<description>
-			<p></p>
+			<p>At 6th level, you gain the ability to mark and prepare a target for sacrifice.</p>
+			<p class="indent">As an action, you say a short prayer and point your hand to a creature within 60 feet of you. The target must make a Wisdom saving throw. On a failed save, it takes 2d10 radiant or necrotic damage (of your choice) and is marked for sacrifice for 1 minute. On a successful save, the damage is halved and the target is not marked.</p>
+			<p class="indent">A marked target has disadvantage on saving throws against your spells, and the death of a marked target within the duration grants you one additional gjof point.</p>
+			<p class="indent">Once you use this feature, you must finish a short or long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Short Rest">
+			<description>As an action, you say a short prayer and point your hand to a creature within 60 feet of you. The target must make a Wisdom saving throw. On a failed save, it takes 2d10 radiant or necrotic damage (of your choice) and is marked for sacrifice for 1 minute. On a successful save, the damage is halved and the target is not marked.
+			A marked target has disadvantage on saving throws against your spells, and the death of a marked target within the duration grants you one additional gjof point.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Sacrificial Ground" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_SACRIFICIAL_GROUND">
 		<description>
-			<p></p>
+			<p>Starting at 8th level, you can make a 100-foot radius sacred by performing a 1-minute-ritual. During the ritual, you spray blood on the ground while citing prayers. If the ritual is interrupted, you must start at the beginning to complete it. When the ritual ends, the area becomes a Sacrificial Ground and you gain the following benefits while in the area;</p>
+			<ul>
+                <li>Each time you gain a gjof point, you gain one more.</li>
+                <li>You can use the Mark of Sacrifice feature as a bonus action instead of an action.</li>
+                <li>While making a saving throw, you can spend 2 gjof points as a reaction to have advantage on the roll.</li>
+                <li>When a creature that you can see and that is in the area makes a saving throw, you can spend 3 gjof points as a reaction to bestow advantage or disadvantage on the roll.</li>
+            </ul>
+			<p class="indent">Sacrificial Ground lasts for one hour. Once you use this feature, you must finish a long rest or spend 6 gjof points to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>You can make a 100-foot radius sacred by performing a 1-minute-ritual. During the ritual, you spray blood on the ground while citing prayers. If the ritual is interrupted, you must start at the beginning to complete it. When the ritual ends, the area becomes a Sacrificial Ground which lasts for 1 hour and you gain the following benefits while in the area;
+			Each time you gain a gjof point, you gain one more.
+			You can use the Mark of Sacrifice feature as a bonus action instead of an action.
+			While making a saving throw, you can spend 2 gjof points as a reaction to have advantage on the roll.
+			When a creature that you can see and that is in the area makes a saving throw, you can spend 3 gjof points as a reaction to bestow advantage or disadvantage on the roll.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_______">
+	<element name="Blood Eagle" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SACRIFICE_BLOOD_EAGLE">
 		<description>
-			<p></p>
+			<p>At 17th level, you gain the ability to offer the greatest sacrifice of all to your deity, the Blood Eagle. It is the most deeply feared method of sacrifice in the realm. It leaves observers in awe.</p>
+			<p class="indent">As an action, you choose a creature within 60 feet of you. The target must succeed on a Constitution saving throw against your spell save DC or take 6d10 necrotic or radiant damage (one of your choice).</p>
+			<p class="indent">If this damage drops the target to 0 hit points, the target’s back is ruptured and its lungs spread over its shoulders, resembling an eagle with wings made of blood.</p>
+			<p class="indent">If this damage does not drop the target to 0 hit points, a terrible wound appears on its back and it has disadvantage on ability checks, attack rolls, and Constitution saving throws for a number of rounds equal to your Wisdom modifier.</p>
+			<p class="indent">Once you use this feature, you must finish a short or long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID________">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Short Rest">
+			<description>As an action, you choose a creature within 60 feet of you. The target must succeed on a Constitution saving throw against your spell save DC or take 6d10 necrotic or radiant damage (one of your choice).
+			If this damage drops the target to 0 hit points, the target’s back is ruptured and its lungs spread over its shoulders, resembling an eagle with wings made of blood.
+			If this damage does not drop the target to 0 hit points, a terrible wound appears on its back and it has disadvantage on ability checks, attack rolls, and Constitution saving throws for {{wisdom:modifier}} rounds.</description>
 		</sheet>
 	</element>
 </elements>
