@@ -11,105 +11,149 @@
 	<element name="Smidr Domain" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_CLERIC_SMIDR">
                 <supports>Divine Domain</supports>
 		<description>
-			<p></p>
+			<p class="flavor">The Smith Domain</p>
+			<p>The Smidr domain focuses on the civilization of Svilland that was born when the first hammer hit the first anvil. With it, the divine knowledge of the crafters was brought to the devoted, and this helped build the tools for a well-adjusted society. Those who follow the Smidr domain are prone to rule over magic items with their divine powers. They know more about and are more familiar with various treasures found in the realm compared to regular artisans.</p>
 			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
-			<div element="ID_______" />
-			<div element="ID________" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_SPELLS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_BONUS_PROFICIENCY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_SUPPRESS_THE_MAGICALLY_FORGED" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_CD_FORGES_BLESSING" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_DIVINE_CRAFTER" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_CD_TOOLS_OF_WAR" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_KNOWLEDGE_OF_THE_FORGE" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="2" />
-			<grant type="Archetype Feature" id="ID______" level="6" />
-			<grant type="Archetype Feature" id="ID_______" level="8" />
-			<grant type="Archetype Feature" id="ID________" level="17" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_BONUS_PROFICIENCY" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_SUPPRESS_THE_MAGICALLY_FORGED" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_CD_FORGES_BLESSING" level="2" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_DIVINE_CRAFTER" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_CD_TOOLS_OF_WAR" level="8" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_KNOWLEDGE_OF_THE_FORGE" level="17" />
 		</rules>
 	</element>
-	<element name="name Domain Spells" type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Smidr Domain Spells" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_SPELLS">
 		<description>
 			<p>At each indicated gothi level, you add the listed spells to your spells prepared. These spells are always prepared and do not count against the number of spells you can prepare.</p>
             <table>
                 <thead>
                     <tr><td>Gothi Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>spells</td></tr>
-                <tr><td>3rd</td><td>spells</td></tr>
-                <tr><td>5th</td><td>spells</td></tr>
-                <tr><td>7th</td><td>spells</td></tr>
-                <tr><td>9th</td><td>spells</td></tr>
+                <tr><td>1st</td><td>mage armor, identify</td></tr>
+                <tr><td>3rd</td><td>magic weapon, heat metal</td></tr>
+                <tr><td>5th</td><td>hand of forge, call lightning</td></tr>
+                <tr><td>7th</td><td>fabricate, stoneskin</td></tr>
+                <tr><td>9th</td><td>creation, wall of stone</td></tr>
             </table>
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
         <rules>
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" SPELLCASTING="CLERIC" PREPARED="TRUE" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_MAGE_ARMOR" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_IDENTIFY" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_MAGIC_WEAPON" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_HEAT_METAL" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_DRS_SVILLAND_SPELL_HAND_OF_FORGE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_CALL_LIGHTNING" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_FABRICATE" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_STONESKIN" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_CREATION" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_WALL_OF_STONE" SPELLCASTING="CLERIC" PREPARED="TRUE" />
         </rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_BONUS_PROFICIENCY">
 		<description>
-			<p></p>
+			<p>When you choose the Smidr domain at 1st level, you gain proficiency with smith’s tools, as well as with heavy armor or martial weapons (of your choice).</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+			<select type="Archetype Feature" name="Bonus Proficiency, Smidr Domain" supports="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_HEAVY|ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_MARTIAL" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Heavy Armor Proficiency" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_HEAVY">
 		<description>
 			<p></p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Martial Weapons Proficiency" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_MARTIAL">
 		<description>
 			<p></p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Suppress the Magically Forged" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_SUPPRESS_THE_MAGICALLY_FORGED">
 		<description>
-			<p></p>
+			<p>Starting at 1st level, you gain the ability to block the power of a magic item. As an action, you can target a magic item you can see within 30 feet of you, and suppress its magical properties for 1 minute. If it is held, worn, or wielded by a creature, the creature must succeed on a Charisma saving throw to resist the effect. If you try to suppress the properties of a sentient magic item, you must also make a successful spell attack against its spell save DC (if it has) to suppress its features.</p>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you can target a magic item you can see within 30 feet of you, and suppress its magical properties for 1 minute. If it is held, worn, or wielded by a creature, the creature must succeed on a Charisma saving throw to resist the effect. If you try to suppress the properties of a sentient magic item, you must also make a successful spell attack against its spell save DC (if it has) to suppress its features.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_______">
+	<element name="Channel Divinity: Forge's Blessing" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_CD_FORGES_BLESSING">
 		<description>
-			<p></p>
+			<p>Starting at 2nd level, you can use your Channel Divinity to increase the power of a magic item you have. As an action, you choose one of your magical items that you are holding, wielding, or wearing, and for 1 minute, you have a +1 more bonus to AC if it is an armor, a +1 more bonus to attack and damage rolls if it is a weapon, and it regains 1 charge if it is an item that has charges. If the item is an armor or a weapon and has charges at the same time, you choose which effect takes place.</p>
+			<p class="indent">At 12th level, the bonuses and charges increase by 1.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Forge's Blessing">
+			<description>You can use your Channel Divinity to increase the power of a magic item you have. As an action, you choose one of your magical items that you are holding, wielding, or wearing, and for 1 minute, you have a +1 more bonus to AC if it is an armor, a +1 more bonus to attack and damage rolls if it is a weapon, and it regains 1 charge if it is an item that has charges. If the item is an armor or a weapon and has charges at the same time, you choose which effect takes place.</description>
+			<description level="12">You can use your Channel Divinity to increase the power of a magic item you have. As an action, you choose one of your magical items that you are holding, wielding, or wearing, and for 1 minute, you have a +2 more bonus to AC if it is an armor, a +2 more bonus to attack and damage rolls if it is a weapon, and it regains 2 charges if it is an item that has charges. If the item is an armor or a weapon and has charges at the same time, you choose which effect takes place.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID________">
+	<element name="Divine Crafter" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_DIVINE_CRAFTER">
 		<description>
-			<p></p>
+			<p>Starting at 6th level, artisan’s tools are weightless for you, along with any crafting material that you can fit into your nonmagical bag.</p>
+			<p class="indent">Additionally, you can craft a copy of any magic item (except potions or poisons) after studying it for 1 hour. You need smith’s tools and a proper workplace to craft the item by using this feature. You can craft a copy of uncommon magic items at 6th level, rare magic items at 12th level, and very rare magic items at 17th level.</p>
+			<p class="indent">To craft a magic item in this way, you require material components that are at least worth the cost of the magic item you want to craft a copy of. By using this feature, you can craft an uncommon magic item in 1 hour, a rare magic item in 1 day and a very rare magic item in 1 week.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>Artisan’s tools are weightless for you, along with any crafting material that you can fit into your nonmagical bag.
+			Additionally, you can craft a copy of any magic item (except potions or poisons) after studying it for 1 hour. You need smith’s tools and a proper workplace to craft the item by using this feature. You can craft a copy of Uncommon magic items.
+			To craft a magic item in this way, you require material components that are at least worth the cost of the magic item you want to craft a copy of. By using this feature, you can craft an uncommon magic item in 1 hour.</description>
+			<description level="12">Artisan’s tools are weightless for you, along with any crafting material that you can fit into your nonmagical bag.
+			Additionally, you can craft a copy of any magic item (except potions or poisons) after studying it for 1 hour. You need smith’s tools and a proper workplace to craft the item by using this feature. You can craft a copy of Rare magic items.
+			To craft a magic item in this way, you require material components that are at least worth the cost of the magic item you want to craft a copy of. By using this feature, you can craft an uncommon magic item in 1 hour and a rare magic item in 1 day.</description>
+			<description level="17">Artisan’s tools are weightless for you, along with any crafting material that you can fit into your nonmagical bag.
+			Additionally, you can craft a copy of any magic item (except potions or poisons) after studying it for 1 hour. You need smith’s tools and a proper workplace to craft the item by using this feature. You can craft a copy of Very Rare magic items.
+			To craft a magic item in this way, you require material components that are at least worth the cost of the magic item you want to craft a copy of. By using this feature, you can craft an uncommon magic item in 1 hour, a rare magic item in 1 day and a very rare magic item in 1 week.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Tools of War" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_CD_TOOLS_OF_WAR">
+		<description>
+			<p>At 8th level, you gain the ability to summon the weapons of war that are used in the endless battles of Svilland.</p>
+			<p class="indent">As an action, you present your holy symbol and choose a point within 60 feet of you. Phantom weapons storm out of the earth and attack all creatures within 20 feet of that point. The creatures in the area must make a Dexterity saving throw, taking 8d4 piercing damage on a failed save, or half as much on a successful one. Also, the area becomes difficult terrain for 1 minute.</p>
+		</description>
+		<sheet usage="Channel Divinity" alt="Tools of War">
+			<description>As an action, you present your holy symbol and choose a point within 60 feet of you. Phantom weapons storm out of the earth and attack all creatures within 20 feet of that point. The creatures in the area must make a Dexterity saving throw, taking 8d4 piercing damage on a failed save, or half as much on a successful one. Also, the area becomes difficult terrain for 1 minute.</description>
+		</sheet>
+	</element>
+	<element name="Knowledge of the Forge" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_SMIDR_KNOWLEDGE_OF_THE_FORGE">
+		<description>
+			<p>Starting at 17th level, your knowledge of magic items grows even deeper. This knowledge lets you cast the identify spell at will.</p>
+			<p class="indent">You can also attune yourself to a magic item as an action, and you no longer need to study a magic item to craft a copy of it by using the Divine Crafter feature. Seeing the magic item becomes enough.</p>
+			<p class="indent">Once you use one of these benefits, you must finish a long rest to use this feature again.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast the identify spell at will.
+			You can also attune yourself to a magic item as an action, and you no longer need to study a magic item to craft a copy of it by using the Divine Crafter feature. Seeing the magic item becomes enough.</description>
 		</sheet>
 	</element>
 </elements>
