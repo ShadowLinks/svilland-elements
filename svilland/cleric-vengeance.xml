@@ -58,7 +58,7 @@
             <grant type="Spell" level="3" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" spellcasting="Cleric" prepared="true" />
             <grant type="Spell" level="5" id="ID_PHB_SPELL_HASTE" spellcasting="Cleric" prepared="true" />
             <grant type="Spell" level="5" id="ID_PHB_SPELL_NONDETECTION" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_PRIVATE_SANCTUM" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_MORDENKAINENS_PRIVATE_SANCTUM" spellcasting="Cleric" prepared="true" />
             <grant type="Spell" level="7" id="ID_PHB_SPELL_STONESKIN" spellcasting="Cleric" prepared="true" />
             <grant type="Spell" level="9" id="ID_PHB_SPELL_PASSWALL" spellcasting="Cleric" prepared="true" />
             <grant type="Spell" level="9" id="ID_PHB_SPELL_SCRYING" SPELLCASTING="CLERIC" PREPARED="TRUE" />
