@@ -30,7 +30,7 @@ Thank you to The-Multitud-e for starting the project I forked from.
 	- Tradition of Helord
 	- Tradition of Ofridr
 	- Tradition of Villr
-- Fighter Archetypes IN PROGRESS
+- Fighter Archetypes COMPLETE
 	- Rune Warrior
 	- Shieldman/Shieldmaiden
 	- Vikingr
@@ -95,7 +95,7 @@ Thank you to The-Multitud-e for starting the project I forked from.
 ### Items
 - Weapons COMPLETE
 - Armor COMPLETE
-- Magic Items/Armor/Weapons
+- Magic Items/Armor/Weapons IN PROGRESS
 
 
 
