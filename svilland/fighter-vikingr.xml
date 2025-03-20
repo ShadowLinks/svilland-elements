@@ -1,24 +1,36 @@
+<elements>
+    <info>
+        <name>Vikingr</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="fighter-vikingr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/fighter-vikingr.xml"/>
+        </update>
+    </info>
+	<element name="Vikingr" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FIGHTER_VIKINGR">
+        <supports>Martial Archetype</supports>
 		<description>
 			<p></p>
 			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_A_LIFE_ON_THE_SEAS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_LONGSHIP_COMBAT" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_BATTLE_SHOUTS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_BLOOD_FEUD" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_SAVAGERY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_WARMONGER" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_A_LIFE_ON_THE_SEAS" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_LONGSHIP_COMBAT" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_BATTLE_SHOUTS" level="7" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_BLOOD_FEUD" level="10" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_SAVAGERY" level="15" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_WARMONGER" level="18" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="name" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_A_LIFE_ON_THE_SEAS">
 		<description>
 			<p></p>
 		</description>
@@ -26,7 +38,7 @@
 			<description></description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="name" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_LONGSHIP_COMBAT">
 		<description>
 			<p></p>
 		</description>
@@ -34,7 +46,7 @@
 			<description></description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+	<element name="name" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_BATTLE_SHOUTS">
 		<description>
 			<p></p>
 		</description>
@@ -42,7 +54,7 @@
 			<description></description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
+	<element name="name" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_BLOOD_FEUD">
 		<description>
 			<p></p>
 		</description>
@@ -50,7 +62,15 @@
 			<description></description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
+	<element name="name" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_SAVAGERY">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+	<element name="name" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_WARMONGER">
 		<description>
 			<p></p>
 		</description>
