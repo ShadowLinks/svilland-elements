@@ -11,105 +11,127 @@
 	<element name="Wicked Domain" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_CLERIC_WICKED">
         <supports>Divine Domain</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
-			<div element="ID_______" />
-			<div element="ID________" />
+			<p>Some deities scheme to bring about the end of Svilland. Among their many minions, they search for those who are worthy of wielding their power.</p>
+			<p class="indent">The Wicked domain focuses on everything that is wicked in the eyes of Odin and his pantheon and in the eyes of the realm. Those devoted to this domain spread ill thought wherever they go.</p>
+			<p class="indent">Just as their deities, they scheme within the shadows or act as tyrants, holding dominion over the weak. They love to see those in power and those who are blessed by The Allfather go down and suffer.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_SPELLS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_BONUS_PROFICIENCY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_WICKED_STRIKE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_CD_TREACHERY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_PERSISTENT_EVIL" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_DIVINE_SCHEME" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_CD_DIVINE_SCHEME" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="2" />
-			<grant type="Archetype Feature" id="ID______" level="6" />
-			<grant type="Archetype Feature" id="ID_______" level="8" />
-			<grant type="Archetype Feature" id="ID________" level="17" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_BONUS_PROFICIENCY" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_WICKED_STRIKE" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_CD_TREACHERY" level="2" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_PERSISTENT_EVIL" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_DIVINE_SCHEME" level="8" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_CD_DIVINE_SCHEME" level="17" />
 		</rules>
 	</element>
-	<element name="name Domain Spells" type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Wicked Domain Spells" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_SPELLS">
 		<description>
 			<p>At each indicated gothi level, you add the listed spells to your spells prepared. These spells are always prepared and do not count against the number of spells you can prepare.</p>
             <table>
                 <thead>
                     <tr><td>Gothi Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>1st</td><td>spells</td></tr>
-                <tr><td>3rd</td><td>spells</td></tr>
-                <tr><td>5th</td><td>spells</td></tr>
-                <tr><td>7th</td><td>spells</td></tr>
-                <tr><td>9th</td><td>spells</td></tr>
+                <tr><td>1st</td><td>charm person, unseen servant</td></tr>
+                <tr><td>3rd</td><td>weeping spirit, ray of enfeeblement</td></tr>
+                <tr><td>5th</td><td>vampiric touch, fear</td></tr>
+                <tr><td>7th</td><td>blight, compulsion</td></tr>
+                <tr><td>9th</td><td>contagion, dominate person</td></tr>
             </table>
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
         <rules>
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="1" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="3" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="5" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="7" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" spellcasting="Cleric" prepared="true" />
-            <grant type="Spell" level="9" id="ID_PHB_SPELL_" SPELLCASTING="CLERIC" PREPARED="TRUE" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_CHARM_PERSON" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="1" id="ID_PHB_SPELL_UNSEEN_SERVANT" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_DRS_SVILLAND_SPELL_WEEPING_SPIRIT" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_VAMPIRIC_TOUCH" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="5" id="ID_PHB_SPELL_FEAR" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_BLIGHT" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="7" id="ID_PHB_SPELL_COMPULSION" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_CONTAGION" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" level="9" id="ID_PHB_SPELL_DOMINATE_PERSON" SPELLCASTING="CLERIC" PREPARED="TRUE" />
         </rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Bonus Proficiency" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_BONUS_PROFICIENCY">
 		<description>
-			<p></p>
+			<p>When you choose the Wicked domain at 1st level, you gain proficiency with heavy armor and become proficient in the Deception skill.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Wicked Strike" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_WICKED_STRIKE">
 		<description>
-			<p></p>
+			<p>Also starting at 1st level, you gain the ability to empower your attacks with the might of wickedness. As a bonus action, you unleash your power and deal an extra 1d6 psychic damage on the next successful weapon attack you make within 1 minute. Additionally, the target must succeed on a Wisdom saving throw or be frightened until the end of its next turn.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain any expended uses once you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="{{wisdom:modifier}}/Long Rest" action="Bonus Action">
+			<description>As a bonus action, you unleash your power and deal an extra 1d6 psychic damage on the next successful weapon attack you make within 1 minute. Additionally, the target must succeed on a Wisdom saving throw or be frightened until the end of its next turn.</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Channel Divinity: Treachery" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_CD_TREACHERY">
 		<description>
-			<p></p>
+			<p>Starting at 2nd level, you can use your Channel Divinity to bring forth the maliciousness within creatures, and use it against them.</p>
+			<p class="indent"></p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Treachery">
+			<description>As an action, you present your holy symbol and emanate a foul light in a 30-foot radius. All hostile creatures that can see you and that are within 30 feet of you must succeed on a Wisdom saving throw or make a weapon attack against their nearest ally as a reaction. If there are no allies within a hostile creature’s reach or range, it is not affected by this feature.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Persistent Evil" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_PERSISTENT_EVIL">
 		<description>
-			<p></p>
+			<p>Starting at 6th level, wickedness begins to feed your will and endurance to survive. Whenever you cast a spell of 1st level or higher that deals damage, you can use a bonus action to draw life from your enemies and regain an amount of hit points equal to half of the damage you dealt with the spell.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet action="Bonus Action">
+			<description>Whenever you cast a spell of 1st level or higher that deals damage, you can use a bonus action to draw life from your enemies and regain an amount of hit points equal to half of the damage you dealt with the spell.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_______">
+	<element name="Divine Scheme" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_DIVINE_SCHEME">
 		<description>
-			<p></p>
+			<p>At 8th level, you become adept in using your divine powers to make ill-meaning plans against your foes and to make the weak-minded bend to your will. Your spell save DC and spell attack modifier increases by 1 for enchantment spells and for your domain spells.</p>
+			<p class="indent">Additionally, as a reaction, when you cast a spell or use a magical feature that targets a creature, you can corrupt the target and force it to make the saving throw against the spell with disadvantage. You can use this feature up to a number of times equal to your Wisdom modifier (minimum of once).</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>Your spell save DC and spell attack modifier increases by 1 for enchantment spells and for your domain spells.
+			Additionally, as a reaction, when you cast a spell or use a magical feature that targets a creature, you can corrupt the target and force it to make the saving throw against the spell with disadvantage. You can use this feature up to {{wisdom:modifier}} times.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID________">
+	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_WICKED_CD_DIVINE_SCHEME">
 		<description>
-			<p></p>
+			<p>At 17th level, you become a champion of evil. Your very presence on the battlefield means havoc for the so-called heroes. As an action,you present your holy symbol and all hostile creatures within 30 feet of you must succeed on a Wisdom saving throw or be affected by the condition determined in the table below for 1 minute:</p>
+			<table>
+				<thead>
+					<tr><td>d10</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>1</td><td>Paralyzed</td></tr>
+				<tr><td>2-4</td><td>Stunned</td></tr>
+				<tr><td>5-7</td><td>Restrained</td></tr>
+				<tr><td>8-9</td><td>Charmed</td></tr>
+				<tr><td>10</td><td>Frightened</td></tr>
+			</table>
+			<p class="indent">An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful one.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Divine Scheme">
+			<description>As an action,you present your holy symbol and all hostile creatures within 30 feet of you must succeed on a Wisdom saving throw or be affected by the condition determined in the table below for 1 minute:
+			1-Paralyze 2-4-Stunned 5-7-Restrained 8-9-Charmed 10-Frightened
+			An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful one.</description>
 		</sheet>
 	</element>
 </elements>
