@@ -1,61 +1,288 @@
+<elements>
+    <info>
+        <name>Rune Warrior</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="fighter-rune.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/fighter-rune.xml"/>
+        </update>
+    </info>
+	<element name="Rune Warrior" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FIGHTER_RUNE">
+        <supports>Martial Archetype</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<p>A rune warrior is a fighter who forms a bond with runes, and strengthens it day by day. Being one with the runes enables rune warriors to cast spells and to show extraordinary talents with weapons, and affects their fate in ways that can only be foreseen by the Gods and Goddesses.</p>
+			<p class="indent">These fighters are destined for great things. Although there are not many rune warriors, several of them are known to have played critical roles in Svilland’s history.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_RUNE_WARRIOR_RUNE_COMBATANT" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_RUNE_WARRIOR_RUNE_CASTER" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_RUNE_WARRIOR_RUNE_BONDED" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_RUNE_WARRIOR_ABOVE_ALL_ELSE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_RUNE_FATE_OF_THE_WEAPON" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_RUNE_BECOMING_THE_WEAPON" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_RUNE_WARRIOR_RUNE_COMBATANT" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_RUNE_WARRIOR_RUNE_CASTER" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_RUNE_WARRIOR_RUNE_BONDED" level="7" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_RUNE_WARRIOR_ABOVE_ALL_ELSE" level="10" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_RUNE_FATE_OF_THE_WEAPON" level="15" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_RUNE_BECOMING_THE_WEAPON" level="18" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="Rune Combatant" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_RUNE_WARRIOR_RUNE_COMBATANT">
 		<description>
-			<p></p>
+			<p>Your relationship with runes starts here. Although you know that you have a long road ahead of you to master runes and that you are only at the beginning, you can already feel the power they have bestowed upon you coursing through your veins.</p>
+			<p class="indent">Starting at 3rd level, you can inscribe a rune of your own creation on a weapon. This rune is specific to you. When someone who is proficient in the Arcana skill makes a successful DC 15 Intelligence (Arcana) check to examine it, it reveals properties pointing at you (like a letter of your name, a title that describes you, or any other piece of knowledge that the GM approves).</p>
+			<p class="indent">Leaving a rune on a weapon can be done in many ways; by drawing the rune with blood, by smithing the rune onto the weapon while forging it, by carving the rune on the weapon, or by finding another technique that ensures the rune’s presence on the weapon. Drawing a rune takes 2 hours and can be done during a short rest. When it is done, the weapon becomes a runic weapon. A rune warrior can only have one runic weapon at a time. When a second one is made, the first one loses its runic weapon properties.</p>
+			<p class="indent">When you choose a weapon to be your runic weapon, a part of your soul is bound to it. As a result, runic weapons deal an extra 1d6 force damage. This damage increases to 1d8 at 7th, 2d6 at 10th, 2d8 at 15th and 2d10 at 18th level.</p>
+		</description>
+		<sheet>
+			<description>You can inscribe a rune of your own creation on a weapon. This rune is specific to you. When someone who is proficient in the Arcana skill makes a successful DC 15 Intelligence (Arcana) check to examine it, it reveals properties pointing at you (like a letter of your name, a title that describes you, or any other piece of knowledge that the GM approves).
+			Drawing a rune takes 2 hours and can be done during a short rest. When it is done, the weapon becomes a runic weapon. A rune warrior can only have one runic weapon at a time. When a second one is made, the first one loses its runic weapon properties.
+			When you choose a weapon to be your runic weapon, a part of your soul is bound to it. As a result, runic weapons deal an extra 1d6 force damage.</description>
+			<description level="7">You can inscribe a rune of your own creation on a weapon. This rune is specific to you. When someone who is proficient in the Arcana skill makes a successful DC 15 Intelligence (Arcana) check to examine it, it reveals properties pointing at you (like a letter of your name, a title that describes you, or any other piece of knowledge that the GM approves).
+			Drawing a rune takes 2 hours and can be done during a short rest. When it is done, the weapon becomes a runic weapon. A rune warrior can only have one runic weapon at a time. When a second one is made, the first one loses its runic weapon properties.
+			When you choose a weapon to be your runic weapon, a part of your soul is bound to it. As a result, runic weapons deal an extra 1d8 force damage.</description>
+			<description level="10">You can inscribe a rune of your own creation on a weapon. This rune is specific to you. When someone who is proficient in the Arcana skill makes a successful DC 15 Intelligence (Arcana) check to examine it, it reveals properties pointing at you (like a letter of your name, a title that describes you, or any other piece of knowledge that the GM approves).
+			Drawing a rune takes 2 hours and can be done during a short rest. When it is done, the weapon becomes a runic weapon. A rune warrior can only have one runic weapon at a time. When a second one is made, the first one loses its runic weapon properties.
+			When you choose a weapon to be your runic weapon, a part of your soul is bound to it. As a result, runic weapons deal an extra 2d6 force damage.</description>
+			<description level="15">You can inscribe a rune of your own creation on a weapon. This rune is specific to you. When someone who is proficient in the Arcana skill makes a successful DC 15 Intelligence (Arcana) check to examine it, it reveals properties pointing at you (like a letter of your name, a title that describes you, or any other piece of knowledge that the GM approves).
+			Drawing a rune takes 2 hours and can be done during a short rest. When it is done, the weapon becomes a runic weapon. A rune warrior can only have one runic weapon at a time. When a second one is made, the first one loses its runic weapon properties.
+			When you choose a weapon to be your runic weapon, a part of your soul is bound to it. As a result, runic weapons deal an extra 2d8 force damage.</description>
+			<description level="18">You can inscribe a rune of your own creation on a weapon. This rune is specific to you. When someone who is proficient in the Arcana skill makes a successful DC 15 Intelligence (Arcana) check to examine it, it reveals properties pointing at you (like a letter of your name, a title that describes you, or any other piece of knowledge that the GM approves).
+			Drawing a rune takes 2 hours and can be done during a short rest. When it is done, the weapon becomes a runic weapon. A rune warrior can only have one runic weapon at a time. When a second one is made, the first one loses its runic weapon properties.
+			When you choose a weapon to be your runic weapon, a part of your soul is bound to it. As a result, runic weapons deal an extra 2d10 force damage.</description>
+		</sheet>
+	</element>
+	<element name="Rune Caster" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_RUNE_WARRIOR_RUNE_CASTER">
+		<description>
+			<p>Starting at 3rd level, you are able to use runes to create magical effects. When you learn a new rune, you tattoo or scarify it on your body. This process takes 2 hours for each level of the rune.</p>
+			<p class="indent">Intelligence is your spellcasting ability.</p>
+			<center>
+                <p><strong>Spell save DC</strong>= 8 + your proficiency bonus + your Intelligence modifier </p>
+                <p><strong>Spell attack modifier</strong>= your proficiency bonus + your Intelligence modifier</p>
+            </center>
+			<h5 class="caption">RUNE SLOTS</h5>
+            <table class="class-features">
+                <thead>
+                    <tr>
+                        <td class="col-10">Fighter Level</td>
+                        <td class="col-10">Runes Known</td>
+                        <td>1st</td>
+                        <td>2nd</td>
+                        <td>3rd</td>
+                        <td>4th</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>3rd</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>4th</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>5th</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>6th</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>7th</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>8th</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>9th</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>10th</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>11th</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>12th</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>13th</td>
+                    <td>9</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>14th</td>
+                    <td>10</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>15th</td>
+                    <td>10</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>16th</td>
+                    <td>11</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>17th</td>
+                    <td>11</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>18th</td>
+                    <td>11</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>19th</td>
+                    <td>12</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>20th</td>
+                    <td>13</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+            </table>
 		</description>
 		<sheet>
 			<description></description>
 		</sheet>
+		 <spellcasting name="Rune Warrior" ability="Intelligence" prepare="false" allowReplace="false">
+            <list>Rune Warrior</list>
+        </spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+            <stat name="rune warrior:spellcasting:slots:1" value="2" level="3"/>
+            <stat name="rune warrior:spellcasting:slots:1" value="1" level="4"/>
+            <stat name="rune warrior:spellcasting:slots:1" value="1" level="7"/>
+            <stat name="rune warrior:spellcasting:slots:2" value="2" level="7"/>
+            <stat name="rune warrior:spellcasting:slots:2" value="1" level="10"/>
+            <stat name="rune warrior:spellcasting:slots:3" value="2" level="13"/>
+            <stat name="rune warrior:spellcasting:slots:3" value="1" level="16"/>
+            <stat name="rune warrior:spellcasting:slots:4" value="1" level="19"/>
+            <select type="Spell" name="Spellcasting (Rune Warrior)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Rune Warrior"/>
+            <select type="Spell" name="Spellcasting (Rune Warrior)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Rune Warrior"/>
+            <select type="Spell" name="Spellcasting (Rune Warrior)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Rune Warrior"/>
+            <select type="Spell" name="Spellcasting (Rune Warrior)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Rune Warrior"/>
+            <select type="Spell" name="Spellcasting (Rune Warrior)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Rune Warrior"/>
+            <select type="Spell" name="Spellcasting (Rune Warrior)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Rune Warrior"/>
+            <select type="Spell" name="Spellcasting (Rune Warrior)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Rune Warrior"/>
+            <select type="Spell" name="Spellcasting (Rune Warrior)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Rune Warrior"/>
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="Rune Bonded" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_RUNE_WARRIOR_RUNE_BONDED">
 		<description>
-			<p></p>
+			<p>Starting at 7th level, your bond with your rune and runic weapon gets stronger. You can choose to carry your weapon as a rune on your body. When you do so, the weapon loses its physical form and is placed onto somewhere on your body as a tattoo in the shape of the same rune you had drawn on it. As an action, you can summon it to your hand or place it back on your body.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>You can choose to carry your weapon as a rune on your body. When you do so, the weapon loses its physical form and is placed onto somewhere on your body as a tattoo in the shape of the same rune you had drawn on it. As an action, you can summon it to your hand or place it back on your body.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+	<element name="Warrior Above All Else" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_RUNE_WARRIOR_ABOVE_ALL_ELSE">
 		<description>
-			<p></p>
+			<p>At 10th level, you discover a new runic fighting technique. You become an exemplary fighter whose style is worthy of legends. It feels like your story and your deeds of the future will be remembered for a long time.</p>
+			<p class="indent">As long as you meet the requirements, this runic fighting technique allows you to get the benefit of a Fighting Style of your choice as an action for 1 minute.</p>
+			<p class="indent">Once you use this feature, you must finish a short or long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Short Rest">
+			<description>This runic fighting technique allows you to get the benefit of a Fighting Style of your choice as an action for 1 minute.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
+	<element name="Fate of the Weapon" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_RUNE_FATE_OF_THE_WEAPON">
 		<description>
-			<p></p>
+			<p>Starting at 15th level, your very existence becomes inseparable from the rune specific to you, and so does your fate. You understand that some weapons play more of an important role in history and that they are destined to kill legendary monsters, to start an unstoppable war, or to leave their names in the pages of history in other ways. At this point, you realize that your specific rune has such a quest and that it is your destiny to complete this fate.</p>
+			<p class="indent">You receive a vision about that fate. It can be in the form of a dream or of a quest given by the Gods and Goddesses. The GM decides the nature of the quest.</p>
+			<p class="indent">Since your destiny is predetermined, you sometimes have luck on your side. While making a weapon attack, you can choose to have advantage on the attack roll as a reaction. When you use this feature up to a number equal to your Charisma modifier (minimum of once), you must finish a short or long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="{{charisma:modifier}}/Short Rest" action="Reaction">
+			<description>While making a weapon attack, you can choose to have advantage on the attack roll as a reaction.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
+	<element name="Becoming the Weapon" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_RUNE_BECOMING_THE_WEAPON">
 		<description>
-			<p></p>
+			<p>Starting at 18th level, your bond with your runic weapon becomes so strong that when you die, you may choose to bind your spirit to the weapon, infuse both together, and become an intelligent weapon. This leaves your rune on the weapon permanently. The attack rolls and damage rolls that are made with this weapon has a +3 bonus in addition to the weapon’s original properties. In this way, if you die before you can fulfill your destiny, you can still pursue it.</p>
+			<p class="indent">Also, when you make a successful attack with your runic weapon, you can choose to score a critical hit as a reaction. Once you use this feature, you must finish a short or long rest to use it again.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description> when you die, you may choose to bind your spirit to the weapon, infuse both together, and become an intelligent weapon. This leaves your rune on the weapon permanently. The attack rolls and damage rolls that are made with this weapon has a +3 bonus in addition to the weapon’s original properties. In this way, if you die before you can fulfill your destiny, you can still pursue it.
+			Also, when you make a successful attack with your runic weapon, you can choose to score a critical hit as a reaction. Once you use this feature, you must finish a short or long rest to use it again.</description>
 		</sheet>
 	</element>
 </elements>
