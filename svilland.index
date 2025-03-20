@@ -46,6 +46,7 @@
 		<file name="cleric-wicked.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/cleric-wicked.xml" />
 
 		<file name="fighter-rune.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/fighter-rune.xml"/>
+		<file name="fighter-shield.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/fighter-shield.xml"/>
 		
 
 		<!-- Spells -->

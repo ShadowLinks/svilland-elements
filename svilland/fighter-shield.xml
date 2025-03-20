@@ -1,61 +1,105 @@
+<elements>
+    <info>
+        <name>Shieldmaiden/Shieldman</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="fighter-shield.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/fighter-shield.xml"/>
+        </update>
+    </info>
+	<element name="Shieldmaiden/Shieldman" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FIGHTER_SHIELD">
+        <supports>Martial Archetype</supports>
 		<description>
-			<p></p>
+			<p>Shieldmaidens or Shieldmen are the famous warriors of Svilland. Their characteristic difference from many other warriors of Svilland is that when they are on the battlefield, it is impossible to miss them. They are protective of their fellow warriors and are determined to survive the fight along with all of their allies. It is even said that legendary shieldmaidens are blessed with the duty to serve as a Valkyrie in the afterlife.</p>
 			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_SHIELD_MASTER_OF_SHIELD" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_SHIELD_SHIELD_YOUR_ALLY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_SHIELD_SHIELD_WALL" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_SHIELD_RALLY_BRETHREN" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_SHIELD_WARDENS_SACRIFICE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_SHIELD_DEFENSIVE_STANCE" />
 		</description>
 		<sheet display="false">
-			<description></description>
+			<description>Some features require your target(s) to make a saving throw to resist their effects. Your DC is {{shieldman:dc}}.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_SHIELD_MASTER_OF_SHIELD" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_SHIELD_SHIELD_YOUR_ALLY" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_SHIELD_SHIELD_WALL" level="7" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_SHIELD_RALLY_BRETHREN" level="10" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_SHIELD_WARDENS_SACRIFICE" level="15" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_SHIELD_DEFENSIVE_STANCE" level="18" />
+			<stat name="Shieldman:dc" value="8" bonus="base" />
+			<stat name="Shieldman:dc" value="proficiency" />
+			<stat name="Shieldman:dc" value="dexterity:modifier" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="Master of Shield" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_SHIELD_MASTER_OF_SHIELD">
 		<description>
-			<p></p>
+			<p>Starting at 3rd level, you can use your shield as a weapon. It deals 1d6 bludgeoning damage, or 1d6 piercing damage if it has spikes.</p>
+			<p class="indent">Also, you can knock a target prone. As an action, you push a target with your shield. The creature must succeed on a Strength saving throw or fall prone. The target must be Medium or smaller.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>You can use your shield as a weapon. It deals 1d6 bludgeoning damage, or 1d6 piercing damage if it has spikes.
+			Also as an action, you push a target with your shield. The creature must succeed on a DC {{shieldman:dc}} Strength saving throw or fall prone. The target must be Medium or smaller.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="Shield Your Ally" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_SHIELD_SHIELD_YOUR_ALLY">
 		<description>
-			<p></p>
+			<p>Starting at 3rd level, when a friendly creature within 5 feet of you is attacked with a melee or ranged weapon, you can use your reaction to put your shield between your ally and the incoming blow. Your friend gains a bonus to its AC in an amount equal to your shield bonus.</p>
+			<p class="indent">When you use this feature, you lose the shield bonus to your AC until the start of your next turn.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet action="Reaction">
+			<description>When a friendly creature within 5 feet of you is attacked with a melee or ranged weapon, you can use your reaction to put your shield between your ally and the incoming blow. Your friend gains a bonus to its AC in an amount equal to your shield bonus.
+			When you use this feature, you lose the shield bonus to your AC until the start of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+	<element name="Shield Wall" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_SHIELD_SHIELD_WALL">
 		<description>
-			<p></p>
+			<p>Starting at 7th level, you can form a shield wall with your allies. If you are wielding your shield, and if there is an ally wielding a shield adjacent to you, you can form a shield wall as a bonus action. As long as you and your ally stay adjacent to each other, melee and ranged weapons attacks against you are made with disadvantage.</p>
+			<p class="indent">Additionally, if any ally of your size is behind you when you form a shield wall, the ally has half-cover against ranged attacks and spells coming from the area your wall faces. Any ally that is one size smaller than you has three-quarters cover against such attacks or spells.</p>
+			<p class="indent">When you form a shield wall, neither you nor your ally can use a reaction as long as the shield wall persists.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>If you are wielding your shield, and if there is an ally wielding a shield adjacent to you, you can form a shield wall as a bonus action. As long as you and your ally stay adjacent to each other, melee and ranged weapons attacks against you are made with disadvantage.
+			Additionally, if any ally of your size is behind you when you form a shield wall, the ally has half-cover against ranged attacks and spells coming from the area your wall faces. Any ally that is one size smaller than you has three-quarters cover against such attacks or spells.
+			When you form a shield wall, neither you nor your ally can use a reaction as long as the shield wall persists.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
+	<element name="Rally Brethren" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_SHIELD_RALLY_BRETHREN">
 		<description>
-			<p></p>
+			<p>Starting at 10th level, you can use your Second Wind feature to heal an ally of your choice within 30 feet of you.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>You can use your Second Wind feature to heal an ally of your choice within 30 feet of you.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
+	<element name="Warden's Sacrifice" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_SHIELD_WARDENS_SACRIFICE">
 		<description>
-			<p></p>
+			<p>Starting at 15th level, whenever an ally within 5 feet of you takes damage from an attack or spell, you can use your reaction to take the damage yourself instead.</p>
+			<p class="indent">You can use this feature a number of times equal to your Constitution modifier (minimum of once). You regain any expended uses after you finish a long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{constitution:modifier}}/Long Rest">
+			<description>Whenever an ally within 5 feet of you takes damage from an attack or spell, you can use your reaction to take the damage yourself instead.</description>
+		</sheet>
+	</element>
+	<element name="Defensive Stance" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_SHIELD_DEFENSIVE_STANCE">
+		<description>
+			<p>Starting at 18th level, as an action, you can take a defensive stance that allows you to protect yourself and your allies as much as possible. When you do so, you cannot make any attacks other than those stated below, but gain the following benefits as long as you stay in this stance:</p>
+			<ul>
+                <li>If a creature fails on a weapon attack against you, you can use your reaction to make an opportunity attack.</li>
+                <li>Your Shield Wall provides three-quarters cover for allies of your size and total cover for smaller ones.</li>
+                <li>If you do not move on a turn, you have half-cover until the beginning of your next turn.</li>
+                <li>You can make an opportunity attack with your shield against a creature that moves within 5 feet of you. On a hit, the creature must also succeed on a Strength saving throw or is shoved 5 feet.</li>
+            </ul>
+			<p class="indent">The stance ends when you are grappled, paralyzed, petrified, stunned, are knocked prone, or fall unconscious.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>As an action, you can take a defensive stance that allows you to protect yourself and your allies as much as possible. When you do so, you cannot make any attacks other than those stated below, but gain the following benefits as long as you stay in this stance:
+			If a creature fails on a weapon attack against you, you can use your reaction to make an opportunity attack.
+			Your Shield Wall provides three-quarters cover for allies of your size and total cover for smaller ones.
+			If you do not move on a turn, you have half-cover until the beginning of your next turn.
+			You can make an opportunity attack with your shield against a creature that moves within 5 feet of you. On a hit, the creature must also succeed on a DC {{shieldman:dc}} Strength saving throw or is shoved 5 feet.
+			The stance ends when you are grappled, paralyzed, petrified, stunned, are knocked prone, or fall unconscious.</description>
 		</sheet>
 	</element>
 </elements>
