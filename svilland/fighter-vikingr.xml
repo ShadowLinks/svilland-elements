@@ -9,7 +9,7 @@
 	<element name="Vikingr" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FIGHTER_VIKINGR">
         <supports>Martial Archetype</supports>
 		<description>
-			<p></p>
+			<p>The archetypal Vikingr are professional raiders. They sail away to far seas with the hope that they have the favor of Gods and Goddesses - especially Aegir, Thor, and Ran - and with the wish of a sea chest full of plunder in their minds. They excel in coordinated and devastating raids, especially in those at sea. Those who train to become a vikingr know the importance of morale alongside their strength to become victorious in combat.</p>
 			<p class="indent"></p>
 			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_A_LIFE_ON_THE_SEAS" />
 			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_LONGSHIP_COMBAT" />
@@ -18,8 +18,8 @@
 			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_SAVAGERY" />
 			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_WARMONGER" />
 		</description>
-		<sheet display="false">
-			<description></description>
+		<sheet>
+			<description>Your save DC for Vikingr features is either {{vikingr:dcdex}} based on dex or {{vikingr:dcstr}} based on str.</description>
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_A_LIFE_ON_THE_SEAS" level="3" />
@@ -28,54 +28,281 @@
 			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_BLOOD_FEUD" level="10" />
 			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_SAVAGERY" level="15" />
 			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_WARMONGER" level="18" />
+			<stat name="vikingr:dcdex" value="8" bonus="base" />
+			<stat name="vikingr:dcdex" value="proficiency" />
+			<stat name="vikingr:dcdex" value="dexterity:modifier" />
+			<stat name="vikingr:dcstr" value="8" bonus="base" />
+			<stat name="vikingr:dcstr" value="proficiency" />
+			<stat name="vikingr:dcstr" value="strength:modifier" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_A_LIFE_ON_THE_SEAS">
+	<element name="A Life on the Seas" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_A_LIFE_ON_THE_SEAS">
 		<description>
-			<p></p>
+			<p>At 3rd level, you gain proficiency with water vehicles and navigator’s tools. You also become proficient in one of the following skills: Acrobatics, Athletics, or Survival. If you choose a skill that you are already proficient in, you add half of your proficiency bonus, rounded down, to the result of the chosen ability check.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_WATER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+			<select type="Archetype Feature" name="Proficiency, A Life on the Seas" supports="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_ACROBATICS|ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_ATHLETICS|ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_SURVIVAL|ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_ACROBATICS2|ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_ATHLETICS2|ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_SURVIVAL2" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_LONGSHIP_COMBAT">
+	<element name="Acrobatics" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_ACROBATICS">
+		<requirements>!ID_PROFICIENCY_SKILL_ACROBATICS</requirements>
 		<description>
-			<p></p>
+			<p>You are proficient in Acrobatics.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_BATTLE_SHOUTS">
+	<element name="Acrobatics" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_ACROBATICS2">
+		<requirements>ID_PROFICIENCY_SKILL_ACROBATICS</requirements>
 		<description>
-			<p></p>
+			<p>You are already proficient in acrobatics, you can add half of your proficienty bonus rounded down to the check.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<stat name="acrobatics:misc" value="proficiency:half" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_BLOOD_FEUD">
+	<element name="Athletics" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_ATHLETICS">
+		<requirements>!ID_PROFICIENCY_SKILL_ATHLETICS</requirements>
 		<description>
-			<p></p>
+			<p>You are proficient in athletics.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_SAVAGERY">
+	<element name="Athletics" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_ATHLETICS2">
+		<requirements>ID_PROFICIENCY_SKILL_ATHLETICS</requirements>
 		<description>
-			<p></p>
+			<p>You are already proficient in athletics, you can add half of your proficienty bonus rounded down to the check.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<stat name="athletics:misc" value="proficiency:half" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_WARMONGER">
+	<element name="Survival" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_SURVIVAL">
+		<requirements>!ID_PROFICIENCY_SKILL_SURVIVAL</requirements>
 		<description>
-			<p></p>
+			<p>You are proficient in survival.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+		</rules>
+	</element>
+	<element name="Survival" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_SURVIVAL2">
+		<requirements>ID_PROFICIENCY_SKILL_SURVIVAL</requirements>
+		<description>
+			<p>You are already proficient in survival, you can add half of your proficienty bonus rounded down to the check.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="survival:misc" value="proficiency:half" />
+		</rules>
+	</element>
+	<element name="Longship Combat" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_LONGSHIP_COMBAT">
+		<description>
+			<p>You become an expert in land raids and in the act of waging war on longships.</p>
+			<p class="indent">At 3rd, 7th, 10th and 15th levels, you gain the benefits of one of the following options of your choice:</p>
+			<p class="indent"><strong><i>Agitation of Battle.</i></strong> While you are rolling initiative, you can gain a number of temporary hit points equal to your Constitution modifier until the end of the encounter.</p>
+			<p class="indent">You can choose this option more than once, increasing the amount of temporary hit points gained by a number equal to your Constitution modifier at each choice.</p>
+			<p class="indent">Once you use this feature, you must finish a short or long rest to use it again..</p>
+			<p class="indent"><strong><i>Board Warder.</i></strong> When a creature tries to board your ship and you are next to the edge of the ship or can reach it with a melee weapon, you gain an opportunity attack against that enemy.</p>
+			<p class="indent">Also, instead of making an opportunity attack, you can try to throw the creature overboard as a reaction. You make a Strength (Athletics) check with advantage contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check (of the target’s choice). On a success, you prevent it from boarding your ship, and it falls into the sea.</p>
+			<p class="indent"><strong><i>Boarding Expertise.</i></strong> You have advantage on your ability checks and attack rolls to hook a ship, to cut grapnel ropes, and to pull them out of your ship.</p>
+			<p class="indent"><strong><i>Campaign Resilience.</i></strong> You have advantage on saving throws against environmental hazards such as Black Winter’s Cold.</p>
+			<p class="indent"><strong><i>Fire Fighter.</i></strong> You are an expert in extinguishing flames with water buckets. Rather than taking an action, you can pour a water bucket on the fire as a bonus action as long as you have one hand free.</p>
+			<p class="indent">You are also an expert in wrecking ships that are ablaze. Whenever a ship is on fire, you can cause the attack to deal an extra die worth of damage of the same type dealt by the weapon to it.</p>
+			<p class="indent"><strong><i>Plank Jumper.</i></strong> While jumping from one ship to another, your movements are not affected by difficult terrain. Additionally, you have advantage on Strength (Athletics) and Dexterity (Acrobatics) checks while jumping to a ship, and while holding on nets or ropes within the ship.</p>
+			<p class="indent"><strong><i>Quartermaster.</i></strong> You have advantage on your checks with navigator’s tools to navigate your ship. In addition, you and your crew’s provisions last twice as long as it normally would while you are on a ship.</p>
+			<p class="indent"><strong><i>Vigilant Attacker.</i></strong> You gain a +5 bonus to your initiative roll while on the seas.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Longship Combat" supports="longship-combat" level="3" />
+			<select type="Archetype Feature" name="Longship Combat" supports="longship-combat" level="7" />
+			<select type="Archetype Feature" name="Longship Combat" supports="longship-combat" level="10" />
+			<select type="Archetype Feature" name="Longship Combat" supports="longship-combat" level="15" />
+		</rules>
+	</element>
+	<element name="Battle Shouts" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_BATTLE_SHOUTS">
+		<description>
+			<p>At 7th level, you learn battle shouts that you can use in encounters to do several different things. You gain the following shouts:</p>
+			<p class="indent">Discouraging Shout. When you make a successful attack against a creature, you can shout as a reaction. Enemies within 30 feet of you that can hear you must succeed on a Wisdom saving throw or become frightened of you until the end of their next turn.</p>
+			<p class="indent">Distracting Shout. As a bonus action, you can shout at a creature within 15 feet of you that can hear you to distract it. The creature must succeed on an Intelligence saving throw or become distracted. Your allies can then make an opportunity attack against the target if they are able to do so.</p>
+			<p class="indent">Encouraging Shout. While rolling initiative, you can shout words of encouragement as a reaction. Your allies within 30 feet of you that can hear you have advantage on their initiative rolls.</p>
+			<p class="indent">When you use this feature twice, you must finish a short or long rest to use it again.</p>
+		</description>
+		<sheet usage="2/Short Rest">
+			<description>You gain the following shouts:
+			Discouraging Shout. When you make a successful attack against a creature, you can shout as a reaction. Enemies within 30 feet of you that can hear you must succeed on a Wisdom saving throw or become frightened of you until the end of their next turn.
+			Distracting Shout. As a bonus action, you can shout at a creature within 15 feet of you that can hear you to distract it. The creature must succeed on an Intelligence saving throw or become distracted. Your allies can then make an opportunity attack against the target if they are able to do so.
+			Encouraging Shout. While rolling initiative, you can shout words of encouragement as a reaction. Your allies within 30 feet of you that can hear you have advantage on their initiative rolls.</description>
+		</sheet>
+	</element>
+	<element name="Blood Feud" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_BLOOD_FEUD">
+		<description>
+			<p>Starting at 10th level, whenever you suffer a critical hit, you can use your reaction to make an opportunity attack against the creature that scored the critical hit.</p>
+			<p class="indent">Additionally, if your current hit points are lower than half your hit point maximum, your weapon attacks deal an extra 1d4 damage of the weapon’s damage type. This extra damage becomes 1d6 when you reach 15th level.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Whenever you suffer a critical hit, you can use your reaction to make an opportunity attack against the creature that scored the critical hit.
+			Additionally, if your current hit points are lower than half your hit point maximum, your weapon attacks deal an extra 1d4 damage of the weapon’s damage type.</description>
+			<description level="15">Whenever you suffer a critical hit, you can use your reaction to make an opportunity attack against the creature that scored the critical hit.
+			Additionally, if your current hit points are lower than half your hit point maximum, your weapon attacks deal an extra 1d6 damage of the weapon’s damage type.</description>
+		</sheet>
+	</element>
+	<element name="Savagery" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_SAVAGERY">
+		<description>
+			<p>Starting at 15th level, whenever you score a critical hit against a creature, you can use your bonus action to make an additional attack against that creature.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Whenever you score a critical hit against a creature, you can use your bonus action to make an additional attack against that creature.</description>
+		</sheet>
+	</element>
+	<element name="Warmonger" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_WARMONGER">
+		<description>
+			<p>Starting at 18th level, each time you suffer a critical hit, deal a critical hit, drop to 0 hit points, or make a creature drop to 0 hit points, your next weapon attack deals an extra 1d10 damage of the weapon’s damage type.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>Each time you suffer a critical hit, deal a critical hit, drop to 0 hit points, or make a creature drop to 0 hit points, your next weapon attack deals an extra 1d10 damage of the weapon’s damage type.</description>
+		</sheet>
+	</element>
+	<element name="Agitation of Battle 1" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_AGITATION_OF_BATTLE1">
+		<supports>longship-combat</supports>
+		<description>
+			<p>While you are rolling initiative, you can gain a number of temporary hit points equal to your Constitution modifier until the end of the encounter.</p>
+			<p class="indent">You can choose this option more than once, increasing the amount of temporary hit points gained by a number equal to your Constitution modifier at each choice.</p>
+			<p class="indent">Once you use this feature, you must finish a short or long rest to use it again..</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>While you are rolling initiative, you can gain {{constitution:modifier}} temporary hit points r until the end of the encounter.</description>
+		</sheet>
+	</element>
+	<element name="Agitation of Battle 2" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_AGITATION_OF_BATTLE2">
+		<supports>longship-combat</supports>
+		<requirements>ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_AGITATION_OF_BATTLE1</requirements>
+		<description>
+			<p>While you are rolling initiative, you can gain a number of temporary hit points equal to your Constitution modifier until the end of the encounter.</p>
+			<p class="indent">You can choose this option more than once, increasing the amount of temporary hit points gained by a number equal to your Constitution modifier at each choice.</p>
+			<p class="indent">Once you use this feature, you must finish a short or long rest to use it again..</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>While you are rolling initiative, you can gain {{constitution:modifier}} temporary hit points r until the end of the encounter.</description>
+		</sheet>
+	</element>
+	<element name="Agitation of Battle 3" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_AGITATION_OF_BATTLE3">
+		<supports>longship-combat</supports>
+		<requirements>ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_AGITATION_OF_BATTLE2</requirements>
+		<description>
+			<p>While you are rolling initiative, you can gain a number of temporary hit points equal to your Constitution modifier until the end of the encounter.</p>
+			<p class="indent">You can choose this option more than once, increasing the amount of temporary hit points gained by a number equal to your Constitution modifier at each choice.</p>
+			<p class="indent">Once you use this feature, you must finish a short or long rest to use it again..</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>While you are rolling initiative, you can gain {{constitution:modifier}} temporary hit points r until the end of the encounter.</description>
+		</sheet>
+	</element>
+	<element name="Agitation of Battle 4" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_AGITATION_OF_BATTLE4">
+		<supports>longship-combat</supports>
+		<requirements>ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_AGITATION_OF_BATTLE3</requirements>
+		<description>
+			<p>While you are rolling initiative, you can gain a number of temporary hit points equal to your Constitution modifier until the end of the encounter.</p>
+			<p class="indent">You can choose this option more than once, increasing the amount of temporary hit points gained by a number equal to your Constitution modifier at each choice.</p>
+			<p class="indent">Once you use this feature, you must finish a short or long rest to use it again..</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>While you are rolling initiative, you can gain {{constitution:modifier}} temporary hit points r until the end of the encounter.</description>
+		</sheet>
+	</element>
+	<element name="Board Warder" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_BOARD_WARDER">
+		<supports>longship-combat</supports>
+		<description>
+			<p> When a creature tries to board your ship and you are next to the edge of the ship or can reach it with a melee weapon, you gain an opportunity attack against that enemy.</p>
+			<p class="indent">Also, instead of making an opportunity attack, you can try to throw the creature overboard as a reaction. You make a Strength (Athletics) check with advantage contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check (of the target’s choice). On a success, you prevent it from boarding your ship, and it falls into the sea.</p>
+		</description>
+		<sheet>
+			<description>When a creature tries to board your ship and you are next to the edge of the ship or can reach it with a melee weapon, you gain an opportunity attack against that enemy.
+			Also, instead of making an opportunity attack, you can try to throw the creature overboard as a reaction. You make a Strength (Athletics) check with advantage contested by the target’s Strength (Athletics) or Dexterity (Acrobatics) check (of the target’s choice). On a success, you prevent it from boarding your ship, and it falls into the sea.</description>
+		</sheet>
+	</element>
+	<element name="Boarding Expertise" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_BOARDING_EXPERTISE">
+		<supports>longship-combat</supports>
+		<description>
+			<p>You have advantage on your ability checks and attack rolls to hook a ship, to cut grapnel ropes, and to pull them out of your ship.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on your ability checks and attack rolls to hook a ship, to cut grapnel ropes, and to pull them out of your ship.</description>
+		</sheet>
+	</element>
+	<element name="Campaign Resilience" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_CAMPAIGN_RESILIENCE">
+		<supports>longship-combat</supports>
+		<description>
+			<p>You have advantage on saving throws against environmental hazards such as Black Winter’s Cold.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against environmental hazards such as Black Winter’s Cold.</description>
+		</sheet>
+	</element>
+	<element name="Fire Fighter" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_FIRE_FIGHTER">
+		<supports>longship-combat</supports>
+		<description>
+			<p>You are an expert in extinguishing flames with water buckets. Rather than taking an action, you can pour a water bucket on the fire as a bonus action as long as you have one hand free.</p>
+			<p class="indent">You are also an expert in wrecking ships that are ablaze. Whenever a ship is on fire, you can cause the attack to deal an extra die worth of damage of the same type dealt by the weapon to it.</p>
+		</description>
+		<sheet>
+			<description>You are an expert in extinguishing flames with water buckets. Rather than taking an action, you can pour a water bucket on the fire as a bonus action as long as you have one hand free.
+			You are also an expert in wrecking ships that are ablaze. Whenever a ship is on fire, you can cause the attack to deal an extra die worth of damage of the same type dealt by the weapon to it.</description>
+		</sheet>
+	</element>
+	<element name="Plank Jumper" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_PLANK_JUMPER">
+		<supports>longship-combat</supports>
+		<description>
+			<p>While jumping from one ship to another, your movements are not affected by difficult terrain. Additionally, you have advantage on Strength (Athletics) and Dexterity (Acrobatics) checks while jumping to a ship, and while holding on nets or ropes within the ship.</p>
+		</description>
+		<sheet>
+			<description>While jumping from one ship to another, your movements are not affected by difficult terrain. Additionally, you have advantage on Strength (Athletics) and Dexterity (Acrobatics) checks while jumping to a ship, and while holding on nets or ropes within the ship.</description>
+		</sheet>
+	</element>
+	<element name="Quartermaster" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_QUARTERMASTER">
+		<supports>longship-combat</supports>
+		<description>
+			<p>You have advantage on your checks with navigator’s tools to navigate your ship. In addition, you and your crew’s provisions last twice as long as it normally would while you are on a ship.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on your checks with navigator’s tools to navigate your ship. In addition, you and your crew’s provisions last twice as long as it normally would while you are on a ship.</description>
+		</sheet>
+	</element>
+	<element name="Vigilant Attacker" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_FIGHTER_VIKINGR_VIGILANT_ATTACKER">
+		<supports>longship-combat</supports>
+		<description>
+			<p>You gain a +5 bonus to your initiative roll while on the seas.</p>
+		</description>
+		<sheet>
+			<description>You gain a +5 bonus to your initiative roll while on the seas.</description>
 		</sheet>
 	</element>
 </elements>

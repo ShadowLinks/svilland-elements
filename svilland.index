@@ -47,6 +47,8 @@
 
 		<file name="fighter-rune.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/fighter-rune.xml"/>
 		<file name="fighter-shield.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/fighter-shield.xml"/>
+		<file name="fighter-vikingr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/fighter-vikingr.xml"/>
+
 		
 
 		<!-- Spells -->
