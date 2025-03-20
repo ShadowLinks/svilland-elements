@@ -13,6 +13,8 @@ Thank you to The-Multitud-e for starting the project I forked from.
 	- Chanter of Kin
 	- Chanter of Skies
 	- Chanter of Naturra
+
+### Subclasses:
 - Paladin Oaths
 	- Oath to Freyja
 	- Oath to Hel
@@ -28,11 +30,11 @@ Thank you to The-Multitud-e for starting the project I forked from.
 	- Tradition of Helord
 	- Tradition of Ofridr
 	- Tradition of Villr
-- Fighter Archetypes
+- Fighter Archetypes IN PROGRESS
 	- Rune Warrior
 	- Shieldman/Shieldmaiden
 	- Vikingr
-- Cleric Domains IN PROGRESS
+- Cleric Domains COMPLETE
 	- Execution Domain
 	- Fury Domain
 	- Kaldr Domain
