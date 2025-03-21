@@ -226,6 +226,26 @@
             <grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" />
         </rules>
     </element>
+    <element name="Armor of Lög" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ARMOR_OF_LOG">
+        <description>
+            <p>The key to success in Svilland is to have strong faith. While wearing this item, your Wisdom score increases by 1, to a maximum of 20.</p>
+            <p class="indent"><strong><em>Curse.</em></strong> This item is cursed. If your alignment is evil and you don this armor, you can’t doff it again. Every time you commit an evil act, the armor shines bright and you take 1d6 radiant damage. This curse can only be removed by means of a remove curse spell.</p>
+        </description>
+        <setters>
+            <set name="keywords">plated leather</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="plated leather">Armor</set>
+            <set name="attunement">false</set>
+            <set name="rarity">Uncommon</set>
+            <set name="cursed">true</set>
+            <set name="armor">Plated Leather</set>
+        </setters>
+        <rules>
+            <stat name="wisdom" value="1" />
+        </rules>
+    </element>
 </elements>
 <!-- 
 
