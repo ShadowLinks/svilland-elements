@@ -201,7 +201,54 @@
             <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
         </setters>
         <rules>
-            <stat name="ac:shield" value="2" bonus="shield"/>
+            <stat name="ac:shield" value="2" bonus="shield" />
+        </rules>
+    </element>
+    <!-- Magic Armor -->
+    <element name="Armor of GinnheiLagr" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ARMOR_OF_GINNHEILAGR">
+        <description>
+            <p>When an alle dies, their apprentices take up the alle’s armor. With each adventure of each owner, the armor gains divine powers and becomes an Armor of Ginnheilagr.</p>
+            <p class="indent">The armor has 4 charges. While wearing it, you can expend 1 charge to cast the detect evil and good spell and 2 charges to cast the death ward spell. The armor regains 1d4 expended charges daily at dawn.</p>
+        </description>
+        <setters>
+            <set name="keywords">scilland chain mail</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="svilland chain mail">Armor</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Svilland Chain Mail</set>
+            <set name="charges">4</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" />
+            <grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" />
         </rules>
     </element>
 </elements>
+<!-- 
+
+    <element name="name" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_">
+        <description>
+            <p></p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords">plate</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="plate">Armor</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Very Rare</set>
+            <set name="cursed">true</set>
+            <set name="armor">Plate</set>
+            <set name="enhancement">1</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement"/>
+        </rules>
+    </element>
+    
+    -->
