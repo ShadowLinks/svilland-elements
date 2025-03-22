@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Potions</name>
+        <description></description>
+        <author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
+        <update version="0.0.1">
+            <file name="items-potions.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-potions.xml" />
+        </update>
+    </info>
+    <element name="Mama's Beverage" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_MAMAS_BEVERAGE">
+        <description>
+            <p>This is a potion that tastes like strawberries. When you drink it, you do not require food or water for the next 24 hours.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Potions</set>
+            <set name="weight" lb="0.5">½ lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Poison of Deathsand" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_POISON_OF_DEATHSAND">
+        <description>
+            <p>Once, a mysterious and deadly sea creature attacked the shores of Alsvartr. The creature was killed on Ashen Shore, but it was so massive that people couldn’t push its body back into the sea and its body was so poisonous that they couldn’t harvest it either. Not knowing what else to do,they burnt it on the shore. The poison seeped into the sand, which is now used in the making of this poison.</p>
+            <p class="indent">The poison deals 2d4 poison damage when ingested. An affected creature must succeed on a DC 12 Constitution saving throw or take 2d4 poison damage at the start of each of its turns for the next 1 minute. A creature can be affected with only one dose of this poison at a time.</p>
+            <div class="reference">
+                <div element="ID_INTERNAL_SUPPORT_POISON_INGESTED"/>
+            </div>
+        </description>
+        <setters>
+            <set name="keywords">poison, injested</set>
+            <set name="category">Poison</set>
+            <set name="weight" lb="0.5">½ lb.</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Potion of Godly Might" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_POTION_OF_GODLY_MIGHT">
+        <description>
+            <p>Odin himself is rumored to have created the recipe for this potion. When you drink it, all your ability scores increase by 2, to a maximum of 26. However, your mortal body cannot contain this power longer than an hour. At the end of the hour, you suffer four levels of exhaustion at once. These levels of exhaustion cannot be reduced by any means, and they cannot be removed until you finish a long rest.</p>
+            <p class="indent">For each vial you drink before you finish a long rest, your hit point maximum is halved.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Potions</set>
+            <set name="weight" lb="0.5">½ lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Legendary</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Raratoskr's Potion" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_RATATOSKRS_POTION">
+        <description>
+            <p>Ratatoskr the Messenger of the Gods moves at the speed of lightning.</p>
+            <p class="indent">Upon drinking the potion, you are electrified and filled with the might of lightning, moving much faster than you normally would. Your speed is doubled for 1d4 minutes.</p>
+            <p class="indent">In addition, whenever a creature hits you with a melee weapon attack for the duration, a bolt of lightning flies off your electrified body, dealing 2d6 lightning damage to the creature. This effect can occur once per turn.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Potions</set>
+            <set name="weight" lb="0.5">½ lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Very Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Slayer's Poison" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_SLAYERS_POISON">
+        <description>
+            <p>By taking an action, you can use a vial of this poison to coat one slashing or piercing weapon or up to 3 pieces of ammunition. A creature hit by the poisoned weapon or ammunition must succeed on a DC 15 Constitution saving throw or become paralyzed for 1 minute.</p>
+            <div class="reference">
+                <div element="ID_INTERNAL_SUPPORT_POISON_INJURY"/>
+            </div>
+        </description>
+        <setters>
+            <set name="keywords">poison, injury</set>
+            <set name="category">Poison</set>
+            <set name="weight" lb="0.5">½ lb.</set>
+            <set name="rarity">Very Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+</elements>
+
+<!-- 
+<element name="name" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_">
+        <description>
+            <p></p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Potions</set>
+            <set name="weight" lb="0.5">½ lb.</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    -->

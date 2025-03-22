@@ -246,10 +246,253 @@
             <stat name="wisdom" value="1" />
         </rules>
     </element>
+    <element name="Black Ice Chestplate" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_BLACK_ICE_CHESTPLATE">
+        <description>
+            <p>This armor is an extremely tough heavy armor. While wearing the armor, you gain the following benefits:</p>
+            <ul>
+                <li>You gain a +2 bonus to AC</li>
+                <li>The armor has 6 charges. You can use your reaction to dispel a spell that targets only you by expending a number of them. This number is equal to 1 + the level of the spell. The armor regains 1d4+1 expended charges daily at dawn.</li>
+                <li>When you are attacked by a melee spell or weapon attack, the attacker takes 1d4 cold damage</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">square plates</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="square plates">Armor</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Legendary</set>
+            <set name="charges">6</set>
+            <set name="armor">Square Plates</set>
+            <set name="enhancement">2</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="2" bonus="enhancement"/>
+        </rules>
+    </element>
+    <element name="Expanding Shield" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_EXPANDING_SHIELD">
+        <description>
+            <p>This is a wooden shield that is crafted out of tree roots, which move around in the front as if they were alive.</p>
+            <p class="indent">While holding this shield, you have a +1 bonus to AC. This bonus is in addition to the shield’s normal bonus to AC.</p>
+            <p class="indent">The shield has 8 charges. By expending a number of charges as an action, you can choose to gain one of the following benefits:</p>
+            <ul>
+                <li>By expending one charge, you can expand the shield to form a wooden wall that remains until the start of your next turn. The wall is 2 feet high and 5 feet wide, and it provides half cover.</li>
+                <li>By expending 2 charges, you can expand the shield and cover yourself with roots until the start of your next turn. The roots provide full cover.</li>
+                <li>By expending 3 charges, you can expand the shield to form a wooden wall that remains until the start of your next turn. The wall is 6 feet high and 15 feet wide, and it provides half cover.</li>
+            </ul>
+            <p class="indent">The shield regains 1d4 charges daily at dawn.</p>
+            <p class="indent">Curse. This item is cursed. When you expend a charge to use one of its features, your skin dries out and resembles a tree bark for 1 day. For the duration, you have vulnerability to fire damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">shield</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">Round Shield</set>
+            <set name="charges">8</set>
+            <set name="enhancement">1</set>
+            <set name="cursed">true</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement"/>
+        </rules>
+    </element>
+    <element name="Fearmade Armor" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_FEARMADE_ARMOR">
+        <description>
+            <p>You can escape nightmares, but you can’t run away from your fears. This dark armor is forged with horrific nightmares and resembles the creatures of night.</p>
+            <p class="indent">While wearing this armor, you gain the following benefits:</p>
+            <ul>
+                <li>You have a +1 bonus to AC.</li>
+                <li>You are immune to being frightened and paralyzed.</li>
+                <li>You have advantage on your Charisma (Intimidation) checks.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">square plates</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="square plates">Armor</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">Square Plates</set>
+            <set name="enhancement">1</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement"/>
+        </rules>
+    </element>
+    <element name="Fur Coat of Fallen Mammoth" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_FUR_COAT_OF_FALLEN_MAMMOTH">
+        <description>
+            <p>ince mammoths are extremely rare nowadays, it is very hard to craft this armor. The few found on the market are generally second-hand and old.</p>
+            <p class="indent">While wearing this armor, you have immunity to cold damage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="any light">Armor</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT</set>
+        </setters>
+    </element>
+    <element name="Gafumadr Armor" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_GAFUMADR_ARMOR">
+        <description>
+            <p>Luck is something you are born with. However, as long as you wear this armor, it will always be on your side.</p>
+            <p class="indent">This armor has 7 charges. When you make an ability check, you can use your reaction to expend one of these charges to reroll the dice.You can attempt to do so after you roll the dice, but before the GM reveals the result.</p>
+            <p class="indent">The armor regains 1 expended charge daily at dawn.</p>
+        </description>
+        <setters>
+            <set name="keywords">ring mail</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="ring mail">Armor</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Ring Mail</set>
+            <set name="charges">7</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement"/>
+        </rules>
+    </element>
+    <element name="Hardened Storm" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_HARDENED_STORM">
+        <description>
+            <p>This shield looks like a simple round shield with a symbol of Thor in the front and grants elemental protection.</p>
+            <p class="indent">When you come across this shield, roll a d4. While holding the shield, you have resistance to thunder damage if the result of the roll is 1, to fire damage if it is 2, to lightning damage if it is 3, and to cold damage if it is 4.</p>
+        </description>
+        <setters>
+            <set name="keywords">round shield</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="round shield">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Round Shield</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Hjalpa Armor" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_HJALPA_ARMOR">
+        <description>
+            <p>This armor looks like a nonmagical armor that has a rough surface. It becomes tougher when hit. When you take bludgeoning, piercing, or slashing damage while wearing this armor, you can use your reaction to take half damage instead.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="any">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+        </setters>
+    </element>
+    <element name="Nionaem Hunting Armor" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_NIONAEM_HUNTING_ARMOR">
+        <description>
+            <p>Hunting is extremely important in the culture of Svilland, and there are certain magic items that help hunters all over the land. This armor is one of them.</p>
+            <p class="indent">While wearing this item, you have advantage on Wisdom (Perception and Survival) checks.</p>
+        </description>
+        <setters>
+            <set name="keywords">Medium Hide</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="medium hide">Armor</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Medium Hide</set>
+        </setters>
+    </element>
+    <element name="Shield of Blod" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_SHIELD_OF_BLOD">
+        <description>
+            <p>Legends say that there is a shield forged in the hottest fires in the realms and enchanted in Helheim, which has a fiendish face in the front.</p>
+            <p class="indent">The shield has its own personality (Neutral) and can choose whether it will lend its powers to the wielder or not, according to each action of the wielder. If the wielder does something the shield doesn’t approve of, the expression of the face is filled with hate and withholds most of its powers from the wielder. But if the shield commends the wielder’s actions, it smiles and allows the wielder to use its powers to the full. The motives of the shield is up to the GM.</p>
+            <p class="indent">While wielding this magic shield, you gain the following benefits:</p>
+            <ul>
+                <li>Whether the shield is on your side or not, You have a +2 bonus to AC. This bonus is in addition to the shield’s normal bonus to AC.</li>
+                <li>When the shield is on your side, you can cast the vampiric touch spell using a 3rd level spell slot, or the finger of death spell. Once you cast one of them, you must finish a long rest to do so again.</li>
+                <li>When the shield is on your side, you can cast the detect thoughts spell twice. Once you use this benefit, you must finish a long rest to do so again.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">round shield</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="round shield">Armor</set>
+            <set name="rarity">Legendary</set>
+            <set name="armor">Round Shield</set>
+            <set name="attunement">true</set>
+            <set name="enhancement">2</set>
+        </setters>
+        <rules>
+            <stat name="ac:misc" value="2" bonus="enhancement"/>
+        </rules>
+    </element>
+    <element name="Shield of Gjalla" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_SHIELD_OF_GJALLA">
+        <description>
+            <p>This shield serves its owner till death and then looks for another that is worthy. While wearing this item, you gain the following benefits:</p>
+            <ul>
+                <li>You can cast the hold person and lesser restoration spells without their material components. Once you cast one of them, you must finish a long rest to do so again.</li>
+                <li>When you take damage while carrying the shield, screams of anguish fill a 10-foot radius centered on you.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">round shield</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="round shield">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Round Shield</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Shield of Storr" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_SHIELD_OF_STORR">
+        <description>
+            <p>This shield was crafted in the early years of Green Lights of the East and is now used by Queen Bergljöt’s trusted guards.</p>
+            <p class="indent">It has 2 charges. By expending one, you can cast the shield spell. The shield regains all expended charges daily at dawn.</p>
+        </description>
+        <setters>
+            <set name="keywords">round shield</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="round shield">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Round Shiled</set>
+            <set name="attunement">true</set>
+            <set name="charges">2</set>
+        </setters>
+    </element>
+    <element name="Sorcerer's Shield" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_SORCERERS_SHIELD">
+        <description>
+            <p>This shield is a tiny shield-shaped ornament that is placed on a bracelet and that is enlarged when used. If you are an Ansuz-Touched, Ihwar-Touched, Ing-Touched, Isa-Touched, Kaun-Touched, Laugr-Touched, or Thurisaz-Touched sorcerer, your power boosts the shield’s power when you activate it.</p>
+            <p class="indent">You can activate or deactivate the shield as a bonus action. While activated, the bracelet glows and transforms into a magic round shield for 1 minute, and you gain the following benefits:</p>
+            <ul>
+                <li>You have a +1 bonus to AC.</li>
+                <li>When a creature within 5 feet of you hits you with a melee weapon attack, the shield deals 1d6 damage to the attacker. The type of the damage depends on your archetype. For example; if you are a Thurisaz-Touched sorcerer, the shield deals lightning damage.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">round shield</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="round shield">Armor</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Round Shield</set>
+            <set name="enhancement">1</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:enhancement" value="1" bonus="enhancement"/>
+        </rules>
+    </element>
 </elements>
 <!-- 
 
-    <element name="name" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_">
+<element name="name" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_">
         <description>
             <p></p>
             <p class="indent"></p>
@@ -269,6 +512,20 @@
         <rules>
             <stat name="ac:armored:enhancement" value="1" bonus="enhancement"/>
         </rules>
+    </element>
+
+<element name="name" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_">
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords">shield</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="shield">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+        </setters>
     </element>
     
     -->

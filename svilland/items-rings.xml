@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Rings</name>
+        <description></description>
+        <author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
+        <update version="0.0.1">
+            <file name="items-rings.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-rings.xml" />
+        </update>
+    </info>
+    <element name="Black Ice Ring" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_BLACK_ICE_RING">
+        <description>
+            <p>This ring made of black ice has tiny snowflakes on its pitch-black surface. While wearing it, you have resistance to cold and fire damage.</p>
+            <p class="indent">Additionally, you can use your reaction to create a magic shield to prevent fire damage from a spell of 4th level or lower. You can prevent up to a maximum of 100 fire damage at a time with this shield. Once you use the ring in this way, you must finish a long rest to do so again.</p>
+        </description>
+        <setters>
+            <set name="category">Rings</set>
+            <set name="type">Ring</set>
+            <set name="rarity">Very Rare</set>
+            <set name="slot">ring</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Herbalists' Ring" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_HERBALISTS_RING">
+        <description>
+            <p>This ring is generally worn by professional herbalists and followers of Freyja. While wearing it, you gain the following benefits:</p>
+            <ul>
+                <li>You have resistance to poison damage.</li>
+                <li>You have advantage on saving throws against poison.</li>
+                <li>You can cast the detect poison and disease spell once every 8 hours</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="category">Rings</set>
+            <set name="type">Ring</set>
+            <set name="rarity">Rare</set>
+            <set name="slot">ring</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Ring of Farbjodr" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_RING_OF_FARBJODR">
+        <description>
+            <p>This ring is among the creations of a sorcerer who loved to make weapons out of ordinary things. It contains the most deadly spells in the arsenal of this person shrouded in mystery. After the sorcerer crafted the ring, a bandit stole it. The bandit was then killed before the delivery was complete, and the ring was lost without a trace. Since then, the ring has been seeking an owner powerful enough to carry it.</p>
+            <p class="indent">While wearing this ring, you can cast the finger of death, incendiary cloud, or feeblemind spell once. When you use the ring in this way, you cannot do so again before you finish a long rest.</p>
+            <p class="indent"><strong>Curse.</strong> After you use one of these spells, roll a d20. If the result is 15 or lower, the ring loses its power until next dawn.</p>
+            <p class="indent">If you use all the spells before you finish a long rest, roll another d20. If the result is 18 or lower, the ring loses its properties.</p>
+        </description>
+        <setters>
+            <set name="category">Rings</set>
+            <set name="type">Ring</set>
+            <set name="rarity">Legendary</set>
+            <set name="slot">ring</set>
+            <set name="attunement">true</set>
+            <set name="cursed">true</set>
+        </setters>
+    </element>
+    <element name="Ring of Framganga" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_RING_OF_FRAMGANGA">
+        <description>
+            <p>According to the story, a master blacksmith crafted this hand-shaped and jeweled ring to become more powerful. Counting on the power of the ring, the blacksmith challenged incredibly skilled warriors. After defeating some of them, the power of the ring made the blacksmith challenge the very best there was. Although the power of the ring was immense, the blacksmith lost the duel due to a lack of courage and skill. The victorious warrior took the ring and threw it off a cliff, thinking no one should have powers they didn’t deserve.</p>
+            <p class="indent">While wearing this ring, you have advantage on your weapon attacks and are proficient with any weapon that is in your hand, so long as you keep holding it.</p>
+        </description>
+        <setters>
+            <set name="category">Rings</set>
+            <set name="type">Ring</set>
+            <set name="rarity">Very Rare</set>
+            <set name="slot">ring</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Ring of Frami" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_RING_OF_FRAMI">
+        <description>
+            <p>A group of adventurers crafted this ring to symbolize their companionship, for they believed that they were invincible when they were together.</p>
+            <p class="indent">While wearing this ring, you gain a +2 bonus to your damage rolls.</p>
+            <p class="indent">This bonus increases by an additional +2 for each friendly creature wearing a Ring of Frami, to a maximum of +10.</p>
+        </description>
+        <setters>
+            <set name="category">Rings</set>
+            <set name="type">Ring</set>
+            <set name="rarity">Rare</set>
+            <set name="slot">ring</set>
+        </setters>
+    </element>
+    <element name="Ring of Mottaka" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_RING_OF_MOTTAKA">
+        <description>
+            <p>Rings of Mottaka were forged in North Assembly as a gift to the rulers of the kingdoms. However, they were lost on their respective paths to their owners. Although these rings do not grant legendary powers, they are highly valuable.</p>
+            <p class="indent">While wearing this ring, you are proficient in the Survival skill and you always know which direction north is.</p>
+        </description>
+        <setters>
+            <set name="category">Rings</set>
+            <set name="type">Ring</set>
+            <set name="rarity">Uncommon</set>
+            <set name="slot">ring</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Ring of Vidr" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_RING_OF_VIDR">
+        <description>
+            <p>This wooden ring was very popular among the warriors of the Bear King. Nowadays, using these rings is taboo because of the atrocities the Bear King committed.</p>
+            <p class="indent">If you take 25 or more damage in a round while wearing this ring, you have advantage on your next attack roll.</p>
+        </description>
+        <setters>
+            <set name="category">Rings</set>
+            <set name="type">Ring</set>
+            <set name="rarity">Uncommon</set>
+            <set name="slot">ring</set>
+        </setters>
+    </element>
+</elements>
+
+<!-- 
+<element name="name" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_">
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="category">Rings</set>
+            <set name="type">Ring</set>
+            <set name="rarity">Uncommon</set>
+            <set name="slot">ring</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    -->
