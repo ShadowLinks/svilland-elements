@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Rods</name>
+        <description></description>
+        <author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
+        <update version="0.0.1">
+            <file name="items-rods.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-rods.xml" />
+        </update>
+    </info>
+    <element name="Rod of Aegir" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ROD_OF_AEGIR">
+        <description>
+            <p>A fisher sailed out to sea on a stormy day. Although the fish weren’t biting, a golden rod got caught in one of his nets. He was overcome with joy because his village had been fighting with drought and hunger for some time now, and this would solve all their problems. It was not long before he became the jarl of the village.</p>
+            <p class="indent">He carried the rod everywhere with him. One day, one of his sons rebelled against him and he smacked his son with the rod, turning him into water in an instant. Wracked with guilt and shame at what he had become, he flung himself off a cliff into the chilly waters of the sea with the rod tucked away in his robe.</p>
+            <p class="indent">The Rod of Aegir can turn anything it touches into water, including creatures. You can make a melee weapon attack with it. On a hit, the target must succeed on a DC 20 Constitution saving throw or turn into water and die instantly. This property can be used against creatures and magic items no more than once per week, and at will for mundane items. In either case, you cannot target carried or worn items.</p>
+            <p class="indent">Additionally, while wielding the Rod of Aegir, you gain a swimming speed equal to your walking speed and you can breathe under water as you do on land.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Rods</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="type">Rod</set>
+            <set name="slot">onehand</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Artifact</set>
+        </setters>
+    </element>
+    <element name="Rod of Balder" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ROD_OF_BALDER">
+        <description>
+            <p>When Balder fell to Helheim, a rod fell to Svilland. The rod has two faces just like Balder; one evil and one good.</p>
+            <p class="indent">Roll a d20 daily at dawn. If the result is 10 or lower, the rod is evil until the next dawn. If the result is 11 or higher, the rod is good.</p>
+            <p class="indent">If the rod is good, it is more protective of you while you wield it, and you gain vulnerability to poison and psychic damage and immunity to all other damage types.</p>
+            <p class="indent">If the rod is evil, the rod becomes a greataxe called Axe of Merciless Retribution. You gain a +3 bonus to the attack and damage rolls with this magic weapon. It deals an extra 2d6 necrotic damage on a hit. If the target is a follower of Hel or Loki, the axe deals an additional 2d4 psychic damage. In addition, you score a critical hit against a target if you roll a 18, 19, or 20 on a weapon attack roll with this weapon.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Rods</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="type">Rod</set>
+            <set name="slot">onehand</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Artifact</set>
+        </setters>
+    </element>
+    <element name="Rod of Fenrir" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ROD_OF_FENRIR">
+        <description>
+            <p>The undead forged a rod in the icy mountains of Helheim, as all the denizens of Helheim watched. They named the first wielder of the rod Hel Wanderer.</p>
+            <p class="indent">Hel Wanderer travelled to Svilland and brought along the terrors of Helheim. For a little while, Hel Wanderer and the rod spread these horrors all across the land. However, it wasn’t long before another rod-wielder stood before Hel Wanderer. The two fought each other for days on end, with neither victorious. In the end, both of them vanished into thin air, taking their rods with them.</p>
+            <p class="indent">When you attune to the Rod of Hel, you must make a DC 20 Intelligence saving throw. On a failed save, the rod creates a separate identity within you. Only you can hear The Voice of Hel, which is the name of this new persona, until you die, even if your attunement ends. The GM controls the Voice of Hel and is the only one who is aware of its motives. The Voice of Hel is lawful evil. In addition, your soul travels to the deepest pits of Helheim when you die and you cannot be resurrected by any means.</p>
+            <p class="indent">On a successful save, the rod bolsters your health and your hit point maximum increases by 20.</p>
+            <p class="indent">Additionally, while wielding this rod, you gain the following benefits:</p>
+            <ul>
+                <li>You have resistance to all damage types except radiant and psychic.</li>
+                <li>You have a +5 bonus to your attack and damage rolls.</li>
+                <li>Minions of Hel see you as a friendly creature and do not attack you unless you provoke them.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Rods</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="type">Rod</set>
+            <set name="slot">onehand</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Artifact</set>
+        </setters>
+    </element>
+    <element name="Rod of Loki" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ROD_OF_LOKI">
+        <description>
+            <p>Loki never misses an opportunity for trickery. Seeing all Gods and Goddesses aiding their believers with Rods, he secretly crafted his own rod and sent it to Svilland. A lumberjack saw the rod fall out of the sky upon its arrival. Although he was an honest man, he succumbed to Loki’s powers of trickery as soon as he picked up the rod. His wife saw the changes in her husband but she didn’t mind, and she eventually fell under the influence of the rod as well.</p>
+            <p class="indent">The couple secretly built a temple in the woods to please Loki. Since the lumberjack could transform himself into anything he wanted with the rod, Loki followers came from far and wide to see it for their eyes.</p>
+            <p class="indent">However, one day, he disappeared without a trace, and his wife was left with the rod. Everyone coveted the rod, and this eventually caused divides in the group. The woman was never heard of after this divide, although it is rumored that she lost it somewhere on the land. Now, the rod roams Svilland, seeking another who is mad and mischievous enough to wield t. While wielding this rod, you gain the following benefits:</p>
+            <ul>
+                <li>Any critical hit against you becomes a normal hit.</li>
+                <li>When you see a spell being cast, you can also cast the spell once by using the rod within 1 hour. The spell save DC of the spell is 20, and the spell attack modifier is +12.</li>
+                <li>As an action, you can change the rod to another magic item that you saw.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Rods</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="type">Rod</set>
+            <set name="slot">onehand</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Artifact</set>
+        </setters>
+    </element>
+    <element name="Rod of Odin" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ROD_OF_ODIN">
+        <description>
+            <p>When this rod first fell from Asgard to Svilland, it landed in a village. Upon its arrival, all villagers were filled with immense wisdom. However, this sudden burst of knowledge blinded the villagers with a greed to acquire even more. For reasons unknown, all villagers turned on one another. In the end, the rod was all that survived. People of Svilland learnt an important lesson that day. Knowledge had the power to create and to destroy.</p>
+            <p class="indent">While wielding this item, you gain the following benefits:</p>
+            <ul>
+                <li>Your Intelligence and Wisdom scores increase by 5, to a maximum of 29. Your Wisdom and Intelligence scores can’t be reduced thereafter.</li>
+                <li>You gain proficiency in the Arcana, History, and Religion skills.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Rods</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="type">Rod</set>
+            <set name="slot">onehand</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Artifact</set>
+        </setters>
+    </element>
+    <element name="Rod of Thor" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ROD_OF_THOR">
+        <description>
+            <p>Most babies are given rattles or blankets as gifts of birth. Thor, however, was given this rod. It is said that the thunder God greatly enjoyed the use of this rod against foes (both real and imaginary) until he was joined with his beloved hammer, and that the rod still carries a part of the mighty God within.</p>
+            <p class="indent">This rod contains the power of almighty thunder God. While holding this rod, you can feel the lightning within and sometimes you can even hear the thunder. Additionally, your body is covered in sparks.</p>
+            <p class="indent">While wielding this rod, you gain the following benefits:</p>
+            <ul>
+                <li>The rod is a +3 warhammer, and you gain proficiency with warhammers.</li>
+                <li>You have immunity to lightning and thunder damage. Also, when you are hit by thunder or lightning damage, you regain hit points equal to the amount of the damage.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Rods</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="type">Rod</set>
+            <set name="slot">onehand</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Artifact</set>
+        </setters>
+    </element>
+    <element name="Rod of Tyr" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ROD_OF_TYR">
+        <description>
+            <p>One day, Tyr could no longer take all the chaos, injustice, and suffering that plagued Svilland. He chose a young girl who would know nothing but pain all her life to be his champion.</p>
+            <p class="indent">When she turned 18, Tyr blessed her with visions and a rod that possessed the power to both resolve her inner conflicts and to bring justice all across the land. However, when the young woman held the rod and sensed the immense power within, she was filled with hope and ambition for revenge. This rod could help her cleanse the land of all evil, starting with those who made her suffer all her life. Although the identity and the ultimate fate of the rod’s first owner is unknown, many think that it was Queen Bergljot and that she is no longer in possession of it. Alas, this is all that is known about this rod of legend.</p>
+            <p class="indent">While wielding this rod, you gain the following benefits:</p>
+            <ul>
+                <li>You are immune to being charmed, exhausted, frightened, paralyzed, petrified, poisoned, and stunned</li>
+                <li>If a creature does something unjust, as an action, you can curse the creature with the Curse of Justice. Until the creature fixes the mistake or makes amends for it, it suffers one level of exhaustion at the end of each of its long rests. The levels of exhaustion gained by this curse can only be removed by means of a wish spell. Your alignment must be lawful good to be able to use this curse.</li>
+                <li>You start speaking with the voice of Tyr, thus becoming the booming voice of justice. Your Charisma (Intimidation, Persuasion) attempts automatically succeed.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Rods</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="type">Rod</set>
+            <set name="slot">onehand</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Artifact</set>
+        </setters>
+    </element>
+</elements>
+
+<!-- 
+<element name="name" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_">
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Rods</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="type">Rod</set>
+            <set name="slot">onehand</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Artifact</set>
+        </setters>
+    </element>
+    -->

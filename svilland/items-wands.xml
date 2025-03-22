@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Wands</name>
+        <description></description>
+        <author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
+        <update version="0.0.1">
+            <file name="items-wands.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-wands.xml" />
+        </update>
+    </info>
+    <element name="Wand of Elemental Channeling" type="Magic Item" source="Silverplate" id="ID_DRS_SVILLAND_MAGIC_ITEM_WAND_OF_ELEMENTAL_CHANNELING">
+        <description>
+            <p>This wand has 7 charges. While holding it, you can use an action to cast the rune of elemental channeling spell. The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand’s last charge, roll a d20. If you roll a 3 or lower, the wand freezes, burns and crackles with lightning at the same time, crumbling to dust.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Wands</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="type">Wand</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="charges">7</set>
+        </setters>
+    </element>
+    <element name="Wand of Thunderblood" type="Magic Item" source="Silverplate" id="ID_DRS_SVILLAND_MAGIC_ITEM_WAND_OF_THUNDERBLOOD">
+        <description>
+            <p>This wand has 7 charges. While holding it, you can use an action to expend 1 charge and cast the rune of thunderblood spell. The wand regains 1d6 + 1 expended charges daily at dawn.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Wands</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="type">Wand</set>
+            <set name="rarity">Common</set>
+            <set name="attunement">true</set>
+            <set name="charges">7</set>
+        </setters>
+    </element>
+    <element name="Wand of Travel" type="Magic Item" source="Silverplate" id="ID_DRS_SVILLAND_MAGIC_ITEM_WAND_OF_TRAVEL">
+        <description>
+            <p>This wand has 7 charges. While holding it, you can use an action to expend 2 of its 7 charges to cast the feather fall, fly or rune of translocation spell. The wand regains 1d6 + 1 expended charges daily at dawn.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Wands</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="type">Wand</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="charges">7</set>
+        </setters>
+    </element>
+</elements>
+<!-- 
+<element name="names" type="Magic Item" source="Silverplate" id="ID_DRS_SVILLAND_MAGIC_ITEM_">
+        <description>
+            <p></p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Wands</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="type">Wand</set>
+            <set name="rarity">Common</set>
+            <set name="attunement">true</set>
+            <set name="charges">7</set>
+        </setters>
+    </element>
+    -->

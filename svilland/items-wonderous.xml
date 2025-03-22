@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Wonderous</name>
+        <description></description>
+        <author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
+        <update version="0.0.1">
+            <file name="items-wonderous.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-wonderous.xml" />
+        </update>
+    </info>
+</elements>

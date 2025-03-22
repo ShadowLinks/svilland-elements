@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Staves</name>
+        <description></description>
+        <author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
+        <update version="0.0.1">
+            <file name="items-staves.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-staves.xml" />
+        </update>
+    </info>
+    <element name="Broken Light Staff" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_BROKEN_LIGHT_STAFF">
+        <description>
+            <p>This is a staff used by many spellcasters in Svilland, especially while they are in dark dungeons and forgotten places.</p> 
+            <p class="indent">While wielding the staff, you can cast the dancing lights cantrip. Additionally, as a bonus action, you can turn off or extinguish all the light sources within 120 feet of you, except for the magical ones.</p>          
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Staffs</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="weapon">Quarterstaff</set>
+            <set name="type">Staff</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Old One's Cane" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_OLD_ONES_CANE">
+        <description>
+            <p>This was the staff of old seidrs murdered in the massacre caused by the Bear King.</p> 
+            <p class="indent">While wielding this item, you have resistance to cold damage. Additionally, this staff has 10 charges and as an action, you can expend one charge to cast the soul scream spell, or 3 charges to cast the treacherous bonds spell. The staff regains 1d10 expended charges daily at dawn.</p>          
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Staffs</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="weapon">Quarterstaff</set>
+            <set name="type">Staff</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">10</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Scepter of the Stone Table" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_SCEPTER_OF_THE_STONE_TABLE">
+        <description>
+            <p>Scepter of the Stone Table is the staff of a member of the high seidr council. It is made from oak and is 5 feet long.</p> 
+            <p class="indent">The scepter has 5 charges. As an action, you can expend one charge to cast the magic missile spell (4th level version). The spell deals psychic damage instead of force damage when cast in this way. If the target of the spell is a spirit, it must succeed on a DC 16 Wisdom saving throw or be affected by the control spirit spell. Scepter of the Stone Table regains 1d4+1 expended charges daily at dawn.</p>          
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Staffs</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="weapon">Quarterstaff</set>
+            <set name="type">Staff</set>
+            <set name="rarity">Very Rare</set>
+            <set name="charges">5</set>
+            <set name="attunement" addition="by a seidr">true</set>
+        </setters>
+    </element>
+    <element name="Storm Finder, Last Memory of Ragnarok" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_STORM_FINDER_LAST_MEMORY_OF_RAGNAROK">
+        <description>
+            <p>Once upon a time, an oracle named Halvar had a vision of Ragnarok. In his vision, he saw a staff enchanted with thunder and lightning save the Asgardians just as all seemed lost. He searched for the staff far and wide for years on end until one night, he had another vision in which he himself was crafting it. Halvar thus spent the rest of his life searching for the best materials with which he crafted this masterpiece of a staff piece by piece. Alas, he died before he could use it, and before he could give it to those who would do so when the time came. The staff is still somewhere out there, waiting to be found to fulfill its destiny.</p> 
+            <p class="indent">This staff has 10 charges. You can cast any spell that deals lightning or thunder damage by expending a number of charges equal to the level of the spell slot you used. The staff regains 1d4 expended charges daily at dawn. If you stay in a stormy area for 1 hour, the staff regains 3 additional charges.</p>
+            <p class="indent">If you expend the last charge, roll a d20. If you roll a 5 or lower, you have a vision of Ragnarok. The vision deals 3d6 psychic damage to you and this damage can’t be lowered by any means.</p>        
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Staffs</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="weapon">Quarterstaff</set>
+            <set name="type">Staff</set>
+            <set name="rarity">Legendary</set>
+            <set name="charges">10</set>
+            <set name="attunement" addition="by a sorcerer">true</set>
+        </setters>
+    </element>
+</elements>
+
+<!-- 
+<element name="name" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_">
+        <description>
+            <p></p> 
+            <p class="indent"></p>          
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Staffs</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="weapon">Quarterstaff</set>
+            <set name="type">Staff</set>
+            <set name="rarity">Uncommon</set>
+            <set name="charges">6</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    -->

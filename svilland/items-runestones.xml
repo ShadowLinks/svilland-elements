@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Runestones</name>
+        <description></description>
+        <author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
+        <update version="0.0.1">
+            <file name="items-runestones.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-runestones.xml" />
+        </update>
+    </info>
+</elements>

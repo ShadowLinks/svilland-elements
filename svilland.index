@@ -58,6 +58,9 @@
 		<file name="items-armor.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-armor.xml" />
 		<file name="items-potions.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-potions.xml" />
 		<file name="items-rings.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-rings.xml" />
+        <file name="items-rods.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-rods.xml" />
+		<file name="items-staves.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-staves.xml" />
+		<file name="items-wands.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-wands.xml" />
 
 		</files>
 </index>
