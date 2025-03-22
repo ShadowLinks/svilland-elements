@@ -9,42 +9,45 @@
     <element name="Oath to Thor" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_PALADIN_THOR">
         <supports>Sacred Oath</supports>
         <description>
-            <p></p>
-             <h5 class="caption">TENETS OF THOR</h5>
-            <p></p>
+            <p>Alles who swear an oath to Thor carry with them their God’s thunderous might. Walking in their sacred path, they always seek new challenges and foes that seem worthy for them to best.</p>
+			<p class="indent">They show no mercy to the opponents of their God, especially to jotunns. Some of them have heard the stories of Odd and Black Winter and are preparing themselves for the fight that the folks of Svilland will give against hordes of frost and despair.</p>
+            <h5 class="caption">CHANGES IN FEATURES</h5>
+			<p class="indent"><strong><em>Divine Smite and Improved Divine Smite. </em></strong>You deal thunder damage rather than radiant damage with Divine Smite and Improved Divine Smite.</p>
+			<h5 class="caption">TENETS OF THOR</h5>
+            <p>Thor’s ideals involve challenge, courage, valour, and wrath. Although they may vary slightly from one town to the other, alles of Thor share these tenets:</p>
             <p class="indent">
-                <b><i>Tenant</i></b>
-                 desc 
+                <b><i>Honesty. </i></b>
+                Only the cowards lie. Stay bold in your words and actions. 
             </p>
             <p class="indent">
-                <b><i>Tenant</i></b>
-                 desc
+                <b><i>Courage. </i></b>
+                Never back down in the face of danger. Know that the thunder of Thor within you will smite your foes.
             </p>
             <p class="indent">
-                <b><i>Tenant</i></b>
-                desc
+                <b><i>Challenge. </i></b>
+                Do not appreciate foes that are lesser than you. Seek and find those who think they can best the champion of thunder.
             </p>
             <p class="indent">
-                <b><i>Tenant</i></b>
-                desc
+                <b><i>Respect. </i></b>
+                Those who work for their brethren and traditions deserve your respect, those who try to betray them, deserve none.esc
             </p>
             <p class="indent"></p>
 			<p class="indent"></p>
 			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_THOR_SPELLS" />
 			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_THOR_CD" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_THOR_AURA_OF_CHALLENGE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_THOR_CD_THUNDEROUS_SMITE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_THOR_THORS_WRATH" />
 		</description>
-		<sheet display="false">
-			<description></description>
+		<sheet>
+			<description>Feature Change: Divine Smites now deal thunder damage instead of radiant damage.</description>
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_THOR_SPELLS" level="3" />
 			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_THOR_CD" level="3" />
-			<grant type="Archetype Feature" id="ID____" level="7" />
-			<grant type="Archetype Feature" id="ID_____" level="15" />
-			<grant type="Archetype Feature" id="ID______" level="20" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_THOR_AURA_OF_CHALLENGE" level="7" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_THOR_CD_THUNDEROUS_SMITE" level="15" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_THOR_THORS_WRATH" level="20" />
 		</rules>
 	</element>
 	<element name="Oath to Thor Spells" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_THOR_SPELLS">
@@ -54,79 +57,96 @@
 				<thead>
 					<tr><td>Alle Level</td><td>Spell</td></tr>
 				</thead>
-				<tr><td>3rd</td><td>data1</td></tr>
-				<tr><td>5th</td><td>data2</td></tr>
-				<tr><td>9th</td><td>data3</td></tr>
-				<tr><td>13th</td><td>data4</td></tr>
-				<tr><td>17th</td><td>data5</td></tr>
+				<tr><td>3rd</td><td>command, thunderwave</td></tr>
+				<tr><td>5th</td><td>striking ray*, shocking grasp</td></tr>
+				<tr><td>9th</td><td>call lightning, protection from energy (lightning and thunder)</td></tr>
+				<tr><td>13th</td><td>death ward, lightning bolt (as a 4th level spell)</td></tr>
+				<tr><td>17th</td><td>might of Thor*, rune of thunderblood*</td></tr>
 			</table>
 		</description>
+		<sheet>
+			<description level="9"> Protection from energy only thunder and lightning</description>
+			<description level="13"> Protection from energy only thunder and lightning. Lightning bolt as a 4th level spell</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_COMMAND" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_THUNDERWAVE" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_DRS_SVILLAND_SPELL_STRIKING_RAY" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_SHOCKING_GRASP" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_CALL_LIGHTNING" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_DEATH_WARD" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_LIGHTNING_BOLT" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_DRS_SVILLAND_SPELL_MIGHT_OF_THOR" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_DRS_SVILLAND_SPELL_RUNE_OF_THUNDERBLOOD" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Thunderous Strikes" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_THOR_CD">
+		<description>
+			<p>When you take this oath at 3rd level, you gain the following Channel Divinity options;</p>
+			<p class="indent"><strong><em>Thunder Weapon. </em></strong>As an action, you imbue one melee weapon that is in your hand with Thor’s thunder. For 1 minute, the weapon deals additional thunder damage equal to your Charisma modifier.</p>
+			<p class="indent"><strong><em>Thunderous Throw. </em></strong>As an action, you imbue your weapon with thunderous force. For 1 minute, your weapon gains a throwing range of 30/60 feet and deals its damage as thunder damage. You can call the weapon back to your hand as a bonus action.</p>
+		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_THOR_CD_THUNDER_WEAPON" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_THOR_CD_THUNDEROUS_THROW" />
 		</rules>
 	</element>
-	<element name="Channel Divinity" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_THOR_CD">
+	<element name="Channel Divinity: Thunder Weapon" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_THOR_CD_THUNDER_WEAPON">
 		<description>
 			<p></p>
 		</description>
-		<sheet display="false">
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Thunder Weapon">
+			<description>As an action, you imbue one melee weapon that is in your hand with Thor’s thunder. For 1 minute, the weapon deals additional {{charisma:modifier}} thunder damage</description>
 		</sheet>
-		<rules>
-			<grant type="Archetype Feature" id="ID__" />
-			<grant type="Archetype Feature" id="ID___" />
-		</rules>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Channel Divinity: Thunderous Throw" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_THOR_CD_THUNDEROUS_THROW">
 		<description>
 			<p></p>
 		</description>
-		<sheet usage="Channel Divinity" alt="">
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Thunderous Throw">
+			<description>As an action, you imbue your weapon with thunderous force. For 1 minute, your weapon gains a throwing range of 30/60 feet and deals its damage as thunder damage. You can call the weapon back to your hand as a bonus action.</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Aura of Challenge" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_THOR_AURA_OF_CHALLENGE">
 		<description>
-			<p></p>
-		</description>
-		<sheet usage="Channel Divinity" alt="">
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
-		<description>
-			<p></p>
+			<p>Starting at 7th level, the will of Thor grows inside you, and your enemies feel it. Any hostile creature within 10 feet of you has disadvantage on its first attack roll on each of its turns if it attacks a creature other than you.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>Any hostile creature within 10 feet of you has disadvantage on its first attack roll on each of its turns if it attacks a creature other than you.</description>
+			<description level="18">Any hostile creature within 30 feet of you has disadvantage on its first attack roll on each of its turns if it attacks a creature other than you.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Channel Divinity: Thunderous Smite" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_THOR_CD_THUNDEROUS_SMITE">
 		<description>
-			<p></p>
+			<p>Starting at 15th level, you gain the following Channel Divinity option;</p>
+			<p class="indent">As an action, you hold your weapon up and point it to the skies, saying a prayer to Thor. Then you can point to a creature within 60 feet of you and make a ranged spell attack. On a hit, thunderous lightning falls from the sky and smites the creature, dealing 3d8 thunder damage and 3d8 lightning damage. The creature must also succeed on a Constitution saving throw or be stunned until the end of its next turn.</p>
+			<p class="indent">You can also choose to use this option to create a flash of light rather than to smite with thunder. In this case, {{charisma:modifier}} creatuers within 30 feet of you must succeed on a Constitution saving throw or be blinded or deafened (your choice) for 1 minute. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful one.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Thunderous Smite">
+			<description>As an action, you hold your weapon up and point it to the skies, saying a prayer to Thor. Then you can point to a creature within 60 feet of you and make a ranged spell attack. On a hit, thunderous lightning falls from the sky and smites the creature, dealing 3d8 thunder damage and 3d8 lightning damage. The creature must also succeed on a Constitution saving throw or be stunned until the end of its next turn.
+			You can also choose to use this option to create a flash of light rather than to smite with thunder. In this case, {{charisma:modifier}} creatuers within 30 feet of you must succeed on a Constitution saving throw or be blinded or deafened (your choice) for 1 minute. An affected creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful one.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Thor's Wrath" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_THOR_THORS_WRATH">
 		<description>
-			<p></p>
+			<p>Starting at 20th level, as an action, you can call forth the storm of Thor and invoke his might within you. The skies above you darken with clouds and thunder strikes, and your eyes glow blue with sparks of lightning. For 1 minute, you gain the following benefits:</p>
+			<ul>
+                <li>You become immune to lightning and thunder damage.</li>
+                <li>You can use your Thunder Weapon and Thunderous Throw features without expending your Channel Divinity.</li>
+                <li>As a bonus action, you can strike a creature within 30 feet of you with lightning. The creature must make a Dexterity saving throw. The creature takes 1d10 lightning damage plus 1d10 thunder damage on a failed save, or half as much on a successful one. On a save that fails by 5 points or more, the creature is also blinded or deafened for 1 minute. It can repeat its saving throws at the end of its turns to break free from the effect.</li>
+            </ul>
+			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, For 1 minute, you gain the following benefits:
+			You become immune to lightning and thunder damage.
+			You can use your Thunder Weapon and Thunderous Throw features without expending your Channel Divinity.
+			As a bonus action, you can strike a creature within 30 feet of you with lightning. The creature must make a Dexterity saving throw. The creature takes 1d10 lightning damage plus 1d10 thunder damage on a failed save, or half as much on a successful one. On a save that fails by 5 points or more, the creature is also blinded or deafened for 1 minute. It can repeat its saving throws at the end of its turns to break free from the effect.</description>
 		</sheet>
 	</element>
 </elements>
