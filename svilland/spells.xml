@@ -217,7 +217,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Cold's Embrace" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_">
+    <element name="Cold's Embrace" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_COLDS_EMBRACE">
         <supports>Spell Saving Throw, Ranger</supports>
         <description>
             <p>The best defense against the cold is cold itself. You clean a creature’s body with snow, and it makes a Constitution saving throw. On a successful save, it gains resistance against cold damage for the duration. On a failed save, it takes 1d6 cold damage and suffers one level of exhaustion.</p>
@@ -1802,7 +1802,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Striking Ray" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_">
+    <element name="Striking Ray" type="Spell" source="Svilland" id="ID_DRS_SVILLAND_SPELL_STRIKING_RAY">
         <supports>Spell Attack, Paladin</supports>
         <description>
             <p>You call down four rays of branch lightning from the skies and direct them at targets within range. You can direct them at one target or several. Make a ranged spell attack for each branch. On a hit, a target takes 2d4 lightning damage.</p>
