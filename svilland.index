@@ -61,6 +61,7 @@
         <file name="items-rods.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-rods.xml" />
 		<file name="items-staves.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-staves.xml" />
 		<file name="items-wands.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-wands.xml" />
+		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-weapons.xml" />
 
 		</files>
 </index>

@@ -12,7 +12,7 @@
         <supports>Weapon, Simple, Melee, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
     </element>
     <element name="Saex" type="Weapon" source="Svilland" id="ID_DRS_SILVERPLATE_WEAPON_SAEX">
-        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
         <description>
             <p/>
         </description>
@@ -47,7 +47,7 @@
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_SVILLANDER_AXE</supports>
     </element>
     <element name="Svillander Axe" type="Weapon" source="Svilland" id="ID_DRS_SILVERPLATE_WEAPON_SVILLANDER_AXE">
-        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_SVILLANDER_AXE</supports>
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_SVILLANDER_AXE, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
         <description>
             <p/>
             <div element="ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_SVILLANDER_AXE"/>
@@ -70,7 +70,7 @@
         <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
     </element>
     <element name="Svardstav" type="Weapon" source="Svilland" id="ID_DRS_SILVERPLATE_WEAPON_SVARDSTAV">
-        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED,</supports>
         <description>
             <p/>
         </description>
@@ -105,7 +105,7 @@
         <supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY</supports>
     </element>
     <element name="Yew Longbow" type="Weapon" source="Svilland" id="ID_DRS_SILVERPLATE_WEAPON_YEW_LONGBOW">
-        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY</supports>
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY,ID_INTERNAL_WEAPON_GROUP_BOWS</supports>
         <description>
             <p/>
         </description>
@@ -119,4 +119,495 @@
             <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_YEW_LONGBOW</set>
         </setters>
     </element>
+    <element name="Arcanic Terror" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ARCANIC_TERROR">
+        <description>
+            <p>This magic weapon is a maul used by a hero of legend to fight a cult that was using forest spirits to terrorize people. While wielding this weapon, you gain the following benefits:</p>
+            <ul>
+                <li>When you unsheath this weapon, it casts the antimagic field spell. While you wield the weapon, you are not affected by the spell.</li>
+                <li>This weapon radiates bright light in a 10-foot radius and dim light for an additional 10 feet when unsheathed.</li>
+                <li>If you score a critical hit against a spellcaster, the target must expend one spell slot of its highest available slot level.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">maul</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="maul">Weapon</set>
+            <set name="rarity">Legendary</set>
+            <set name="weapon">Maul</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Axl, The Storm Calmer" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_AXL_THE_STORM_CALLER">
+        <description>
+            <p>Once upon a time in Thorath, a group of priests decided to make something to help Thor in his final battle in Ragnarok. They travelled all across Svilland and collected materials to craft the best weapon they could. After 5 years, they returned to Thorath and crafted a longsword.</p>
+            <p class="indent">While wielding this item, you gain the following benefits:</p>
+            <ul>
+                <li>You have immunity to lightning damage.</li>
+                <li>When targeted by a spell or another magical effect that deals lightning damage, roll a d20. If you roll an 18 or higher, the sword absorbs the damage and you can cast the lightning bolt (DC 15) spell as a bonus action on your next turn.</li>
+                <li>As an action, you can thrust this sword into the ground. When you do so, it discharges a blast of lightning in a 60-foot radius. Each creature in the area must make a DC 16 Dexterity saving throw. A target takes 5d8 lightning damage on a failed save, or half as much on a successful one. The sword remains in the ground for 3 turns and cannot be pulled out by any means.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">greatsword, lightning</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="greatsword">Weapon</set>
+            <set name="rarity">Legendary</set>
+            <set name="weapon">Greatsword</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Black Ice Sword, Wintercall" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_BLACK_ICE_SWORD_WINTERCALL">
+        <description>
+            <p>This magic weapon is made in Langgagudd and is collected by Odd’s Oath members. In spite of its fragile appearance, it can make your enemies experience a frozen hel.</p>
+            <ul>
+                <li>You have a +2 bonus to attack and damage rolls made with this magic weapon.</li>
+                <li>The sword has 6 charges. You can use your action to point the sword at a creature within 30 feet of you and expend 3 charges. The target must succeed on a DC 15 Constitution saving throw or suffer four levels of exhaustion for 5 rounds. The sword regains 1d6 expended charges daily at dawn.</li>
+                <li>When you score a critical hit, the target is trapped in an ice cube and is petrified until the end of its next turn.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">longsword, exhaustion</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="longsword">Weapon</set>
+            <set name="rarity">Legendary</set>
+            <set name="enhancement">2</set>
+            <set name="charges">6</set>
+            <set name="weapon">Longsword</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Blade of the Faceless" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_">
+        <description>
+            <p>This blade can be seen in the hands of the Faceless. A screaming face is carved on the pommel of the weapon.</p>
+            <p class="indent">While wielding it, you gain the following benefits:</p>
+            <ul>
+                <li>You have a +1 bonus to attack and damage rolls made with this magic weapon.</li>
+                <li>On a hit, you can choose to deal half damage. If you do so, the blade makes a deep and powerful sound. The sound deals 1d10 psychic damage to every creature in a 10-foot radius.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">svardstav, psychic</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="svardstav">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="enhancement">1</set>
+            <set name="weapon">Svardstav</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Bow of Fox's Eye" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_BOW_OF_FOXS_EYE">
+        <description>
+            <p>This bow is covered in the blood, the eyes and the fur of foxes. While wielding this item, your Wisdom score increases by 1, to a maximum of 20. Additionally, you gain proficiency in the Perception skill. If you are already proficient in it, you add half of your proficiency bonus again.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords">Yew longbow</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="yew longbow">Weapon</set>
+            <set name="rarity">Rare</set>
+            <set name="weapon">Yew Longbow</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="wisdom" value="1" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" requirements="!ID_PROFICIENCY_SKILL_PERCEPTION" />
+        </rules>
+    </element>
+    <element name="Corrupted Shadow" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_CORRUPTED_SHADOW">
+        <description>
+            <p>n the black markets of Alsvartr, there are some swords that change hands too quickly. There are rumors that once you own this sword, all you can think about is getting rid of it, although no one knows why. When asked, previous owners simply say it messed with their heads.</p>
+            <p class="indent">While wielding this magic weapon, you can cast the banishment and black tentacles spells. Once you cast one of them, you must finish a long rest to cast it again.</p>
+            <p class="indent"><strong><em>Curse.</em></strong> If you refuse to spill blood once you unsheathe the sword, you must make a DC 10 Wisdom saving throw. On failure, the sword speaks to you, telling you that you need to sell it or give it away. You must succeed on a DC 15 Wisdom saving throw just after your next long rest or you make an attack roll against the nearest creature.</p>
+        </description>
+        <setters>
+            <set name="keywords">saex</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="saex">Weapon</set>
+            <set name="rarity">Very Rare</set>
+            <set name="cursed">true</set>
+            <set name="weapon">Saex</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Dual Swords of the End" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_DUAL_SWORDS_OF_THE_END">
+        <description>
+            <p>These swords are two emotionally opposite and unpredictable magic weapons. The left sword has little holes on it with tiny needles inside, and the right sword has a green gem placed on it.</p>
+            <p class="indent">The left sword is filled with fury and wants you to defeat your foes whereas the right sword seeks to protect you and makes sure that you are not in your final battle.</p>
+            <p class="indent">Although powerful, many people don’t want to use these swords since they are unpredictable. The set must be 100 feet within each other or both swords lose their properties and become +1 weapons.</p>
+            <p class="indent">While wielding these swords, roll a d20 before you roll initiative. If the result is 11 or higher, the left sword deals an extra 1d6 slashing damage on a hit and the right sword heals you by 1d6 at the end of each of your turns, both until the battle ends. If you roll a 10 or lower, the left sword deals 1d4 piercing damage to you at the beginning of each of your turns you keep holding it and the right sword grants you a +1 bonus to AC</p>
+        </description>
+        <setters>
+            <set name="keywords">saex, radiant</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="saex">Weapon</set>
+            <set name="rarity">Very Rare</set>
+            <set name="weapon">Saex</set>
+            <set name="attunement">true</set>
+            
+            <set name="slot">twohand</set>
+        </setters>
+    </element>
+    <element name="Hammer from Nothing" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_HAMMER_FROM_NOTHING">
+        <description>
+            <p>This hammer is used by the raiders of Alsvartr to be able to see at night.</p>
+            <p class="indent">While wielding this magic weapon, you have darkvision out to a range of 60 feet. This weapon has 3 charges. By expending one as an action, you can increase your speed by 30 feet and double the damage of the weapon, both until the end of your next turn. The hammer regains 1d3 expended charges when you finish a long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords">warhammer, darkvision</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="warhammer">Weapon</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">3</set>
+            <set name="weapon">Warhammer</set>
+            <set name="attunement">true</set>
+        </setters><rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+        </rules>
+    </element>
+    <element name="Hammer of Dvergrs" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_HAMMER_OF_DVERGRS">
+        <description>
+            <p>This hammer is made and sold by dvergrs in Berzog’ul and can be purchased in Firstward if the dvergrs want to sell it. A Thurisaz Rune is carved on the hammer.</p>
+            <p class="indent">You have a +1 bonus to attack and damage rolls made with this magic weapon. Additionally, when you hit with an attack using this warhammer, the target takes an extra 1d4 lightning and 1d4 thunder damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">warhammer, thunder</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="warhammer">Weapon</set>
+            <set name="rarity">Rare</set>
+            <set name="enhancement">1</set>
+            <set name="weapon">Warhammer</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Howl and Crawl" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_HOWL_AND_CRAWL">
+        <description>
+            <p>These dual swords are generally used by werevargr hunters. These silvered weapons must be 100 feet within one another or they lose their properties and become nonmagical silvered swords. While wielding these magic weapons, you gain the following benefits:</p>
+            <ul>
+                <li>You have a +1 bonus to attack and damage rolls made with Howl. If you score a critical hit against a creature with this weapon, the target must succeed on a DC 16 Constitution saving throw or be poisoned until the end of its next turn and take 1d4 poison damage.</li>
+                <li>You have a +1 bonus to attack and damage rolls made with Crawl. If you score a critical hit against a creature with this weapon, the target must succeed on a DC 16 Constitution saving throw or be blinded until the end of its next turn.</li>
+            </ul>
+            <p class="indent">If you score a critical hit with Crawl or Howl against a target that was blinded or poisoned with these weapons, the target is stunned until the end of its next turn.</p>
+        </description>
+        <setters>
+            <set name="keywords">saex, poison, blind, stun</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="saex">Weapon</set>
+            <set name="rarity">Rare</set>
+            <set name="enhancement">1</set>
+            <set name="weapon">Saex</set>
+            <set name="attunement">true</set>
+            <set name="slot">twohand</set>
+        </setters>
+    </element>
+    <element name="Icy Axe" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ICY_AXE">
+        <description>
+            <p>It has a wooden handle and icy carvings on it. This axe is covered with ice and is generally made by dvergrs.</p>
+            <p class="indent">While wielding this magic weapon, you can strike the ground as an action and release a wave of cold in a 20-foot radius. The creatures in the area take 2d4 cold damage. Once you use this benefit, you must finish a short or long rest to use it again.</p>
+            <p class="indent">When you score a critical hit with this weapon, the target takes an extra 1d4 cold damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">svillander axe, battleaxe, cold</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="svillander axe or battleaxe">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="weapon">Svillander Axe||Battleaxe</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Iron Howl Sword" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_IRON_HOWL_SWORD">
+        <description>
+            <p>A sword crafted by an unknown folk that was living on the mountains, it carries wolf spirits within. When someone swings it in battle, one can hear the howling of these wolves.</p>
+            <p class="indent">If you hit a metal surface with this magic sword, you deal 1d4 thunder damage to each creature in a 20-foot radius centered on you.</p>
+        </description>
+        <setters>
+            <set name="keywords">saex, thunder</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="saex">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="weapon">Saex</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Iron Punisher" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_IRON_PUNISHER">
+        <description>
+            <p>This is a hammer used by the military commanders of Alsvartr. It is carried as a show of strength in battle, and as a means to ensure the respect of their soldiers.</p>
+            <p class="indent">When you hit with an attack using this weapon, the target takes an extra 1d8 bludgeoning damage.</p>
+            <p class="indent">If you kill a creature in battle while wielding this weapon, your next successful attack within 1 minute deals an extra 5 damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">light hammer, warhammer</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="light hammer or warhammer">Weapon</set>
+            <set name="rarity">Rare</set>
+            <set name="weapon">Light Hammer||Warhammer</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Ivory Spikes" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_IVORY_SPIKES">
+        <description>
+            <p>This weapon is generally crafted from mammoth bones and teeth and is used by hunters who collect the spirits of animals.</p>
+            <p class="indent">When you kill a beast with this weapon, you can choose to capture its spirit. Later, you can release the spirits as a bonus action to attack a creature you can see within 60 feet of you, dealing 1d4 psychic damage per spirit (to a maximum of 6d4).</p>
+        </description>
+        <setters>
+            <set name="keywords">morningstar, psychic</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="morningstar">Weapon</set>
+            <set name="rarity">Rare</set>
+            <set name="weapon">Morningstar</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Lash of Storm Tamers" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_LASH_OF_STORM_TAMERS">
+        <description>
+            <p>When someone cracks this whip, made for the purpose of taming a storm by Thor followers, thunder booms and sparks of lightning fly about.</p>
+            <p class="indent">This whip deals thunder damage instead of slashing damage. When you score a critical hit with this weapon, the target takes an extra 1d4 lightning damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">whip, thunder, lightning</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="whip">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="weapon">Whip</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Moonstone Warpick" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_MOONSTONE_WARPICK">
+        <description>
+            <p>One day in Green Lights of the East, people discovered a stone, which they believed to have fallen from the sky. They took the stone, forged weapons with it and these weapons became quite popular in a short time. They call this stone Moonstone. All weapons forged with the moonstone are white instead of steel gray.</p>
+            <p class="indent">This magic weapon has 6 charges. By expending one as a bonus action, you can cast the divine favor spell. The weapon regains 1d6 expended charges every night.</p>
+        </description>
+        <setters>
+            <set name="keywords">warpick</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="warpick">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="charges">6</set>
+            <set name="weapon">Warpick</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Night Influenced Carver" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_NIGHT_INFLUENCED_CARVER">
+        <description>
+            <p>This dagger has quite a bad reputation since it is generally used by assassins and followers of Loki.</p>
+            <p class="indent">While wielding this dagger you have a +2 bonus to Dexterity (Stealth) skill checks, and the dagger leaves no scar on the body it is used on when it is used at night.</p>
+        </description>
+        <setters>
+            <set name="keywords">dagger</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="dagger">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="weapon">Dagger</set>
+        </setters>
+        <rules>
+            <stat name="stealth:misc" value="2" />
+        </rules>
+    </element>
+    <element name="Peacekeeper's Razor" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_PEACEKEEPERS_RAZOR">
+        <description>
+            <p>Usually used by Tyr’s Judges, this weapon helps differentiate good from evil and the innocent from the sinner with the guidance of Tyr’s judgment.</p>
+            <p class="indent">This item has 2 charges. You can use an action to expend 1 of its charges and cast the detect evil and good spell. The razor regains all expended charges at the end of a long rest.</p>
+            <p class="indent">Additionally, if you are good-aligned, when you hit an evil-aligned creature with an attack made with this weapon, the target takes an extra 1d6 slashing damage. If you are evil-aligned, you take 1d4 radiant damage at the start of each turn you keep holding the sword.</p>
+        </description>
+        <setters>
+            <set name="keywords">swords, radiant</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="any sword">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="charges">2</set>
+            <set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Rune Sword" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_RUNE_SWORD">
+        <description>
+            <p>Members of the Rune Keepers organization carry this sword crafted by the alles and gothis of Odin, who also place the symbol of Odin on the hilt.</p>
+            <p class="indent">This magic sword has 2 charges. You can use an action to expend 1 of its charges, which allows you to use the Detect Rune feature. The sword regains all expended charges when you finish a long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords">swords</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="any sword">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="charges">2</set>
+            <set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Scarring Flail" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_SCARRING_FLAIL">
+        <description>
+            <p>Scarring Flail is a weapon made from bear and wolf claws. This flail deals slashing damage instead of bludgeoning damage. Additionally, for every 25 damage you deal to hostile creatures, the damage of the weapon increases by 1, to a maximum of 7 damage. If the bonus is +2 or lower, the weapon is uncommon; +6 or lower, the weapon is rare; +7, the weapon is very rare.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords">flail, slashing</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="flail">Weapon</set>
+            <set name="rarity">varies</set>
+            <set name="weapon">Flail</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Soul Slasher" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_SOUL_SLASHER">
+        <description>
+            <p>This is a dark gray sword with a grim reputation of harming the souls of the creatures it cuts. The sword makes a whistling sound when you swing it.</p>
+            <p class="indent">You have a +1 bonus to attack and damage rolls made with this magic weapon. When you hit with an attack using this weapon, the target takes an extra 1d8 psychic damage.</p>
+            <p class="indent">Additionally, if you stab the ground with the sword as an action, spirits can’t enter or exit a 10-foot radius centered on the sword.</p>
+        </description>
+        <setters>
+            <set name="keywords">longsword, psychic</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="longsword">Weapon</set>
+            <set name="rarity">Very Rare</set>
+            <set name="enhancement">1</set>
+            <set name="weapon">Longsword</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="The Widowmaker Spear" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_THE_WIDOWMAKER_SPEAR">
+        <description>
+            <p>This spear dates back to the times before Svilland. It is one of the two weapons used by a jotunn of legend. The spear carries the brutality of Black Winter with it.</p>
+            <p class="indent">When you hit with an attack using this magic weapon, the target takes an extra 2d6 acid damage.</p>
+            <p class="indent">Additionally, you can thrust this spear to the ground as an action to cause a rain of acid to fall in a 60-foot radius centered on the spear. Each creature in the area must succeed on a DC 16 Dexterity saving throw or take 5d8 acid damage and their equipment is corroded. Corroded weapons deal 1 less damage than normal and corroded armors grant 1 less AC. These effects are permanent unless the items are repaired. Once you use this benefit, you cannot pull the spear out of the ground until after 1d4 rounds, and you must finish a short or long rest to use this benefit again.</p>
+        </description>
+        <setters>
+            <set name="keywords">spear, acid</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="spear">Weapon</set>
+            <set name="rarity">Legendary</set>
+            <set name="weapon">Spear</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Thor's Fist" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_THORS_FIST">
+        <description>
+            <p>Thor’s Fist is a fist shaped stone crafted by the very best blacksmiths. The rune of Thor is carved in the front. When you hit your enemies with it, mighty thunders of Thor make the ground quake and tremble</p>
+            <p class="indent">When you hit with an attack using this magic weapon, the target and the creatures within 5 feet of it take an extra 2d6 lightning or thunder damage (one of your choice). When in stormy areas, this damage increases to 3d6.</p>
+        </description>
+        <setters>
+            <set name="keywords">warhammer, lightning, thunder</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="warhammer">Weapon</set>
+            <set name="rarity">Very Rare</set>
+            <set name="weapon">Warhammer</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Thunderguard Sword" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_THUNDERGUARD_SWORD">
+        <description>
+            <p>Thunderguards, the elite soldiers of Green Lights of the East, use this sword. The rune of Thor is carved on its hilt.</p>
+            <p class="indent">When you hit with an attack using this magic sword, the target takes an extra 2d4 thunder damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">longsword, thunder</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="longsword">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="weapon">Longsword</set>
+        </setters>
+    </element>
+    <element name="Tormenting Chopper" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_TORMENTING_CHOPPER">
+        <description>
+            <p>In the dungeons of Thorath, life is rough, painful, and bloody. Although never proven, it is rumored that the guards there even torture criminals using this weapon, which is where it gets its name.</p>
+            <p class="indent">When you score a critical hit against a creature using this weapon, the target must succeed on a DC 14 Constitution saving throw or suffer 2 levels of exhaustion for 1d4 turns.</p>
+        </description>
+        <setters>
+            <set name="keywords">handaxe, exhaustion</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="handaxe">Weapon</set>
+            <set name="rarity">Rare</set>
+            <set name="weapon">Handaxe</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Twilight of hte Massacre" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_TWILIGHT_OF_THE_MASSACRE">
+        <description>
+            <p>These are the swords of the warlords who gave the orders to hunt down every kuning at the end of the Second Age. It is said that there are five of these swords, all of which were lost on the night of the massacre, and no one knows what happened to them. A farmer found one years later, but people claimed it was corrupted and got rid of the sword. Now, they are out there in Svilland and no one knows where.</p>
+            <p class="indent">When you hit with an attack using this magic weapon, your attack ignores resistance to slashing damage. Additionally, if you score a critical hit with the attack, the target takes a -2 penalty to its AC for 5 turns.</p>
+        </description>
+        <setters>
+            <set name="keywords">greatsword</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="greatsword">Weapon</set>
+            <set name="rarity">Legendary</set>
+            <set name="weapon">Greatsword</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="War Cleaver" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_WAR_CLEAVER">
+        <description>
+            <p>This axe is too heavy to use in battle, but the proud berserkers of Nionaem use it as a show of strength. Generally carried to show off, this axe still indicates that the carrier is a strong warrior.</p>
+            <p class="indent">Your Strength score must be equal to or higher than 16 to use this axe properly. Otherwise you have disadvantage on your attack rolls made with this weapon.</p>
+            <p class="indent">When you hit with an attack using this axe, the target takes an extra 1d8 bludgeoning damage. It is not possible to kill someone gently with this weapon, since the target is mostly crushed beneath the axe or split in half.</p>
+        </description>
+        <setters>
+            <set name="keywords">greataxe, bludgeoning</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="greataxe">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="weapon">Greataxe</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Waterblade" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_WATERBLADE">
+        <description>
+            <p>This sword is part of a myth of Iron Lake (p. 63).</p>
+            <p class="indent">People say that this is the only sword thrown into the lake that the lake threw back. It is said that a warrior threw her sword into the lake one day, as many had done for years. This time, however, the sword would not sink. No matter how many times she threw it in, the sword washed up on the shore again and again. People thus believed that the sword or the warrior was cursed. It later turned out that the sword was simply made from a different material preventing it from sinking like the other weapons.</p>
+            <p class="indent">When you hit with an attack using this weapon, your attacks score a critical hit on a roll of 19 or 20.</p>
+        </description>
+        <setters>
+            <set name="keywords">swords</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="any sword">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
 </elements>
+
+<!-- 
+<element name="name" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_">
+        <description>
+            <p></p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords">longsword, radiant</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="longsword">Weapon</set>
+            <set name="rarity">Legendary</set>
+            <set name="enhancement">3</set>
+            <set name="weapon">Longsword</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+-->
