@@ -1,61 +1,158 @@
-		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+<elements>
+    <info>
+        <name>Oath to Freyja</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="paladin-freyja.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/paladin-freyja.xml"/>
+        </update>
+    </info>
+    <element name="Oath to Freyja" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_PALADIN_FREYJA">
+        <supports>Sacred Oath</supports>
+        <description>
+            <p>Alles who swear their oath to Freyja are wardens of nature and protectors of the realm against unearthly foes. They fight in the name of life itself, seeking to convert or destroy those who try to take innocent lives.</p>
+			<p class="indent">They practice joy and enthusiasm for life and all its beauty. They aid communities to help them live peacefully with the wilderness in welfare and security. Before they strike, they always try to preserve.</p>
+             <h5 class="caption">TENETS OF FREYJA</h5>
+            <p>Freyja’s tenets involve respect for nature and being aware of the truth that people are just as powerless as weak branches in the face of nature’s wrath. Their principles are based on building a better community that values vitality, abundance, and coexistence.</p>
+            <p class="indent">
+                <b><i>Listen to nature. </i></b>
+                 The Goddess of the woods whispers to those who follow her, nestled in the sounds of animals and plants. It is everyone’s duty to listen to the land they inhabit. 
+            </p>
+            <p class="indent">
+                <b><i>Aid those in need.</i></b>
+                Protect the weak and help the poor. There are those who cannot survive on their own. Act as the merciful hand of your Goddess towards them.
+            </p>
+            <p class="indent">
+                <b><i>Show mercy to life. </i></b>
+                Always think twice before ending a life. Every creature in the realm deserves to live the life that has been gifted to them.
+            </p>
+            <p class="indent">
+                <b><i>Be vigilant against death and despair. </i></b>
+                Do not let the undead sully your Goddess’s domain. Always be cautious against corruption and disease for the sake of the living.
+            </p>
+            <p class="indent"></p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_FREYJA_SPELLS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_FREYJA_CD" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_FREYJA_AURA_OF_HEALING" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_FREYJA_BLESSING_OF_VITALITY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_FREYJA_NATURES_INTERVENTION" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_FREYJA_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_FREYJA_CD" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_FREYJA_AURA_OF_HEALING" level="7" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_FREYJA_BLESSING_OF_VITALITY" level="15" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_FREYJA_NATURES_INTERVENTION" level="20" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="Oath to Freyja Spells" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_FREYJA_SPELLS">
 		<description>
-			<p></p>
+			<p>You gain oath spells at the alle levels listed below:</p>
+			<table>
+				<thead>
+					<tr><td>Alle Level</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>3rd</td><td>animal friendship, speak with animals</td></tr>
+				<tr><td>5th</td><td>locate animals or plants, protection from poison</td></tr>
+				<tr><td>9th</td><td>conjure animals, plant growth</td></tr>
+				<tr><td>13th</td><td>dominate beast, stoneskin</td></tr>
+				<tr><td>17th</td><td>commune with nature, mass cure wounds</td></tr>
+			</table>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_ANIMAL_FRIENDSHIP" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_LOCATE_ANIMALS_OR_PLANTS" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_PROTECTION_FROM_POISON" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_CONJURE_ANIMALS" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_PLANT_GROWTH" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_DOMINATE_BEAST" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_STONESKIN" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="Channel Divinity" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_FREYJA_CD">
 		<description>
-			<p></p>
+			<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+			<p class="indent"><strong><em>Awaken Nature.</em></strong> You can use your Channel Divinity to awaken the wilderness and request its aid. As an action, present your holy symbol and choose an effect from below:</p>
+			<ul>
+                <li>Roots start to move and can ensnare a foe of your choice within 30 feet of you. The creature must succeed on a Strength or Dexterity saving throw (of its choice) or be restrained for 1 minute.</li>
+                <li>A Large tree of your choice within 30 feet of you swings its branches and makes a melee spell attack against a target of your choice within the same range. The tree uses your spell attack modifier and has 10 feet reach. On a hit, the target takes 2d8 bludgeoning damage, or 4d4 piercing damage if the branches of the tree have thorns on them.</li>
+                <li>The earth slides and pulls down a creature of your choice within 30 feet of you. The creature must succeed on a Strength saving throw against your spell save DC or be knocked prone and take 1d10 bludgeoning damage.</li>
+            </ul>
+			<p class="indent"><strong><em>Turn the Unholy</em></strong> You can use the Turn the Unholy feature of Oath of Devotion.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_FREYJA_CD_AWAKEN_NATURE" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_FREYJA_CD_TURN_THE_UNHOLY" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+	<element name="Channel Divinity: Awaken Nature" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_FREYJA_CD_AWAKEN_NATURE">
 		<description>
 			<p></p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Awaken Nature">
+			<description>As an action, present your holy symbol and choose an effect from below:
+			Roots start to move and can ensnare a foe of your choice within 30 feet of you. The creature must succeed on a Strength or Dexterity saving throw (of its choice) or be restrained for 1 minute.
+			A Large tree of your choice within 30 feet of you swings its branches and makes a melee spell attack against a target of your choice within the same range. The tree uses your spell attack modifier and has 10 feet reach. On a hit, the target takes 2d8 bludgeoning damage, or 4d4 piercing damage if the branches of the tree have thorns on them.
+			The earth slides and pulls down a creature of your choice within 30 feet of you. The creature must succeed on a Strength saving throw against your spell save DC or be knocked prone and take 1d10 bludgeoning damage.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
+	<element name="Channel Divinity: Turn the Unholy" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_FREYJA_CD_TURN_THE_UNHOLY">
 		<description>
-			<p></p>
+			<p>As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.</p>
+			<p class="indent">A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet alt="Turn the Unholy" usage="Channel Divinity">
+			<description>As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
+	<element name="Aura of Healing" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_FREYJA_AURA_OF_HEALING">
 		<description>
-			<p></p>
+			<p>Starting at 7th level, you and friendly creatures within 10 feet of you start to regain 1 hit point at the start of each of your turns. Additionally, you require half the sustenance in terms of food or water to survive the day.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>you and friendly creatures within 10 feet of you start to regain 1 hit point at the start of each of your turns. Additionally, you require half the sustenance in terms of food or water to survive the day.</description>
+			<description level="18">you and friendly creatures within 30 feet of you start to regain 1 hit point at the start of each of your turns. Additionally, you require half the sustenance in terms of food or water to survive the day.</description>
+		</sheet>
+	</element>
+	<element name="Blessing of Vitality" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_FREYJA_BLESSING_OF_VITALITY">
+		<description>
+			<p>Starting at 15th level, you can pray to Freyja for her blessing. When you do so, you and friendly creatures within 30 feet of you experience the effects below:</p>
+			<p class="indent">Any effect on you caused by disease or poison ends. Also, for 1 minute, you and the affected allies have advantage on saving throws against poison and disease. Any friendly creature that falls unconscious automatically succeeds on death saving throws.</p>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can pray to Freyja for her blessing. When you do so, you and friendly creatures within 30 feet of you experience the effects below
+			Any effect on you caused by disease or poison ends. Also, for 1 minute, you and the affected allies have advantage on saving throws against poison and disease. Any friendly creature that falls unconscious automatically succeeds on death saving throws.</description>
+		</sheet>
+	</element>
+	<element name="Nature's Intervention" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_FREYJA_NATURES_INTERVENTION">
+		<description>
+			<p>At 20th level, Freyja blesses you with the very essence of nature. You and your allies gain vitality from this essence, and your wounds start to heal much faster. In addition, nature actively starts to help you and your allies in combat.</p>
+			<p class="indent">Using your action, you invoke the vivacity of nature. For 1 minute, you gain the following benefits:</p>
+			<ul>
+                <li>At the start of each of your turns, you and friendly creatures within 30 feet of you regain 10 hit points.</li>
+                <li>As a bonus action, you can use the Awaken the Nature option of your Channel Divinity up to a number of times equal to your Charisma modifier (minimum of 1).</li>
+                <li>You count as if you cast an animal friendship spell on beasts that are within 60 feet of you. These beasts must not be under the influence of another entity such as a Vanir. If they are so, once this feature is activated, the opponent that influences these animals must succeed on a Charisma saving throw or lose its influence.</li>
+            </ul>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Using your action, you invoke the vivacity of nature. For 1 minute, you gain the following benefits:
+			At the start of each of your turns, you and friendly creatures within 30 feet of you regain 10 hit points.
+			As a bonus action, you can use the Awaken the Nature option of your Channel Divinity up to {{charisma:modifier}} times.
+			You count as if you cast an animal friendship spell on beasts that are within 60 feet of you. These beasts must not be under the influence of another entity such as a Vanir. If they are so, once this feature is activated, the opponent that influences these animals must succeed on a Charisma saving throw or lose its influence.</description>
 		</sheet>
 	</element>
 </elements>
