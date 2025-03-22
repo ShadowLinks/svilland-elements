@@ -9,42 +9,46 @@
     <element name="Oath to Odin" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_PALADIN_ODIN">
         <supports>Sacred Oath</supports>
         <description>
-            <p></p>
-             <h5 class="caption">TENETS OF ODIN</h5>
-            <p></p>
+            <p>Alles who swear their oath to Odin become his emissaries, and guardians in the realm. They lead the folks against Odin’s enemies.</p>
+			<p class="indent">They yearn for wisdom, acting cautiously in the face of any kind of challenge, rather than behaving recklessly. This is because they know more about Odin than the other Svillanders. They know the Allfather seeks sacred lore, and they know that he is the master of tricking fools.</p>
+			<p class="indent">Before they strike, they try to listen and understand. However, they do not hesitate once they decide to do something.</p>
+             <h5 class="caption">CHANGES IN FEATURES</h5>
+			 <p class="indent"><strong><em>Divine Smite and Improved Divine Smite.</em></strong> You deal psychic damage rather than radiant damage with Divine Smite and Improved Divine Smite.</p>
+			 <h5 class="caption">TENETS OF ODIN</h5>
+            <p>Odin’s teachings are traditions of Svillanders. However, the highest ranking ruler of Valhalla does not restrain the mind of those devoted to him, and he gives them free will to find their own paths to find wisdom. Still, his essence is based on the following tenets:</p>
             <p class="indent">
-                <b><i>Tenant</i></b>
-                 desc 
+                <b><i>Practice wisdom. </i></b>
+                 The wisest shall dine closest to the Allfather. Act with wisdom and with clarity. Always seek new knowledge and equip yourself with the knowledge available in your realm. 
             </p>
             <p class="indent">
-                <b><i>Tenant</i></b>
-                 desc
+                <b><i>Listen to the ravens. </i></b>
+                 The Allfather loves to communicate with his children and to guide them. Pay attention to ravens and other omens around you.
             </p>
             <p class="indent">
-                <b><i>Tenant</i></b>
-                desc
+                <b><i>Understand Allfather’s Kingdom. </i></b>
+                No Gods, Goddesses, or creatures are above his might. He has plans for everyone and everything. Do not fear those who threaten the pantheon, they are just fools playing their parts.
             </p>
             <p class="indent">
-                <b><i>Tenant</i></b>
-                desc
+                <b><i>Trade respect. </i></b>
+                Act in a respectful manner to others and ask to be treated with respect in return. Your duty to the Allfather requires you to inspire majesty.
             </p>
             <p class="indent"></p>
 			<p class="indent"></p>
 			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_ODIN_SPELLS" />
 			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_ODIN_CD" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_ODIN_INVOKE_AURA_OF_INSPIRATION" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_ODIN_INVOKE_WISE_TRICKERY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_ODIN_INVOKE_THE_SACRED_LORE" />
 		</description>
-		<sheet display="false">
-			<description></description>
+		<sheet>
+			<description>Feature Change: Divine Smites now do psychic instead of radiant damage.</description>
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_ODIN_SPELLS" level="3" />
 			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_ODIN_CD" level="3" />
-			<grant type="Archetype Feature" id="ID____" level="7" />
-			<grant type="Archetype Feature" id="ID_____" level="15" />
-			<grant type="Archetype Feature" id="ID______" level="20" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_ODIN_INVOKE_AURA_OF_INSPIRATION" level="7" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_ODIN_INVOKE_WISE_TRICKERY" level="15" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_ODIN_INVOKE_THE_SACRED_LORE" level="20" />
 		</rules>
 	</element>
 	<element name="Oath to Odin Spells" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_ODIN_SPELLS">
@@ -54,79 +58,110 @@
 				<thead>
 					<tr><td>Alle Level</td><td>Spell</td></tr>
 				</thead>
-				<tr><td>3rd</td><td>data1</td></tr>
-				<tr><td>5th</td><td>data2</td></tr>
-				<tr><td>9th</td><td>data3</td></tr>
-				<tr><td>13th</td><td>data4</td></tr>
-				<tr><td>17th</td><td>data5</td></tr>
+				<tr><td>3rd</td><td>detect magic, disguise self</td></tr>
+				<tr><td>5th</td><td>augury, detect thoughts</td></tr>
+				<tr><td>9th</td><td>clairvoyance, hypnotic pattern</td></tr>
+				<tr><td>13th</td><td>confusion, divination</td></tr>
+				<tr><td>17th</td><td>commune, seeming</td></tr>
 			</table>
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_DETECT_MAGIC" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_DISGUISE_SELF" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_AUGURY" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_DETECT_THOUGHTS" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_CLAIRVOYANCE" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_HYPNOTIC_PATTERN" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_CONFUSION" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_DIVINATION" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_COMMUNE" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_SEEMING" />
 		</rules>
 	</element>
 	<element name="Channel Divinity" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_ODIN_CD">
 		<description>
-			<p></p>
+			<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+			<p class="indent"><strong><em>Cosmic Affinity.</em></strong> As a bonus action, you say a prayer to Odin and can cast a spell that normally requires you to take one action.</p>
+			<p class="indent"><strong><em>Turn the Heathen.</em></strong> As an action, you present your holy symbol and speak the prayer of Allfather’s conquest, using your Channel Divinity. Each fey or fiend that can see or hear you within 30 feet must make a Charisma saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.</p>
+			<p class="indent">A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move into a space within a 30-foot-radius. It also can’t take reactions. As its action, it can only choose to Dash or to try to escape from the effect that prevents it from moving. If there’s nowhere to move, the creature can use Dodge as its action.</p>
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" />
-			<grant type="Archetype Feature" id="ID___" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_ODIN_INVOKE_CD_COSMIC_AFFINITY" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_ODIN_INVOKE_CD_TURN_THE_HEATHEN" />
 		</rules>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Channel Divinity: Cosmic Affinity" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_ODIN_INVOKE_CD_COSMIC_AFFINITY">
 		<description>
 			<p></p>
 		</description>
-		<sheet usage="Channel Divinity" alt="">
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Cosmic Affinity" action="Bonus Action">
+			<description>As a bonus action, you say a prayer to Odin and can cast a spell that normally requires you to take one action.</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Channel Divinity: Turn the Heathen" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_ODIN_INVOKE_CD_TURN_THE_HEATHEN">
 		<description>
 			<p></p>
 		</description>
-		<sheet usage="Channel Divinity" alt="">
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Turn the Heathen">
+			<description>As an action, you present your holy symbol and speak the prayer of Allfather’s conquest, using your Channel Divinity. Each fey or fiend that can see or hear you within 30 feet must make a Charisma saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.
+			A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move into a space within a 30-foot-radius. It also can’t take reactions. As its action, it can only choose to Dash or to try to escape from the effect that prevents it from moving. If there’s nowhere to move, the creature can use Dodge as its action.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Aura of Inspiration" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_ODIN_INVOKE_AURA_OF_INSPIRATION">
 		<description>
-			<p></p>
+			<p>Starting at 7th level, you gain an aura of inspiration from the Allfather’s passionate seeking. You and any creature within 10 feet of you gain 1d4 on Wisdom, Intelligence and Charisma ability checks.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>You and any creature within 10 feet of you gain 1d4 on Wisdom, Intelligence and Charisma ability checks.</description>
+			<description level="18">You and any creature within 30 feet of you gain 1d4 on Wisdom, Intelligence and Charisma ability checks.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Wise Trickery" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_ODIN_INVOKE_WISE_TRICKERY">
 		<description>
-			<p></p>
+			<p>Starting at 15th level, Odin blesses you with his cosmic wisdom, as well as with his expertise in trickery. By using your Channel Divinity, you can gain the following pieces of knowledge about a creature:</p>
+			<ul>
+                <li>How its ability scores are compared to yours, higher or lower.</li>
+                <li>One of the things it is vulnerable, resistant or immune to.</li>
+                <li>Its saving throw proficiencies.</li>
+                <li>Is it proficient in a type of skill or with a type of weapon (e.g. martial), if only proficient with one weapon type, you know it is partially proficient with that type of weapon.</li>
+            </ul>
+			<p class="indent">Additionally, you make Charisma ability checks and Intelligence and Wisdom saving throws with advantage against that creature for 1 minute.</p>
+			<p class="indent">The creature cannot surprise you for 1 minute.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="Channel Divinity">
+			<description> By using your Channel Divinity, you can gain the following pieces of knowledge about a creature:
+			How its ability scores are compared to yours, higher or lower.
+			One of the things it is vulnerable, resistant or immune to.
+			Its saving throw proficiencies.
+			Is it proficient in a type of skill or with a type of weapon (e.g. martial), if only proficient with one weapon type, you know it is partially proficient with that type of weapon.
+			Additionally, you make Charisma ability checks and Intelligence and Wisdom saving throws with advantage against that creature for 1 minute.
+			The creature cannot surprise you for 1 minute.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Invoke the Sacred Lore" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_ODIN_INVOKE_THE_SACRED_LORE">
 		<description>
-			<p></p>
+			<p>At 20th level, as an action, you can wake the power of Odin’s sacred lore. He blesses you with his grip on magic and on the cosmos as a whole. With this power you gain the following benefits for 1 minute:</p>
+			<ul>
+                <li>You and friendly creatures within 30 feet of you make your Intelligence and Wisdom saving throws with advantage.</li>
+                <li>Hostile creatures within 30 feet of you make their Wisdom and Intelligence saving throws with disadvantage.</li>
+                <li>You can use the Turn the Heathen option of your Channel Divinity as a bonus action. Turned creatures also take psychic damage equal to your Charisma modifier in the turn they are turned.</li>
+                <li>Ravens swarm in, and a number of swarm of ravens equal to your Charisma modifier are conjured within 300 feet of you. As a bonus action, you can order them to move and attack your foes.</li>
+            </ul>
+			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action you gain the following for 1 minute:
+			You and friendly creatures within 30 feet of you make your Intelligence and Wisdom saving throws with advantage.
+			Hostile creatures within 30 feet of you make their Wisdom and Intelligence saving throws with disadvantage.
+			You can use the Turn the Heathen option of your Channel Divinity as a bonus action. Turned creatures also take {{charisma:modifier}} psychic damage in the turn they are turned.
+			Ravens swarm in, and {{charisma:modifier}} swarms of ravens are conjured within 300 feet of you. As a bonus action, you can order them to move and attack your foes.</description>
 		</sheet>
 	</element>
 </elements>
