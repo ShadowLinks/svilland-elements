@@ -63,6 +63,7 @@
 		<file name="items-wands.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-wands.xml" />
 		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-weapons.xml" />
 		<file name="items-wonderous.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-wonderous.xml" />
+		<file name="items-runestones.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-runestones.xml" />
 
 		</files>
 </index>

@@ -8,4 +8,39 @@
             <file name="items-runestones.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-runestones.xml" />
         </update>
     </info>
+    <element name="Ansuz (Rune of Magic)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ANSUZ_LESSER">
+        <description>
+            <p>Ansuz is the rune of magic and an Ansuz runestone allows you to cast various arcane spells.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must expend a number of spell slots equal to the number of charges the runestone has. If you are attuned, this number decreases by 1.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Detect Magic.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Magic Missle.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Uncommon</set>
+            <set name="charges">1</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
 </elements>
+
+<!-- 
+<element name="Ansuz (Rune of Magic)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ANSUZ">
+        <description>
+            <p></p>
+            <p class="indent"><strong><em></em></strong> </p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">1</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    -->
