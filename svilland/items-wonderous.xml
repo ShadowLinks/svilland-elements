@@ -8,4 +8,461 @@
             <file name="items-wonderous.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-wonderous.xml" />
         </update>
     </info>
+    <element name="Bear Claw Gloves" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_BEAR_CLAW_GLOVES">
+        <description>
+            <p>This set of gloves made of sharpened bear gloves attached to reinforced cloth is generally used by rangers.</p>
+            <p class="indent">While wearing this item, your unarmed strikes deal slashing damage instead of bludgeoning damage. Additionally, when you hit with an attack using these gloves, the target takes an extra 2 slashing damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">slashing, gloves</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+            <set name="slot">hands</set>
+        </setters>
+    </element>
+    <element name="Bear's Shoulderguards" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_BEARS_SHOULDERGUARDS">
+        <description>
+            <p>These shoulderguards are made of bear fur and have a frightening effect on beasts.</p>
+            <p class="indent">While wearing this item, beasts of challenge rating 4 or lower must succeed on a DC 15 Wisdom saving throw when they attack you or be frightened of you for 1d4 turns.</p>
+        </description>
+        <setters>
+            <set name="keywords">frighten</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="slot">shoulders</set>
+        </setters>
+    </element>
+    <element name="Black Ice Piece" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_">
+        <description>
+            <p>If you hold a Black Ice Piece with your bare hands, it deals 1d6 necrotic damage to you at the start of each turn you keep holding it. You can crush and destroy this item as an action to regain a spell slot up to 4th level (of your choice).</p>
+            <p class="indent">Black Ice Pieces are used to craft black ice items by dvergrs. Approximately 10 pieces are needed to craft a Medium armor or weapon.</p>
+        </description>
+        <setters>
+            <set name="keywords">necrotic</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+    <element name="Cloak of Mountain Peaks" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_CLOAK_OF_MOUNTAIN_PEAKS">
+        <description>
+            <p>The Cloak of Mountain Peaks is used to hide in the mountains and is generally crafted and used by the folks living there.</p>
+            <p class="indent">As long as you are on a mountain, you have advantage on Dexterity (Stealth) checks and climbing doesn’t slow you down.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncoommon</set>
+            <set name="attunement">true</set>
+            <set name="slot">shoulders</set>
+        </setters>
+    </element>
+    <element name="Crown of Faded Arcane" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_CROWN_OF_FADED_ARCANE">
+        <description>
+            <p>Once worn by the powerful sorcerers of the realm, this crown is now sold on black markets.</p>
+            <p class="indent">If you have spell slots of 3rd level or lower while wearing it, the number of your spell slots of 3rd level and lower increases by 2.</p>
+        </description>
+        <setters>
+            <set name="keywords">spell slots</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement" addition="by a spellcaster">true</set>
+            <set name="slot">head</set>
+        </setters>
+    </element>
+    <element name="Cuffs of Draugrs" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_CUFFS_OF_DRAUGRS">
+        <description>
+            <p>These cuffs that look like metal skeletal hands are generally used to capture draugrs. There is a rumor that they were initially crafted by seidrs.</p>
+            <p class="indent">You can use them to cuff an incapacitated, paralyzed, restrained, or stunned undead as an action. When you do so, the undead can’t move or can’t take any actions until the cuffs are removed.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+        </setters>
+    </element>
+    <element name="Flesh Carver" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_FLESH_CARVER">
+        <description>
+            <p>This is a dagger generally used by fleshcarvers and runewalkers to cut their own bodies without harming themselves while they draw runes on their flesh.</p>
+        </description>
+        <setters>
+            <set name="keywords">dagger</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+        </setters>
+    </element>
+    <element name="Frosted Mask" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_FROSTED_MASK">
+        <description>
+            <p>This is an iron mask covered in white stones that look like ice</p>
+            <p class="indent">When worn, the mask constantly radiates cold air and extinguishes nonmagical fires within 10 feet of you.</p>
+            <p class="indent">As long as you are wearing it, you are proficient in the Perception skill.</p>
+        </description>
+        <setters>
+            <set name="keywords">skill, perception</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="slot">head</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+        </rules>
+    </element>
+    <element name="Gloves of the Trickster" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_GLOVES_OF_THE_TRICKSTER">
+        <description>
+            <p>These very light leather gloves are generally worn by thieves and members of Loki’s Bastards. They make stealing easier owing to the runes stitched on them. If you are seen wearing them, people think that you are notorious and dishonorable.</p>
+            <p class="indent">While wearing these gloves, you gain proficiency in the Sleight of Hand skill.</p>
+        </description>
+        <setters>
+            <set name="keywords">skill, sleight of hand</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="slot">hands</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+        </rules>
+    </element>
+    <element name="Golden Hands" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_GOLDEN_HANDS">
+        <description>
+            <p>Morlog, a Mithal warmaster, lost his hands in a battle and ordered two golden gloves from dvergrs to replace his hands. After his death, his family gave them away as they were not too keen on keeping his memory alive.</p>
+            <p class="indent">While wearing this item, you gain the following benefits:</p>
+            <ul>
+                <li>You have a +2 bonus to your Charisma saving throws.</li>
+                <li>You have advantage on Charisma (Persuasion) checks.</li>
+                <li>You can use these gloves even if you have no hands, and they act like real hands.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords">charisma save, saves</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement">true</set>
+            <set name="slot">hands</set>
+        </setters>
+        <rules>
+            <stat name="charisma:save:misc" value="2" />
+        </rules>
+    </element>
+    <element name="Green Light Lantern" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_GREEN_LIGHT_LANTERN">
+        <description>
+            <p>The lantern looks like a golden birdcage and is generally found in the rooms of warlords and governors, especially on borderlands. People say that you become more obedient in the face of authorities when the room is lit with the lantern’s green light.</p>
+            <p class="indent">As an action, you can say the command word you designated when you attuned to the lantern, and cause the lantern to shed light. It sheds bright light in a 20-foot radius and dim light for an additional 20 feet.</p>
+            <p class="indent">The lantern has 3 charges. By expending one as an action while you are in the light of the lantern, you can cast the dominate person spell against a creature that is also in the lantern’s light. The lantern regains all expended charges daily at dawn.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+            <set name="slot">onehand</set>
+            <set name="charges">3</set>
+        </setters>
+    </element>
+    <element name="Helmet of the Death Deer" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_HELMET_OF_THE_DEATH_DEER">
+        <description>
+            <p>Using deer skulls as a helmet is a practice common in Svilland. Sometimes, deers become the spirit of the region in which they lived upon their death. Using the skull of such a deer results in magical properties.</p>
+            <p class="indent">While wearing the helmet, you have advantage on the attack rolls against beasts if you are in a forest.</p>
+            <p class="indent">The helmet has 3 charges. By expending one charge, you can give a simple one-word command to a beast. The target must succeed on a DC 18 Wisdom saving throw or obey the command. This item regains 1d4-1 expended charges (minimum of 1 charge) daily at dawn.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+            <set name="slot">head</set>
+            <set name="charges">3</set>
+        </setters>
+    </element>
+    <element name="Horn of Beasts" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_HORN_OF_BEASTS">
+        <description>
+            <p>As an action, you can blow this horn and summon 1d4 beasts of challenge rating one or lower. The animals appear in unoccupied spaces within 30 feet of you. The beasts are friendly to you and your companions. Roll initiative for them as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves against hostile creatures, but otherwise take no actions. The GM has the creatures’ statistics. They disappear after 1 hour, or when they drop to 0 hit points.</p>
+            <p class="indent">Once you use the horn in this way, you must finish a long rest to do so again.</p>
+        </description>
+        <setters>
+            <set name="keywords">summon</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Horn of Retreat" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_HORN_OF_RETREAT">
+        <description>
+            <p>When you blow the horn as an action, creatures within 60 feet of you hear the howls of animals and your body is engulfed in a fog. As a part of your action, you choose up to 6 willing creatures within 60 feet of you. The fog teleports you and the chosen creatures to a random safe place within 500 feet of you. The GM determines the exact location.</p>
+            <p class="indent">Once you use the horn in this way, you must finish a long rest to do so again. Additionally, roll a d20 on every use. If the result is 1, the fog covers the horn and teleports it elsewhere after the horn’s normal powers take effect.</p>
+        </description>
+        <setters>
+            <set name="keywords">teleportation</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Key of Yggdrasil" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_KEY_OF_YGGDRASIL">
+        <description>
+            <p>This is a wooden key made of a branch of the World Tree, Yggdrasil. Just asYgdrasil’s branches lead to different realms, this key opens doors to different locations.</p>
+            <p class="indent">You whisper a specific location to the key as an action. From that moment on, while opening a door, you can expend one of the key’s 4 charges as an action and transform the door to a portal that leads to the whispered location for 2 turns. You can hold the portal open for another 2 turns by expending another charge. You can change the whispered location once per month, and the key regains one expended charge at the end of every week.</p>
+        </description>
+        <setters>
+            <set name="keywords">portal, teleportation</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Mammoth Horn" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_MAMMOTH_HORN">
+        <description>
+            <p>This is a horn made of mammoth bones or tusks. As an action, you can blow it and release a monstrous warcry.</p>
+            <p class="indent">Once you do so, each hostile creature within 60 feet of you must succeed on a DC 15 Wisdom saving throw or be frightened of you until the end of their next turn, and each ally within the same radius has advantage on their next attack roll made within 1 minute.</p>
+        </description>
+        <setters>
+            <set name="keywords">frighten</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+    <element name="Memento of the Mystic" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_MEMENTO_OF_THE_MYSTIC">
+        <description>
+            <p>This is a book with blank pages and a brown cover. Some say that Odin bound the will of a heretic mystic to the book, while others claim that the book was the creation of Loki.</p>
+            <p class="indent">You can use your action to ask the book a question by writing it down on one of its empty pages. When you do so, an answer appears on the next page at dawn the next day. If no mortal has the answer to your question, or you shouldn’t know the answer for one reason or another (determined at the GM’s discretion), no answer appears. You can ask the book a question in this way once per week.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+        </setters>
+    </element>
+    <element name="Oaken Shoulderguard" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_OAKEN_SHOULDERGUARD">
+        <description>
+            <p>This shoulderguard can be worn over your armor. When worn, you gain resistance to acid damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+            <set name="slot">shoulders</set>
+        </setters>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+        </rules>
+    </element>
+    <element name="Pestilence Amulet" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_PESTILENCE_AMULET">
+        <description>
+            <p>This amulet looks like a piece of rock with a purple gem on it. There is a small space under the gem, which holds poison.</p>
+            <p class="indent">When a creature drinks the poison, the poison takes effect after 1d4 days. The creature must succeed on a DC 17 Constitution saving throw or it takes an amount of poison damage equal to 5 x the number of days that passed.</p>
+            <p class="indent">There is enough poison for one use under the gem, which is refilled after you finish a long rest with the amulet still on your person.</p>
+        </description>
+        <setters>
+            <set name="keywords">posion</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+        </setters>
+    </element>
+    <element name="Restless Boots of Freyja" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_RESTLESS_BOOTS_OF_FREYJA">
+        <description>
+            <p>These boots are knitted in Freyja temples by priestesses. They are made from wool, leather and ivy.</p>
+            <p class="indent">While wearing this item, you ignore the effects of difficult terrain. The boots also keep you warm and you ignore the effects of cold weather.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="slot">feet</set>
+        </setters>
+    </element>
+    <element name="Returning Bracelet" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_RETURNING_BRACELET">
+        <description>
+            <p>This bracelet was first crafted by a warrior who had trouble keeping track of his weapon.</p>
+            <p class="indent">During a short rest, you magically bind the bracelet to a weapon you are carrying. Once you do so, you can summon the weapon to your hand as a bonus action if the weapon is within 100 feet of you. There must be a viable way between you and the weapon, meaning that it cannot break through solid obstacles such as barricades or walls.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="slot">wrist</set>
+        </setters>
+    </element>
+    <element name="Rotten Robe" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ROTTEN_ROBE">
+        <description>
+            <p>Followers of Balder crafted these milk-white robes before the fall of Balder. However, the robes decayed and became rotten when Balder died.</p>
+            <p class="indent">As long as you are wearing this item, your alignment cannot be detected.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+            <set name="slot">shoulders</set>
+        </setters>
+    </element>
+    <element name="Soulbound Collar" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_">
+        <description>
+            <p>Mostly slavers use these collars. When a creature wears this collar, it must succeed on a DC 15 Wisdom saving throw when you issue a command to it, or the collar forces it to obey. The collar can be picked by a successful DC 21 Dexterity check. It can also be broken and has 15 AC and 25 hit points, as well as immunity to poison and psychic damage.</p>
+            <p class="indent">If a creature dies while wearing this item, the collar captures their soul. Such a creature can only be brought back to life by means of a true resurrection or wish spell, or it can be brought back by other means, but only after the collar is destroyed.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="slot">neck</set>
+        </setters>
+    </element>
+    <element name="Vegask" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_VEGASK">
+        <description>
+            <p>This is a bronze bracelet that has a red gem on the top of it. It looks like a common accessory.</p>
+            <p class="indent">If you hit a creature with an unarmed strike while wearing this bracelet, it explodes and deals 4d20+10 fire damage to all creatures within 10 feet of you (including you), and 4d20+10 force damage to creatures within an additional 20 feet. As a result, the bracelet is destroyed and your hand is severed.</p>
+            <p class="indent"><strong><em>Curse.</em></strong> This item is cursed. Once you wear this bracelet, you can’t remove it in any way except by means of a wish spell.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="slot">wrist</set>
+            <set name="cursed">true</set>
+        </setters>
+    </element>
+    <element name="Warlord's Fist" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_WARLORDS_FIST">
+        <description>
+            <p>This is a glove forged with the blood of Fenrir’s kin. It is believed that a warlord, who was a follower of Fenrir, used this glove to massacre Odin’s followers.</p>
+            <p class="indent">While wearing this, you have +2 bonus to your damage rolls made with unarmed strikes. Additionally, if you grapple a creature while wearing it, you deal 1d4 piercing damage to the creature at the start of each of your turns.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="slot">hands</set>
+        </setters>
+    </element>
+    <element name="Wolf Collar" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_WOLF_COLLAR">
+        <description>
+            <p>This collar prevents a creature from transforming into a werevargr. The lock of the collar can be picked by a successful DC 19 Dexterity check. It can also be broken and has 13 AC and 21 hit points, as well as immunity to  poison and psychic damage.</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="slot">neck</set>
+        </setters>
+    </element>
+    <element name="Wyrm Lantern" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_WYRM_LANTERN">
+        <description>
+            <p>This lantern carries a piece of wyrm breath in it. It always sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The color of the light depends on the wyrm whose breath was taken. All friendly creatures within 10 feet of the lantern gain truesight out to a range of 30 feet</p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords">truesight</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Wyrm Nail Buckle" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_WYRM_NAIL_BUCKLE_FAKE">
+        <description>
+            <p>This is a beard and hair accessory. The originals were crafted out of wyrm nails, however many on the market nowadays are fakes.</p>
+            <p class="indent">While wearing this item, you have advantage on Charisma saving throws whether it is an original or a fake. If it is an original, the buckle becomes a rare item and your Charisma score increases by 1, to a maximum of 20.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Wyrm Nail Buckle" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_WYRM_NAIL_BUCKLE">
+        <description>
+            <p>This is a beard and hair accessory. The originals were crafted out of wyrm nails, however many on the market nowadays are fakes.</p>
+            <p class="indent">While wearing this item, you have advantage on Charisma saving throws whether it is an original or a fake. If it is an original, the buckle becomes a rare item and your Charisma score increases by 1, to a maximum of 20.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="Charisma" value="1">
+        </rules>
+    </element>
 </elements>
+
+<!-- 
+<element name="name" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_">
+        <description>
+            <p></p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="slot">shoulders</set>
+        </setters>
+    </element>
+    -->
