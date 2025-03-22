@@ -9,42 +9,50 @@
     <element name="Oath to Hel" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_PALADIN_HEL">
         <supports>Sacred Oath</supports>
         <description>
-            <p></p>
+            <p>Alles who swear an oath to Hel carry her rotting touch with them and bestow the weight of their inevitable death upon living creatures. They are cold and unfeeling warriors who possess traits of the dead. They can rally the undead in the realm to do their and their Goddess’s bidding.</p>
+			<p class="indent">They show no respect to anything other than death and its divine queen. They see others, such as the followers of Fenrir or Loki, as tools for their righteous cause.</p>
+			 <h5 class="caption">CHANGES IN FEATURES</h5>
+			 <p class="indent"><strong><em>Lay on Hands.</em></strong> Hel does not want any living thing to be healed, as this delays their arrival in Helheim. She only lets you heal yourself or undead creatures with Lay on Hands.</p>
+			 <p class="indent">If you try to heal other creatures by justifying that they need to remain alive for Hel’s plans, the amount of hit points regained by the creature is still halved.</p>
+			 <p class="indent">On the other hand, you can choose to deal damage with your Lay on Hands feature. By touching a creature, you can inflict necrotic damage in the same amount as you would heal by using Lay on Hands normally.</p>
+			 <p class="indent"><strong><em>Divine Smite and Improved Divine Smite.</em></strong> You inflict necrotic damage rather than radiant damage with Divine Smite and Improved Divine Smite.</p>
              <h5 class="caption">TENETS OF HEL</h5>
-            <p></p>
+            <p>Hel’s tenets for her champions involve respect for her absolute power, the joy of death and the punishment of fools who run for their lives or who try to reach Valhalla. Alles of Hel are cold and unfeeling. They believe in the dominance of death, which they believe will eventually reign over the realm.</p>
             <p class="indent">
-                <b><i>Tenant</i></b>
-                 desc 
+                <b><i>Do not fear death.</i></b>
+                Death is the ultimate salvation your Goddess will bring you. There is no glory in it, just the end of a temporary illusion. You will serve her in Helheim just as you did before. 
             </p>
             <p class="indent">
-                <b><i>Tenant</i></b>
-                 desc
+                <b><i>Show no mercy. </i></b>
+                No matter what creature it is, everyone must bow before Hel. Show no remorse when taking a life.
             </p>
             <p class="indent">
-                <b><i>Tenant</i></b>
-                desc
+                <b><i>Be proud. </i></b>
+                You are the champion of Hel; your heart does not have a place for emotions running amok. Take pride in the authority Hel has given you and act in a regal manner.
             </p>
             <p class="indent">
-                <b><i>Tenant</i></b>
-                desc
+                <b><i>Act cold.</i></b>
+                You carry with you the face of death, act accordingly.
             </p>
             <p class="indent"></p>
 			<p class="indent"></p>
 			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_HEL_SPELLS" />
 			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_HEL_CD" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_HEL_AURA_OF_DREAD" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_HEL_DEATHS_PERSISENCE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_HEL_RITE_OF_DEATH" />
 		</description>
-		<sheet display="false">
-			<description></description>
+		<sheet>
+			<description>Feature Changes: 
+			Lay on Hands can only heal you or undead or deals necrotic damage. If you try to heal other creatures by justifying that they need to remain alive for Hel’s plans, the amount of hit points regained by the creature is still halved.
+			Divine Smite deals necrotic damage instead of radiant</description>
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_HEL_SPELLS" level="3" />
 			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_HEL_CD" level="3" />
-			<grant type="Archetype Feature" id="ID____" level="7" />
-			<grant type="Archetype Feature" id="ID_____" level="15" />
-			<grant type="Archetype Feature" id="ID______" level="20" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_HEL_AURA_OF_DREAD" level="7" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_HEL_DEATHS_PERSISENCE" level="15" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_HEL_RITE_OF_DEATH" level="20" />
 		</rules>
 	</element>
 	<element name="Oath to Hel Spells" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_HEL_SPELLS">
@@ -54,79 +62,96 @@
 				<thead>
 					<tr><td>Alle Level</td><td>Spell</td></tr>
 				</thead>
-				<tr><td>3rd</td><td>data1</td></tr>
-				<tr><td>5th</td><td>data2</td></tr>
-				<tr><td>9th</td><td>data3</td></tr>
-				<tr><td>13th</td><td>data4</td></tr>
-				<tr><td>17th</td><td>data5</td></tr>
+				<tr><td>3rd</td><td>bane, inflict wounds</td></tr>
+				<tr><td>5th</td><td>blindness/deafness, ray of enfeeblement</td></tr>
+				<tr><td>9th</td><td>animate dead, vampiric touch</td></tr>
+				<tr><td>13th</td><td>cage of bones*, hollow eyes*</td></tr>
+				<tr><td>17th</td><td>borrowed hand*, contagion</td></tr>
 			</table>
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_BANE" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_INFLICT_WOUNDS" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_ANIMATE_DEAD" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_VAMPIRIC_TOUCH" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_DRS_SVILLAND_SPELL_CAGE_OF_BONES" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_DRS_SVILLAND_SPELL_HOLLOW_EYES" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_DRS_SVILLAND_SPELL_BORROWED_HAND" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_CONTAGION" />
 		</rules>
 	</element>
 	<element name="Channel Divinity" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_HEL_CD">
 		<description>
-			<p></p>
+			<p>When you take this Oath at 3rd level, you gain the following two Channel Divinity options.</p>
+			<p class="indent"><strong><em></em>Hel’s Rot.</strong> As an action, you can show your holy symbol and point to a creature within 30 feet of you, and who you can see. The creature must make a Constitution saving throw. On a failed save, it takes 2d8 plus your Charisma modifier amount of necrotic damage and is poisoned for 1 minute. It takes half as much damage and is not poisoned on a successful save. A poisoned creature can repeat its saving throws at the end of its turns to break free from this effect.</p>
+			<p class="indent"><strong><em>Blight Weapon. </em></strong>As an action, a melee weapon in your hand is filled with Hel’s deadly blessing. For 1 minute, the weapon deals an extra 1d4 + your Charisma modifier amount of necrotic damage.</p>
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" />
-			<grant type="Archetype Feature" id="ID___" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_HEL_CD_HELS_ROT" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_HEL_CD_BLIGHT_WEAPON" />
 		</rules>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Channel Divinity: Hel's Rot" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_HEL_CD_HELS_ROT">
 		<description>
 			<p></p>
 		</description>
-		<sheet usage="Channel Divinity" alt="">
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Hel's Rot">
+			<description>As an action, you can show your holy symbol and point to a creature within 30 feet of you, and who you can see. The creature must make a Constitution saving throw. On a failed save, it takes 2d8 plus your Charisma modifier amount of necrotic damage and is poisoned for 1 minute. It takes half as much damage and is not poisoned on a successful save. A poisoned creature can repeat its saving throws at the end of its turns to break free from this effect.</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Channel Divinity: Blight Weapon" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_HEL_CD_BLIGHT_WEAPON">
 		<description>
 			<p></p>
 		</description>
-		<sheet usage="Channel Divinity" alt="">
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Blight Weapon">
+			<description>As an action, a melee weapon in your hand is filled with Hel’s deadly blessing. For 1 minute, the weapon deals an extra 1d4 + your Charisma modifier amount of necrotic damage.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Aura of Dread" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_HEL_AURA_OF_DREAD">
 		<description>
-			<p></p>
+			<p>Starting at 7th level, the dreadful reality of Helheim begins to take its place in your presence. You constantly emanate a dreadful aura while you aren’t incapacitated. The aura extends 10 feet from you in every direction, but not through total cover.</p>
+			<p class="indent">When a creature enters the aura for the first time or ends its turn within, you can choose to affect it with an aura of dread. When you do so, it must succeed on a Wisdom saving throw or be frightened of you for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful one.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>You constantly emanate a dreadful aura while you aren’t incapacitated. The aura extends 10 feet from you in every direction, but not through total cover. When a creature enters the aura for the first time or ends its turn within, you can choose to affect it with an aura of dread. When you do so, it must succeed on a Wisdom saving throw or be frightened of you for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful one.</description>
+			<description level="18">You constantly emanate a dreadful aura while you aren’t incapacitated. The aura extends 30 feet from you in every direction, but not through total cover. When a creature enters the aura for the first time or ends its turn within, you can choose to affect it with an aura of dread. When you do so, it must succeed on a Wisdom saving throw or be frightened of you for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful one.</description>			
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Death's Persistence" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_HEL_DEATHS_PERSISENCE">
 		<description>
-			<p></p>
+			<p>Starting at 15th level, when you are reduced to 0 hit points and are not killed outright, you roll a number of d6s equal to your Charisma modifier. Your hit points become that result + your paladin level instead.</p>
+			<p class="indent">Once this feature is activated, it cannot be activated again until you finish a long rest</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>When you are reduced to 0 hit points and are not killed outright, you roll {{charisma:modifier}}d6s. Your hit points become that result + {{level:paladin}} instead.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Rite of Death" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_HEL_RITE_OF_DEATH">
 		<description>
-			<p></p>
+			<p>At 20th level, you can summon the reign of Hel to where you are. As an action, you channel the essence of the depths of Helheim to the realm you are in. For 1 minute, you gain the following benefits and effects:</p>
+			<ul>
+                <li>You can cast animate dead in one action rather than a minute, and without using any material components. The animated creature crumbles to dust after 10 minutes, and its corpse is consumed by Helheim. The undead creatures animated in this way carry the bane of Hel, and their attacks deal an additional amount of necrotic damage equal to your Charisma modifier.</li>
+                <li>You have an aura of death, any hostile creature that starts its turn within 30 feet of you must succeed on a Constitution saving throw or take 2d6 necrotic damage.</li>
+                <li>You and your allies within 30 feet of you gain immunity to necrotic damage.</li>
+                <li>Hostile creatures within 60 feet of you become vulnerable to necrotic damage. If a creature is immune to necrotic damage, its immunity becomes resistance instead, and if it has resistance, it is cancelled out and the creature takes necrotic damage as normal.</li>
+            </ul>
+			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you channel the essence of the depths of Helheim to the realm you are in. For 1 minute, you gain the following benefits and effects:
+			You can cast animate dead in one action rather than a minute, and without using any material components. The animated creature crumbles to dust after 10 minutes, and its corpse is consumed by Helheim. The undead creatures animated in this way carry the bane of Hel, and their attacks deal an additional {{charisma:modifier}} necrotic damage.
+			You have an aura of death, any hostile creature that starts its turn within 30 feet of you must succeed on a Constitution saving throw or take 2d6 necrotic damage.
+			You and your allies within 30 feet of you gain immunity to necrotic damage.
+			Hostile creatures within 60 feet of you become vulnerable to necrotic damage. If a creature is immune to necrotic damage, its immunity becomes resistance instead, and if it has resistance, it is cancelled out and the creature takes necrotic damage as normal.</description>
 		</sheet>
 	</element>
 </elements>
