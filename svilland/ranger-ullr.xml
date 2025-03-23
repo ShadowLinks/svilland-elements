@@ -1,61 +1,89 @@
+<elements>
+    <info>
+        <name>Ullr's Way</name>
+        <update version="0.0.1">
+            <file name=" ranger-ullr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/ranger-ullr.xml"/>
+        </update>
+    </info>
+    <element name="Ullr's Way" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_RANGER_ULLR">
+        <supports>Ranger Archetype</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<p>Those who follow Ullr’s Way are rangers that devote themselves to the hunt. Their way is believed to be guided by Ullr, the God of Hunt and Glory. For such rangers, the hunt is a religious act and sacred. However, not all rangers who follow Ullr’s Way are devoted to Ullr. In their opinion, the God of Hunt merely blesses them with the right tools for their skills.</p>
+			<p class="indent">To these rangers, the hunt itself is more important than the game, and their life’s purpose is to continue this endless hunt. They are mostly recruited or hired as hunters or manhunters for slaying creatures or humanoids in exchange for bounty.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_ULLR_HUNTERS_TRAP" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_ULLR_MARK_OF_THE_HUNT" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_ULLR_WEAKEN_THE_PREY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_ULLR_HUNTERS_PREPARATION" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_ULLR_HUNTERS_TRAP" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_ULLR_MARK_OF_THE_HUNT" level="7" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_ULLR_WEAKEN_THE_PREY" level="11" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_ULLR_HUNTERS_PREPARATION" level="15" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="Hunter's Trap" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_ULLR_HUNTERS_TRAP">
 		<description>
-			<p></p>
+			<p>At 3rd level, you learn to create a magical trap. As an action, you set a trap by choosing a 10-foot-square area within 60 feet of you. When a hostile creature enters the area, it must make a Dexterity saving throw. On a failed save, the creature takes 2d8 force damage and is knocked prone. On a successful save, the damage is halved and the creature isn’t knocked prone.</p>
+			<p class="indent">You can only have one Hunter’s Trap active at a time. Once set, you can deactivate the trap as a bonus action, and it becomes ready to set once again. Once triggered, you cannot use this feature again until you finish a short rest.</p>
+			<p class="indent">The damage of the Hunter’s Trap feature increases to 3d8 at the 7th, 4d8 at 11th and 5d8 at 15th level that you gain in this class.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Short Rest">
+			<description>As an action, you set a trap by choosing a 10-foot-square area within 60 feet of you. When a hostile creature enters the area, it must make a Dexterity saving throw. On a failed save, the creature takes 2d8 force damage and is knocked prone. On a successful save, the damage is halved and the creature isn’t knocked prone.
+			You can only have one Hunter’s Trap active at a time. Once set, you can deactivate the trap as a bonus action, and it becomes ready to set once again. </description>
+			<description level="7">As an action, you set a trap by choosing a 10-foot-square area within 60 feet of you. When a hostile creature enters the area, it must make a Dexterity saving throw. On a failed save, the creature takes 3dd8 force damage and is knocked prone. On a successful save, the damage is halved and the creature isn’t knocked prone.
+			You can only have one Hunter’s Trap active at a time. Once set, you can deactivate the trap as a bonus action, and it becomes ready to set once again. </description>
+			<description level="11">As an action, you set a trap by choosing a 10-foot-square area within 60 feet of you. When a hostile creature enters the area, it must make a Dexterity saving throw. On a failed save, the creature takes 4d8 force damage and is knocked prone. On a successful save, the damage is halved and the creature isn’t knocked prone.
+			You can only have one Hunter’s Trap active at a time. Once set, you can deactivate the trap as a bonus action, and it becomes ready to set once again. </description>
+			<description level="15">As an action, you set a trap by choosing a 10-foot-square area within 60 feet of you. When a hostile creature enters the area, it must make a Dexterity saving throw. On a failed save, the creature takes 5d8 force damage and is knocked prone. On a successful save, the damage is halved and the creature isn’t knocked prone.
+			You can only have one Hunter’s Trap active at a time. Once set, you can deactivate the trap as a bonus action, and it becomes ready to set once again. </description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="Mark of the Hunt" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_ULLR_MARK_OF_THE_HUNT">
 		<description>
-			<p></p>
+			<p>Starting at 7th level, you can mark a creature within 150 feet of you with the Mark of the Hunt. As an action, you examine the hunt and understand its weaknesses, marking it for the hunt for 1 hour. For the duration, once on each of your turns when you hit a marked creature with a weapon attack, it takes an extra 2d8 damage of the same type dealt by the weapon.</p>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>You can mark a creature within 150 feet of you with the Mark of the Hunt. As an action, you examine the hunt and understand its weaknesses, marking it for the hunt for 1 hour. For the duration, once on each of your turns when you hit a marked creature with a weapon attack, it takes an extra 2d8 damage of the same type dealt by the weapon.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+	<element name="Weaken the Prey" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_ULLR_WEAKEN_THE_PREY">
 		<description>
-			<p></p>
+			<p>Starting at 11th level, you begin to understand that weakening your prey is essential for a hunt. When you make a weapon attack against a creature marked by Mark of the Hunt feature, you can apply one of the following effects until the end of the creature’s next turn:</p>
+			<p class="indent"><strong><em>Cripple.</em></strong> The creature must succeed on a Constitution saving throw against your spell save DC or its speed is reduced by 15 feet.</p>
+			<p class="indent"><strong><em>Discourage.</em></strong> The creature must succeed on a Wisdom saving throw against your spell save DC or it has disadvantage on its attack rolls.</p>
+			<p class="indent"><strong><em>Disorient.</em></strong> The creature must succeed on an Intelligence saving throw against your spell save DC or its AC decreases by 2.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>When you make a weapon attack against a creature marked by Mark of the Hunt feature, you can apply one of the following effects until the end of the creature’s next turn:
+			Cripple. The creature must succeed on a Constitution saving throw against your spell save DC or its speed is reduced by 15 feet.
+			Discourage. The creature must succeed on a Wisdom saving throw against your spell save DC or it has disadvantage on its attack rolls.
+			Disorient. The creature must succeed on an Intelligence saving throw against your spell save DC or its AC decreases by 2.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
+	<element name="Hunter's Preparation" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_ULLR_HUNTERS_PREPARATION">
 		<description>
-			<p></p>
+			<p>At 15th level, you can study a 150-foot-square area centered on you as an action. For 1 minute, you gain the following benefits in the area:</p>
+			<ul>
+                <li>You have advantage on Strength (Athletics) checks made to climb or jump, Dexterity (Stealth), Wisdom (Perception), or Wisdom (Survival) checks (of your choice).</li>
+                <li>Your speed becomes 40 feet.</li>
+                <li>You can slow yourself down during a fall and take only half damage by using the terrain to your advantage.</li>
+                <li>As a reaction, you use your surroundings to your advantage and gain a +2 bonus to AC until the start of your next turn.</li>
+                <li>You can use your Hunter’s Trap feature to mark anywhere in the area.</li>
+            </ul>
+			<p class="indent">Once you use this feature, you cannot do so again until you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>You can study a 150-foot-square area centered on you as an action. For 1 minute, you gain the following benefits in the area:
+			You have advantage on Strength (Athletics) checks made to climb or jump, Dexterity (Stealth), Wisdom (Perception), or Wisdom (Survival) checks (of your choice).
+			Your speed becomes 40 feet.
+			You can slow yourself down during a fall and take only half damage by using the terrain to your advantage.
+			As a reaction, you use your surroundings to your advantage and gain a +2 bonus to AC until the start of your next turn.
+			You can use your Hunter’s Trap feature to mark anywhere in the area.</description>
 		</sheet>
 	</element>
 </elements>

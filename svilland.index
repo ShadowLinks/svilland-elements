@@ -55,9 +55,10 @@
 		<file name="paladin-thor.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/paladin-thor.xml"/>
 		<file name="paladin-tyr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/paladin-tyr.xml"/>
 
-		
-		<file name=" ranger-spiritwarden.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/ranger-spiritwarden.xml"/>
 
+		<file name=" ranger-spiritwarden.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/ranger-spiritwarden.xml"/>
+		<file name=" ranger-skadi.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/ranger-skadi.xml"/>
+		<file name=" ranger-ullr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/ranger-ullr.xml"/>
 
 		<!-- Spells -->
 		<file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/spells.xml"/>
