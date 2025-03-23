@@ -60,7 +60,9 @@
 		<file name=" ranger-ullr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/ranger-ullr.xml"/>
 
 		<file name="sorcerer-ansuz.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/sorcerer-ansuz.xml"/>
-
+		<file name="sorcerer-vanir.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/sorcerer-vanir.xml"/>
+		<file name="sorcerer-ihwar.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/sorcerer-ihwar.xml"/>
+		
 
 		<!-- Spells -->
 		<file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/spells.xml"/>

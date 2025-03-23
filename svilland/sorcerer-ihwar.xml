@@ -1,61 +1,111 @@
+<elements>
+    <info>
+        <name>Ihwar-Touched"</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="sorcerer-ihwar.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/sorcerer-ihwar.xml"/>
+        </update>
+    </info>
+	<element name="Ihwar-Touched" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_SORCERER_IHWAR">
+        <supports>Sorcerous Origin</supports>
 		<description>
-			<p></p>
+			<p>Ihwar-touched sorcerers carry with them the magical nature of Ihwar, the rune of dreams and death. They are better attuned to spells of necromancy and spells to overcome death. Because of their rune’s nature, they perceive their environment as ever-aging, seeing things age and rot away second by second.</p>
 			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_IHWAR_DEATH_MAGIC" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_IHWAR_SIGHT_OF_DEATH" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_IHWAR_WEAR_THE_DEADS_SKIN" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_IHWAR_CONSUMPTION" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_IHWAR_UNDYING" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_IHWAR_DEATH_MAGIC" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_IHWAR_SIGHT_OF_DEATH" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_IHWAR_WEAR_THE_DEADS_SKIN" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_IHWAR_CONSUMPTION" level="14" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_IHWAR_UNDYING" level="18" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="Death Magic" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_IHWAR_DEATH_MAGIC">
 		<description>
-			<p></p>
+			<p>Your affinity to death gives you the option to learn some non-sorcerer spells that are based on death and resurrection. While learning a new spell, you can choose one from the list below as an alternative to spells on your sorcerer spell list. The spell you choose becomes a sorcerer spell for you.</p>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>3rd</td><td>speak with dead</td></tr>
+				<tr><td>5th</td><td>raise dead</td></tr>
+				<tr><td>7th</td><td>resurrection</td></tr>
+				<tr><td>9th</td><td>true resurrection</td></tr>
+			</table>
 		</description>
 		<sheet>
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Spell" spellcasting="Sorcerer" level="5" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
+			<grant type="Spell" spellcasting="Sorcerer" level="9" id="ID_PHB_SPELL_RAISE_DEAD" />
+			<grant type="Spell" spellcasting="Sorcerer" level="13" id="ID_PHB_SPELL_RESURRECTION" />
+			<grant type="Spell" spellcasting="Sorcerer" level="17" id="ID_PHB_SPELL_TRUE_RESURRECTION" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="Sight of Death" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_IHWAR_SIGHT_OF_DEATH">
 		<description>
-			<p></p>
+			<p>At 1st level, you can use the following benefits by spending 1 sorcery point on each use:</p>
+			<p class="indent"><strong><em>Death Sight.</em></strong> When you touch a corpse and concentrate for a minute by making a Wisdom (Insight) check, you see a glimpse of how the creature died along with its killer if the creature saw the killer as it was dying. The duration of this vision is limited to 1 turn only. The DC for using Death Sight on a fresh corpse is 10, a half rotten corpse is 15, a rotten corpse is 20, and a skeleton is 25. </p>
+			<p class="indent"><strong><em>Glimpse of Death.</em></strong> Whenever a creature makes a melee spell attack or melee weapon attack against you, you can use your reaction to make a melee spell attack against the creature. On a hit, it sees an illusion of itself dying and fails its attack. The creature must also succeed on a Wisdom saving throw or the sight terrifies the creature and causes it to be frightened of you until the end of its next turn.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>You can use the following benefits by spending 1 sorcery point on each use:
+			Death Sight. When you touch a corpse and concentrate for a minute by making a Wisdom (Insight) check, you see a glimpse of how the creature died along with its killer if the creature saw the killer as it was dying. The duration of this vision is limited to 1 turn only. The DC for using Death Sight on a fresh corpse is 10, a half rotten corpse is 15, a rotten corpse is 20, and a skeleton is 25.
+			Glimpse of Death. Whenever a creature makes a melee spell attack or melee weapon attack against you, you can use your reaction to make a melee spell attack against the creature. On a hit, it sees an illusion of itself dying and fails its attack. The creature must also succeed on a Wisdom saving throw or the sight terrifies the creature and causes it to be frightened of you until the end of its next turn.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+	<element name="Wear the Dead's Skin" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_IHWAR_WEAR_THE_DEADS_SKIN">
 		<description>
-			<p></p>
+			<p>At 6th level, you gain the ability to magically wear pieces of a corpse as protective skin. As an action, you can consume an undead creature of your choice within 10 feet of you. The undead must succeed on a Constitution saving throw or take 2d10 necrotic damage and you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons for 1 minute.</p>
+			<p class="indent">If the undead is under your control, it cannot make a saving throw against this effect.</p>
+			<p class="indent">If the undead has advantage against effects that turn it (such as Turn Undead), it also has resistance to the necrotic damage dealt by this feature.</p>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you can consume an undead creature of your choice within 10 feet of you. The undead must succeed on a Constitution saving throw or take 2d10 necrotic damage and you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons for 1 minute.
+			If the undead is under your control, it cannot make a saving throw against this effect.
+			If the undead has advantage against effects that turn it (such as Turn Undead), it also has resistance to the necrotic damage dealt by this feature.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
+	<element name="Consumption" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_IHWAR_CONSUMPTION">
 		<description>
-			<p></p>
+			<p>At 14th level you gain the ability to steal life. As an action, you drain the life force of a creature within 10 feet of you. If it is a living creature, it must succeed on a Constitution saving throw, or its hit point maximum is reduced by a number equal to its hit die, and you gain temporary hit points equal to the reduction in the creature’s hit point maximum. This reduction lasts until the target finishes a long rest.</p>
+			<p class="indent">If you drain life from a creature that is unconscious, that has 0 hit points, or that died within the last 10 minutes, this feature automatically succeeds.</p>
+			<p class="indent">If the creature dies when you use this feature on it, the target cannot be brought back except by means of a true resurrection, or wish spell.</p>
+			<p class="indent">Once you use this feature, you must finish a short or long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Short Rest">
+			<description>As an action, you drain the life force of a creature within 10 feet of you. If it is a living creature, it must succeed on a Constitution saving throw, or its hit point maximum is reduced by a number equal to its hit die, and you gain temporary hit points equal to the reduction in the creature’s hit point maximum. This reduction lasts until the target finishes a long rest.
+			If you drain life from a creature that is unconscious, that has 0 hit points, or that died within the last 10 minutes, this feature automatically succeeds.
+			If the creature dies when you use this feature on it, the target cannot be brought back except by means of a true resurrection, or wish spell.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
+	<element name="Undying" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_IHWAR_UNDYING">
 		<description>
-			<p></p>
+			<p>At 18th level, as an action, you can become a harvester of souls. Your body looks like a shadowy, undead figure of nightmares. The transformation lasts for 1 minute, and you gain the following benefits while in this form:</p>
+			<ul>
+                <li>You are immune to necrotic damage, but vulnerable to radiant damage.</li>
+                <li>Your range for the Glimpse of Death as well as the Consumption and Wear the Dead’s Skin features increases to 60 feet.</li>
+                <li>You have advantage on death saves.</li>
+                <li>When you drop to 0 hit points, you can use your reaction to spend 7 sorcery points and drop to 1 hit point instead.</li>
+            </ul>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>As an action, you can become a harvester of souls. Your body looks like a shadowy, undead figure of nightmares. The transformation lasts for 1 minute, and you gain the following benefits while in this form:
+			You are immune to necrotic damage, but vulnerable to radiant damage.
+			Your range for the Glimpse of Death as well as the Consumption and Wear the Dead’s Skin features increases to 60 feet.
+			You have advantage on death saves.
+			When you drop to 0 hit points, you can use your reaction to spend 7 sorcery points and drop to 1 hit point instead.</description>
 		</sheet>
 	</element>
 </elements>

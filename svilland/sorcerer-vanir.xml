@@ -1,61 +1,85 @@
+<elements>
+    <info>
+        <name>Child of Vanir"</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="sorcerer-vanir.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/sorcerer-vanir.xml"/>
+        </update>
+    </info>
+	<element name="Child of Vanir" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_SORCERER_VANIR">
+        <supports>Sorcerous Origin</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<p>Vanirs are adept in both the magic of the runes that Odin found and sent to Svillanders and the magic that ruled the untameable wild of the realm.</p>
+			<p class="indent">Descending from the Vanir, you can tap into the wild as well as your sorcery magic. While learning a new spell, you can choose one spell from the druid spell list as an alternative to the spells on your sorcerer spell list. The spell you choose becomes a sorcerer spell for you.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_VANIR_SHIFT_MAGIC_OF_VANIR" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_VANIR_SHIFT_FUTURE_SIGHT" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_VANIR_SHIFT_DENIAL_OF_FATE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_VANIR_SHIFT_WISDOM_OF_AGES" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_VANIR_SHIFT_PARADIGM_OF_TIME" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_VANIR_SHIFT_MAGIC_OF_VANIR" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_VANIR_SHIFT_FUTURE_SIGHT" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_VANIR_SHIFT_DENIAL_OF_FATE" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_VANIR_SHIFT_WISDOM_OF_AGES" level="14" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_VANIR_SHIFT_PARADIGM_OF_TIME" level="18" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="Magic of Vanir" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_VANIR_SHIFT_MAGIC_OF_VANIR">
 		<description>
-			<p></p>
+			<p>Vanirs are adept in both the magic of the runes that Odin found and sent to Svillanders and the magic that ruled the untameable wild of the realm.</p>
+			<p class="indent">Descending from the Vanir, you can tap into the wild as well as your sorcery magic. While learning a new spell, you can choose one spell from the druid spell list as an alternative to the spells on your sorcerer spell list. The spell you choose becomes a sorcerer spell for you.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description> While learning a new spell, you can choose one spell from the druid spell list as an alternative to the spells on your sorcerer spell list. The spell you choose becomes a sorcerer spell for you.</description>
+		</sheet>
+		<spellcasting name="Sorcerer" extend="true">
+			<extend>Druid</extend>
+		</spellcasting>
+	</element>
+	<element name="Future Sight" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_VANIR_SHIFT_FUTURE_SIGHT">
+		<description>
+			<p>Starting at 1st level, you gain the following benefits:</p>
+			<ul>
+                <li>You can be first in the initiative. If there are other creatures with this feature or a similar power that involves time, you and the other creatures roll initiative, contest it among yourselves, and act according to the result. Also, you cannot be surprised.</li>
+                <li>As a reaction, you can choose to have advantage on an ability check, attack roll, or saving throw.</li>
+                <li>As a reaction, you can choose to impose disadvantage on a saving throw that a creature makes against a spell that you cast.</li>
+            </ul>
+			<p class="indent">You can use these features a number of times equal to your Charisma modifier (minimum of once). You regain any expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{charisma:modifier}}/Long Rest">
+			<description>You can be first in the initiative. If there are other creatures with this feature or a similar power that involves time, you and the other creatures roll initiative, contest it among yourselves, and act according to the result. Also, you cannot be surprised.
+			As a reaction, you can choose to have advantage on an ability check, attack roll, or saving throw.
+			As a reaction, you can choose to impose disadvantage on a saving throw that a creature makes against a spell that you cast.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="Denial of Fate" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_VANIR_SHIFT_DENIAL_OF_FATE">
 		<description>
-			<p></p>
+			<p>Starting at 6th level, whenever you or one of your allies within 300 feet of you fail a saving throw, take damage, or fall unconscious, you can use your reaction to spend 2 sorcery points and make yourself or your ally negate the harmful effect.</p>
+			<p class="indent">Once you use this feature, you must finish a short or long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Short Rest">
+			<description>Whenever you or one of your allies within 300 feet of you fail a saving throw, take damage, or fall unconscious, you can use your reaction to spend 2 sorcery points and make yourself or your ally negate the harmful effect.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+	<element name="Wisdom of Ages" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_VANIR_SHIFT_WISDOM_OF_AGES">
 		<description>
-			<p></p>
+			<p>Starting at 14th level, by spending 1 sorcery point, you can add your Wisdom modifier to any ability check, attack roll, damage roll, or saving throw you make.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>By spending 1 sorcery point, you can add your Wisdom modifier to any ability check, attack roll, damage roll, or saving throw you make.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
+	<element name="Shift Paradigm of time" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_VANIR_SHIFT_PARADIGM_OF_TIME">
 		<description>
-			<p></p>
+			<p>Starting at 18th level, you gain the ability to shift your passage through time and diverge it from others’. With your will, time starts to move slower for you. You can choose to take an additional action on your turn. You can even cast an additional spell by spending 4 sorcery points.</p>
+			<p class="indent">You can use this feature a number of times equal to your Charisma modifier (minimum once). You regain any expended uses when you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="{{charisma:modifier}}/Long Rest">
+			<description>You can choose to take an additional action on your turn. You can even cast an additional spell by spending 4 sorcery points.</description>
 		</sheet>
 	</element>
 </elements>
