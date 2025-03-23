@@ -9,42 +9,49 @@
     <element name="Oath to Tyr" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_PALADIN_TYR">
         <supports>Sacred Oath</supports>
         <description>
-            <p></p>
-             <h5 class="caption">TENETS OF TYR</h5>
-            <p></p>
+            <p>Alles who swear their oaths to Tyr become the holy warrior-judges of Svilland. They wander from place to place seeking to correct injustice. They act as judges in communities they visit and care for the cases of law in settlements.</p>
+			<p class="indent">They are protective of innocent folk and try to aid them in any way they can, especially against bandits or other oppressors. Against criminals and wrongdoers, they act in a cold, merciless manner. They do what the law requires, and do not act according to their humane emotions.</p>
+            <h5 class="caption">CHANGES IN FEATURES</h5>
+			<p class="indent"><strong><em>Divine Smite and Improved Divine Smite:</em></strong> You inflict force damage rather than radiant damage with Divine Smite and Improved Divine Smite.</p>
+			<h5 class="caption">TENETS OF TYR</h5>
+            <p>As Tyr is the warrior God of justice, he requires all of his champions to act in the search for justice as well, and spread his holy duty within the realm. The pillars of Tyr stand on the following tenets:</p>
             <p class="indent">
-                <b><i>Tenant</i></b>
-                 desc 
+                <b><i>Protect. </i></b>
+                 Always protect and help the innocent in the face of injustice. 
             </p>
             <p class="indent">
-                <b><i>Tenant</i></b>
-                 desc
+                <b><i>Valour. </i></b>
+                 Face your opponent and never backstab a foe.
             </p>
             <p class="indent">
-                <b><i>Tenant</i></b>
-                desc
+                <b><i>Honesty. </i></b>
+                Be fair and be honest. Do not cheat or lie to others, even if they are your enemy.
             </p>
             <p class="indent">
-                <b><i>Tenant</i></b>
-                desc
+                <b><i>Justice. </i></b>
+                Do what is just. Bring judgement down upon wrongdoers whenever possible.
+            </p>
+			<p class="indent">
+                <b><i>Judgement. </i></b>
+                Do not vanquish your foe out of hatred. Even when your opponent falls, make sure it is judged correctly and be aware that it deserves a worthy punishment. A thief stealing bread because it is hungry does not deserve the same fate with a vicious murderer.
             </p>
             <p class="indent"></p>
 			<p class="indent"></p>
 			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_TYR_SPELLS" />
 			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_TYR_CD" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_TYR_FURTHER_THE_LAW" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_TYR_CHALLENGE_THE_LAWBREAKER" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_TYR_ZEAL_FOR_JUSTICE" />
 		</description>
-		<sheet display="false">
-			<description></description>
+		<sheet>
+			<description>Feature Change: Divine Smites deal force damage instead of radiant damage.</description>
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_TYR_SPELLS" level="3" />
 			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_TYR_CD" level="3" />
-			<grant type="Archetype Feature" id="ID____" level="7" />
-			<grant type="Archetype Feature" id="ID_____" level="15" />
-			<grant type="Archetype Feature" id="ID______" level="20" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_TYR_FURTHER_THE_LAW" level="7" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_TYR_CHALLENGE_THE_LAWBREAKER" level="15" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_TYR_ZEAL_FOR_JUSTICE" level="20" />
 		</rules>
 	</element>
 	<element name="Oath to Tyr Spells" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_TYR_SPELLS">
@@ -54,79 +61,107 @@
 				<thead>
 					<tr><td>Alle Level</td><td>Spell</td></tr>
 				</thead>
-				<tr><td>3rd</td><td>data1</td></tr>
-				<tr><td>5th</td><td>data2</td></tr>
-				<tr><td>9th</td><td>data3</td></tr>
-				<tr><td>13th</td><td>data4</td></tr>
-				<tr><td>17th</td><td>data5</td></tr>
+				<tr><td>3rd</td><td>hunter’s mark, protection from evil and good</td></tr>
+				<tr><td>5th</td><td>hold person, zone of truth</td></tr>
+				<tr><td>9th</td><td>haste, protection from energy</td></tr>
+				<tr><td>13th</td><td>guardian of faith, resilient sphere</td></tr>
+				<tr><td>17th</td><td>hold monster, wall of force</td></tr>
 			</table>
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_" />
-			<grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_HUNTERS_MARK" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_HOLD_PERSON" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_ZONE_OF_TRUTH" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_HASTE" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_GUARDIAN_OF_FAITH" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_HOLD_MONSTER" />
+			<grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_WALL_OF_FORCE" />
 		</rules>
 	</element>
 	<element name="Channel Divinity" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_TYR_CD">
 		<description>
-			<p></p>
+			<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+			<p class="indent"><strong><em>Punish the Wrongdoers. </em></strong>As an action, you accuse a creature threatening the law or threatening innocents. For 1 minute, you attack that creature with advantage. If that creature has recently harmed one of your allies, that ally attacks the creature with advantage as well.</p>
+			<p class="indent">Although the GM decides what constitutes a threatening creature, you may use the following definitions for wrongdoers as inspiration: A creature that is acting against the rightful laws of a local or regional ruler, is thus a wrongdoer. A creature that threatens the innocents is also a wrongdoer.</p>
+			<p class="indent"><strong><em>Protection. </em></strong>As an action, you present your holy symbol and speak a prayer to protect the innocent in danger. You and friendly creatures within 30 feet of you add 2 to your AC for 1 minute.</p>
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" />
-			<grant type="Archetype Feature" id="ID___" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_TYR_CD_PUNISH_THE_WRONGDOES" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_TYR_CD_PROTECTION" />
 		</rules>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Channel Divinity: Punish the Wrongdoers" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_TYR_CD_PUNISH_THE_WRONGDOES">
 		<description>
 			<p></p>
 		</description>
-		<sheet usage="Channel Divinity" alt="">
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Punish the Wrongdoers">
+			<description>As an action, you accuse a creature threatening the law or threatening innocents. For 1 minute, you attack that creature with advantage. If that creature has recently harmed one of your allies, that ally attacks the creature with advantage as well.
+			Although the GM decides what constitutes a threatening creature, you may use the following definitions for wrongdoers as inspiration: A creature that is acting against the rightful laws of a local or regional ruler, is thus a wrongdoer. A creature that threatens the innocents is also a wrongdoer.</description>
 		</sheet>
 	</element>
-	<element name="Channel Divinity: " type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Channel Divinity: Protection" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_TYR_CD_PROTECTION">
 		<description>
 			<p></p>
 		</description>
-		<sheet usage="Channel Divinity" alt="">
-			<description></description>
+		<sheet usage="Channel Divinity" alt="Protection">
+			<description>As an action, you present your holy symbol and speak a prayer to protect the innocent in danger. You and friendly creatures within 30 feet of you add 2 to your AC for 1 minute.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Further the Law" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_TYR_FURTHER_THE_LAW">
 		<description>
-			<p></p>
+			<p>Starting at 7th level, you and friendly creatures within 10 feet of you gain the following benefits:</p>
+			<ul>
+                <li>You gain advantage on Wisdom (Insight) checks to perceive lies.</li>
+                <li>You gain advantage on your initiative checks in a battle against creatures that are consciously trying to harm innocents.</li>
+            </ul>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>You and friendly creatures within 10 feet of you gain the following benefits:
+			You gain advantage on Wisdom (Insight) checks to perceive lies.
+			You gain advantage on your initiative checks in a battle against creatures that are consciously trying to harm innocents.</description>
+			<description level="18">You and friendly creatures within 30 feet of you gain the following benefits:
+			You gain advantage on Wisdom (Insight) checks to perceive lies.
+			You gain advantage on your initiative checks in a battle against creatures that are consciously trying to harm innocents.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Challenge the Lawbreaker" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_TYR_CHALLENGE_THE_LAWBREAKER">
 		<description>
-			<p></p>
+			<p>Starting at 15th level, you become the voice and hand of justice.</p>
+			<p class="indent">As an action, you can declare a creature within 100 feet of you to be guilty by announcing its crimes. For 1 hour, you have advantage on your attack rolls against the guilty creature, and when you score a critical hit with a weapon attack against it, you deal an extra 2d8 radiant damage.</p>
+			<p class="indent">If the creature is not guilty of the crimes you announced, you do not gain the benefits of this feature. Whether a creature is guilty or not is determined at the GM’s discretion.</p>
+			<p class="indent">You can use this feature once per week.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Week">
+			<description>As an action, you can declare a creature within 100 feet of you to be guilty by announcing its crimes. For 1 hour, you have advantage on your attack rolls against the guilty creature, and when you score a critical hit with a weapon attack against it, you deal an extra 2d8 radiant damage.
+			If the creature is not guilty of the crimes you announced, you do not gain the benefits of this feature. Whether a creature is guilty or not is determined at the GM’s discretion.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Zeal for Justice" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_PALADIN_TYR_ZEAL_FOR_JUSTICE">
 		<description>
-			<p></p>
+			<p>At 20th level, as an action, you transform into a Valkyrie-like paragon. Creatures that look at you see wings of shadow and light stretching out of your back. Your face also becomes blurred; becoming the face of blind justice. For 1 minute, you gain the following benefits:</p>
+			<ul>
+                <li>You gain immunity to all conditions.</li>
+                <li>You gain resistance to bludgeoning, piercing and slashing damage from nonmagical weapons.</li>
+                <li>As an action, you can jump 30 feet high, landing on a location within 60 feet of you with all the might of a Valkyrie. Creatures within 10 feet of where you land must make Strength saving throws; taking 4d6 force damage and falling prone on a failed save, or taking half as much damage on a successful one. You then deal an extra 7 (2d6) force damage on your next attack.</li>
+                <li>As an action, you can turn your back and spread your ghostly wings to protect your allies. You and any allies within 10 feet of you gain a + 2 bonus to AC against attacks and have advantage on their saving throws against spells until the start of your next turn.</li>
+            </ul>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>as an action, you transform into a Valkyrie-like paragon. Creatures that look at you see wings of shadow and light stretching out of your back. Your face also becomes blurred; becoming the face of blind justice. For 1 minute, you gain the following benefits:
+			You gain immunity to all conditions. You gain resistance to bludgeoning, piercing and slashing damage from nonmagical weapons.
+			As an action, you can jump 30 feet high, landing on a location within 60 feet of you with all the might of a Valkyrie. Creatures within 10 feet of where you land must make Strength saving throws; taking 4d6 force damage and falling prone on a failed save, or taking half as much damage on a successful one. You then deal an extra 7 (2d6) force damage on your next attack.
+			As an action, you can turn your back and spread your ghostly wings to protect your allies. You and any allies within 10 feet of you gain a + 2 bonus to AC against attacks and have advantage on their saving throws against spells until the start of your next turn.</description>
 		</sheet>
 	</element>
 </elements>

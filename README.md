@@ -15,7 +15,7 @@ Thank you to The-Multitud-e for starting the project I forked from.
 	- Chanter of Naturra
 
 ### Subclasses:
-- Paladin Oaths
+- Paladin Oaths COMPLETE
 	- Oath to Freyja
 	- Oath to Hel
 	- Oath to Odin
@@ -95,7 +95,8 @@ Thank you to The-Multitud-e for starting the project I forked from.
 ### Items
 - Weapons COMPLETE
 - Armor COMPLETE
-- Magic Items/Armor/Weapons IN PROGRESS
+- Magic Items/Armor/Weapons COMPLETE
+- Runestones 
 
 
 
