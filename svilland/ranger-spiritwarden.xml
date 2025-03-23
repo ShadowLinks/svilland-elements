@@ -1,61 +1,216 @@
+<elements>
+    <info>
+        <name>Spirit Warden</name>
+        <update version="0.0.1">
+            <file name=" ranger-spiritwarden.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/ranger-spiritwarden.xml"/>
+        </update>
+    </info>
+    <element name="Spirit Warden" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_RANGER_SPIRITWARDEN">
+        <supports>Ranger Archetype</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<p>Land spirits are an important part of Svilland’s nature. As they are magically attuned to nature, some rangers develop a special connection to such spirits.</p>
+			<p class="indent">These rangers are called spirit wardens and are initiated to magic and guided in the ways of being a ranger by these spirits.</p>
+			<p class="indent">It is common for rangers to find their way in nature, but spirit wardens carry the essence of nature within. Thus, they gain special benefits according to their respective regions.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_ACCUSTOMED_TO_HAVEN" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_SPIRITS_WRATH" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_GUARDIAN_OF_THE_LAND" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_SPIRITS_AVATAR" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_ACCUSTOMED_TO_HAVEN" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_SPIRITS_WRATH" level="7" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_GUARDIAN_OF_THE_LAND" level="11" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_SPIRITS_AVATAR" level="15" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="Accustomed to Haven" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_ACCUSTOMED_TO_HAVEN">
 		<description>
-			<p></p>
+			<p>When you choose this archetype at 3rd level, you choose a land spirit (forest, mountain, or sea) and are blessed by it. All features, abilities, and benefits you gain in relation to it are determined by the region of the chosen spirit. </p>
 		</description>
-		<sheet>
+		<sheet display="False">
 			<description></description>
 		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Land Spirit" supports="land-spirit" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="Forest" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_FOREST">
+		<supports>land-spirit</supports>
 		<description>
-			<p></p>
+			<p>Forest regions become your favored terrain if you have not chosen it already.</p>
+			<ul>
+                <li>You can use the trees and bushes in your surroundings for defense. You gain a +1 bonus to AC when there is a tree or bush within 5 feet of you.</li>
+                <li>You have advantage on Dexterity (Stealth) and Wisdom (Perception) checks while in forests.</li>
+                <li>By using your bonus action, you can make a Strength (Athletics) check to climb a tree up to 10 feet.</li>
+            </ul>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet alt="Accustomed to Haven (Forest)">
+			<description>You can use the trees and bushes in your surroundings for defense. You gain a +1 bonus to AC when there is a tree or bush within 5 feet of you.
+			You have advantage on Dexterity (Stealth) and Wisdom (Perception) checks while in forests.
+			By using your bonus action, you can make a Strength (Athletics) check to climb a tree up to 10 feet.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+	<element name="Mountain" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_MOUNTAIN">
+		<supports>land-spirit</supports>
 		<description>
-			<p></p>
+			<p>Mountain regions become your favored terrain if you have not chosen it already.</p>
+			<ul>
+                <li>You can choose to have advantage on Constitution saving throws up to a number of times equal to your Wisdom modifier (minimum of once). You regain any expended uses when you finish a long rest.</li>
+                <li>You have advantage on Wisdom (Perception) and Wisdom (Survival) checks in mountain regions.</li>
+                <li>You become instinctually capable of climbing rocks, cliffs, and mountains. In these areas you have advantage on Strength (Athletics) checks while climbing. Also, when you roll an 9 or lower on a Strength (Athletics) check while climbing, you can choose to use 10 instead.</li>
+            </ul>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet alt="Accustomed to Haven (Mountain)">
+			<description>You can choose to have advantage on Constitution saving throws up to {{wisdom:modifier}} time. You regain any expended uses when you finish a long rest.
+			You have advantage on Wisdom (Perception) and Wisdom (Survival) checks in mountain regions.
+			You become instinctually capable of climbing rocks, cliffs, and mountains. In these areas you have advantage on Strength (Athletics) checks while climbing. Also, when you roll an 9 or lower on a Strength (Athletics) check while climbing, you can choose to use 10 instead.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
+	<element name="Sea" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_SEA">
+		<supports>land-spirit</supports>
 		<description>
-			<p></p>
+			<p>Coast regions become your favored terrain if you have not chosen it already.</p>
+			<ul>
+                <li>When you are using Primeval Awareness within sea regions or on seas and lakes, you can sense anything in a 10-mile radius.</li>
+                <li>You have advantage on Strength (Athletics) and Dexterity (Stealth) checks while swimming, and you have a swimming speed equal to your normal speed.</li>
+                <li>You can quench your thirst by drinking sea water; the salt does not affect you.</li>
+            </ul>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet alt="Accustomed to Haven (Sea)">
+			<description>When you are using Primeval Awareness within sea regions or on seas and lakes, you can sense anything in a 10-mile radius.
+			You have advantage on Strength (Athletics) and Dexterity (Stealth) checks while swimming.
+			You can quench your thirst by drinking sea water; the salt does not affect you.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:swim" value="speed" />
+		</rules>
+	</element>
+	<element name="Land Spirit's Wrath" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_SPIRITS_WRATH">
+		<description>
+			<p>At 7th level, you gain one of the following benefits, depending on your land spirit:</p>
+			<p class="indent"><strong><em>Forest. </em></strong>You conjure a venomous ethereal viper that comes out of your fingertips and strikes an opponent of your choice within 60 feet of you. Make a ranged spell attack. On a hit, the target takes 2d8 poison damage and makes a Constitution saving throw. On a failed save, the target takes additional 1d4 poison damage at the start of each of its turns and is poisoned for 1 minute. It can repeat its saving throw at the end of each of its turns, ending the effect on a successful one.</p>
+			<p class="indent"><strong><em>Mountain. </em></strong>You make the earth under a creature within 30 feet of you crumble and crack. The creature must succeed on a Dexterity saving throw against your spell save DC or fall in the crack and take 2d10 bludgeoning damage. If the target fails the saving throw by 5 or more, the creature is also stuck in the fissure and falls prone. In order to get out of the crack, it must succeed on a Strength saving throw against the same DC at the start of each of its turns.</p>
+			<p class="indent"><strong><em>Sea. </em></strong>If an ally within 15 feet of you is the target of an attack and the attacker is within 60 feet of you, you can use your reaction to make a ranged spell attack against the attacker. On a hit, you send a furious sea wave its way and the target takes 2d8 force damage.</p>
+			<p class="indent">Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+		</description>
+		<sheet display="false">
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" requirements="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_FOREST" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_SPIRITS_WRATH_FOREST" />
+			<grant type="Archetype Feature" requirements="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_MOUNTAIN" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_SPIRITS_WRATH_MOUNTAIN" />
+			<grant type="Archetype Feature" requirements="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_SEA" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_SPIRITS_WRATH_SEA" />
+		</rules>
+	</element>
+	<element name="Land Spirit's Wrath (Forest)" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_SPIRITS_WRATH_FOREST">
+		<description></description>
+		<sheet usage="1/Short Rest">
+			<description>You conjure a venomous ethereal viper that comes out of your fingertips and strikes an opponent of your choice within 60 feet of you. Make a ranged spell attack. On a hit, the target takes 2d8 poison damage and makes a Constitution saving throw. On a failed save, the target takes additional 1d4 poison damage at the start of each of its turns and is poisoned for 1 minute. It can repeat its saving throw at the end of each of its turns, ending the effect on a successful one.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
+	<element name="Land Spirit's Wrath (Mountain)" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_SPIRITS_WRATH_MOUNTAIN">
+		<description></description>
+		<sheet usage="1/Short Rest">
+			<description>You make the earth under a creature within 30 feet of you crumble and crack. The creature must succeed on a Dexterity saving throw against your spell save DC or fall in the crack and take 2d10 bludgeoning damage. If the target fails the saving throw by 5 or more, the creature is also stuck in the fissure and falls prone. In order to get out of the crack, it must succeed on a Strength saving throw against the same DC at the start of each of its turns.</description>
+		</sheet>
+	</element>
+	<element name="Land Spirit's Wrath (Sea)" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_SPIRITS_WRATH_SEA">
+		<description></description>
+		<sheet usage="1/Short Rest">
+			<description>If an ally within 15 feet of you is the target of an attack and the attacker is within 60 feet of you, you can use your reaction to make a ranged spell attack against the attacker. On a hit, you send a furious sea wave its way and the target takes 2d8 force damage.</description>
+		</sheet>
+	</element>
+	<element name="Guardian of the Land" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_GUARDIAN_OF_THE_LAND">
 		<description>
-			<p></p>
+			<p>Starting at 11th level, you are seen as a guardian of the land by your land spirit. In order to help you fight and protect the land, it gives you the following benefits:</p>
+			<p class="indent"><strong><em>Forest. </em></strong>While in a forest, you are always under the effect of a longstrider spell.</p>
+			<p class="indent"><strong><em>Mountain. </em></strong>You gain resistance against one of the following damage types of your choice: bludgeoning, piercing, or slashing.</p>
+			<p class="indent"><strong><em>Sea. </em></strong>You can magically breathe underwater.</p>
 		</description>
+		<sheet display="false">
+		</sheet>		
+		<rules>
+			<grant type="Archetype Feature" requirements="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_FOREST" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_GUARDIAN_OF_THE_LAND_FOREST" />
+			<grant type="Archetype Feature" requirements="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_MOUNTAIN" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_GUARDIAN_OF_THE_LAND_MOUNTAIN" />
+			<grant type="Archetype Feature" requirements="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_SEA" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_GUARDIAN_OF_THE_LAND_SEA" />
+		</rules>
+	</element>
+	<element name="Guardian of the Land (Forest)" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_GUARDIAN_OF_THE_LAND_FORES">
+		<description></description>
 		<sheet>
-			<description></description>
+			<description>While in a forest, you are always under the effect of a longstrider spell.</description>
+		</sheet>
+	</element>
+	<element name="Guardian of the Land (Mountain)" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_GUARDIAN_OF_THE_LAND_MOUNTAIN">
+		<description></description>
+		<sheet>
+			<description>You gain resistance against one of the following damage types of your choice: bludgeoning, piercing, or slashing.</description>
+		</sheet>
+	</element>
+	<element name="Guardian of the Land (Sea)" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_GUARDIAN_OF_THE_LAND_SEA">
+		<description></description>
+		<sheet>
+			<description>You can magically breathe underwater.</description>
+		</sheet>
+	</element>
+	<element name="Land Spirit's Avatar" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_SPIRITS_AVATAR">
+		<description>
+			<p>At 15th level, you learn to summon the might of your land spirit within yourself. As an action, you concentrate on your land spirit, and gain the following traits for 1 minute:</p>
+			<p class="indent"><strong><em>Forest</em></strong> </p>
+			<ul>
+                <li>You become immune to poison damage and you cannot be poisoned.</li>
+                <li>One of your weapon attacks deal additional poison damage equal to the weapon’s damage dice, once per turn. The creature must also succeed on a Constitution saving throw or be poisoned for 1 minute. It can repeat its saving throws at the end of each of its turns, ending the poisoned condition on a success.</li>
+                <li>You have advantage on Dexterity (Stealth) checks while in forests.</li>
+            </ul>
+			<p class="indent"><strong><em>Mountain</em></strong> </p>
+			<ul>
+                <li>You gain resistance to a damage type of your choice (except psychic).</li>
+                <li>You have advantage on ability checks and saving throws against being knocked prone and grappled.</li>
+                <li>Only once within this duration, if you drop to 0 hit points, you can choose to drop to 1 hit point instead.</li>
+            </ul>
+			<p class="indent"><strong><em>Sea</em></strong> </p>
+			<ul>
+                <li>You cannot be targeted by opportunity attacks.</li>
+                <li>If you are in water, you cannot be grappled.</li>
+                <li>When you take the attack action, you can make one additional attack.</li>
+            </ul>
+			<p class="indent">Once you use this feature, you cannot use it again until you finish a long rest.</p>
+		</description>
+		<sheet display="false">
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" requirements="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_FOREST" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_SPIRITS_AVATAR_FOREST" />
+			<grant type="Archetype Feature" requirements="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_MOUNTAIN" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_SPIRITS_AVATAR_MOUNTAIN" />
+			<grant type="Archetype Feature" requirements="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_SEA" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_SPIRITS_AVATAR_SEA" />
+		</rules>
+	</element>
+	<element name="Land Spirit's Avatar (Forest)" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_SPIRITS_AVATAR_FOREST">
+		<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you concentrate on your land spirit, and gain the following traits for 1 minute:
+			You become immune to poison damage and you cannot be poisoned.
+			One of your weapon attacks deal additional poison damage equal to the weapon’s damage dice, once per turn. The creature must also succeed on a Constitution saving throw or be poisoned for 1 minute. It can repeat its saving throws at the end of each of its turns, ending the poisoned condition on a success.
+			You have advantage on Dexterity (Stealth) checks while in forests.</description>
+		</sheet>
+	</element>
+	<element name="Land Spirit's Avatar (Mountain)" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_SPIRITS_AVATAR_MOUNTAIN">
+		<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you concentrate on your land spirit, and gain the following traits for 1 minute:
+			You gain resistance to a damage type of your choice (except psychic).
+			You have advantage on ability checks and saving throws against being knocked prone and grappled.
+			Only once within this duration, if you drop to 0 hit points, you can choose to drop to 1 hit point instead.</description>
+		</sheet>
+	</element>
+	<element name="Land Spirit's Avatar (Sea)" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RANGER_SPIRITWARDEN_LAND_SPIRITS_AVATAR_SEA">
+		<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you concentrate on your land spirit, and gain the following traits for 1 minute:
+			You cannot be targeted by opportunity attacks.
+			If you are in water, you cannot be grappled.
+			When you take the attack action, you can make one additional attack.</description>
 		</sheet>
 	</element>
 </elements>
