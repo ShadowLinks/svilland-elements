@@ -1,61 +1,101 @@
+<elements>
+    <info>
+        <name>Ansuz-Touched"</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="sorcerer-ansuz.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/sorcerer-ansuz.xml"/>
+        </update>
+    </info>
+	<element name="Ansuz-Touched" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_SORCERER_ANSUZ">
+        <supports>Sorcerous Origin</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<p>Ansuz-touched sorcerers carry with them the magical nature of Ansuz, the magic rune and the rune of Odin. They are better attuned to the nature of magic.</p>
+			<p class="indent">With their runic essence, they can manipulate their ways of magic better than other sorcerers. Additionally, masters of this origin can create their own visage from the aether and use it to channel their spells or other magical abilities.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ANSUZ_ANSUZ_MAGIC" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ANSUZ_ATTUNED_TO_MAGIC" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ANSUZ_MAGICAL_ADEPT" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ANSUZ_MAGIC_RESISTANCE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ANSUZ_MAGIC_MASTERY" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ANSUZ_ANSUZ_MAGIC" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ANSUZ_ATTUNED_TO_MAGIC" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ANSUZ_MAGICAL_ADEPT" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ANSUZ_MAGIC_RESISTANCE" level="14" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ANSUZ_MAGIC_MASTERY" level="18" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="Ansuze Magic" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ANSUZ_ANSUZ_MAGIC">
 		<description>
-			<p></p>
+			<p>Your affinity to arcana gives you the option to learn spells from the wizard spell list. While learning a new spell, you can choose one spell from the runewalker spell list as an alternative to the spells on your sorcerer spell list. The chosen spells become a sorcerer spell for you.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>While learning a new spell, you can choose one spell from the runewalker spell list as an alternative to the spells on your sorcerer spell list. The chosen spells become a sorcerer spell for you.</description>
+		</sheet>
+		<spellcasting name="Sorcerer" extend="true">
+			<extend>Wizard</extend>
+			<extend>Runewalker</extend>
+		</spellcasting>
+	</element>
+	<element name="Attuned to Magic" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ANSUZ_ATTUNED_TO_MAGIC">
+		<description>
+			<p>Starting at 1st level, you can cast detect magic and detect runes spells as cantrips.</p>
+		</description>
+		<sheet>
+			<description>You can cast detect magic and detect runes spells as cantrips.</description>
+		</sheet>
+		<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
+		<grant type="Spell" id="ID_PHB_SPELL_DETECT_RUNES" />
+	</element>
+	<element name="Magical Adept" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ANSUZ_MAGICAL_ADEPT">
+		<description>
+			<p>At 6th level, you gain the following benefits:</p>
+			<p class="indent"><strong><em></em></strong>Adept of Magics. Starting at 6th level, you can learn one spell from any class’ spell list at each sorcerer level you gain. Each of these spells must be of a level for which you have spell slots.</p>
+			<p class="indent"><strong><em></em></strong>Differ Location (Metamagic). You can shift the location of your spells’ source in the eyes of your foes. By spending 2 sorcery points, you can make the spell seem like it has emerged from somewhere else within a 20-foot radius.</p>
+		</description>
+		<sheet>
+			<description>You can learn one spell from any class’ spell list at each sorcerer level you gain. Each of these spells must be of a level for which you have spell slots.
+			Differ Location (Metamagic). You can shift the location of your spells’ source in the eyes of your foes. By spending 2 sorcery points, you can make the spell seem like it has emerged from somewhere else within a 20-foot radius.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Adept of Magics" supports="$(spellcasting:slots)" level="6" number="1" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Adept of Magics" supports="$(spellcasting:slots)" level="7" number="1" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Adept of Magics" supports="$(spellcasting:slots)" level="8" number="1" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Adept of Magics" supports="$(spellcasting:slots)" level="9" number="1" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Adept of Magics" supports="$(spellcasting:slots)" level="10" number="1" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Adept of Magics" supports="$(spellcasting:slots)" level="11" number="1" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Adept of Magics" supports="$(spellcasting:slots)" level="12" number="1" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Adept of Magics" supports="$(spellcasting:slots)" level="13" number="1" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Adept of Magics" supports="$(spellcasting:slots)" level="14" number="1" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Adept of Magics" supports="$(spellcasting:slots)" level="15" number="1" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Adept of Magics" supports="$(spellcasting:slots)" level="16" number="1" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Adept of Magics" supports="$(spellcasting:slots)" level="17" number="1" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Adept of Magics" supports="$(spellcasting:slots)" level="18" number="1" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Adept of Magics" supports="$(spellcasting:slots)" level="19" number="1" spellcasting="Sorcerer"/>
+			<select type="Spell" name="Adept of Magics" supports="$(spellcasting:slots)" level="20" number="1" spellcasting="Sorcerer"/>
+		</rules>
+	</element>
+	<element name="Magic Resistance" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ANSUZ_MAGIC_RESISTANCE">
+		<description>
+			<p>Starting at 14th level, whenever you or an ally within 30 feet of you are targeted by a spell or spell attack, you can use your reaction and spend 2 sorcery points to have advantage on your saving throw against the spell, or to make the creature casting it have disadvantage on its spell attack.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Whenever you or an ally within 30 feet of you are targeted by a spell or spell attack, you can use your reaction and spend 2 sorcery points to have advantage on your saving throw against the spell, or to make the creature casting it have disadvantage on its spell attack.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="Magic Mastery" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ANSUZ_MAGIC_MASTERY">
 		<description>
-			<p></p>
+			<p>At 18th level, you understand the full potential of Ansuz, the rune of magic. You gain an additional Metamagic option of your choice.</p>
+			<p class="indent">Additionally, the sorcery point cost of the Metamagic options decrease by 1 (to a minimum of one).</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>The sorcery point cost of the Metamagic options decrease by 1 (to a minimum of one).</description>
 		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
-		</sheet>
+		<rules>
+			<select type="Class Feature" name="Metamagic (Magic Mastery)" supports="Metamagic" />
+		</rules>
 	</element>
 </elements>
