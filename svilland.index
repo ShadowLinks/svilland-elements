@@ -22,6 +22,9 @@
 		<file name="race-vestri.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/race-vestri.xml" />
 		
 		<!-- Classes -->
+		<file name="class-runewalker.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/class-runewalker.xml" />
+		
+
 		<file name="barbarian-berserkr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/barbarian-berserkr.xml" />
 		<file name="barbarian-svinfylking.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/barbarian-svinfylking.xml" />
 		<file name="barbarian-ufhednar.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/barbarian-ufhednar.xml" />

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Runewalker</name>
+        <description>Runewalker Class from Svilland</description>
+        <update version="0.0.1">
+            <file name="class-runewalker.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/class-runewalker.xml" />
+        </update>
+    </info>
+    <element name="Runewalker" type="Class" source="Svilland" id="ID_DRS_SVILLAND_CLASS_RUNEWALKER">
+        <description>
+            <p>Many many years ago, when the Gods came to these lands, Odin learnt about magic in its raw form. As Odin delved deeper and deeper and uncovered the mysteries of magic, he also began to shape it. He gave the chaotic and raw energies of the world a form and classified them. Finally, he created runes and bestowed them upon the folk of Svilland.</p>
+            <p class="indent">Then arose the Runewalkers. They understood that runes are a way of life, and so they made magic and runes a part of their lives. War, farming, traveling and many other mortal concepts gained a runic meaning.</p>
+            <h4>A LIFE DEDICATED TO RUNES</h4>
+            <p>A Runewalker’s life is an adventurous one. They search for runes so long as they have life in them. Runewalkers appear whenever a rune is found, or wherever they are needed. They never miss a chance to learn more about runes.</p>
+            <h4>CREATING A RUNEWALKER</h4>
+            <p>You travel and gather runes. You keep the knowledge you’ve discovered, protect it, and think it to be sacred. You choose a runic path (which is different from an archetype) and try to live by it to set an example for other people. For example, if you walk on the Path of the Dead, you can be seen helping a medic in a small village in the daytime, also building on your knowledge of anatomy. The same night, you can be seen exercising your knowledge on the undead that you raised. You should also talk to your GM about your teacher, your master and the origins of your curiosity about runes.</p>
+            <h5 class="caption">QUICK BUILD</h5>
+            <p>You can make a runewalker quickly by following these suggestions. Intelligence should be your highest ability score followed by Wisdom or Constitution.</p>
+            <h2>CLASS FEATURES</h2>
+            <p>As an runewalker, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d6 per runewalker level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per runewalker level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> None</li>
+                <li><strong>Weapons:</strong> All simple weapons</li>
+                <li><strong>Tools:</strong> Rune scribing tools</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Intelligence, Wisdom</li>
+                <li><strong>Skills:</strong> Choose two from Arcana, History, Insight, Medicine, Nature, Religion</li>
+            </ul>
+            <h5 class="caption">EQUIPMENT</h5>
+            <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+            <ul>
+                <li>(a) a dagger or (b) a handax</li>
+                <li>(a) robe or (b) the fur of a beast</li>
+                <li>A rune focus</li>
+            </ul>
+            <!-- class table here -->
+            <h5 class="caption">THE RUNEWALKER</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
+                </thead>
+                <tr><td> 1st</td><td class="left">Runic Magic, Detect Rune</td><td>3</td><td>6</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 2nd</td><td class="left">Archetype Feature</td><td>3</td><td>8</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 3rd</td><td class="left">Rune Path</td><td>3</td><td>10</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 4th</td><td class="left">-</td><td>4</td><td>12</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 5th</td><td class="left">ASI</td><td>4</td><td>14</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 6th</td><td class="left">Archetype Feature</td><td>4</td><td>16</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 7th</td><td class="left">-</td><td>4</td><td>18</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 8th</td><td class="left">ASI</td><td>4</td><td>20</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 9th</td><td class="left">-</td><td>5</td><td>22</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>10th</td><td class="left">Archetype Feature, Rune Path</td><td>5</td><td>24</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>11th</td><td class="left">-</td><td>5</td><td>26</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>12th</td><td class="left">ASI</td><td>5</td><td>28</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>13th</td><td class="left">-</td><td>5</td><td>30</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+                <tr><td>14th</td><td class="left">Archetype Feature</td><td>5</td><td>32</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+                <tr><td>15th</td><td class="left">-</td><td>5</td><td>34</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+                <tr><td>16th</td><td class="left">ASI</td><td>5</td><td>36</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+                <tr><td>17th</td><td class="left">-</td><td>5</td><td>38</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+                <tr><td>18th</td><td class="left">Rune Path</td><td>5</td><td>40</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+                <tr><td>19th</td><td class="left">ASI</td><td>5</td><td>42</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+                <tr><td>20th</td><td class="left">-</td><td>5</td><td>44</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+            </table>
+            <div element="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_RUNIC_MAGIC" />
+            <div element="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_DETECT_RUNE" />
+            <div element="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_RUNIC_TRADITION" />
+            <div element="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_RUNE_PATH" />
+            <div element="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_ASI" />
+            <div element="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_RUNIC_PURGE" />
+        </description>
+        <setters>
+            <set name="hd">d6</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+            <select type="Proficiency" name="Skill Proficiency, (Runewalker)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_RELIGION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_RUNES_SCRIBING_TOOLS" />
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+            <grant type="Class Feature" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_RUNIC_MAGIC" level="1" />
+            <grant type="Class Feature" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_DETECT_RUNE" level="1" />
+            <grant type="Class Feature" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_RUNIC_TRADITION" level="2" />
+            <grant type="Class Feature" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_RUNE_PATH" level="2" />
+            <grant type="Class Feature" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_ASI" level="4" />
+            <grant type="Class Feature" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_RUNIC_PURGE" level="5" />
+        </rules>
+        <spellcasting name="Runewalker" ability="Intelligence" prepare="true">
+            <list>Runewalker</list>
+        </spellcasting>
+    </element>
+    <element name="Runic Magic" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_RUNIC_MAGIC">
+        <description>
+            <p>As a runewalker, you have a list of runes you know. This list is called a runelist. It can be in the shape of a spellbook, of separate scrolls or of tattoos on your body. The runelist is made up of the wizard spell list plus the runewalker spells given in this book.</p>
+            <h4>Cantrips</h4>
+            <p>At 1st level, you know 3 cantrips of your choice from the wizard and runewalker spell lists. You learn additional cantrips at higher runewalker levels as shown in the Cantrips Known column of the Runewalker table.</p>
+            <h4>Runelist</h4>
+            <p>At 1st level, you have a runelist containing six 1st-level spells of your choice from the wizard and runewalker spell lists.</p>
+            <h4>Preparing and Casting Spells</h4>
+            <p>The Runewalker table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all your expended spell slots when you finish a long rest.</p>
+            <p class="indent">You prepare a list of spells that are available for you to cast. To do so, choose a number of spells from your runelist equal to your Intelligence modifier + your runewalker level (minimum of one spell). The spells must be of a level for which you have spell slots.</p>
+            <p class="indent">You can change your list of prepared spells when you finish a long rest. Preparing a new list of spells requires time spent studying your runelist and memorizing the incantations and gestures you must make to cast the spell: you must spend at least 1 minute per spell level for each spell on your list.</p>
+            <h4>Spellcasting Ability</h4>
+            <p>Intelligence is your spellcasting ability for the spells from your runelist. Memorizing runes, their meanings and remembering spells’ requirements are all related to Intelligence. You also use your Intelligence modifier while determining a spell’s DC and making an attack roll</p>
+            <center>
+                <p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+                <p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+            </center>
+            <h4>Ritual Casting</h4>
+            <p>You can cast a spell as a ritual if that spell has the ritual tag and you have the spell on your runelist. You don’t need to have the spell prepared.</p>
+            <h4>Spellcasting Focus</h4>
+            <p>You can use a rune focus as a spellcasting focus for your spells.</p>
+            <h4>Learning Spells of 1st Level or higher</h4>
+            <p>Each time you gain a runewalker level, you can add two runewalker and wizard spells to your runelist. Each of these spells must be of a level for which you have spell slots, as shown on the Runewalker table.</p>
+            <h4>Your Runelist</h4>
+            <p>The runes that you add to your runelist indicate the research you have done. You might find other runes during your adventures. You could discover new runes among your enemies’ notes, in a ruined temple during political wars or in eldritch places dating back to ancient times.</p>
+            <p class="indent"><strong><em>Adding a rune onto the list.</em></strong> When you find a new rune, you can add it to your runelist if it is of a level for which you have spell slots. Also, you need the time to understand the rune, and material to add it to your runelist.</p>
+            <p class="indent">Adding a rune to your runelist involves different steps. These include solving the meaning of the rune, understanding its needs and its nature, and finally, casting it. To master a rune and cast it without error, you have to work on it. All of these steps take 2 hours and 50 gp for each level of the spell. If you want to copy one of the runes from your runelist to another, for instance to your friends’ runelist or your backup runelist, you need to spend 1 hour and 10 gp for each level of the rune.</p>
+        </description>
+        <sheet>
+            <description>You can cast tagged spells as rituals. You can prepare {{runewalker:spellcasting:prepare}} spells from the Runewalker or Wizard spell list. You can use a rune focus as your spellcasting focus.</description>
+        </sheet>
+        <spellcasting name="Runewalker" extend="true">
+            <extend>Wizard</extend>
+        </spellcasting>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+            <grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING"/>
+            <grant type="Proficiency" name="ID_PROFICIENCY_SPELLCASTING_FOCUS_RUNE_FOCUS" />
+            <stat name="runewalker:spellcasting:slots:1" value="2" level="1"/>
+            <stat name="runewalker:spellcasting:slots:1" value="1" level="2"/>
+            <stat name="runewalker:spellcasting:slots:1" value="1" level="3"/>
+            <stat name="runewalker:spellcasting:slots:2" value="2" level="3"/>
+            <stat name="runewalker:spellcasting:slots:2" value="1" level="4"/>
+            <stat name="runewalker:spellcasting:slots:3" value="2" level="5"/>
+            <stat name="runewalker:spellcasting:slots:3" value="1" level="6"/>
+            <stat name="runewalker:spellcasting:slots:4" value="1" level="7"/>
+            <stat name="runewalker:spellcasting:slots:4" value="1" level="8"/>
+            <stat name="runewalker:spellcasting:slots:4" value="1" level="9"/>
+            <stat name="runewalker:spellcasting:slots:5" value="1" level="9"/>
+            <stat name="runewalker:spellcasting:slots:5" value="1" level="10"/>
+            <stat name="runewalker:spellcasting:slots:5" value="1" level="18"/>
+            <stat name="runewalker:spellcasting:slots:6" value="1" level="11"/>
+            <stat name="runewalker:spellcasting:slots:6" value="1" level="19"/>
+            <stat name="runewalker:spellcasting:slots:7" value="1" level="13"/>
+            <stat name="runewalker:spellcasting:slots:7" value="1" level="20"/>
+            <stat name="runewalker:spellcasting:slots:8" value="1" level="15"/>
+            <stat name="runewalker:spellcasting:slots:9" value="1" level="17"/>
+            <stat name="runewalker:spellcasting:prepare" value="intelligence:modifier"/>
+            <stat name="runewalker:spellcasting:prepare" value="level:runewalker"/>
+            <select type="Spell" name="Cantrip (Runewalker)" supports="$(spellcasting:list), 0" level="1" number="4" spellcasting="Runewalker" />
+            <select type="Spell" name="Cantrip (Runewalker)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Runewalker"/>
+            <select type="Spell" name="Cantrip (Runewalker)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Runewalker" />
+            <select type="Spell" name="Runelist (Runewalker)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="Runewalker"/>
+            <select type="Spell" name="Runelist (Runewalker)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="2" spellcasting="Runewalker" />
+            <select type="Spell" name="Runelist (Runewalker)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="2" spellcasting="Runewalker" />
+            <select type="Spell" name="Runelist (Runewalker)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="2" spellcasting="Runewalker" />
+            <select type="Spell" name="Runelist (Runewalker)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="2" spellcasting="Runewalker" />
+            <select type="Spell" name="Runelist (Runewalker)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="2" spellcasting="Runewalker" />
+            <select type="Spell" name="Runelist (Runewalker)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="2" spellcasting="Runewalker" />
+            <select type="Spell" name="Runelist (Runewalker)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="2" spellcasting="Runewalker" />
+            <select type="Spell" name="Runelist (Runewalker)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="2" spellcasting="Runewalker" />
+            <select type="Spell" name="Runelist (Runewalker)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="2" spellcasting="Runewalker" />
+            <select type="Spell" name="Runelist (Runewalker)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="2" spellcasting="Runewalker" />
+            <select type="Spell" name="Runelist (Runewalker)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" number="2" spellcasting="Runewalker" />
+            <select type="Spell" name="Runelist (Runewalker)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="2" spellcasting="Runewalker" />
+            <select type="Spell" name="Runelist (Runewalker)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="2" spellcasting="Runewalker" />
+            <select type="Spell" name="Runelist (Runewalker)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="2" spellcasting="Runewalker" />
+            <select type="Spell" name="Runelist (Runewalker)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" number="2" spellcasting="Runewalker" />
+            <select type="Spell" name="Runelist (Runewalker)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="2" spellcasting="Runewalker" />
+            <select type="Spell" name="Runelist (Runewalker)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" number="2" spellcasting="Runewalker" />
+            <select type="Spell" name="Runelist (Runewalker)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="2" spellcasting="Runewalker" />
+            <select type="Spell" name="Runelist (Runewalker)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="2" spellcasting="Runewalker" />
+        </rules>
+    </element>
+    <element name="Detect Rune" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_DETECT_RUNE">
+        <description>
+            <p>For 1 minute, you sense the presence of runes within 30 feet of you. If you sense any rune in this way, you can use an action to learn its school of magic. Then, you can make an Intelligence (Arcana) check (DC = 10 + spell level of the rune) to comprehend the spell level of the rune.</p>
+        </description>
+        <sheet>
+            <description>For 1 minute, you sense the presence of runes within 30 feet of you. If you sense any rune in this way, you can use an action to learn its school of magic. Then, you can make an Intelligence (Arcana) check (DC = 10 + spell level of the rune) to comprehend the spell level of the rune.</description>
+        </sheet>
+    </element>
+    <element name="Runic Tradition" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_RUNIC_TRADITION">
+        <description>
+            <p>You can choose different traditions while learning about runes. You can dedicate your life to studies about runes and discover new ways to use them, empower the runes using your own life force, or use the mystical powers of runes to weave magical effects around others. As you grow in power and become a master of the tradition you follow, word spreads of your knowledge and might. Your reputation seems to precede you wherever you go.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype" name="Runic Tradition" supports="Runic-Traditions" />
+        </rules>
+    </element>
+    <element name="Rune Path" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_RUNE_PATH">
+        <description>
+            <p>You see runes as a path in life that one walks on. After you learn about runes and runic magic, you choose a rune path. You know that life has many ways to go about things, many choices; and so do runes.</p>
+            <p class="indent"></p>At 10th and 18th levels, you choose 1 additional rune path (different from the ones you chose so far).
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Rune Path" supports="rune-path" />
+            <select type="Class Feature" name="Rune Path" supports="rune-path" level="10" />
+            <select type="Class Feature" name="Rune Path" supports="rune-path" level="18" />
+        </rules>
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_ASI">
+        <description>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Improvement Option (Runewalker 4)" supports="Improvement Option,Runewalker,4" level="4"/>
+            <select type="Class Feature" name="Improvement Option (Runewalker 8)" supports="Improvement Option,Runewalker,8" level="8"/>
+            <select type="Class Feature" name="Improvement Option (Runewalker 12)" supports="Improvement Option,Runewalker,12" level="12"/>
+            <select type="Class Feature" name="Improvement Option (Runewalker 16)" supports="Improvement Option,Runewalker,16" level="16"/>
+            <select type="Class Feature" name="Improvement Option (Runewalker 19)" supports="Improvement Option,Runewalker,19" level="19"/>
+        </rules>
+    </element>
+    <element name="Runic Purge" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_RUNIC_PURGE">
+        <description>
+            <p>You can spoil runes by purging them with your arcane knowledge. As an action, you can expend a spell slot that is equal to the spell level of the rune you want to purge, and purge the rune, making it useless by leaving only a trace behind.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can expend a spell slot that is equal to the spell level of the rune you want to purge, and purge the rune, making it useless by leaving only a trace behind.</description>
+        </sheet>
+    </element>
+    <element name="Rune Focus (Proficiency)" source="Svilland" type="Proficiency" id="ID_PROFICIENCY_SPELLCASTING_FOCUS_RUNE_FOCUS">
+    </element>
+    <element name="Rune Scribing Tools (Proficiency)" source="Svilland" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_RUNES_SCRIBING_TOOLS">
+    </element>
+    <element name="Rune Scribing Tools" type="Item" source="Svilland" id="ID_DRS_SVILLAND_ITEM_TOOL_RUNES_SCRIBING_TOOLS">
+        <description>  
+            <p></p>
+        </description>
+        <setters>
+            <set name="category">Tools</set>
+            <set name="cost" currency="gp">30</set>
+            <set name="weight" lb="5">5 lbs.</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_RUNES_SCRIBING_TOOLS</set>
+        </setters>
+    </element>
+    <element name="Path of Berserk" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_PATH_BERSERK">
+        <supports>rune-path</supports>
+        <description>
+            <p>Learning runes and casting spells cannot stop you from grabbing your axe and terrorizing the battlefield. When you choose to walk on this path, you become proficient with two martial weapons of your choice.</p>
+            <p class="indent">Also, as an action, you can enter a runic berserk. For 1 minute, your weapon attacks become magical, you can use your spell attack modifier for your weapon attacks, and you have a +1 bonus to your attack rolls and damage rolls. Once you use this feature, you must finish a long rest to use it again.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>As an action, you can enter a runic berserk. For 1 minute, your weapon attacks become magical, you can use your spell attack modifier for your weapon attacks, and you have a +1 bonus to your attack rolls and damage rolls.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Weapon Proficiency, (Berserk)" supports="Martial" number="2" />
+        </rules>
+    </element>
+    <element name="Path of Elements" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_PATH_ELEMENTS">
+        <supports>rune-path</supports>
+        <description>
+            <p>You walk on the path of the primal forces of nature and choose one of the following elements to walk on its path; cold, fire, or thunder and lightning. Your spells that deal damage of the chosen type deals an extra 1d6 damage.</p>
+            <p class="indent">Additionally, runes mark your soul when you choose this path to walk on. You have advantage on Charisma (Persuasion) checks against elementals and nature spirits.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" supports="rune-path-element" />
+        </rules>
+    </element>
+    <element name="Path of Elements (Fire)" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_PATH_ELEMENTS_FIRE">
+        <supports>rune-path-element</supports>
+        <description>
+            <p>Your spells of fire damage deals an extra 1d6 damage.</p>
+        </description>
+        <sheet>
+            <description>Your spells of fire damage deals an extra 1d6 damage.
+            You have advantage on Charisma (Persuasion) checks against elementals and nature spirits.</description>
+        </sheet>
+    </element>
+    <element name="Path of Elements (Cold)" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_PATH_ELEMENTS_COLD">
+        <supports>rune-path-element</supports>
+        <description>
+            <p>Your spells of cold damage deals an extra 1d6 damage.</p>
+        </description>
+        <sheet>
+            <description>Your spells of cold damage deals an extra 1d6 damage.
+            You have advantage on Charisma (Persuasion) checks against elementals and nature spirits.</description>
+        </sheet>
+    </element>
+    <element name="Path of Elements (Thunder)" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_PATH_ELEMENTS_THUNDER">
+        <supports>rune-path-element</supports>
+        <description>
+            <p>Your spells of thunder damage deals an extra 1d6 damage.</p>
+        </description>
+        <sheet>
+            <description>Your spells of thunder damage deals an extra 1d6 damage.
+            You have advantage on Charisma (Persuasion) checks against elementals and nature spirits.</description>
+        </sheet>
+    </element>
+    <element name="Path of Elements (Lightning)" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_PATH_ELEMENTS_LIGHTNING">
+        <supports>rune-path-element</supports>
+        <description>
+            <p>Your spells of lightning damage deals an extra 1d6 damage.</p>
+        </description>
+        <sheet>
+            <description>Your spells of lightning damage deals an extra 1d6 damage.
+            You have advantage on Charisma (Persuasion) checks against elementals and nature spirits.</description>
+        </sheet>
+    </element>
+    <element name="Path of Protection" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_PATH_PROTECTIOn">
+        <supports>rune-path</supports>
+        <description>
+            <p>You devote yourself to the protection of yourself and others. You become proficient with light armors.</p>
+            <p class="indent">Also, as a reaction, you can choose to have advantage on your next saving throw. Once you use this feature, you must finish a long rest to use it again.</p>
+            <p class="indent">Additionally, as an action, you can draw a rune of protection on yourself or on an ally within your reach. The rune stays active for 8 hours and grants a success on the next death saving throw. Once you use this feature, you must finish a long rest to use it again.</p>
+        </description>
+        <sheet>
+            <description>As a reaction, you can choose to have advantage on your next saving throw. Once you use this feature, you must finish a long rest to use it again.
+            Additionally, as an action, you can draw a rune of protection on yourself or on an ally within your reach. The rune stays active for 8 hours and grants a success on the next death saving throw. Once you use this feature, you must finish a long rest to use it again.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+        </rules>
+    </element>
+    <element name="Path of Seal" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_PATH_SEAL">
+        <supports>rune-path</supports>
+        <description>
+            <p>Runes have mystic powers and one of them can be interpreted as “sealing”. Sealing things carry different meanings. You can seal a chest, a door, a lockbox, or you can seal someone’s luck and fate.</p>
+            <p class="indent">As an action, you can seal an object. Opening the seal requires a successful DC 20 Dexterity check. This DC increases to 25 at 10th level. You may have only one seal at a time. When a second one is to be created, the old seal is broken.</p>
+            <p class="indent">In addition, when your target makes an ability check, attack roll, or saving throw, you can try to seal its fate as a reaction. It must succeed on a Wisdom saving throw against your spell save DC or the result of its roll counts as 1. You can only use this feature before the target makes the roll. You can use this feature once per week.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can seal an object. Opening the seal requires a successful DC 20 Dexterity check. This DC increases to 25 at 10th level. You may have only one seal at a time. When a second one is to be created, the old seal is broken.
+            In addition, when your target makes an ability check, attack roll, or saving throw, you can try to seal its fate as a reaction. It must succeed on a Wisdom saving throw against your spell save DC or the result of its roll counts as 1. You can only use this feature before the target makes the roll. You can use this feature once per week.</description>
+        </sheet>
+    </element>
+    <element name="Path of the Dead" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_PATH_DEAD">
+        <supports>rune-path</supports>
+        <description>
+            <p>Every path ends, as does life. You choose to see what happens after the path ends. While walking on the path of the dead, you can create one more undead with spells that create undead such as animate dead or create undead. This feature does not work if you do not have enough materials to create one more undead.</p>
+            <p class="indent">Also, your connection with the dead and their presence increases. You can sense the graves within 10 feet of you.</p>
+        </description>
+        <sheet>
+            <description>While walking on the path of the dead, you can create one more undead with spells that create undead such as animate dead or create undead. This feature does not work if you do not have enough materials to create one more undead.
+            You can sense the graves within 10 feet of you.</description>
+        </sheet>
+    </element>
+    <element name="Path of Travel" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_PATH_TRAVEL">
+        <supports>rune-path</supports>
+        <description>
+            <p>You dedicate yourself to the concept of traveling. Your speed increases by 10 feet and you have advantage on saving throws against being exhausted.</p>
+            <p class="indent">Although you like to travel, there is nothing like a warm hearth and good mead; home. You designate a place to be your home. Once per week, you can teleport to your home as an action.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against being exhausted.
+            You designate a place to be your home. Once per week, you can teleport to your home as an action.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:misc" value="10" />
+        </rules>
+    </element>
+    <element name="Rune Focus" type="Item" source="Svilland" id="ID_DRS_SVILLAND_ITEM_RUNE_FOCUS">
+        <description>
+            <p>Spell Focus for Runewalkers.</p>
+        </description>
+        <setters>
+            <set name="category">Spellcasting Focus</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="container">Rune Focus</set>
+        </setters>
+    </element>
+</elements>
