@@ -3,9 +3,10 @@ aurora content builder elements from svilland norse setting for 5e
 Thank you to The-Multitud-e for starting the project I forked from.
 
 ## Things to do:
+Potential additions from the new svilland book.
 
 ### Classes:
-- Runewalker
+- Runewalker 
 	- Runescarred
 	- Runescribe
 	- Runeweaver
@@ -14,27 +15,27 @@ Thank you to The-Multitud-e for starting the project I forked from.
 	- Chanter of Skies
 	- Chanter of Naturra
 
-### Subclasses:
-- Paladin Oaths COMPLETE
+### Subclasses: COMPLETE
+- Paladin Oaths 
 	- Oath to Freyja
 	- Oath to Hel
 	- Oath to Odin
 	- Oath to Thor
 	- Oath to Tyr
-- Barbarian Paths COMPLETE
+- Barbarian Paths 
 	- Path of Berserkr
 	- Path of Svinfylking
 	- Path of Ulfhednar
-- Bard Traditions (Colleges) COMPLETE
+- Bard Traditions (Colleges) 
 	- Tradition of Bragi
 	- Tradition of Helord
 	- Tradition of Ofridr
 	- Tradition of Villr
-- Fighter Archetypes COMPLETE
+- Fighter Archetypes 
 	- Rune Warrior
 	- Shieldman/Shieldmaiden
 	- Vikingr
-- Cleric Domains COMPLETE
+- Cleric Domains 
 	- Execution Domain
 	- Fury Domain
 	- Kaldr Domain
