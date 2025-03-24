@@ -10,7 +10,7 @@
 	</info>
 	<files>
 		<file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/source.xml" />
-		<file name="langauges.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/languages.xml"/>
+		<file name="langauges.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/languages.xml"/>
 		<file name="backgrounds.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/backgrounds.xml" />
 		
 		<!-- Races -->
@@ -23,7 +23,9 @@
 		
 		<!-- Classes -->
 		<file name="class-runewalker.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/class-runewalker.xml" />
-		
+		<file name="runewalker-runescarred.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/runewalker-runescarred.xml" />
+		<file name="runewalker-runescribe.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/runewalker-runescribe.xml" />
+		<file name="runewalker-runeweaver.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/runewalker-runeweaver.xml" />
 
 		<file name="barbarian-berserkr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/barbarian-berserkr.xml" />
 		<file name="barbarian-svinfylking.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/barbarian-svinfylking.xml" />
