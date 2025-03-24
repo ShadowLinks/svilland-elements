@@ -1,3 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Chanter of Nattura</name>
+        <description>Chanter of Nattura Tradition for Seidr from Svilland</description>
+        <update version="0.0.1">
+            <file name="seidr-nattura.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/seidr-nattura.xml" />
+        </update>
+    </info>
+	<element name="Chanter of Nattura" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_SEIDR_NATTURA">
+        <supports>seidr-tradition</supports>
 		<description>
 			<p></p>
 			<p class="indent"></p>
@@ -6,19 +17,21 @@
 			<div element="ID____" />
 			<div element="ID_____" />
 			<div element="ID______" />
+			<div element="ID_______" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID__" level="3" />
+			<grant type="Archetype Feature" id="ID___" level="3" />
+			<grant type="Archetype Feature" id="ID____" level="7" />
+			<grant type="Archetype Feature" id="ID_____" level="11" />
+			<grant type="Archetype Feature" id="ID______" level="15" />
+			<grant type="Archetype Feature" id="ID_______" level="18" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="name" type="Archetype Feature" source="Svilland" id="ID__">
 		<description>
 			<p></p>
 		</description>
@@ -26,7 +39,7 @@
 			<description></description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
 		<description>
 			<p></p>
 		</description>
@@ -34,7 +47,7 @@
 			<description></description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
 		<description>
 			<p></p>
 		</description>
@@ -42,7 +55,7 @@
 			<description></description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
+	<element name="name" type="Archetype Feature" source="Svilland" id="ID_____">
 		<description>
 			<p></p>
 		</description>
@@ -50,7 +63,15 @@
 			<description></description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
+	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+	<element name="name" type="Archetype Feature" source="Svilland" id="ID_______">
 		<description>
 			<p></p>
 		</description>
