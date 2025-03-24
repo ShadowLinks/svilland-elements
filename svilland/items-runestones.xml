@@ -283,6 +283,480 @@
             <set name="attunement">true</set>
         </setters>
     </element>
+    <element name="Lesser Runestone of Ing (Rune of Earth)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ING_LESSER">
+        <p>Ing is the rune of earth and an Ing runestone lets you control earth.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must bury it beneath the earth for 8 hours.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Mending.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Resistance.</p>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">1</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Greater Runestone of Ing (Rune of Earth)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ING_GREATER">
+        <description>
+            <p>Ing is the rune of earth and an Ing runestone lets you control earth.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must bury it beneath the earth for 8 hours.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Mending, Barkskin.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Resistance, Meld into stone.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">3</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Grand Runestone of Ing (Rune of Earth)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ING_GRAND">
+        <description>
+            <p>Ing is the rune of earth and an Ing runestone lets you control earth.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must bury it beneath the earth for 8 hours.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Mending, Barkskin, Stoneskin.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Resistance, Meld into stone, Wall of stone.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Very Rare</set>
+            <set name="charges">5</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Sacred Runestone of Ing (Rune of Earth)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ING_SACRED">
+        <description>
+            <p>Ing is the rune of earth and an Ing runestone lets you control earth.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must bury it beneath the earth for 8 hours.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Mending, Barkskin, Stoneskin.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Resistance, Meld into stone, Wall of stone, Move Earth, Reverse Gravity.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Legendary</set>
+            <set name="charges">7</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Lesser Runestone of Isa (Rune of Ice)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ISA_LESSER">
+        <p>Isa is the rune of cold and ice, and an Isa runestone lets you wield the power of the cold.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must bury it in a pile of snow that is in contact with the earth (not separated by a cup or container) for 8 hours.</p>
+            <p class="indent">Additionally, if you are attuned to an Isa runestone of any rarity, you can choose to have advantage on a Constitution saving throw against an effect that deals cold damage or against cold weather by expending one charge as a reaction. Once you use the runestone in this way, you must finish a short or long rest to do so again.</p>
+            <p class="indent"><strong><em>Spells.</em></strong></p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Ray of Frost.</p>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">1</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Greater Runestone of Isa (Rune of Ice)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ISA_GREATER">
+        <description>
+            <p>Isa is the rune of cold and ice, and an Isa runestone lets you wield the power of the cold.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must bury it in a pile of snow that is in contact with the earth (not separated by a cup or container) for 8 hours.</p>
+            <p class="indent">Additionally, if you are attuned to an Isa runestone of any rarity, you can choose to have advantage on a Constitution saving throw against an effect that deals cold damage or against cold weather by expending one charge as a reaction. Once you use the runestone in this way, you must finish a short or long rest to do so again.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Cold's Embrace.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Ray of Frost, Ice Pit.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">3</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Grand Runestone of Isa (Rune of Ice)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ISA_GRAND">
+        <description>
+            <p>Isa is the rune of cold and ice, and an Isa runestone lets you wield the power of the cold.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must bury it in a pile of snow that is in contact with the earth (not separated by a cup or container) for 8 hours.</p>
+            <p class="indent">Additionally, if you are attuned to an Isa runestone of any rarity, you can choose to have advantage on a Constitution saving throw against an effect that deals cold damage or against cold weather by expending one charge as a reaction. Once you use the runestone in this way, you must finish a short or long rest to do so again.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Cold's Embrace, Ice Storm.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Ray of Frost, Ice Pit, Cone of Cold.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Very Rare</set>
+            <set name="charges">5</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Sacred Runestone of Isa (Rune of Ice)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ISA_SACRED">
+        <description>
+            <p>Isa is the rune of cold and ice, and an Isa runestone lets you wield the power of the cold.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must bury it in a pile of snow that is in contact with the earth (not separated by a cup or container) for 8 hours.</p>
+            <p class="indent">Additionally, if you are attuned to an Isa runestone of any rarity, you can choose to have advantage on a Constitution saving throw against an effect that deals cold damage or against cold weather by expending one charge as a reaction. Once you use the runestone in this way, you must finish a short or long rest to do so again.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Cold's Embrace, Ice Storm</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Ray of Frost, Ice Pit, Cone of Cold, Freezing Sphere, Avalanche.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Legendary</set>
+            <set name="charges">7</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Lesser Runestone of Kaun (Rune of Fire)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_KAUN_LESSER">
+        <p>Kaun is the rune of fire and a Kaun runestone lets you create fire out of thin air.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must put it into a fire such as a campfire or a hearth fire for 8 hours.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Produce Flame.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Firebolt.</p>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">1</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Greater Runestone of Kaun (Rune of Fire)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_KAUN_GREATER">
+        <description>
+            <p>Kaun is the rune of fire and a Kaun runestone lets you create fire out of thin air.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must put it into a fire such as a campfire or a hearth fire for 8 hours.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Produce Flame, Scorching Ray.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Firebolt, Fireball.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">3</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Grand Runestone of Kaun (Rune of Fire)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_KAUN_GRAND">
+        <description>
+            <p>Kaun is the rune of fire and a Kaun runestone lets you create fire out of thin air.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must put it into a fire such as a campfire or a hearth fire for 8 hours.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Produce Flame, Scorching Ray, Wall of Fire.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Firebolt, Fireball, Flame Strike.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Very Rare</set>
+            <set name="charges">5</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Sacred Runestone of Kaun (Rune of Fire)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_KAUN_SACRED">
+        <description>
+            <p>Kaun is the rune of fire and a Kaun runestone lets you create fire out of thin air.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must put it into a fire such as a campfire or a hearth fire for 8 hours.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Produce Flame, Scorching Ray, Wall of Fire.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Firebolt, Fireball, Flame Strike, Delayed Blast Fireball, Fire Storm.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Legendary</set>
+            <set name="charges">7</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Lesser Runestone of Laugr (Rune of Water)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_LAUGR_LESSER">
+        <p>Laugr is the rune of water and a Laugr runestone lets you bend water to your will.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must bury it beneath a natural body of water, such as a river or a lake for 8 hours.</p>
+            <p class="indent">Additionally, if you are attuned to a Laugr runestone of any rarity, you can expend one charge as an action to have advantage on your next Wisdom saving throw against a mind-altering spell or other magical ability within 8 hours. This is because your mind becomes flexible enough to slip through the grasp of the opponent caster, just like water.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> .</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Create or Destory Water.</p>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">1</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Greater Runestone of Laugr (Rune of Water)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_LAUGR_GREATER">
+        <description>
+            <p>Laugr is the rune of water and a Laugr runestone lets you bend water to your will.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must bury it beneath a natural body of water, such as a river or a lake for 8 hours.</p>
+            <p class="indent">Additionally, if you are attuned to a Laugr runestone of any rarity, you can expend one charge as an action to have advantage on your next Wisdom saving throw against a mind-altering spell or other magical ability within 8 hours. This is because your mind becomes flexible enough to slip through the grasp of the opponent caster, just like water.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Water Breathing (self only).</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Create or Destory Water, Water Breathing.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">3</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Grand Runestone of Laugr (Rune of Water)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_LAUGR_GRAND">
+        <description>
+            <p>Laugr is the rune of water and a Laugr runestone lets you bend water to your will.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must bury it beneath a natural body of water, such as a river or a lake for 8 hours.</p>
+            <p class="indent">Additionally, if you are attuned to a Laugr runestone of any rarity, you can expend one charge as an action to have advantage on your next Wisdom saving throw against a mind-altering spell or other magical ability within 8 hours. This is because your mind becomes flexible enough to slip through the grasp of the opponent caster, just like water.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Water Breathing (self only), Control Water.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Create or Destory Water, Water Breathing, Conjure Elemental (water).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Very Rare</set>
+            <set name="charges">5</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Sacred Runestone of Laugr (Rune of Water)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_LAUGR_SACRED">
+        <description>
+            <p>Laugr is the rune of water and a Laugr runestone lets you bend water to your will.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must bury it beneath a natural body of water, such as a river or a lake for 8 hours.</p>
+            <p class="indent">Additionally, if you are attuned to a Laugr runestone of any rarity, you can expend one charge as an action to have advantage on your next Wisdom saving throw against a mind-altering spell or other magical ability within 8 hours. This is because your mind becomes flexible enough to slip through the grasp of the opponent caster, just like water.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Water Breathing (self only), Control Water.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Create or Destory Water, Water Breathing, Conjure Elemental (water), Conjure Elemental (water) (7th).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Legendary</set>
+            <set name="charges">7</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Lesser Runestone of Odal (Rune of Borders)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ODAL_LESSER">
+        <p>Odal is the rune of borders and an Odal runestone lets you cast various protective spells.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must finish a long rest within a circle you draw on the ground with your own blood while the runestone is on your person. While preparing the blood circle, you take 1d4 necrotic damage that cannot be lowered by any means, and your hit point maximum is lowered by 1d4. In addition, the amount of hit points you regain at the end of the long rest during which you recharge the runestone decreases by 30.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> .</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Protection from Evil and Good.</p>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">1</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Greater Runestone of Odal (Rune of Borders)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ODAL_GREATER">
+        <description>
+            <p>Odal is the rune of borders and an Odal runestone lets you cast various protective spells.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must finish a long rest within a circle you draw on the ground with your own blood while the runestone is on your person. While preparing the blood circle, you take 1d4 necrotic damage that cannot be lowered by any means, and your hit point maximum is lowered by 1d4. In addition, the amount of hit points you regain at the end of the long rest during which you recharge the runestone decreases by 30.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Protection from Energy.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Protection from Evil and Good, Warding Bond.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">3</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Grand Runestone of Odal (Rune of Borders)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ODAL_GRAND">
+        <description>
+            <p>Odal is the rune of borders and an Odal runestone lets you cast various protective spells.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must finish a long rest within a circle you draw on the ground with your own blood while the runestone is on your person. While preparing the blood circle, you take 1d4 necrotic damage that cannot be lowered by any means, and your hit point maximum is lowered by 1d4. In addition, the amount of hit points you regain at the end of the long rest during which you recharge the runestone decreases by 30.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Protection from Energy, Resilient Sphere.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Protection from Evil and Good, Warding Bond, Wall of Force.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Very Rare</set>
+            <set name="charges">5</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Sacred Runestone of Odal (Rune of Borders)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_ODAL_SACRED">
+        <description>
+            <p>Odal is the rune of borders and an Odal runestone lets you cast various protective spells.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must finish a long rest within a circle you draw on the ground with your own blood while the runestone is on your person. While preparing the blood circle, you take 1d4 necrotic damage that cannot be lowered by any means, and your hit point maximum is lowered by 1d4. In addition, the amount of hit points you regain at the end of the long rest during which you recharge the runestone decreases by 30.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Protection from Energy, Resilient Sphere.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Protection from Evil and Good, Warding Bond, Wall of Force, Globe of Invulnerability (7th).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Legendary</set>
+            <set name="charges">7</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Lesser Runestone of Thurisaz (Rune of Lightning)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_THURISAZ_LESSER">
+        <p>Thurisaz is the rune of lightning and power, and a Thurisaz runestone lets you wield lightning and empower your spells with it.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must leave it in a thunderstorm for 8 hours or must cast a spell on it that deals lightning damage. In the latter case, the runestone gains a number of charges equal to the level of the spell. If you are attuned to the runestone, and if you are the one who casts the lightning-damage-dealing spell, the runestone regains one additional charge.</p>
+            <p class="indent">Additionally, if you are attuned to an Isa runestone of any rarity, you can choose to have advantage on a Constitution saving throw against an effect that deals cold damage or against cold weather by expending one charge as a reaction. Once you use the runestone in this way, you must finish a short or long rest to do so again.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Shocking Grasp.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Thunderwave.</p>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">1</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Greater Runestone of Thurisaz (Rune of Lightning)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_THURISAZ_GREATER">
+        <description>
+            <p>Thurisaz is the rune of lightning and power, and a Thurisaz runestone lets you wield lightning and empower your spells with it.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must leave it in a thunderstorm for 8 hours or must cast a spell on it that deals lightning damage. In the latter case, the runestone gains a number of charges equal to the level of the spell. If you are attuned to the runestone, and if you are the one who casts the lightning-damage-dealing spell, the runestone regains one additional charge.</p>
+            <p class="indent">Additionally, if you are attuned to an Isa runestone of any rarity, you can choose to have advantage on a Constitution saving throw against an effect that deals cold damage or against cold weather by expending one charge as a reaction. Once you use the runestone in this way, you must finish a short or long rest to do so again.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Shocking Grasp, .</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Thunderwave, Lighting Bolt.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">3</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Grand Runestone of Thurisaz (Rune of Lightning)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_THURISAZ_GRAND">
+        <description>
+            <p>Thurisaz is the rune of lightning and power, and a Thurisaz runestone lets you wield lightning and empower your spells with it.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must leave it in a thunderstorm for 8 hours or must cast a spell on it that deals lightning damage. In the latter case, the runestone gains a number of charges equal to the level of the spell. If you are attuned to the runestone, and if you are the one who casts the lightning-damage-dealing spell, the runestone regains one additional charge.</p>
+            <p class="indent">Additionally, if you are attuned to an Isa runestone of any rarity, you can choose to have advantage on a Constitution saving throw against an effect that deals cold damage or against cold weather by expending one charge as a reaction. Once you use the runestone in this way, you must finish a short or long rest to do so again.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Shocking Grasp</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Thunderwave, Lighting Bolt, Lighting Bolt (5th).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Very Rare</set>
+            <set name="charges">5</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Sacred Runestone of Thurisaz (Rune of Lightning)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_THURISAZ_SACRED">
+        <description>
+            <p>Thurisaz is the rune of lightning and power, and a Thurisaz runestone lets you wield lightning and empower your spells with it.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must leave it in a thunderstorm for 8 hours or must cast a spell on it that deals lightning damage. In the latter case, the runestone gains a number of charges equal to the level of the spell. If you are attuned to the runestone, and if you are the one who casts the lightning-damage-dealing spell, the runestone regains one additional charge.</p>
+            <p class="indent">Additionally, if you are attuned to an Isa runestone of any rarity, you can choose to have advantage on a Constitution saving throw against an effect that deals cold damage or against cold weather by expending one charge as a reaction. Once you use the runestone in this way, you must finish a short or long rest to do so again.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Shocking Grasp.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Thunderwave, Lighting Bolt, Lighting Bolt (5th), Chain Lightning (7th).</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Legendary</set>
+            <set name="charges">7</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Lesser Runestone of Wunjo (Rune of Bind)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_WUNJO_LESSER">
+        <p>Wunjo is the rune of binding and a Wunjo runestone lets you cast binding spells as well as spells that aid your allies.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must put it in the middle of your dining table where you share your food with your trusted friends, and then finish a long rest with the runestone on your body and your friends around you.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Guidance.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Comprehend Languages.</p>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">1</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Greater Runestone of Wunjo (Rune of Bind)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_WUNJO_GREATER">
+        <description>
+            <p>Wunjo is the rune of binding and a Wunjo runestone lets you cast binding spells as well as spells that aid your allies.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must put it in the middle of your dining table where you share your food with your trusted friends, and then finish a long rest with the runestone on your body and your friends around you.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Guidance, Aid.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Comprehend Languages, Sending.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">3</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Grand Runestone of Wunjo (Rune of Bind)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_WUNJO_GRAND">
+        <description>
+            <p>Wunjo is the rune of binding and a Wunjo runestone lets you cast binding spells as well as spells that aid your allies.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must put it in the middle of your dining table where you share your food with your trusted friends, and then finish a long rest with the runestone on your body and your friends around you.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Guidance, Aid, Planar Binding.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Comprehend Languages, Sending, Hold Monster.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Very Rare</set>
+            <set name="charges">5</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Sacred Runestone of Wunjo (Rune of Bind)" type="Magic Item" source="Svilland" id="ID_DRS_SVILLAND_MAGIC_ITEM_WUNJO_SACRED">
+        <description>
+            <p>Wunjo is the rune of binding and a Wunjo runestone lets you cast binding spells as well as spells that aid your allies.</p>
+            <p class="indent"><strong><em>Recharging.</em></strong> In order to recharge this runestone, you must put it in the middle of your dining table where you share your food with your trusted friends, and then finish a long rest with the runestone on your body and your friends around you.</p>
+            <p class="indent"><strong><em>Spells.</em></strong> Guidance, Aid, Planar Binding.</p>
+            <p class="indent"><strong><em>Attuned Spells.</em></strong> Comprehend Languages, Sending, Hold Monster, Forcecage.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Runestones</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Runestones</set>
+            <set name="rarity">Legendary</set>
+            <set name="charges">7</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
