@@ -236,22 +236,7 @@
             <description>As an action, you can expend a spell slot that is equal to the spell level of the rune you want to purge, and purge the rune, making it useless by leaving only a trace behind.</description>
         </sheet>
     </element>
-    <element name="Rune Focus (Proficiency)" source="Svilland" type="Proficiency" id="ID_PROFICIENCY_SPELLCASTING_FOCUS_RUNE_FOCUS">
-    </element>
-    <element name="Rune Scribing Tools (Proficiency)" source="Svilland" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_RUNES_SCRIBING_TOOLS">
-    </element>
-    <element name="Rune Scribing Tools" type="Item" source="Svilland" id="ID_DRS_SVILLAND_ITEM_TOOL_RUNES_SCRIBING_TOOLS">
-        <description>  
-            <p></p>
-        </description>
-        <setters>
-            <set name="category">Tools</set>
-            <set name="cost" currency="gp">30</set>
-            <set name="weight" lb="5">5 lbs.</set>
-            <set name="type">Tool</set>
-            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_RUNES_SCRIBING_TOOLS</set>
-        </setters>
-    </element>
+    
     <element name="Path of Berserk" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_RUNEWALKER_PATH_BERSERK">
         <supports>rune-path</supports>
         <description>
@@ -370,6 +355,23 @@
             <stat name="speed:misc" value="10" />
         </rules>
     </element>
+    <element name="Rune Focus (Proficiency)" source="Svilland" type="Proficiency" id="ID_PROFICIENCY_SPELLCASTING_FOCUS_RUNE_FOCUS">
+    </element>
+    <element name="Tool Proficiency (Rune Scribing Tools)" source="Svilland" type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_RUNES_SCRIBING_TOOLS">
+        <supports>Tool</supports>
+    </element>
+    <element name="Rune Scribing Tools" type="Item" source="Svilland" id="ID_DRS_SVILLAND_ITEM_TOOL_RUNES_SCRIBING_TOOLS">
+        <description>  
+            <p></p>
+        </description>
+        <setters>
+            <set name="category">Tools</set>
+            <set name="cost" currency="gp">30</set>
+            <set name="weight" lb="5">5 lbs.</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_RUNES_SCRIBING_TOOLS</set>
+        </setters>
+    </element>
     <element name="Rune Focus" type="Item" source="Svilland" id="ID_DRS_SVILLAND_ITEM_RUNE_FOCUS">
         <description>
             <p>Spell Focus for Runewalkers.</p>
@@ -379,6 +381,7 @@
             <set name="cost" currency="gp">0</set>
             <set name="weight" lb="1">1 lb.</set>
             <set name="container">Rune Focus</set>
+            <set name="proficiency">ID_PROFICIENCY_SPELLCASTING_FOCUS_RUNE_FOCUS</set>
         </setters>
     </element>
 </elements>
