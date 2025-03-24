@@ -44,12 +44,12 @@
 		<sheet>
 			<description></description>
 		</sheet>
-		<rules>
-			<grant type="Spell" spellcasting="Sorcerer" level="5" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" />
-			<grant type="Spell" spellcasting="Sorcerer" level="9" id="ID_PHB_SPELL_RAISE_DEAD" />
-			<grant type="Spell" spellcasting="Sorcerer" level="13" id="ID_PHB_SPELL_RESURRECTION" />
-			<grant type="Spell" spellcasting="Sorcerer" level="17" id="ID_PHB_SPELL_TRUE_RESURRECTION" />
-		</rules>
+		<spellcasting name="Sorcerer" extend="true">
+			<extend>ID_PHB_SPELL_SPEAK_WITH_DEAD</extend>
+			<extend>ID_PHB_SPELL_RAISE_DEAD</extend>
+			<extend>ID_PHB_SPELL_RESURRECTION</extend>
+			<extend>ID_PHB_SPELL_TRUE_RESURRECTION</extend>
+		</spellcasting>
 	</element>
 	<element name="Sight of Death" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_IHWAR_SIGHT_OF_DEATH">
 		<description>

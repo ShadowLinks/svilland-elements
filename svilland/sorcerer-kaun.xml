@@ -9,66 +9,104 @@
 	<element name="Kaun-Touched" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_SORCERER_KAUN">
         <supports>Sorcerous Origin</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<p>Kaun-touched sorcerers carry with them the rune of Kaun, the fire rune. They are better attuned to spells based on fire. With a wave of their hand, they can burn their foes to a crisp.</p>
+			<p class="indent">These sorcerers are fewer in number compared to those touched by Isa. Yet, there are many tales around them because of the terror they wreak on a battlefield as they set it ablaze.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_FIRE_MAGIC" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_CATCHING_FIRE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_DREADFUL_FLAMES" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_KAUN_PYROMANIA" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_KAUN_INFERNO_INCARNATE" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="6" />
-			<grant type="Archetype Feature" id="ID_____" level="14" />
-			<grant type="Archetype Feature" id="ID______" level="18" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_FIRE_MAGIC" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_CATCHING_FIRE" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_DREADFUL_FLAMES" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_KAUN_PYROMANIA" level="14" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_KAUN_INFERNO_INCARNATE" level="18" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Fire Magic" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_FIRE_MAGIC">
 		<description>
-			<p></p>
+			<p>Your affinity to fire gives you the option to learn some non-sorcerer spells that are based on fire. While learning a new spell, you can choose one from the list below as an alternative to spells on your sorcerer spell list. The spell you choose becomes a sorcerer spell for you.</p>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>1st</td><td>sacred flame, sword of kaun*</td></tr>
+				<tr><td>2nd</td><td>branding smite, continual flame, flame blade</td></tr>
+				<tr><td>3rd</td><td>smoke of lava*, word of surtr*</td></tr>
+				<tr><td>4th</td><td>conjure minor elementals (fire only)</td></tr>
+				<tr><td>5th</td><td>conjure elemental (fire only), flame strike</td></tr>
+			</table>
 		</description>
 		<sheet>
-			<description></description>
+			<description>Conjure elemental spells only summon fire elementals.</description>
 		</sheet>
 		<spellcasting name="Sorcerer" extend="true">
-			<extend></extend>
+			<extend>ID_DRS_SVILLAND_SPELL_SWORD_OF_KAUN</extend>
+			<extend>ID_PHB_SPELL_SACRED_FLAME</extend>
+			<extend>ID_PHB_SPELL_BRANDING_SMITE</extend>
+			<extend>ID_PHB_SPELL_CONTINUAL_FLAME</extend>
+			<extend>ID_PHB_SPELL_FLAME_BLADE</extend>
+			<extend>ID_DRS_SVILLAND_SPELL_SMOKE_OF_LAVA</extend>
+			<extend>ID_DRS_SVILLAND_SPELL_WORD_OF_SURTR</extend>
+			<extend>ID_PHB_SPELL_CONJURE_MINOR_ELEMENTALS</extend>
+			<extend>ID_PHB_SPELL_CONJURE_ELEMENTAL</extend>
+			<extend>ID_PHB_SPELL_FLAME_STRIKE</extend>
 		</spellcasting>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Catching Fire" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_CATCHING_FIRE">
 		<description>
-			<p></p>
+			<p>At 1st level, your fire spells become stronger and more persistent. In addition to objects, your fire spells can also set creatures on fire for 1 minute. By spending 1 sorcery point while casting a spell that requires a spell attack and that deals fire damage, you can make your target catch fire and take 1d4 fire damage at the start of each of its turns for 1 minute. The fires can be extinguished as an action.</p>
+			<p class="indent">The fire damage becomes 1d6 at 6th, 1d8 at 14th and 1d10 at 10th level.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>In addition to objects, your fire spells can also set creatures on fire for 1 minute. By spending 1 sorcery point while casting a spell that requires a spell attack and that deals fire damage, you can make your target catch fire and take 1d4 fire damage at the start of each of its turns for 1 minute. The fires can be extinguished as an action.</description>
+			<description level="6">In addition to objects, your fire spells can also set creatures on fire for 1 minute. By spending 1 sorcery point while casting a spell that requires a spell attack and that deals fire damage, you can make your target catch fire and take 1d6 fire damage at the start of each of its turns for 1 minute. The fires can be extinguished as an action.</description>
+			<description level="10">In addition to objects, your fire spells can also set creatures on fire for 1 minute. By spending 1 sorcery point while casting a spell that requires a spell attack and that deals fire damage, you can make your target catch fire and take 1d8 fire damage at the start of each of its turns for 1 minute. The fires can be extinguished as an action.</description>
+			<description level="14">In addition to objects, your fire spells can also set creatures on fire for 1 minute. By spending 1 sorcery point while casting a spell that requires a spell attack and that deals fire damage, you can make your target catch fire and take 1d10 fire damage at the start of each of its turns for 1 minute. The fires can be extinguished as an action.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Dreadful Flames" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_DREADFUL_FLAMES">
 		<description>
-			<p></p>
+			<p>Starting at 6th level, your fire spells become so intense that they cause their targets to panic.</p>
+			<p class="indent">If a creature catches fire by your Catching Fire feature, you can spend 1 additional sorcery point as a reaction and frighten the target. It must succeed on a Wisdom saving throw or be frightened of you until the end of its next turn.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet action="Reaction">
+			<description>If a creature catches fire by your Catching Fire feature, you can spend 1 additional sorcery point as a reaction and frighten the target. It must succeed on a Wisdom saving throw or be frightened of you until the end of its next turn.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Pyromania" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_KAUN_PYROMANIA">
 		<description>
-			<p></p>
+			<p>Starting at 14th level, you become a pyromaniac while casting fire spells. Your fire spells become stronger and more destructive.</p>
+			<p class="indent">By spending 1 sorcery point while casting a spell that deals fire damage, you can increase the spell’s damage by 1d6. This damage increases by 1d6 for each additional sorcery point spent in this way, to a maximum of 10 sorcery points.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>By spending 1 sorcery point while casting a spell that deals fire damage, you can increase the spell’s damage by 1d6. This damage increases by 1d6 for each additional sorcery point spent in this way, to a maximum of 10 sorcery points.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<!-- usage limits were not defined in source -->
+	<element name="Inferno Incarnate" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_KAUN_INFERNO_INCARNATE">
 		<description>
-			<p></p>
+			<p>Starting at 18th level, as an action, you can become an avatar of fire. Your body looks like an erupting volcano, your eyes start to glow with a red or yellow hue, and flame and smoke starts coming out of them. The form lasts for 1 minute, and you gain the following benefits while in this form:</p>
+			<ul>
+                <li>You gain immunity to fire damage, and vulnerability to cold damage.</li>
+                <li>Your steps leave traces of fire and set the ground ablaze. You create a 5-foot-wide line of fire in the track of your movement. The fire remains for 1 minute or until it is extinguished as an action.</li>
+                <li>You can hurl flames to a target within 60 feet of you, dealing 2d6 fire damage on a successful ranged spell attack.</li>
+                <li>You can intensify your flaming body and create a 5-foot-radius aura of fire. When a creature enters the area for the first time or ends its turn within it, it must succeed on a Constitution saving throw or take 1d10 fire damage.</li>
+                <li>As a part of your movement, you instantly combust with a bright explosion, dealing damage to creatures nearby and potentially blinding them. Because of the combustion, you take 9d6 fire damage yourself, which cannot be reduced by any means. Creatures within 10 feet of you take twice that fire damage. An affected creature must succeed on a Constitution saving throw or become blinded for a number of rounds equal to your Charisma modifier (minimum of one).</li>
+            </ul>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you can become an avatar of fire. The form lasts for 1 minute, and you gain the following benefits while in this form:
+			You gain immunity to fire damage, and vulnerability to cold damage.
+			Your steps leave traces of fire and set the ground ablaze. You create a 5-foot-wide line of fire in the track of your movement. The fire remains for 1 minute or until it is extinguished as an action.
+			You can hurl flames to a target within 60 feet of you, dealing 2d6 fire damage on a successful ranged spell attack.
+			You can intensify your flaming body and create a 5-foot-radius aura of fire. When a creature enters the area for the first time or ends its turn within it, it must succeed on a Constitution saving throw or take 1d10 fire damage.
+			As a part of your movement, you instantly combust with a bright explosion, dealing damage to creatures nearby and potentially blinding them. Because of the combustion, you take 9d6 fire damage yourself, which cannot be reduced by any means. Creatures within 10 feet of you take twice that fire damage. An affected creature must succeed on a Constitution saving throw or become blinded for {{charisma:modifier}} rounds.</description>
 		</sheet>
 	</element>
 </elements>

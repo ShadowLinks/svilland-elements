@@ -9,66 +9,63 @@
 	<element name="Ing-Touched" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_SORCERER_ING">
         <supports>Sorcerous Origin</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<p>Ing-touched sorcerers carry with them the rune of Ing, the earth rune. The rune provides them with an essence that is sturdy and tough, making them more resilient than other sorcerers.</p>
+			<p class="indent">Ing-touched sorcerers generally excel in martial arts, and are known as respectable warriors.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ING_FISTS_OF_STONE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ING_MOUNTAIN_STANCE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ING_CURE_FROM_THE_SOIL" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ING_MIGHT_OF_EARTH" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="6" />
-			<grant type="Archetype Feature" id="ID_____" level="14" />
-			<grant type="Archetype Feature" id="ID______" level="18" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ING_FISTS_OF_STONE" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ING_MOUNTAIN_STANCE" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ING_CURE_FROM_THE_SOIL" level="14" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ING_MIGHT_OF_EARTH" level="18" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Fists of Stone" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ING_FISTS_OF_STONE">
 		<description>
-			<p></p>
+			<p>Starting at 1s level, whenever you cast a spell that requires a spell attack and that targets a creature within your reach, you can choose to cast it as a part of a magical unarmed strike. If you choose to do so, you have advantage on the attack roll and deal an additional 1d4 + your Charisma modifier bludgeoning damage.</p>
 		</description>
 		<sheet>
-			<description></description>
-		</sheet>
-		<spellcasting name="Sorcerer" extend="true">
-			<extend></extend>
-		</spellcasting>
-	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+			<description>Whenever you cast a spell that requires a spell attack and that targets a creature within your reach, you can choose to cast it as a part of a magical unarmed strike. If you choose to do so, you have advantage on the attack roll and deal an additional 1d4 + {{charism:modifier}} bludgeoning damage.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Mountain Stance" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ING_MOUNTAIN_STANCE">
 		<description>
-			<p></p>
+			<p>At 6th level, you learn how to invoke the essence of mountains within you. Whenever a creature targets you with a spell or weapon attack, you can use your reaction and spend 1 sorcery point to cover yourself with soil, gaining a bonus to AC equal to your Charisma modifier (minimum of one) against the attack.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>Whenever a creature targets you with a spell or weapon attack, you can use your reaction and spend 1 sorcery point to cover yourself with soil, gaining +{{charisma:modifier}} bonus to AC against the
+attack.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Cure from the Soil" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ING_CURE_FROM_THE_SOIL">
 		<description>
-			<p></p>
+			<p>Starting at 14th level, you can heal yourself by using your magical essence. As an action, you can expend a spell slot and regain a number of d6s equal to the spell slot’s level (3d6 for a 3rd level spell slot, for example) as hit points, or as temporary hit points if your current hit points is equal to your hit point maximum.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>As an action, you can expend a spell slot and regain a number of d6s equal to the spell slot’s level as hit points, or as temporary hit points if your current hit points is equal to your hit point maximum.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Might of Earth" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ING_MIGHT_OF_EARTH">
 		<description>
-			<p></p>
+			<p>At 18th level, you learn to invoke the full might and permanence of earth within you. As an action, you invoke the Ing rune and gain the following benefits for 1 minute:</p>
+			<ul>
+                <li>You have resistance to bludgeoning, piercing, and slashing damage.</li>
+                <li>You have advantage on your ability checks and saving throws against being grappled, prone, restrained, and stunned.</li>
+                <li>When you hit a creature with a spell that deals cold, fire, force, lightning, or thunder damage, it must succeed on a Strength saving throw or fall prone.</li>
+            </ul>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you invoke the Ing rune and gain the following benefits for 1 minute:
+			You have resistance to bludgeoning, piercing, and slashing damage.
+			You have advantage on your ability checks and saving throws against being grappled, prone, restrained, and stunned.
+			When you hit a creature with a spell that deals cold, fire, force, lightning, or thunder damage, it must succeed on a Strength saving throw or fall prone.</description>
 		</sheet>
 	</element>
 </elements>

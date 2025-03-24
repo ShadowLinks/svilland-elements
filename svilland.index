@@ -20,6 +20,7 @@
 		<file name="race-kuning.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/race-kuning.xml" />
 		<file name="race-mithral.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/race-mithral.xml" />
 		<file name="race-vestri.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/race-vestri.xml" />
+		
 		<!-- Classes -->
 		<file name="barbarian-berserkr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/barbarian-berserkr.xml" />
 		<file name="barbarian-svinfylking.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/barbarian-svinfylking.xml" />
@@ -62,7 +63,11 @@
 		<file name="sorcerer-ansuz.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/sorcerer-ansuz.xml"/>
 		<file name="sorcerer-vanir.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/sorcerer-vanir.xml"/>
 		<file name="sorcerer-ihwar.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/sorcerer-ihwar.xml"/>
-		
+		<file name="sorcerer-ing.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/sorcerer-ing.xml"/>
+		<file name="sorcerer-isa.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/sorcerer-isa.xml"/>
+		<file name="sorcerer-kaun.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/sorcerer-kaun.xml"/>
+		<file name="sorcerer-laugr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/sorcerer-laugr.xml"/>
+		<file name="sorcerer-thurisaz.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/sorcerer-thurisaz.xml"/>
 
 		<!-- Spells -->
 		<file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/spells.xml"/>

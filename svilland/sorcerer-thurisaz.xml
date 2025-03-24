@@ -9,66 +9,81 @@
 	<element name="Thurisaz-Touched" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_SORCERER_THURISAZ">
         <supports>Sorcerous Origin</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<p>Thurisaz-touched sorcerers carry with them the rune of Sol; the lightning rune. These sorcerers have the power to evoke lightning. For some Thurisaz-touched sorcerers, this is the purest form of power.</p>
+			<p class="indent">These sorcerers can act extremely fast, able to leap through lightning in the glimpse of an eye. Additionally, they can have the lighting pass through them, using their own flesh for a surging path of lightning. They are known for disorienting their foes with their spells.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_THURISAZ_LIGHTNING_IN_THE_VEINS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_THURISAZ_LIGHTNING_MAGIC" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_THURISAZ_LIGHTNING_LEAP" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_THURISAZ_RESURGE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_THURISAZ_STUNNING_SURGE" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="6" />
-			<grant type="Archetype Feature" id="ID_____" level="14" />
-			<grant type="Archetype Feature" id="ID______" level="18" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_THURISAZ_LIGHTNING_IN_THE_VEINS" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_THURISAZ_LIGHTNING_MAGIC" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_THURISAZ_LIGHTNING_LEAP" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_THURISAZ_RESURGE" level="14" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_THURISAZ_STUNNING_SURGE" level="18" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Lightning in the Veins" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_THURISAZ_LIGHTNING_IN_THE_VEINS">
 		<description>
-			<p></p>
+			<p>Starting at 1st level, whenever you make a Dexterity saving throw, you can spend 1 sorcery point to have advantage on it.</p>
 		</description>
 		<sheet>
+			<description>Whenever you make a Dexterity saving throw, you can spend 1 sorcery point to have advantage on it.</description>
+		</sheet>
+	</element>
+	<element name="Lightning Magic" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_THURISAZ_LIGHTNING_MAGIC">
+		<description>
+			<p>Your affinity to the rune of Thurisaz lets you learn lightning spells that are not on your sorcerer spell list. While learning a new spell, you can choose one from the list below as alternates to spells on your sorcerer spell list. The spells you choose become sorcerer spells for you.</p>
+			<table>
+				<thead>
+					<tr><td>d4</td><td>column2</td></tr>
+				</thead>
+				<tr><td>1st</td><td>ride like lightning*</td></tr>
+				<tr><td>2nd</td><td>oppression of Thurisaz*</td></tr>
+				<tr><td>3rd</td><td>call lightning</td></tr>
+			</table>
+		</description>
+		<sheet display="false">
 			<description></description>
 		</sheet>
 		<spellcasting name="Sorcerer" extend="true">
-			<extend></extend>
+			<extend>ID_DRS_SVILLAND_SPELL_RIDE_LIKE_LIGHTNING</extend>
+			<extend>ID_DRS_SVILLAND_SPELL_OPPRESSION_OF_THURISAZ</extend>
+			<extend>ID_PHB_SPELL_CALL_LIGHTNING</extend>
 		</spellcasting>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Lightning Leap" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_THURISAZ_LIGHTNING_LEAP">
 		<description>
-			<p></p>
+			<p>Starting at 6th level, when you cast a spell that deals lightning or thunder damage, you can spend 2 sorcery points as a reaction to travel through the path of lightning. Once you do so, you teleport to an unoccupied space within 5 feet of the spell’s target, the spell’s path, or its area of effect.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>When you cast a spell that deals lightning or thunder damage, you can spend 2 sorcery points as a reaction to travel through the path of lightning. Once you do so, you teleport to an unoccupied space within 5 feet of the spell’s target, the spell’s path, or its area of effect.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Resurge" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_THURISAZ_RESURGE">
 		<description>
-			<p></p>
+			<p>tarting at 14th level, you can recreate the current of lightning when you leap through it to make it change its direction and head towards a new target.</p>
+			<p class="indent">When you use the Lightning Leap feature, you can spend 4 sorcery points as a reaction and duplicate the effects of the spell you used in said feature. You can choose a different target, and the point of origin of the spell is the space you teleported to.</p>
+			<p class="indent">However, the range of the duplicated spell cannot be farther than 20 feet, and if it is a spell that leaps through targets (such as chain lightning spell), it does not.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>When you use the Lightning Leap feature, you can spend 4 sorcery points as a reaction and duplicate the effects of the spell you used in said feature. You can choose a different target, and the point of origin of the spell is the space you teleported to.
+			However, the range of the duplicated spell cannot be farther than 20 feet, and if it is a spell that leaps through targets (such as chain lightning spell), it does not.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Stunning Surge" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_THURISAZ_STUNNING_SURGE">
 		<description>
-			<p></p>
+			<p>Starting at 18th level, whenever you deal lightning or thunder damage to a creature with a spell, you can spend 1 sorcery point as a reaction and try to stun the target of the spell. The target must succeed on a Constitution saving throw or be stunned until the end of its next turn.</p>
+			<p class="indent">Even if the spell has more than one target, you can stun only one creature at a time by this feature.</p>
 		</description>
 		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+			<description>Whenever you deal lightning or thunder damage to a creature with a spell, you can spend 1 sorcery point as a reaction and try to stun the target of the spell. The target must succeed on a Constitution saving throw or be stunned until the end of its next turn.
+			Even if the spell has more than one target, you can stun only one creature at a time by this feature.</description>
 		</sheet>
 	</element>
 </elements>

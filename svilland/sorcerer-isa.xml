@@ -9,66 +9,81 @@
 	<element name="Isa-Touched" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_SORCERER_ISA">
         <supports>Sorcerous Origin</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<p>Isa-touched sorcerers carry with them the magical nature of Isa, the ice rune. As Svilland is a cold land, Isa is a rune that many sorcerers are born with.</p>
+			<p class="indent">These sorcerers are better attuned to spells based on ice and cold. They can send chills down their foes’ spines, and make them unable to fight effectively. When they master the rune, the cold becomes so intense that many enemies even find it impossible to move around an Isa-touched sorcerer.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ISA_COLD_AFFINITY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ISA_ICY_GROUNDS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ISA_CHILLING_COLD" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ISA_FREEZING_VISAGE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ISA_BRINGER_OF_WINTER" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="6" />
-			<grant type="Archetype Feature" id="ID_____" level="14" />
-			<grant type="Archetype Feature" id="ID______" level="18" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ISA_COLD_AFFINITY" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ISA_ICY_GROUNDS" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ISA_CHILLING_COLD" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ISA_FREEZING_VISAGE" level="14" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ISA_BRINGER_OF_WINTER" level="18" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Cold Affinity" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ISA_COLD_AFFINITY">
 		<description>
-			<p></p>
+			<p>At 1st level, you gain the following benefits:</p>
+			<p class="indent"><strong><em></em></strong>Cold Barrier. When you take damage, you can use your reaction to spend 1 sorcery point and freeze the moisture around you. In this way, you create a thin layer of ice right on top of your body and lower the damage taken by 1d6.</p>
+			<p class="indent"><strong><em></em></strong>Cold Resilience. You have advantage on saving throws against cold weather effects and cold environment conditions. Additionally, by spending 1 sorcery point as a bonus action, you gain resistance to cold damage for a number of rounds equal to your Charisma modifier (minimum of one).</p>
 		</description>
 		<sheet>
-			<description></description>
-		</sheet>
-		<spellcasting name="Sorcerer" extend="true">
-			<extend></extend>
-		</spellcasting>
-	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+			<description>Cold Barrier. When you take damage, you can use your reaction to spend 1 sorcery point and freeze the moisture around you. In this way, you create a thin layer of ice right on top of your body and lower the damage taken by 1d6.
+			Cold Resilience. You have advantage on saving throws against cold weather effects and cold environment conditions. Additionally, by spending 1 sorcery point as a bonus action, you gain resistance to cold damage for {{charisma:modifier}} rounds.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Icy Grounds" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ISA_ICY_GROUNDS">
 		<description>
-			<p></p>
+			<p>Also at 1st level, your cold spells leave remains of ice on the ground. While casting a spell that deals cold damage, you can spend 1 sorcery point to cover a 10-foot area around the target or around the center of the spell with thin ice, making the area difficult terrain for 1 minute.</p>
+			<p class="indent">You can choose a number of creatures equal to your Charisma modifier (minimum of one). The difficult terrain counts as normal terrain for you and those creatures.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>While casting a spell that deals cold damage, you can spend 1 sorcery point to cover a 10-foot area around the target or around the center of the spell with thin ice, making the area difficult terrain for 1 minute.
+			You can choose up to {{charisma:modifier}} creatures and the difficult terrain counts as normal terrain for you and those creatures.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Chilling Cold" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ISA_CHILLING_COLD">
 		<description>
-			<p></p>
+			<p>At 6th level, the ice rune empowers your spells. Whenever you cast a spell that requires a spell attack and deals cold damage, you can spend 1 sorcery point to slow your target(s) down. A target must succeed on a Constitution saving throw, or its speed is reduced by half until the end of its next turn.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>Whenever you cast a spell that requires a spell attack and deals cold damage, you can spend 1 sorcery point to slow your target(s) down. A target must succeed on a Constitution saving throw, or its speed is reduced by half until the end of its next turn.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Freezing Visage" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ISA_FREEZING_VISAGE">
 		<description>
-			<p></p>
+			<p>At 14th level, you become even more attuned to ice. Whenever you cast a spell that deals cold damage, you can spend 2 sorcery points to make the target(s) of the spell restrained. A target must succeed on a Constitution saving throw or be restrained until the end of its next turn.</p>
+			<p class="indent">If a target is ablaze or has a fiery aura that surrounds it, it does not get restrained but the flames are extinguished. If the aura is a constant effect, it is suppressed for 1 minute.</p>
+			<p class="indent">Additionally, whenever a creature targets you with a spell or a weapon attack, you can choose to spend 4 sorcery points as a reaction and cover yourself with a block of ice for 1 minute. While in this state, you can’t take any actions (except for dismissing the ice block) and you can’t move. You can only perceive your surroundings, and you can’t be targeted by spell or weapon attacks.</p>
+			<p class="indent">The block of ice has 13 AC and 20 hit points. It remains until it is destroyed or until you dismiss it as an action.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>Whenever you cast a spell that deals cold damage, you can spend 2 sorcery points to make the target(s) of the spell restrained. A target must succeed on a Constitution saving throw or be restrained until the end of its next turn.
+			If a target is ablaze or has a fiery aura that surrounds it, it does not get restrained but the flames are extinguished. If the aura is a constant effect, it is suppressed for 1 minute.
+			Additionally, whenever a creature targets you with a spell or a weapon attack, you can choose to spend 4 sorcery points as a reaction and cover yourself with a block of ice for 1 minute. While in this state, you can’t take any actions (except for dismissing the ice block) and you can’t move. You can only perceive your surroundings, and you can’t be targeted by spell or weapon attacks.
+			The block of ice has 13 AC and 20 hit points. It remains until it is destroyed or until you dismiss it as an action.</description>
+		</sheet>
+	</element>
+	<element name="Bringer of Winter" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_ISA_BRINGER_OF_WINTER">
+		<description>
+			<p>At 18th level, as an action, you can invoke the power of the Isa rune within you. For 1 minute, you gain the following benefits:</p>
+			<ul>
+                <li>Your Chilling Cold and Freezing Visage features affect the targets for a number of rounds equal to your Charisma modifier (minimum of one round). A target can repeat its saving throw at the end of each of its turns, ending the effect on itself on a successful one.</li>
+                <li>You emanate a 5-foot-radius aura of cold. The creatures within the aura have disadvantage on their spell and weapon attacks.</li>
+            </ul>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can invoke the power of the Isa rune within you. For 1 minute, you gain the following benefits:
+			Your Chilling Cold and Freezing Visage features affect the targets for a number of rounds equal to your Charisma modifier (minimum of one round). A target can repeat its saving throw at the end of each of its turns, ending the effect on itself on a successful one.
+			You emanate a 5-foot-radius aura of cold. The creatures within the aura have disadvantage on their spell and weapon attacks.</description>
 		</sheet>
 	</element>
 </elements>

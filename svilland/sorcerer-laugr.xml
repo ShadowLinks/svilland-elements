@@ -9,66 +9,103 @@
 	<element name="Laugr-Touched" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_SORCERER_LAUGR">
         <supports>Sorcerous Origin</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<p>Laugr-touched sorcerers carry with them the rune of Laugr, the water rune. The water rune elevates Laugr-touched sorcerers’ social capabilities, which means that they are constantly surrounded by people who love (or at least admire) them.</p>
+			<p class="indent">Laugr-touched sorcerers are also more adaptable. Just as water changes shape to fit its container, these sorcerers can quickly change their plans according to how things turn out.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_LAUGR_SPELLS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_LAUGR_WATER_AFFINITY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_LAUGR_SENSEFUL_CASTING" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_LAUGR_WATER_CLONE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_LAUGR_CLONE_MASTERY" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="6" />
-			<grant type="Archetype Feature" id="ID_____" level="14" />
-			<grant type="Archetype Feature" id="ID______" level="18" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_LAUGR_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_LAUGR_WATER_AFFINITY" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_LAUGR_SENSEFUL_CASTING" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_LAUGR_WATER_CLONE" level="14" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_LAUGR_CLONE_MASTERY" level="18" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Water Magic" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_LAUGR_SPELLS">
 		<description>
 			<p></p>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>1st</td><td>cure wounds, healing word, spare the dying</td></tr>
+				<tr><td>2nd</td><td>aid, lesser restoration</td></tr>
+				<tr><td>3rd</td><td>mass healing word, revivify</td></tr>
+				<tr><td>4th</td><td>conjure minor elementals (water only)</td></tr>
+				<tr><td>5th</td><td>conjure elemental (water only), mass cure wounds</td></tr>
+			</table>
 		</description>
 		<sheet>
-			<description></description>
+			<description>Conjure Elemental spells only summon water elementals.</description>
 		</sheet>
 		<spellcasting name="Sorcerer" extend="true">
-			<extend></extend>
+			<extend>ID_PHB_SPELL_CURE_WOUNDS</extend>
+			<extend>ID_PHB_SPELL_HEALING_WORD</extend>
+			<extend>ID_PHB_SPELL_SPARE_THE_DYING</extend>
+			<extend>ID_PHB_SPELL_AID</extend>
+			<extend>ID_PHB_SPELL_LESSER_RESTORATION</extend>
+			<extend>ID_PHB_SPELL_MASS_HEALING_WORD</extend>
+			<extend>ID_PHB_SPELL_REVIVIFY</extend>
+			<extend>ID_PHB_SPELL_CONJURE_MINOR_ELEMENTALS</extend>
+			<extend>ID_PHB_SPELL_CONJURE_ELEMENTAL</extend>
+			<extend>ID_PHB_SPELL_MASS_CURE_WOUNDS</extend>
 		</spellcasting>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Water Affinity" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_LAUGR_WATER_AFFINITY">
 		<description>
-			<p></p>
+			<p>At 1st level, you gain the following benefits:</p>
+			<p class="indent"><strong><em>Breathe Underwater.</em></strong> Laugr comes to you when you are underwater. You breathe magically underwater as if you were affected by a water breathing spell.</p>
+			<p class="indent"><strong><em>Socialite. </em></strong>By spending 1 sorcery point, you gain advantage on your Charisma (Deception, Persuasion) and Wisdom (Insight) checks for 1 minute.</p>
+			<p class="indent"><strong><em>Swim Speed.</em></strong> You have a swimming speed of 40 feet.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>Breathe Underwater. Laugr comes to you when you are underwater. You breathe magically underwater as if you were affected by a water breathing spell.
+			Socialite. By spending 1 sorcery point, you gain advantage on your Charisma (Deception, Persuasion) and Wisdom (Insight) checks for 1 minute.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:swim" value="40" bonus="base" />
+		</rules>
+	</element>
+	<element name="Senseful Casting" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_LAUGR_SENSEFUL_CASTING">
+		<description>
+			<p>At 6th level, you gain the following benefits:</p>
+			<p class="indent"><strong><em>Charm of the Seas.</em></strong> While casting an enchantment spell, you can spend 2 sorcery points as a reaction and increase the spell save DC or spell attack modifier (of your choice) of the spell by 1d4.</p>
+			<p class="indent"><strong><em>Might of the Seas.</em></strong> While casting a spell that controls or manipulates a body of water, you can spend 2 sorcery points as a reaction and increase the spell save DC or spell attack modifier (of your choice) of the spell by 1d4.</p>
+		</description>
+		<sheet>
+			<description>Charm of the Seas. While casting an enchantment spell, you can spend 2 sorcery points as a reaction and increase the spell save DC or spell attack modifier (of your choice) of the spell by 1d4.
+			Might of the Seas. While casting a spell that controls or manipulates a body of water, you can spend 2 sorcery points as a reaction and increase the spell save DC or spell attack modifier (of your choice) of the spell by 1d4.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Water Clone" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_LAUGR_WATER_CLONE">
 		<description>
-			<p></p>
+			<p>Starting at 14th level, as a bonus action, you create a magical clone of yourself from water. This clone has hit points and AC equal to yours, but it cannot take any actions. Instead, you can use your clone as the source of your spells. For example, you can target an area with your fireball spell within your clone’s range, instead of within your own.</p>
+			<p class="indent">When you are using Twinned Spell Metamagic, you can pick a secondary target that is in your clone’s range. If you pick the same target or area with your clone while doing so, you can choose to have advantage on your spell attack, or to impose disadvantage on the saving throw of a target of your choice.</p>
+			<p class="indent">Additionally, as a bonus action (or as a reaction if you are targeted by a spell, a spell attack or weapon attack), you can swap places with your clone by spending 2 sorcery points if your clone is within 60 feet of you.</p>
+			<p class="indent">The clone remains for 1 minute, until it drops to 0 hit points, or until you dismiss it as an action. Once you use this feature, you must finish a long rest to use it again</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>As a bonus action, you create a magical clone of yourself from water for 1 minute or until you dismiss it with an action or it drops to 0 hp. This clone has hit points and AC equal to yours, but it cannot take any actions. Instead, you can use your clone as the source of your spells.
+			When you are using Twinned Spell Metamagic, you can pick a secondary target that is in your clone’s range. If you pick the same target or area with your clone while doing so, you can choose to have advantage on your spell attack, or to impose disadvantage on the saving throw of a target of your choice.
+			Additionally, as a bonus action (or as a reaction if you are targeted by a spell, a spell attack or weapon attack), you can swap places with your clone by spending 2 sorcery points if your clone is within 60 feet of you.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Clone Mastery" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SORCERER_LAUGR_CLONE_MASTERY">
 		<description>
-			<p></p>
+			<p>At 18th level, you gain the following benefits:</p>
+			<p class="indent"><strong><em></em></strong>Blast of Waves. By spending 4 sorcery points, you can destroy your clone and make it erupt in waves that go in every direction. Creatures within 30 feet of the clone must make a Strength saving throw. On a failed save, a creature takes 8d8 bludgeoning damage and is carried away 30 feet in the opposite direction of the blast, falling prone. On a successful save, a creature takes half damage and is not carried away or knocked prone.</p>
+			<p class="indent"><strong><em></em></strong>Consume the Essence. If your clone is within 30 feet of you, you can choose to consume its essence. When you do so, your clone is destroyed, and you gain temporary hit points equal to half of your hit dice number of d4s (9d4 for 18th level, for example).</p>
 		</description>
 		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+			<description>Blast of Waves. By spending 4 sorcery points, you can destroy your clone and make it erupt in waves that go in every direction. Creatures within 30 feet of the clone must make a Strength saving throw. On a failed save, a creature takes 8d8 bludgeoning damage and is carried away 30 feet in the opposite direction of the blast, falling prone. On a successful save, a creature takes half damage and is not carried away or knocked prone.
+			Consume the Essence. If your clone is within 30 feet of you, you can choose to consume its essence. When you do so, your clone is destroyed, and you gain temporary hit points equal to half of your hit dice number of d4s.</description>
 		</sheet>
 	</element>
 </elements>
