@@ -1,61 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Chanter of Kin</name>
+        <description>Chanter of Kin Tradition for Seidr from Svilland</description>
+        <update version="0.0.1">
+            <file name="seidr-kin.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/seidr-kin.xml" />
+        </update>
+    </info>
+	<element name="Chanter of Kin" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_SEIDR_KIN">
+        <supports>seidr-tradition</supports>
 		<description>
-			<p></p>
-			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<p>You get initiated into the tradition by the spirits of your ancestors. They are your past. They fought and died for their path. Now, that path is yours. Ancestor spirits choose seidrs for their own purposes. They are exact and wise in their remarks, and can see what people cannot.</p>
+			<p class="indent">Ancestors may influence you to become a warden of your village, tribe, or nation. They may push you towards a path where you must confront challenges that threaten your people or other folks of Svilland. In any case, ancestors seek to communicate with, and aid or protect matters of the sentient folks and societies.</p>
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_KIN_TRADITION_PROFICIENCY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_KIN_ANCESTORS_GUIDANCE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_KIN_ANCESTORS_AID" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_KIN_ANCESTORS_REVENGE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_KIN_ANCESTRAL_GATHERING" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_KIN_ANCESTRAL_MIGHT" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_KIN_TRADITION_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_KIN_ANCESTORS_GUIDANCE" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_KIN_ANCESTORS_AID" level="7" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_KIN_ANCESTORS_REVENGE" level="11" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_KIN_ANCESTRAL_GATHERING" level="15" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_KIN_ANCESTRAL_MIGHT" level="18" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="Tradition Proficiency" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_KIN_TRADITION_PROFICIENCY">
 		<description>
-			<p></p>
+			<p>When you choose the Chanter of Kin tradition at 1st level, you gain proficiency in the History skill.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="Ancestor’s Guidance" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_KIN_ANCESTORS_GUIDANCE">
 		<description>
-			<p></p>
+			<p>When you choose this tradition at 3rd level, you receive a blessing from your ancestors. During your short or long rests, you can invite your ancestors to dine with you. When they do, they make you and those around you feel guided and protected. At the GM’s discretion, they can give you advice on your quests.</p>
+			<p class="indent">You can also choose a number of creatures up to your Wisdom modifier, and your ancestors give them temporary hit points equal to your Wisdom modifier.</p>
+			<p class="indent">Additionally, as a bonus action, you can invoke the protection of your warrior kin or guidance from ancient seidrs as described below:</p>
+			<p class="indent"><strong><em>Ancient Seidr.</em></strong>  Ancient seidrs manifest themselves to guide your magic. Roll 1d4 and add the result to your spell save DC or spell attack modifier until the start of your next turn.</p>
+			<p class="indent"><strong><em>Warrior Kin.</em></strong>  Your warrior ancestors manifest themselves to guide you. Roll 1d4 and add the result to your AC or attack bonus (of your choice) until the start of your next turn.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain any expended uses once you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="{{wisdom:modifier}}/Long Rest" action="Bonus Action">
+			<description>During your short or long rests, you can invite your ancestors to dine with you. When they do, they make you and those around you feel guided and protected. At the GM’s discretion, they can give you advice on your quests.
+			You can also choose a number of creatures up to {{wisdom:modifier}}, and your ancestors give them {{wisdom:modifier}} temporary hit points.
+			Ancient Seidr. Roll 1d4 and add the result to your spell save DC or spell attack modifier until the start of your next turn.
+			Warrior Kin. Roll 1d4 and add the result to your AC or attack bonus (of your choice) until the start of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+	<element name="Ancestor’s Aid" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_KIN_ANCESTORS_AID">
 		<description>
-			<p></p>
+			<p>Starting at 7th level, as an action, you can summon your ancestors and make them cause mischief upon your foes for 1 minute.</p>
+			<p class="indent">At your preference, you can form a barrier of your warrior kin or cause your ancient seidrs to haunt your enemies</p>
+			<p class="indent"><strong><em></em></strong>Ancient Seidr. Ancient seidrs manifest themselves close to you and haunt the targets of your spells. You have advantage on your spell attack rolls against creatures within 30 feet of you, and such creatures you target with your spells have disadvantage on saving throws against your spells.</p>
+			<p class="indent"><strong><em></em></strong>Warrior Kin. Your warrior ancestors manifest themselves close to you and start circling around you and protect you. Attack rolls against you are made with disadvantage.</p>
+			<p class="indent">Once used, you cannot use this feature again until you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you can summon your ancestors and make them cause mischief upon your foes for 1 minute.
+			Ancient Seidr. You have advantage on your spell attack rolls against creatures within 30 feet of you, and such creatures you target with your spells have disadvantage on saving throws against your spells.
+			Warrior Kin. Attack rolls against you are made with disadvantage.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
+	<element name="Ancestor’s Revenge" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_KIN_ANCESTORS_REVENGE">
 		<description>
-			<p></p>
+			<p>Starting at 11th level, whenever you take damage from an attack or spell, you can use your reaction to let your ancestors take revenge from the source of that attack if the attacker is within 30 feet of you. When you do so, the attacker must make a saving throw (Dexterity if your ancestor is a warrior kin, Wisdom if it is an ancient seidr).</p>
+			<p class="indent">On a failed save, the creature takes 5d8 force damage (if the ancestor is a warrior kin) or psychic damage (if the ancestor is an ancient seidr), and it becomes frightened of you for 1 minute. On a successful save, it takes half as much damage and is not frightened. The creature can repeat its saving throw at the end of each of its turns, ending the effect on a successful one.</p>
+			<p class="indent">Once you use this feature, you cannot do so again until you finish a short rest.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Short Rest">
+			<description>henever you take damage from an attack or spell, you can use your reaction to let your ancestors take revenge from the source of that attack if the attacker is within 30 feet of you. When you do so, the attacker must make a saving throw. Dexterity if your ancestor is a warrior kin, Wisdom if it is an ancient seidr.
+			On a failed save, the creature takes 5d8 force damage (if the ancestor is a warrior kin) or psychic damage (if the ancestor is an ancient seidr), and it becomes frightened of you for 1 minute. On a successful save, it takes half as much damage and is not frightened. The creature can repeat its saving throw at the end of each of its turns, ending the effect on a successful one.
+			</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
+	<element name="Ancestral Gathering" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_KIN_ANCESTRAL_GATHERING">
 		<description>
-			<p></p>
+			<p>Starting at 15th level, when you use the Ancestors’ Aid feature, you can affect a number of additional creatures up to your Wisdom modifier (minimum of one creature). The creature(s) can benefit from this feature while they are within 60 feet of you.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>When you use the Ancestors’ Aid feature, you can affect a number of additional creatures up to {{wisdom:modifier}}. The creature(s) can benefit from this feature while they are within 60 feet of you.</description>
+		</sheet>
+	</element>
+	<element name="Ancestral Might" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_KIN_ANCESTRAL_MIGHT">
+		<description>
+			<p>At 18th level, your ancestors provide you with the power to take their revenge, coming from their decades or centuries of old wisdom. As an action, you can invoke the powers of your warrior kin or magical influence from ancient seidrs.</p>
+			<p class="indent">As an action, you invoke your ancestral might. Choose a number of creatures equal to your Wisdom modifier within 120 feet of you. These creatures must succeed on a Constitution (for warrior kin) or Wisdom (for ancient seidr) saving throw, or be affected by one of the following (according to the type of ancestor you choose):</p>
+			<p class="indent"><strong><em></em></strong>Ancient Seidr. Seidrs of the past, who were masters of seeing through the souls of creatures, seal your enemies’ souls and thus keep them from spellcasting. For 1 minute, whenever a creature you targeted casts a spell, it must first succeed on a Wisdom saving throw or cannot cast the spell.</p>
+			<p class="indent"><strong><em></em></strong>Warrior Kin. Your warrior ancestors project a war cry that is heard as an unnatural, terrifying sound, in a 300-foot radius centered on you.</p>
+			<p class="indent">On a failed save, a creature takes 2d10 psychic damage and becomes stunned until the end of its next turn. On a successful save, it takes half as much damage and is not stunned.</p>
+			<p class="indent">The warrior kin remain for 1 minute and you count as though you cast a spirit guardians spell that has an area of 30-foot radius and that you don’t have to maintain concentration on.</p>
+			<p class="indent">Once you use this feature, you cannot do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you invoke your ancestral might. Choose up to {{wisdom:modifier}} creatures within 120 feet of you. These creatures must succeed on a Constitution (for warrior kin) or Wisdom (for ancient seidr) saving throw, or be affected by one of the following:
+			Ancient Seidr.For 1 minute, whenever a creature you targeted casts a spell, it must first succeed on a Wisdom saving throw or cannot cast the spell.
+			Warrior Kin. Your warrior ancestors project a war cry that is heard as an unnatural, terrifying sound, in a 300-foot radius centered on you.
+			On a failed save, a creature takes 2d10 psychic damage and becomes stunned until the end of its next turn. On a successful save, it takes half as much damage and is not stunned.
+			The warrior kin remain for 1 minute and you count as though you cast a spirit guardians spell that has an area of 30-foot radius and that you don’t have to maintain concentration on.</description>
 		</sheet>
 	</element>
 </elements>

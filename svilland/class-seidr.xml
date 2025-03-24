@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Seidr</name>
+        <description>Seidr Class from Svilland</description>
+        <update version="0.0.1">
+            <file name="class-seidr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/class-seidr.xml" />
+        </update>
+    </info>
+    <element name="Seidr" type="Class" source="Svilland" id="ID_DRS_SVILLAND_CLASS_SEIDR">
+        <description>
+    <p>Seidrs feel the spirits around them and work with them. They commune with the beyond, acting as a bridge between the material and the immaterial, between life and death. They master ancient traditions to communicate with spirits, seeking to spread their will or perhaps to tie the will of the spirits to their own. While most seidrs are of the Kuning ancestry, there are seidrs from other ancestries as wel.</p>
+    <h4>THE SPIRITS CHOSE YOU</h4>
+    <p>Seidrs always feel the spirits around them. They may possess this gift from birth, or they may become aware of the connection in later years, perhaps even in adulthood.</p>
+    <p class="indent">Spirits can act like a seidr’s deity, but they are not deities, nor the patrons of seidrs. Seidrs are the messenger of spirits. If the spirits think someone is ready, they test them. If the candidate passes the test, the spirits open their eyes as a seidr.</p>
+    <p class="indent">While their power comes from the spirits that guide them, seidrs can also make ranged attacks or fight in hand to hand combat. They are comfortable with light armor and know how to use simple weapons</p>
+    <h4>LEARN FROM GHOSTLY EYES</h4>
+    <p>When spirits choose a seidr, they share their wisdom with it. Spirits are immortal and their wisdom is limitless. Some of them are souls of the departed, and some have very distinct characteristic features and alignments.</p>
+    <p class="indent">The spirit’s character determines the seidr’s way of life. For example, if a spirit is evil, the seidr who is a channel of that spirit will most likely lean towards evil as well.</p>
+    <p class="indent">Some seidrs think that they are equals with the spirits in their relationship. In their opinion, spirits also learn from seidrs, as they want to know what is happening in the world and are able to do so through seidrs.</p>
+    <h4>CREATING A SEIDR</h4>
+    <p>When making a seidr, think about the way your character was trained in spirit magic. If your character is not a Kuning, you must have a very valid and interesting reason for a Kuning to trust you enough to teach (you) such ancient secrets that are the pillar of their culture.</p>
+    <p class="indent">Your mentor does not have to be a Kuning either, but someone who learnt the ways of seidrs and then passed them onto you for sacred (or wicked) reasons. Or, perhaps, it could actually have been the spirits who taught you, for a reason that is known or yet to be known to you. As you think about this backstory, also think about how you plan to use your powers.</p>
+    <p class="indent">Unlike many classes, being a seidr often requires a direct sense of responsibility for the spirits represented. Still, you may have also obtained the powers and decided to use them for your selfish deeds, and the spirits might just be letting this happen for a greater plan, or perhaps, simply for entertainment.</p>
+    <h5 class="caption">QUICK BUILD</h5>
+    <p>You can make a seidr quickly by following these suggestions. First, Wisdom should be your highest ability score, since that is a seidr’s spellcasting ability, followed by Charisma.</p>
+    <h2>CLASS FEATURES</h2>
+    <p>As a seidr, you gain the following class features.</p>
+    <h5 class="caption">HIT POINTS</h5>
+    <ul class="unstyled">
+        <li><strong>Hit Dice:</strong> 1d8 per seider level</li>
+        <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+        <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per seidr level after 1st</li>
+    </ul>
+    <h5 class="caption">PROFICIENCIES</h5>
+    <ul class="unstyled mb">
+        <li><strong>Armor:</strong> Light armor</li>
+        <li><strong>Weapons:</strong> SImple Weapons, Battleaxes, Shortswords, tridents, longbows, nets</li>
+        <li><strong>Tools:</strong> Herbalistm kit</li>
+    </ul>
+    <ul class="unstyled">
+        <li><strong>Saving Throws:</strong> Wisdom, Charisma</li>
+        <li><strong>Skills:</strong> Choose two skills from Arcana, Perception, Persuasion, Insight, Nature, Medicine, and Survival.</li>
+    </ul>
+    <h5 class="caption">EQUIPMENT</h5>
+    <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+    <ul>
+        <li>(a) any simple weapon, or (b) a bone shortsword</li>
+        <li>(a) a battle axe, or (b) a shield</li>
+        <li>Leather armor, an explorer’s pack, and a totem</li>
+    </ul>
+        <!-- class table here -->
+        <h5 class="caption">THE SEIDR</h5>
+            <table class="class-features">
+                <thead>
+                    <tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td></tr>
+                </thead>
+                <tr><td> 1st</td><td class="left">Initiation of Spirits, Spellcasting, Tradition Feature</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 2nd</td><td class="left">Eyes Show You</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 3rd</td><td class="left">Tradition Feature</td><td>3</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 4th</td><td class="left">ASI</td><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 5th</td><td class="left">-</td><td>4</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 6th</td><td class="left">Dream Walking</td><td>4</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 7th</td><td class="left">Tradition Feature</td><td>4</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 8th</td><td class="left">ASI</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td> 9th</td><td class="left">-</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>10th</td><td class="left">Seidaz</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>11th</td><td class="left">Tradition Feature</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>12th</td><td class="left">ASI</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><td>13th</td><td class="left">-</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+                <tr><td>14th</td><td class="left">-</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>—</td><td>—</td></tr>
+                <tr><td>15th</td><td class="left">Tradition Feature</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+                <tr><td>16th</td><td class="left">ASI</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>—</td></tr>
+                <tr><td>17th</td><td class="left">-</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+                <tr><td>18th</td><td class="left">Tradition Feature</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+                <tr><td>19th</td><td class="left">ASI</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
+                <tr><td>20th</td><td class="left">Spirit Form</td><td>5</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>
+            </table>
+            <div element="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_INITIATION_OF_SPIRITS" />
+            <div element="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_SPELLCASTING" />
+            <div element="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_EYES_SHOW_YOU" />
+            <div element="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_ASI" />
+            <div element="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_DREAM_WALKING" />
+            <div element="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_SEIDAZ" />
+            <div element="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_SPIRIT_FORM" />
+        </description>
+        <setters>
+            <set name="hd">d8</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+            <select type="Proficiency" name="Skill Proficiency, Seidr" number="2" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <grant type="Class Feature" id="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_INITIATION_OF_SPIRITS" level="1" />
+            <grant type="Class Feature" id="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_SPELLCASTING" level="1" />
+            <grant type="Class Feature" id="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_EYES_SHOW_YOU" level="2" />
+            <grant type="Class Feature" id="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_ASI" level="4" />
+            <grant type="Class Feature" id="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_DREAM_WALKING" level="6" />
+            <grant type="Class Feature" id="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_SEIDAZ" level="10" />
+            <grant type="Class Feature" id="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_SPIRIT_FORM" level="20" />
+        </rules>
+        <spellcasting name="Seidr" ability="Wisdom" prepare="true">
+            <list known="true">Seidr</list>
+        </spellcasting>
+    </element>
+    <element name="Initiation of the Spirits" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_INITIATION_OF_SPIRITS">
+        <description>
+            <p>At 1st level, you are chosen by a family of spirits to follow in their footsteps. Choose one of the traditions from which you will gain your first feature.</p>
+            <p class="indent">Spirits who choose you also provide you with insight to guide you on their path. Once per day, you can choose to gain advantage on a Wisdom (Insight) check.</p>
+            <p class="indent">There are many spirits in the realm, and they are divided into 3 families; Ancestors, Sky Spirits, and Land Spirits</p>
+            <p class="indent">Ancestors are those in your family or clan who passed away in the past. They are notable warriors or wise people. Some seidrs also have seidrs who have been dead a long time as guides even though they are not from the same family or clan.</p>
+            <p class="indent">Sky Spirits are heavenly spirits that are the wisest and the oldest in the realm. Some seidrs even perceive them as Gods and Goddesses. They are indeed deity-like figures who are very powerful but who are also equally distant from the errands of mortals.</p>
+            <p class="indent">Land Spirits are spirits that hold parts of the realm’s land as their arcane domain. They are not visible like wraiths or other monster-like spirits, but their essence and presence are quite strong in the areas they dominate. They mainly guide the habits of, and the balance between, beasts and vegetation. Seidrs call these spirits Nattura.</p>
+            <h5>Seidr Traditions</h5>
+            <p>Seidrs follow traditions that are as ancient as the art of spirit magic itself. The traditions are taught by masters to apprentices in the form of verbal communication and of one-on-one training. Seidrs carry their secrets locked in their minds and souls, and don’t leave any kind of written trace regarding their craft.</p>
+            <p class="indent">Traditions focus on different kinds of spirit magic. They also involve chanting to different types of spirits</p>
+            <p class="indent">For example, the tradition of Chanter of Kin focuses on your and your mentor’s ancestors and ancestral seidrs, while the tradition of Chanter of Skies summons the powers of the great spirits; moon, war, life and death, and the Chanter of Nattura draws its powers from the land spirits and the spirits of the woods.</p>
+        </description>
+        <sheet>
+            <description>Once per day, you can choose to gain advantage on a Wisdom (Insight) check.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype" name="Spirit Family" supports="seidr-tradition" />
+        </rules>
+    </element>
+    <element name="Spellcasting" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_SPELLCASTING">
+        <description>
+            <p>When you chant for the spirits to come to your aid, you cast spells from the powers they have bestowed upon you. See general rules about spellcasting. Your seidr spell list is made up of the druid spell list plus the seidr spells given in this book.</p>
+            <h4>Cantrips</h4>
+            <p>At 1st level, you know two cantrips of your choice from the seidr and druid spell lists. At higher levels, you learn additional cantrips, as shown in the Cantrips Known column of the Seidr table.</p>
+            <h4>Preparing and Casting Spells</h4>
+            <p>You can see how many spell slots you have for 1st level spells or higher from the Seidr table. When you cast one of these spells, you expend a slot of that spell’s level. Expended spell slots are regained after finishing a long rest.</p>
+            <p class="indent">You prepare your spell list for the day from your seidr spell list. To prepare your list of available spells, choose a number of spells equal to your Wisdom modifier + your seidr level (minimum of one spell). The spells must belong to a level for which you already have spell slots.</p>
+            <p class="indent">You can change your list of prepared spells after you finish a long rest. After that, you pray to the spirits for them to bestow the new spells upon you. Your prayer must take 1 minute per spell level for each spell on your list.</p>
+            <h4>Spellcasting Ability</h4>
+            <p>Wisdom is your spellcasting ability for spells from your seidr spell list. Spirits, good or evil, seek wise people who recognize the otherworld and who treat them with the utmost respect. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier to determine the spell save DC and the spell attack modifier.</p>
+            <center>
+                <p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+                <p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+            </center>
+            <h4>Ritual Casting</h4>
+            <p>You can cast a seidr spell as a ritual if that spell has the ritual tag and if you have the spell prepared.</p>
+            <h4>Spellcasting Focus</h4>
+            <p>You can use a totem as a spellcasting focus for the spells from your seidr spell list.</p>
+        </description>
+        <sheet>
+            <description>You can cast Seidr spells as rituals. You can prepare {{druid:spellcasting:prepare}} spells from the seidr spell list. You can use a Totem as your spellcasting focus</description>
+        </sheet>
+        <spellcasting name="Seidr" extend="true">
+            <extend known="true">Druid</extend>
+        </spellcasting>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+            <grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING"/>
+            <stat name="seidr:spellcasting:slots:1" value="2" level="1"/>
+            <stat name="seidr:spellcasting:slots:1" value="1" level="2"/>
+            <stat name="seidr:spellcasting:slots:1" value="1" level="3"/>
+            <stat name="seidr:spellcasting:slots:2" value="2" level="3"/>
+            <stat name="seidr:spellcasting:slots:2" value="1" level="4"/>
+            <stat name="seidr:spellcasting:slots:3" value="2" level="5"/>
+            <stat name="seidr:spellcasting:slots:3" value="1" level="6"/>
+            <stat name="seidr:spellcasting:slots:4" value="1" level="7"/>
+            <stat name="seidr:spellcasting:slots:4" value="1" level="8"/>
+            <stat name="seidr:spellcasting:slots:4" value="1" level="9"/>
+            <stat name="seidr:spellcasting:slots:5" value="1" level="9"/>
+            <stat name="seidr:spellcasting:slots:5" value="1" level="10"/>
+            <stat name="seidr:spellcasting:slots:5" value="1" level="18"/>
+            <stat name="seidr:spellcasting:slots:6" value="1" level="11"/>
+            <stat name="seidr:spellcasting:slots:6" value="1" level="19"/>
+            <stat name="seidr:spellcasting:slots:7" value="1" level="13"/>
+            <stat name="seidr:spellcasting:slots:7" value="1" level="20"/>
+            <stat name="seidr:spellcasting:slots:8" value="1" level="15"/>
+            <stat name="seidr:spellcasting:slots:9" value="1" level="17"/>
+            <stat name="seidr:spellcasting:prepare" value="wisdom:modifier"/>
+            <stat name="seidr:spellcasting:prepare" value="level:seidr"/>
+            <select type="Spell" name="Cantrip (Seidr)" supports="$(spellcasting:list), 0" level="1" number="4" spellcasting="Seidr" />
+            <select type="Spell" name="Cantrip (Seidr)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Seidr" />
+            <select type="Spell" name="Cantrip (Seidr)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Seidr" />
+        </rules>
+    </element>
+    <element name="Eyes Show You" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_EYES_SHOW_YOU">
+        <description>
+            <p>Starting at 2nd level, you start to sense the spirits around you. By focusing on the beyond, you can see 60 feet into the ethereal plane for 1 minute. Once you use this feature, you cannot do so again until you finish a long rest.</p>
+            <p class="indent">At the GM’s discretion, spirits may show you some instant glimpses or visions, filled with hints and puzzles. They may show them to you for guidance or for mischief. You can understand which it is by succeeding on a Wisdom (Insight) check contested by their Charisma (Deception) check.</p>
+        </description>
+        <sheet>
+            <description>By focusing on the beyond, you can see 60 feet into the ethereal plane for 1 minute. Once you use this feature, you cannot do so again until you finish a long rest.
+            At the GM’s discretion, spirits may show you some instant glimpses or visions, filled with hints and puzzles. They may show them to you for guidance or for mischief. You can understand which it is by succeeding on a Wisdom (Insight) check contested by their Charisma (Deception) check.</description>
+        </sheet>
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_ASI">
+        <description>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Improvement Option (Seidr 4)" supports="Improvement Option,Seidr,4" level="4"/>
+            <select type="Class Feature" name="Improvement Option (Seidr 8)" supports="Improvement Option,Seidr,8" level="8"/>
+            <select type="Class Feature" name="Improvement Option (Seidr 12)" supports="Improvement Option,Seidr,12" level="12"/>
+            <select type="Class Feature" name="Improvement Option (Seidr 16)" supports="Improvement Option,Seidr,16" level="16"/>
+            <select type="Class Feature" name="Improvement Option (Seidr 19)" supports="Improvement Option,Seidr,19" level="19"/>
+        </rules>
+    </element>
+    <element name="Dream Walking" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_DREAM_WALKING">
+        <description>
+            <p>Starting at 6th level, you learn how to take a journey to the dream realm. By falling asleep with a specific purpose during a long rest, you voyage into the dream world to wander into the dreams of others and uncover things from their subconscious. Unlike other creatures, you don’t have disadvantage when moving and navigating within the dream realm. See (p. 86) Dream Realm for further information.</p>
+            <p class="indent">If you fall unconscious while in this realm, you wake up with the hit points you had when you went to sleep but take 1d4 psychic damage for each seidr level you have. This is because your soul manifests itself more strongly, and thus gets affected more when you are a higher level seidr.</p>
+            <p class="indent">While you are dream walking, your material body lies asleep and counts as paralyzed. If someone interacts with your body, you must succeed on a DC 10 Wisdom saving throw to go back to it, end this feature and wake up.</p>
+            <p class="indent">Starting at 13th level, you can also dream walk into the ethereal plane while sleeping as if you had cast an etherealness spell. Differing from the dream realm, any damage you take while walking in the ethereal plane decreases your hit point maximum by an equal amount. If you drop to 0 hit points, you fall unconscious and begin making death saves as usual. On the other hand, this decrease of hit point maximum does not break your long rest.</p>
+            <p class="indent">Once you wake up, you cannot dream walk again until your next long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>By falling asleep with a specific purpose during a long rest, you voyage into the dream world to wander into the dreams of others and uncover things from their subconscious. Unlike other creatures, you don’t have disadvantage when moving and navigating within the dream realm. See (p. 86) Dream Realm for further information.
+            If you fall unconscious while in this realm, you wake up with the hit points you had when you went to sleep but take 1d4 psychic damage for each seidr level you have.
+            While you are dream walking, your material body lies asleep and counts as paralyzed. If someone interacts with your body, you must succeed on a DC 10 Wisdom saving throw to go back to it, end this feature and wake up.</description>
+            <description level="13">By falling asleep with a specific purpose during a long rest, you voyage into the dream world to wander into the dreams of others and uncover things from their subconscious. Unlike other creatures, you don’t have disadvantage when moving and navigating within the dream realm. See (p. 86) Dream Realm for further information.
+            If you fall unconscious while in this realm, you wake up with the hit points you had when you went to sleep but take 1d4 psychic damage for each seidr level you have.
+            While you are dream walking, your material body lies asleep and counts as paralyzed. If someone interacts with your body, you must succeed on a DC 10 Wisdom saving throw to go back to it, end this feature and wake up.
+            You can also dream walk into the ethereal plane while sleeping as if you had cast an etherealness spell. Differing from the dream realm, any damage you take while walking in the ethereal plane decreases your hit point maximum by an equal amount. If you drop to 0 hit points, you fall unconscious and begin making death saves as usual. On the other hand, this decrease of hit point maximum does not break your long rest.</description>
+        </sheet>
+    </element>
+    <element name="Seidaz" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_SEIDAZ">
+        <description>
+            <p>Starting at 10th level, you become more capable in the ways of your spirit magic. Spirits can affect mortals more powerfully than other creatures.</p>
+            <p class="indent">By using their magic, you become better at casting mind-altering spells. The spell save DCs of enchantment spells increase by 1. Also, when a creature makes a saving throw against an enchantment spell you cast, it has disadvantage on the saving throw.</p>
+        </description>
+        <sheet>
+            <description>The spell save DCs of enchantment spells increase by 1. Also, when a creature makes a saving throw against an enchantment spell you cast, it has disadvantage on the saving throw.</description>
+        </sheet>
+    </element>
+    <element name="Spirit Form" type="Class Feature" source="Svilland" id="ID_DRS_SVILLAND_CLASS_FEATURE_SEIDR_SPIRIT_FORM">
+        <description>
+            <p>Starting at 20th level, you become a master of the flesh and of the spirit. As an action, you transform into a spirit for 1 minute. While in spirit form, you become a ghostly silhouette of yourself and gain the following features:</p>
+            <ul>
+                <li>You gain resistance against the following damage types: acid, cold, fire, lightning, necrotic, poison, thunder; bludgeoning, piercing, and slashing from nonmagical attacks.</li>
+                <li>When you move, you can become incorporeal and move through creatures and objects. If you finish your movement within an object, you take 1d10 force damage.</li>
+                <li>Bright light within 10 feet of you becomes dim light, and dim light within 10 feet of you becomes darkness.</li>
+                <li>Any hostile creature that is within 30 feet of you and that is not an undead must succeed on a Wisdom saving throw or be frightened of you for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful one. A creature that succeeds on its saving throw is immune to this effect for 24 hours.</li>
+            </ul>
+            <p class="indent">Once used, you cannot use this feature again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>As an action, yAny hostile creature that is within 30 feet of you and that is not an undead must succeed on a Wisdom saving throw or be frightened of you for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful one. A creature that succeeds on its saving throw is immune to this effect for 24 hours.u can become incorporeal and move through creatures and objects. If you finish your movement within an object, you take 1d10 force damage.
+            Bright light within 10 feet of you becomes dim light, and dim light within 10 feet of you becomes darkness.
+            </description>
+        </sheet>
+    </element>
+</elements>
