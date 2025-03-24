@@ -62,8 +62,8 @@
 		<description>
 			<p>Starting at 7th level, as an action, you can summon your ancestors and make them cause mischief upon your foes for 1 minute.</p>
 			<p class="indent">At your preference, you can form a barrier of your warrior kin or cause your ancient seidrs to haunt your enemies</p>
-			<p class="indent"><strong><em></em></strong>Ancient Seidr. Ancient seidrs manifest themselves close to you and haunt the targets of your spells. You have advantage on your spell attack rolls against creatures within 30 feet of you, and such creatures you target with your spells have disadvantage on saving throws against your spells.</p>
-			<p class="indent"><strong><em></em></strong>Warrior Kin. Your warrior ancestors manifest themselves close to you and start circling around you and protect you. Attack rolls against you are made with disadvantage.</p>
+			<p class="indent"><strong><em>Ancient Seidr.</em></strong> Ancient seidrs manifest themselves close to you and haunt the targets of your spells. You have advantage on your spell attack rolls against creatures within 30 feet of you, and such creatures you target with your spells have disadvantage on saving throws against your spells.</p>
+			<p class="indent"><strong><em>Warrior Kin.</em></strong> Your warrior ancestors manifest themselves close to you and start circling around you and protect you. Attack rolls against you are made with disadvantage.</p>
 			<p class="indent">Once used, you cannot use this feature again until you finish a long rest.</p>
 		</description>
 		<sheet usage="1/Long Rest">
@@ -96,8 +96,8 @@
 		<description>
 			<p>At 18th level, your ancestors provide you with the power to take their revenge, coming from their decades or centuries of old wisdom. As an action, you can invoke the powers of your warrior kin or magical influence from ancient seidrs.</p>
 			<p class="indent">As an action, you invoke your ancestral might. Choose a number of creatures equal to your Wisdom modifier within 120 feet of you. These creatures must succeed on a Constitution (for warrior kin) or Wisdom (for ancient seidr) saving throw, or be affected by one of the following (according to the type of ancestor you choose):</p>
-			<p class="indent"><strong><em></em></strong>Ancient Seidr. Seidrs of the past, who were masters of seeing through the souls of creatures, seal your enemies’ souls and thus keep them from spellcasting. For 1 minute, whenever a creature you targeted casts a spell, it must first succeed on a Wisdom saving throw or cannot cast the spell.</p>
-			<p class="indent"><strong><em></em></strong>Warrior Kin. Your warrior ancestors project a war cry that is heard as an unnatural, terrifying sound, in a 300-foot radius centered on you.</p>
+			<p class="indent"><strong><em>Ancient Seidr.</em></strong> Seidrs of the past, who were masters of seeing through the souls of creatures, seal your enemies’ souls and thus keep them from spellcasting. For 1 minute, whenever a creature you targeted casts a spell, it must first succeed on a Wisdom saving throw or cannot cast the spell.</p>
+			<p class="indent"><strong><em>Warrior Kin.</em></strong> Your warrior ancestors project a war cry that is heard as an unnatural, terrifying sound, in a 300-foot radius centered on you.</p>
 			<p class="indent">On a failed save, a creature takes 2d10 psychic damage and becomes stunned until the end of its next turn. On a successful save, it takes half as much damage and is not stunned.</p>
 			<p class="indent">The warrior kin remain for 1 minute and you count as though you cast a spirit guardians spell that has an area of 30-foot radius and that you don’t have to maintain concentration on.</p>
 			<p class="indent">Once you use this feature, you cannot do so again until you finish a long rest.</p>
