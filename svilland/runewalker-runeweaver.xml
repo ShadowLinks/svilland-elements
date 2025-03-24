@@ -1,61 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Runeweaver</name>
+        <description>Runeweaver Tradition for Runewalker from Svilland</description>
+        <update version="0.0.1">
+            <file name="runewalker-runeweaver.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/runewalker-runeweaver.xml" />
+        </update>
+    </info>
+	<element name="Runeweaver" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_RUNEWALKER_RUNEWEAVER">
+        <supports>Runic-Traditions</supports>
 		<description>
-			<p></p>
+			<p>Runeweavers focus on the mystical powers of the runes. They think that the universe is based on runes and try to see runes in everything around them. To them, everything is a mystical sign.</p>
 			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNEWEAVER_WEAVE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNEWEAVER_WEAVE_INFUSION" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNEWEAVER_DARK_WEAVE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNEWEAVER_PERMANENT_WEAVING" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNEWEAVER_WEAVE" level="2" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNEWEAVER_WEAVE_INFUSION" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNEWEAVER_DARK_WEAVE" level="10" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNEWEAVER_PERMANENT_WEAVING" level="14" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="Weave" type="Archetype Feature" source="Solasta" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNEWEAVER_WEAVE">
 		<description>
-			<p></p>
+			<p>Starting at 2nd level, you start to weave triggering conditions or triggers into runes (spells from your runelist) you cast. For example; you can say, “I weave a shield rune on me. It is automatically activated when I am attacked by a melee weapon attack,” or “I am weaving a fireball rune on the door of my house. When an undead creature touches the door, a fireball spell is cast centered on the point I am designating right now.”</p>
+			<p class="indent">Weaving a spell is a 10-minute ritual and requires you to expend a spell slot as though you were casting the spell normally. The ritual also consumes the spell components that are required to cast the spell.</p>
+			<p class="indent">A weaved spell lasts for 2 hours or until it is triggered. You cannot weave a spell of 6th level or higher, and you can only weave spells of which the casting time is an action, a bonus action, or a reaction. For spells that require a target, you need to specify a target. For spells that affect an area, you need to specify its point of origin. The distance between the point of origin and the point you weave the spell on must be equal to or lower than the rune’s range.</p>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>You can weave triggering conditions or triggers into your spells. >Weaving a spell is a 10-minute ritual and requires you to expend a spell slot as though you were casting the spell normally. The ritual also consumes the spell components that are required to cast the spell.
+			A weaved spell lasts for 2 hours or until it is triggered. You cannot weave a spell of 6th level or higher, and you can only weave spells of which the casting time is an action, a bonus action, or a reaction. For spells that require a target, you need to specify a target. For spells that affect an area, you need to specify its point of origin. The distance between the point of origin and the point you weave the spell on must be equal to or lower than the rune’s range.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="Weave Infusion" type="Archetype Feature" source="Solasta" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNEWEAVER_WEAVE_INFUSION">
 		<description>
-			<p></p>
+			<p>Starting at 6th level, you start to weave runes around yourself and your allies. You or the chosen ally gain one of the following benefits;</p>
+			<ul>
+				<li>+5 bonus to initiative checks</li>
+				<li>+1 bonus to weapon attack rolls</li>
+				<li>+1 bonus to spell attack rolls</li>
+				<li>+2 bonus to AC</li>
+				<li>Advantage on one of the ability checks (of your choice)</li>
+				<li>Advantage on one of the saving throws (of your choice)</li>
+			</ul>
+			<p class="indent">Weaving a rune in such a way is a 10-minute ritual. The chosen effect lasts until you finish a long rest. If you use this feature on an ally, they must be within 30 feet of you during the ritual.</p>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>You start to weave runes around yourself and your allies. You or the chosen ally gain one of the following benefits;
+			+5 bonus to initiative checks
+			+1 bonus to weapon attack rolls
+			+1 bonus to spell attack rolls
+			+2 bonus to AC
+			Advantage on one of the ability checks (of your choice)
+			Advantage on one of the saving throws (of your choice)
+			Weaving a rune in such a way is a 10-minute ritual. The chosen effect lasts until you finish a long rest. If you use this feature on an ally, they must be within 30 feet of you during the ritual.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+	<element name="Dark Weave" type="Archetype Feature" source="Solasta" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNEWEAVER_DARK_WEAVE">
 		<description>
-			<p></p>
+			<p>Starting at 10th level, you start to weave runes in opposition to your enemies. The enemy gains one of the following flaws;</p>
+			<ul>
+				<li>-5 penalty to initiative checks</li>
+				<li>-1 penalty to weapon attack rolls</li>
+				<li>-1 penalty to spell attack rolls</li>
+				<li>-2 penalty to AC</li>
+				<li>Disadvantage on one of the ability checks (of your choice)</li>
+				<li>Disadvantage on one of the saving throws (of your choice)</li>
+			</ul>
+			<p class="indent">Weaving a rune in such a way is a 10-minute ritual. The chosen effect lasts until you finish a long rest. If you use this feature on an ally, it must be within 120 feet of you during the ritual.</p>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>You start to weave runes in opposition to your enemies. The enemy gains one of the following flaws;
+			-5 penalty to initiative checks
+			-1 penalty to weapon attack rolls
+			-1 penalty to spell attack rolls
+			-2 penalty to AC
+			Disadvantage on one of the ability checks (of your choice)
+			Disadvantage on one of the saving throws (of your choice)
+			Weaving a rune in such a way is a 10-minute ritual. The chosen effect lasts until you finish a long rest. If you use this feature on an ally, it must be within 120 feet of you during the ritual.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
+	<element name="Permanent Weaving" type="Archetype Feature" source="Solasta" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNEWEAVER_PERMANENT_WEAVING">
 		<description>
-			<p></p>
+			<p>At 14th level, you weave an effect on yourself permanently. The effect can be chosen from the benefits listed in the Weave Infusion feature. Once the benefit is chosen, it cannot be changed.</p>
 		</description>
 		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+			<description>You weave an effect on yourself permanently. The effect can be chosen from the benefits listed in the Weave Infusion feature. Once the benefit is chosen, it cannot be changed.</description>
 		</sheet>
 	</element>
 </elements>

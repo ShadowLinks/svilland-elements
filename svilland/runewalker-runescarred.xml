@@ -1,61 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Runescarred</name>
+        <description>Runescarred Tradition for Runewalker from Svilland</description>
+        <update version="0.0.1">
+            <file name="runewalker-runescarred.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/runewalker-runescarred.xml" />
+        </update>
+    </info>
+	<element name="Runescarred" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_RUNEWALKER_RUNESCARRED">
+        <supports>Runic-Traditions</supports>
 		<description>
-			<p></p>
+			<p>Runescarreds are fanatics who engrave runes on their bodies as scars. They believe that they can unlock the hidden potentials of runes by empowering them with the force of life running through their veins.</p>
 			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCARRED_BLOOD_FOR_THE_GODS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCARRED_SCAR_OF_GODS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCARRED_SACRIFICE_TO_THE_ONE_EYED_GOD" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCARRED_RUNE_BEARER" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCARRED_BLOOD_FOR_THE_GODS" level="2" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCARRED_SCAR_OF_GODS" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCARRED_SACRIFICE_TO_THE_ONE_EYED_GOD" level="10" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCARRED_RUNE_BEARER" level="14" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="Blood for the Gods" type="Archetype Feature" source="Solasta" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCARRED_BLOOD_FOR_THE_GODS">
 		<description>
-			<p></p>
+			<p>At 2nd level, you learn how to empower the runes with your own blood. While casting a spell from your runelist, you can choose to a scar yourself and make your spell more powerful. You deal a spell level amount of necrotic damage to yourself and the DC of the spell you cast increases by 1. The damage cannot be reduced by any means.</p>
+			<p class="indent">Also, when you drop a creature to 0 hit points by using a spell from your runelist, you regain hit points equal to the level of the spell.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>While casting a spell from your runelist, you can choose to a scar yourself and make your spell more powerful. You deal a spell level amount of necrotic damage to yourself and the DC of the spell you cast increases by 1. The damage cannot be reduced by any means.
+			Also, when you drop a creature to 0 hit points by using a spell from your runelist, you regain hit points equal to the level of the spell.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="Scar of Gods" type="Archetype Feature" source="Solasta" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCARRED_SCAR_OF_GODS">
 		<description>
-			<p></p>
+			<p>Starting at 6th level, the repeatedly opened and healed scars toughen your body. As long as you do not wear any armor, you gain a bonus to your AC equal to half of your proficiency bonus (rounded down).</p>
+			<p class="indent">Also, as an action, you can choose to protect yourself with a protection rune, and have resistance to one of the following damage types for 1 minute; bludgeoning, piercing, or slashing damage from nonmagical weapons.</p>
+			<p class="indent">Starting at 14th level, you can choose a damage type of your choice (instead of the given choices above) while using this feature.</p>
+			<p class="indent">Once you use this feature, you must finish a long rest to use it again.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>As long as you do not wear any armor, you gain a bonus to your AC equal to half of your proficiency bonus (rounded down).
+			Also, as an action, you can choose to protect yourself with a protection rune, and have resistance to one of the following damage types for 1 minute; bludgeoning, piercing, or slashing damage from nonmagical weapons.</description>
+			<description level="14">As long as you do not wear any armor, you gain a bonus to your AC equal to half of your proficiency bonus (rounded down).
+			Also, as an action, you can choose to protect yourself with a protection rune, and have resistance to one damage type for 1 minute.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="ac:rune-scarred:base" value="10"/>
+            <stat name="ac:rune-scarred:dexterity" value="dexterity:modifier"/>
+            <stat name="ac:rune-scarred:proficiency" value="proficiency:half"/>
+            <stat name="ac:rune-scarred" value="ac:rune-scarred:base"/>
+            <stat name="ac:rune-scarred" value="ac:rune-scarred:dexterity"/>
+            <stat name="ac:rune-scarred" value="ac:rune-scarred:proficiency"/>
+            <stat name="ac:calculation" value="ac:rune-scarred" bonus="calculation" equipped="[armor:none]" alt="Scar of the Gods (Runescarred)"/>
+		</rules>
+	</element>
+	<element name="Sacrifice to the One-Eyed God" type="Archetype Feature" source="Solasta" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCARRED_SACRIFICE_TO_THE_ONE_EYED_GOD">
+		<description>
+			<p>Starting at 10th level, you feel that your blood can empower runes even more. When you use your Blood For the Gods feature, you can choose to deal necrotic damage to yourself equal to twice the spell level, and to increase the DC of the spell by 2.</p>
+			<p class="indent">Also, when you drop a creature to 0 hit points by using a spell from your runelist, you regain hit points equal to twice the level of the spell.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>When you use your Blood For the Gods feature, you can choose to deal necrotic damage to yourself equal to twice the spell level, and to increase the DC of the spell by 2.
+			Also, when you drop a creature to 0 hit points by using a spell from your runelist, you regain hit points equal to twice the level of the spell.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+	<element name="Rune Bearer" type="Archetype Feature" source="Solasta" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCARRED_RUNE_BEARER">
 		<description>
-			<p></p>
+			<p>Starting at 14th level, you become the bearer of a rune. You choose a spell of 6th level or lower from your runelist and carve it on your body (on a part of your choice) permanently. When you cast this spell and use the Blood For the Gods feature, the DC increases by 1. Also, when you use an item to cast the rune of your choice, the first usage in a day does not expend a charge.</p>
+			<p class="indent">Rune Bearer is a highly valued title among runewalkers. Their runic might is both respected and feared by Svillanders.</p>
 		</description>
 		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+			<description>You choose a spell of 6th level or lower from your runelist and carve it on your body (on a part of your choice) permanently. When you cast this spell and use the Blood For the Gods feature, the DC increases by 1. Also, when you use an item to cast the rune of your choice, the first usage in a day does not expend a charge.</description>
 		</sheet>
 	</element>
 </elements>

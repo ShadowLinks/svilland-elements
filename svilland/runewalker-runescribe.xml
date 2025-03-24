@@ -1,61 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Runescribe</name>
+        <description>Runescribe Tradition for Runewalker from Svilland</description>
+        <update version="0.0.1">
+            <file name="runewalker-runescribe.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/runewalker-runescribe.xml" />
+        </update>
+    </info>
+	<element name="Runescribe" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_RUNEWALKER_RUNESCRIBE">
+        <supports>Runic-Traditions</supports>
 		<description>
-			<p></p>
+			<p>Runescribes follow runic lore. They believe that the ability to scribe runes is both a gift and a sacred duty. They try to write down all runic lore so that not even a pinch of knowledge is lost. Since parchment is not easily found in Svilland, they learn how to scribe runes on any surface they see fit.</p>
 			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCRIBE_MEMORY_OF_GODS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCRIBE_SCRIBE_OF_GODS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCRIBE_WORD_OF_GODS" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCRIBE_WORD_BEARER" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="1" />
-			<grant type="Archetype Feature" id="ID___" level="1" />
-			<grant type="Archetype Feature" id="ID____" level="1" />
-			<grant type="Archetype Feature" id="ID_____" level="1" />
-			<grant type="Archetype Feature" id="ID______" level="1" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCRIBE_MEMORY_OF_GODS" level="2" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCRIBE_SCRIBE_OF_GODS" level="6" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCRIBE_WORD_OF_GODS" level="10" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCRIBE_WORD_BEARER" level="14" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID__">
+	<element name="Memory of Gods" type="Archetype Feature" source="Solasta" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCRIBE_MEMORY_OF_GODS">
 		<description>
-			<p></p>
+			<p>You train your memory so that you can remember each piece of lore you find. Starting at 2nd level, the number of your spell slots for this class of 1st, 2nd, 3rd, 4th, 5th, and 6th slot levels increases by 1. This feature does not let you cast spells of slot levels that you normally cannot cast.</p>
 		</description>
 		<sheet>
 			<description></description>
 		</sheet>
+		<rules>
+			<stat name="runewalker:spellcasting:slots:1" value="1" level="2"/>
+			<stat name="runewalker:spellcasting:slots:2" value="1" level="3"/>
+			<stat name="runewalker:spellcasting:slots:3" value="1" level="5"/>
+			<stat name="runewalker:spellcasting:slots:4" value="1" level="7"/>
+			<stat name="runewalker:spellcasting:slots:5" value="1" level="9"/>
+			<stat name="runewalker:spellcasting:slots:6" value="1" level="11"/>
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID___">
+	<element name="Scribe of Gods" type="Archetype Feature" source="Solasta" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCRIBE_SCRIBE_OF_GODS">
 		<description>
-			<p></p>
+			<p>At 6th level, you learn to inscribe runes (spells from your runelist) onto rocks, leaves, or anything else you may find. You can do so by expending the rune’s spell slot during a 1-hour process of inscribing. You can later use those runes as if they were spell scrolls. Such runes can only be used once, and they can only be used by you. If a saving throw is required, it is made against your spell save DC.</p>
+			<p class="indent">Inscribing requires a certain amount of gold since it is done with a special ink (Cantrip - 25 gp, 1 - 50 gp, 2 - 150 gp, 3 - 300 gp, 4 - 1275 gp, 5 - 2550 gp, 6 - 13625 gp, 7 - 27250 gp, 8 - 40875 gp, 9 - 90000 gp). You cannot inscribe a rune that you cannot cast. You can have a number of runes equal to your proficiency bonus inscribed in this way at a time. When you exceed this limit, the oldest rune you inscribed is broken.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>You learn to inscribe runes (spells from your runelist) onto rocks, leaves, or anything else you may find. You can do so by expending the rune’s spell slot during a 1-hour process of inscribing. You can later use those runes as if they were spell scrolls. Such runes can only be used once, and they can only be used by you. If a saving throw is required, it is made against your spell save DC.
+			Inscribing requires a certain amount of gold since it is done with a special ink (Cantrip - 25 gp, 1 - 50 gp, 2 - 150 gp, 3 - 300 gp, 4 - 1275 gp, 5 - 2550 gp, 6 - 13625 gp, 7 - 27250 gp, 8 - 40875 gp, 9 - 90000 gp). You cannot inscribe a rune that you cannot cast. You can have a number of runes equal to your proficiency bonus inscribed in this way at a time. When you exceed this limit, the oldest rune you inscribed is broken.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID____">
+	<element name="Word of Gods" type="Archetype Feature" source="Solasta" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCRIBE_WORD_OF_GODS">
 		<description>
-			<p></p>
+			<p>Starting at 10th level, you discover new inscribing methods to lessen the cost you pay while using the Scribe of Gods feature. All the prices are halved.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description> All the prices are halved while using the Scribe of Gods feature.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID_____">
+	<element name="Word Bearer" type="Archetype Feature" source="Solasta" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_RUNEWALKER_RUNESCRIBE_WORD_BEARER">
 		<description>
-			<p></p>
+			<p>Starting at 14th level, you discover a special word by which you can control runes. When you use the Scribe of Gods feature, you can inscribe a rune in such a way that it can also be used by others who know a certain command word determined by you. However, inscribing a rune with a command word doubles the price.</p>
+			<p class="indent">The command word is totally up to you and you can talk to your GM about it.</p>
+			<p class="indent">Word Bearer is a highly valued title among scholars who work on runes. Even kings and queens in Svilland feel the need to consult a Word Bearer’s knowledge in matters of grave importance.</p>
 		</description>
 		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Solasta" id="ID______">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+			<description>You discover a special word by which you can control runes. When you use the Scribe of Gods feature, you can inscribe a rune in such a way that it can also be used by others who know a certain command word determined by you. However, inscribing a rune with a command word doubles the price.</description>
 		</sheet>
 	</element>
 </elements>
