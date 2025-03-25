@@ -4,7 +4,7 @@
 		<name>Svilland</name>
 		<description>Norse themed setting and character options for D&amp;D 5e</description>
 		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="svilland.index" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland.index"/>
 		</update>
 	</info>
