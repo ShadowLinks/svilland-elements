@@ -4,7 +4,7 @@
         <name>Wonderous</name>
         <description></description>
         <author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="items-wonderous.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/items-wonderous.xml" />
         </update>
     </info>
@@ -444,7 +444,7 @@
             <set name="attunement">true</set>
         </setters>
         <rules>
-            <stat name="Charisma" value="1">
+            <stat name="Charisma" value="1" />
         </rules>
     </element>
 </elements>
