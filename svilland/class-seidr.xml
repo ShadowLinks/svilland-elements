@@ -153,7 +153,7 @@
             <p>You can use a totem as a spellcasting focus for the spells from your seidr spell list.</p>
         </description>
         <sheet>
-            <description>You can cast Seidr spells as rituals. You can prepare {{druid:spellcasting:prepare}} spells from the seidr spell list. You can use a Totem as your spellcasting focus</description>
+            <description>You can cast Seidr spells as rituals. You can prepare {{seidr:spellcasting:prepare}} spells from the seidr spell list. You can use a Totem as your spellcasting focus</description>
         </sheet>
         <spellcasting name="Seidr" extend="true">
             <extend known="true">Druid</extend>
