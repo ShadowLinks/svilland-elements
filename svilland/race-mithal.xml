@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Mithral</name>
+		<name>Mithal</name>
 		<description></description>
 		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
-		<update version="0.0.1">
-			<file name="race-mithral.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/race-mithral.xml" />
+		<update version="0.0.2">
+			<file name="race-mithal.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/race-mithal.xml" />
 		</update>
 	</info>
-    <element name="Mithral" type="Race" source="Svilland" id="ID_DRS_SVILLAND_RACE_MITHRAL">
+    <element name="Mithal" type="Race" source="Svilland" id="ID_DRS_SVILLAND_RACE_MITHAL">
         <description>
             <p>In the Second Age, they were the followers of the Bear King. Now they are caught between lands, fighting everything on every front. Armies of Green Lights of the East stand ready to claim their lands and hunters of Nionaem always harass their people.</p>
             <h4>UNENDING CONFLICT</h4>
@@ -46,7 +46,7 @@
         </setters>
         <sheet display="false" />
         <rules>
-            <grant type="Racial Trait" id="ID_DRS_SVILLAND_MITHRAL_RACIAL_TRAIT_IN_THE_MIDDLE" />
+            <grant type="Racial Trait" id="ID_DRS_SVILLAND_MITHAL_RACIAL_TRAIT_IN_THE_MIDDLE" />
             <select type="Feat" name="Feat (Mithal)"/>
             <grant type="Size" id="ID_SIZE_MEDIUM" />
             <stat name="innate speed" value="30" bonus="base" />
@@ -58,7 +58,7 @@
             <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Mithal)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_CHARISMA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
         </rules>
     </element>
-    <element name="In the Middle" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_MITHRAL_RACIAL_TRAIT_IN_THE_MIDDLE">
+    <element name="In the Middle" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_MITHAL_RACIAL_TRAIT_IN_THE_MIDDLE">
         <description>
             <p>You can choose an extra language between the Dvergmer, Kun, or Vestris languages. You are also roficient in the History skill related to your chosen language; meaning you are proficient in Kuning history if you choose Kun as a language, or Vestri history if you choose Vestris as a language.</p>
         </description>
@@ -69,7 +69,7 @@
             <select type="Racial Trait" name="In the Middle" supports="mithal-lang" />
         </rules>
     </element>
-    <element name="Dvergmer" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_MITHRAL_RACIAL_TRAIT_DVERGMER">
+    <element name="Dvergmer" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_MITHAL_RACIAL_TRAIT_DVERGMER">
         <supports>mithal-lang</supports>
         <description>
             <p>You know Dvergmer and you are also proficient in the History skill related to your chosen language.</p>
@@ -82,7 +82,7 @@
         </rules>
     </element>
 
-    <element name="Kun" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_MITHRAL_RACIAL_TRAIT_KUN">
+    <element name="Kun" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_MITHAL_RACIAL_TRAIT_KUN">
         <supports>mithal-lang</supports>
         <description>
             <p>You know Kun and you are also proficient in the History skill related to your chosen language.</p>
@@ -95,7 +95,7 @@
         </rules>
     </element>
 
-    <element name="Vestris" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_MITHRAL_RACIAL_TRAIT_VESTRIS">
+    <element name="Vestris" type="Racial Trait" source="Svilland" id="ID_DRS_SVILLAND_MITHAL_RACIAL_TRAIT_VESTRIS">
         <supports>mithal-lang</supports>
         <description>
             <p>You know Vestris and you are also proficient in the History skill related to your chosen language.</p>
