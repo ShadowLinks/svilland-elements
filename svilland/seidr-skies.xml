@@ -10,73 +10,99 @@
 	<element name="Chanter of Skies" type="Archetype" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_SEIDR_SKIES">
         <supports>seidr-tradition</supports>
 		<description>
-			<p></p>
+			<p>Sky Spirits are some of the most well-known spirits of Svilland. Most of the Kuning and some other ancestries believe in their existence and guidance. There are lots of Sky Spirits, but after the murder of the High Seidr Council (p.7), only 5 of them have been granting power to seidrs. They are: Sun, Moon, Life, Death, and War.</p>
 			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
-			<div element="ID_______" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_SKIES_TRADITION_PROFICIENCY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_SKIES_BLESSING_OF_THE_MOON" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_SKIES_RITUAL_OF_LIFE" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_SKIES_FURY_OF_WAR" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_SKIES_BLESSING_OF_THE_SUN" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_SKIES_CHANNEL_DEATH" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="3" />
-			<grant type="Archetype Feature" id="ID___" level="3" />
-			<grant type="Archetype Feature" id="ID____" level="7" />
-			<grant type="Archetype Feature" id="ID_____" level="11" />
-			<grant type="Archetype Feature" id="ID______" level="15" />
-			<grant type="Archetype Feature" id="ID_______" level="18" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_SKIES_TRADITION_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_SKIES_BLESSING_OF_THE_MOON" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_SKIES_RITUAL_OF_LIFE" level="7" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_SKIES_FURY_OF_WAR" level="11" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_SKIES_BLESSING_OF_THE_SUN" level="15" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_SKIES_CHANNEL_DEATH" level="18" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Tradition Proficiency" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_SKIES_TRADITION_PROFICIENCY">
 		<description>
-			<p></p>
+			<p>When you choose the Chanter of Skies tradition at 1st level, you gain proficiency in the Religion skill</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Blessing of the Moon" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_SKIES_BLESSING_OF_THE_MOON">
 		<description>
-			<p></p>
+			<p>Starting at 3rd level, you have advantage on your Wisdom (Insight), Wisdom (Perception), Dexterity (Stealth), and Wisdom (Survival) checks made at night-time.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>You have advantage on your Wisdom (Insight), Wisdom (Perception), Dexterity (Stealth), and Wisdom (Survival) checks made at night-time.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Ritual of Life" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_SKIES_RITUAL_OF_LIFE">
 		<description>
-			<p></p>
+			<p>At 7th level, you learn a ritual that lets you create spiritual decoctions of vitality through the teachings of the Life spirit. To perform the ritual, you prepare a decoction by blessing a bowl of water with special spiritual herbs during a short rest in a meditative trance. If your trance is interrupted, you should start over. When you are done, the decoction acts like a Potion of Healing.</p>
+			<p class="indent">In one short rest, you can create a number of potions equal to your Wisdom modifier (minimum of one potion). In a long rest, creating these decoctions count as light activity as if you are standing watch, and you can create a number of potions up to twice your Wisdom modifier (minimum of one).</p>
+			<p class="indent">These decoctions are the gifts of the Life spirit, thus, it only affects a number of those you consider to be allies, to a maximum of 6 allies. As they are decoctions, they do not look like normal Potions of Healing, and they turn sour and unusable after one day.</p>
+			<p class="indent">The decoction you make acts like a Potion of Greater Healing once you reach 11th level and acts like a Potion of Superior Healing once you reach 17th level in this class.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>you prepare a decoction by blessing a bowl of water with special spiritual herbs during a short rest in a meditative trance. If your trance is interrupted, you should start over. When you are done, the decoction acts like a Potion of Healing.
+			In one short rest, you can create up to {{wisdom:modifier}} potions. In a long rest, creating these decoctions count as light activity as if you are standing watch, and you can create a number of potions up to {{double-wis}}.
+			These decoctions are the gifts of the Life spirit, thus, it only affects a number of those you consider to be allies, to a maximum of 6 allies. As they are decoctions, they do not look like normal Potions of Healing, and they turn sour and unusable after one day.</description>
+			<description level="11">you prepare a decoction by blessing a bowl of water with special spiritual herbs during a short rest in a meditative trance. If your trance is interrupted, you should start over. When you are done, the decoction acts like a Potion of Greater Healing.
+			In one short rest, you can create up to {{wisdom:modifier}} potions. In a long rest, creating these decoctions count as light activity as if you are standing watch, and you can create a number of potions up to {{double-wis}}.
+			These decoctions are the gifts of the Life spirit, thus, it only affects a number of those you consider to be allies, to a maximum of 6 allies. As they are decoctions, they do not look like normal Potions of Healing, and they turn sour and unusable after one day.</description>
+			<description level="17">you prepare a decoction by blessing a bowl of water with special spiritual herbs during a short rest in a meditative trance. If your trance is interrupted, you should start over. When you are done, the decoction acts like a Potion of Superior Healing.
+			In one short rest, you can create up to {{wisdom:modifier}} potions. In a long rest, creating these decoctions count as light activity as if you are standing watch, and you can create a number of potions up to {{double-wis}}.
+			These decoctions are the gifts of the Life spirit, thus, it only affects a number of those you consider to be allies, to a maximum of 6 allies. As they are decoctions, they do not look like normal Potions of Healing, and they turn sour and unusable after one day.</description>
+		</sheet>
+		<rules>
+			<stat name="double-wis" value="wisdom:modifier" bonus="base" />
+			<stat name="double-wis" value="wisdom:modifier" />
+		</rules>
+	</element>
+	<element name="Fury of War" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_SKIES_FURY_OF_WAR">
+		<description>
+			<p>Starting at 11th level, you can incite fury within your allies as an action. Choose a number of allies equal to your Wisdom modifier (minimum of one ally) within 60 feet of you. For 1 minute, you and the chosen allies deal an extra 1d6 psychic damage on each successful attack.</p>
+			<p class="indent">The damage increases by 2d6 when you reach the 14th level and 3d6 when you reach 17th level in this class.</p>
+			<p class="indent">Once you use this feature, you cannot do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can incite fury within your allies as an action. Choose up to {{wisdom:modifier}} allies within 60 feet of you. For 1 minute, you and the chosen allies deal an extra 1d6 psychic damage on each successful attack.</description>
+			<description level="14">You can incite fury within your allies as an action. Choose up to {{wisdom:modifier}} allies within 60 feet of you. For 1 minute, you and the chosen allies deal an extra 2d6 psychic damage on each successful attack.</description>
+			<description level="17">You can incite fury within your allies as an action. Choose up to {{wisdom:modifier}} allies within 60 feet of you. For 1 minute, you and the chosen allies deal an extra 3d6 psychic damage on each successful attack.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Blessing of the Sun" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_SKIES_BLESSING_OF_THE_SUN">
 		<description>
-			<p></p>
+			<p>Starting at 15th level, whenever you cast a spell that deals radiant or fire damage, the damage you deal increases by one die (for example, a fireball spell you cast deals 9d6 fire damage instead of 8d6. If the spell deals both damage types, you choose the damage type of the additional die).</p>
+			<p class="indent">Also at 15th level, as an action, you can emanate a 60-foot-radius aura of sunlight for 1 minute or until you dismiss it as another action. The aura is centered on you and moves with you. You emit bright light in a 60-foot radius and dim light for an additional 30 feet. The area of bright light created by this feature counts as sunlight.</p>
+			<p class="indent">Once you channel the Sun in this way, you cannot do so again until you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>Whenever you cast a spell that deals radiant or fire damage, the damage you deal increases by one die (If the spell deals both damage types, you choose the damage type of the additional die).
+			As an action, you can emanate a 60-foot-radius aura of sunlight for 1 minute or until you dismiss it as another action. The aura is centered on you and moves with you. You emit bright light in a 60-foot radius and dim light for an additional 30 feet. The area of bright light created by this feature counts as sunlight.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Channel Death" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_SKIES_CHANNEL_DEATH">
 		<description>
-			<p></p>
+			<p>At 18th level, you can touch a creature and release a magical ray of death and agony. You make a touch spell attack against a creature that is not an undead or a construct. On a hit, you deal necrotic damage to the target by a number of d6s equal to its hit dice.</p>
+			<p class="indent">Once you use this feature, you cannot do so again until you finish a short rest.</p>
 		</description>
-		<sheet>
-			<description></description>
-		</sheet>
-	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_______">
-		<description>
-			<p></p>
-		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Short Rest">
+			<description>You make a touch spell attack against a creature that is not an undead or a construct. On a hit, you deal necrotic damage to the target by a number of d6s equal to its hit dice.</description>
 		</sheet>
 	</element>
 </elements>

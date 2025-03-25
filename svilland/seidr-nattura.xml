@@ -12,71 +12,105 @@
 		<description>
 			<p></p>
 			<p class="indent"></p>
-			<div element="ID__" />
-			<div element="ID___" />
-			<div element="ID____" />
-			<div element="ID_____" />
-			<div element="ID______" />
-			<div element="ID_______" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_NATTURA_NATURES_TRADITION_PROFICIENCY" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_NATTURA_NATURES_SPIRITS_WATCH" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_NATTURA_BEAST_SPIRIT" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_NATTURA_NATURES_REJUVENATION" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_NATTURA_BEAST_SPIRITS_GATHERING" />
+			<div element="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_NATTURA_NATURES_WRATH" />
 		</description>
 		<sheet display="false">
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID__" level="3" />
-			<grant type="Archetype Feature" id="ID___" level="3" />
-			<grant type="Archetype Feature" id="ID____" level="7" />
-			<grant type="Archetype Feature" id="ID_____" level="11" />
-			<grant type="Archetype Feature" id="ID______" level="15" />
-			<grant type="Archetype Feature" id="ID_______" level="18" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_NATTURA_NATURES_TRADITION_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_NATTURA_NATURES_SPIRITS_WATCH" level="3" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_NATTURA_BEAST_SPIRIT" level="7" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_NATTURA_NATURES_REJUVENATION" level="11" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_NATTURA_BEAST_SPIRITS_GATHERING" level="15" />
+			<grant type="Archetype Feature" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_NATTURA_NATURES_WRATH" level="18" />
 		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID__">
+	<element name="Tradition Proficiency" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_NATTURA_NATURES_TRADITION_PROFICIENCY">
 		<description>
-			<p></p>
+			<p>When you choose the Chanter of Nattura tradition at 1st level, you gain proficiency in the Animal Handling skill.</p>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description></description>
 		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+		</rules>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID___">
+	<element name="Nature Spirit's Watch" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_NATTURA_NATURES_SPIRITS_WATCH">
 		<description>
-			<p></p>
+			<p>Starting at 3rd level, spirits of nature begin to respect you as a seidr and aid you while you are in nature. Whenever you are within a forest, woods, waterside, or away from a settlement that contains more than 50 people, spirits of nature begin to guide you and watch your back.</p>
+			<p class="indent">You have advantage on Wisdom (Survival) checks to find a good place to camp and to find your way through nature, and on your Wisdom (Animal Handling) checks.</p>
+			<p class="indent">Additionally, when you make camp to take a long rest, spirits watch over the area within 300 feet of you. They wake you up if they perceive a threat within that area. The nature of the threat is at the GM’s discretion according to the following:</p>
+			<p class="indent">The “threat” they perceive does not have to be a threat to you, they also perceive lumberjacks or hunters as a threat, for example.</p>
+			<p class="indent">Similarly, a real threat may not be perceived as a threat by the spirits. For example, if someone approaches you with intentions of tricking or attacking you but does not draw their weapon, it may not be a “threat” for them.</p>
+			<p class="indent">When they wake you up in this way, you have a feeling that a threat is approaching, but you do not know where the threat is or anything else about it.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>Whenever you are within a forest, woods, waterside, or away from a settlement that contains more than 50 people, spirits of nature begin to guide you and watch your back.
+			You have advantage on Wisdom (Survival) checks to find a good place to camp and to find your way through nature, and on your Wisdom (Animal Handling) checks.
+			Additionally, when you make camp to take a long rest, spirits watch over the area within 300 feet of you. They wake you up if they perceive a threat within that area. "Threat" is up to DM.
+			When they wake you up in this way, you have a feeling that a threat is approaching, but you do not know where the threat is or anything else about it.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID____">
+	<element name="Beast Spirit" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_NATTURA_BEAST_SPIRIT">
 		<description>
-			<p></p>
+			<p>At 7th level, you learn how to invoke a spirit of a beast within you. As an action, you invoke a beast spirit and gain one of the following benefits of your choice for 1 minute:</p>
+			<p class="indent"><strong><em>Bear Spirit.</em></strong> You gain temporary hit points equal to your seidr level.</p>
+			<p class="indent"><strong><em>Raven Spirit.</em></strong> You have advantage on saving throws.</p>
+			<p class="indent"><strong><em>Wolf Spirit.</em></strong> You deal an extra damage equal to your Wisdom modifier (minimum one) on a successful attack.</p>
+			<p class="indent">Once you use this feature, you cannot do so again until you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you invoke a beast spirit and gain one of the following benefits of your choice for 1 minute:
+			Bear Spirit. You gain {{level:seidr}} temporary hit point.
+			Raven Spirit. You have advantage on saving throws.
+			Wolf Spirit. You deal an extra {{wisdom:modifier}} damage on a successful attack.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_____">
+	<element name="Nature's Rejuvenation" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_NATTURA_NATURES_REJUVENATION">
 		<description>
-			<p></p>
+			<p>Starting at 11th level, you channel the rejuvenation of nature whenever you heal someone. The healing spells you cast restore 4 additional hit points.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>The healing spells you cast restore 4 additional hit points.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID______">
+	<element name="Beast Spirit's Gathering" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_NATTURA_BEAST_SPIRITS_GATHERING">
 		<description>
-			<p></p>
+			<p>Starting at 15th level, the Beast Spirit feature can also affect your allies. Choose a number of creatures up to your Wisdom modifier (minimum of one creature) that is within 60 feet of you to grant them the benefits of Beast Spirit. The type of the beast spirit can be different for each chosen creature.</p>
 		</description>
 		<sheet>
-			<description></description>
+			<description>Choose up to {{wisdom:modifier}} creatures that are within 60 feet of you to grant them the benefits of Beast Spirit. The type of the beast spirit can be different for each chosen creature.</description>
 		</sheet>
 	</element>
-	<element name="name" type="Archetype Feature" source="Svilland" id="ID_______">
+	<element name="Nature's Wrath" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_SEIDR_NATTURA_NATURES_WRATH">
 		<description>
-			<p></p>
+			<p>At 18th level, you can invoke the wrath of nature and release it upon your enemies. As an action, you summon the spirits of nature to provide you with the following benefits:</p>
+			<p class="indent">Animals immediately come to your aid as if you had cast a conjure animals spell using a 5th-level spell slot. The types of the animals depend on the region and are determined at the GM’s discretion.</p>
+			<p class="indent">Additionally, nature within 100 feet of you becomes your lair for 1 minute. On initiative count 20 (losing initiative ties), you take a lair action to cause one of the following effects:</p>
+			<p class="indent"><strong><em>Branch Hit.</em></strong> If you are in the woods, a tree shakes and hits a creature within 5 feet of it (10 feet if the tree is Huge or larger) with its branches. It uses your spell attack modifier and deals bludgeoning damage equal to 3d8 + your Wisdom modifier.</p>
+			<p class="indent"><strong><em>Crumble.</em></strong> If you are in a cave, a part of the ceiling collapses on a 10-foot-square area. Creatures within the area must make a Dexterity saving throw. On a failed save, a creature takes 3d6 bludgeoning damage and falls prone. It takes half as much damage and does not fall prone on a successful one.</p>
+			<p class="indent"><strong><em>Entangle.</em></strong> If you are in the woods, bushes move to entangle a creature within 5 feet of them. The creature must succeed on a Strength saving throw or become restrained. It can attempt to break free from the bushes by making a Strength check to escape at the end of each of its turns.</p>
+			<p class="indent"><strong><em>Rock Slide.</em></strong> If you are on the mountains, some rocks within 100 feet of you slide and start to fall towards a 30-foot-square area. Creatures within the area must make a Dexterity saving throw. A creature takes 3d6 bludgeoning damage and is buried under the rubble on a failed save. It takes half as much damage and is not buried on a successful one.</p>
+			<p class="indent">A buried creature is restrained and unable to breathe or stand up. A creature can take an action to make a DC 13 Strength check to create an opening and use its movement to get out through that opening back to the surface.</p>
+			<p class="indent"><strong><em>Winter Call.</em></strong> If you are in snowy areas, spirits of snow and winter betray your enemies. For your enemies, the ground becomes difficult terrain. Also, when an enemy enters the area for the first time on a turn or ends its turn there, it must succeed on a Constitution saving throw or take 2d6 cold damage.</p>
+			<p class="indent">Once you use this feature, you cannot do so again until you finish a long rest.</p>
 		</description>
-		<sheet>
-			<description></description>
+		<sheet usage="1/Long Rest">
+			<description>As an action, you summon the spirits of nature to provide you with the following benefits:
+			Animals (Region appropriate) immediately come to your aid as if you had cast a conjure animals spell using a 5th-level spell slot.
+			Additionally, nature within 100 feet of you becomes your lair for 1 minute. On initiative count 20 (losing initiative ties), you take a lair action to cause one of the following effects:
+			Branch Hit. If you are in the woods, a tree shakes and hits a creature within 5 feet of it (10 feet if the tree is Huge or larger) with its branches. It uses your spell attack modifier and deals bludgeoning damage equal to 3d8 + {{wisdom:modifier}}.
+			Crumble. If you are in a cave, a part of the ceiling collapses on a 10-foot-square area. Creatures within the area must make a Dexterity saving throw. On a failed save, a creature takes 3d6 bludgeoning damage and falls prone. It takes half as much damage and does not fall prone on a successful one.
+			Entangle. If you are in the woods, bushes move to entangle a creature within 5 feet of them. The creature must succeed on a Strength saving throw or become restrained. It can attempt to break free from the bushes by making a Strength check to escape at the end of each of its turns.
+			Rock Slide. If you are on the mountains, some rocks within 100 feet of you slide and start to fall towards a 30-foot-square area. Creatures within the area must make a Dexterity saving throw. A creature takes 3d6 bludgeoning damage and is buried under the rubble on a failed save. It takes half as much damage and is not buried on a successful one. A buried creature is restrained and unable to breathe or stand up. A creature can take an action to make a DC 13 Strength check to create an opening and use its movement to get out through that opening back to the surface.
+			Winter Call. If you are in snowy areas, spirits of snow and winter betray your enemies. For your enemies, the ground becomes difficult terrain. Also, when an enemy enters the area for the first time on a turn or ends its turn there, it must succeed on a Constitution saving throw or take 2d6 cold damage.</description>
 		</sheet>
 	</element>
 </elements>

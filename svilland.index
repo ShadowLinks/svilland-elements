@@ -27,6 +27,10 @@
 		<file name="runewalker-runescribe.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/runewalker-runescribe.xml" />
 		<file name="runewalker-runeweaver.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/runewalker-runeweaver.xml" />
 
+		<file name="class-seidr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/class-seidr.xml" />
+		<file name="seidr-kin.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/seidr-kin.xml" />
+		<file name="seidr-skies.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/seidr-skies.xml" />
+
 		<file name="barbarian-berserkr.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/barbarian-berserkr.xml" />
 		<file name="barbarian-svinfylking.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/barbarian-svinfylking.xml" />
 		<file name="barbarian-ufhednar.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/barbarian-ufhednar.xml" />
