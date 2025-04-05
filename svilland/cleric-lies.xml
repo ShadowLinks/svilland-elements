@@ -4,7 +4,7 @@
 		<name>Lies Domain</name>
 		<description></description>
 		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="cleric-lies.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/cleric-lies.xml" />
 		</update>
 	</info>
@@ -73,7 +73,7 @@
 			<description>You have expertise with the disguise kit.</description>
 		</sheet>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" bonus="double" />
+			<stat name="deception:proficiency" value="proficiency" bonus="double"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" bonus="double"/>
 		</rules>
 	</element>

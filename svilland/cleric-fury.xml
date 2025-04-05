@@ -4,7 +4,7 @@
 		<name>Fury Domain</name>
 		<description></description>
 		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="cleric-fury.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/cleric-fury.xml" />
 		</update>
 	</info>
@@ -73,8 +73,8 @@
 			<description></description>
 		</sheet>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" bonus="double"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" bonus="double"/>
+			<stat name="animal handling:proficiency" value="proficiency" bonus="double"/>
+			<stat name="survival:proficiency" value="proficiency" bonus="double"/>
 		</rules>
 	</element>
 	<element name="Beast's Survival" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_BEASTS_SURVIVAL">

@@ -4,7 +4,7 @@
 		<name>Mein Domain</name>
 		<description></description>
 		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="cleric-mein.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/cleric-mein.xml" />
 		</update>
 	</info>
@@ -74,7 +74,7 @@
 			<description>Your proficiency bonus is doubled for any ability check you make that uses the healers kit.</description>
 		</sheet>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT"  bonus="double" />
+			<stat name="insight:proficiency" value="proficiency" bonus="double"/>
 		</rules>
 	</element>
 	<element name="Spread of Agony" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_SPREAD_OF_AGONY">
