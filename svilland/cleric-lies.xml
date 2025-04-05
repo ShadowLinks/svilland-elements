@@ -73,7 +73,8 @@
 			<description>You have expertise with the disguise kit.</description>
 		</sheet>
 		<rules>
-			<stat name="deception:proficiency" value="proficiency" bonus="double"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<stat name="deception:proficiency" value="proficiency" bonus="double" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" bonus="double"/>
 		</rules>
 	</element>

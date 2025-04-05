@@ -74,7 +74,8 @@
 			<description>Your proficiency bonus is doubled for any ability check you make that uses the healers kit.</description>
 		</sheet>
 		<rules>
-			<stat name="insight:proficiency" value="proficiency" bonus="double"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<stat name="insight:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
 	<element name="Spread of Agony" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_MEIN_SPREAD_OF_AGONY">

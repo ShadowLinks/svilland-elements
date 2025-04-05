@@ -73,8 +73,10 @@
 			<description></description>
 		</sheet>
 		<rules>
-			<stat name="animal handling:proficiency" value="proficiency" bonus="double"/>
-			<stat name="survival:proficiency" value="proficiency" bonus="double"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<stat name="animal handling:proficiency" value="proficiency" bonus="double" />
+			<stat name="survival:proficiency" value="proficiency" bonus="double" />
 		</rules>
 	</element>
 	<element name="Beast's Survival" type="Archetype Feature" source="Svilland" id="ID_DRS_SVILLAND_ARCHETYPE_FEATURE_CLERIC_FURY_BEASTS_SURVIVAL">
