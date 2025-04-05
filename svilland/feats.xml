@@ -2,8 +2,8 @@
     <info>
         <name>Feats</name>
         <description></description>
-        <update version="0.0.1">
-            <file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/feats.xml"/>
+        <update version="0.0.2">
+            <file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/feats.xml"/>
         </update>
     </info>
     <element name="Blessed With Magic" type="Feat" source="Svilland" id="ID_DRS_SVILLAND_FEAT_BLESSED_WITH_MAGIC">

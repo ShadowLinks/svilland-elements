@@ -4,7 +4,7 @@
 		<name>Svilland</name>
 		<description>Norse themed setting and character options for D&amp;D 5e</description>
 		<author url="https://dreamrealmstorytellers.com/svilland/">Dream Realm Storytellers</author>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="svilland.index" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland.index"/>
 		</update>
 	</info>
@@ -12,6 +12,7 @@
 		<file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/source.xml" />
 		<file name="langauges.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/languages.xml"/>
 		<file name="backgrounds.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/backgrounds.xml" />
+		<file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/refs/heads/main/svilland/feats.xml"/>
 		
 		<!-- Races -->
 		<file name="race-austri.xml" url="https://raw.githubusercontent.com/ShadowLinks/svilland-elements/main/svilland/race-austri.xml"/>

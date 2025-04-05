@@ -2,10 +2,13 @@
 aurora content builder elements from svilland norse setting for 5e
 Thank you to The-Multitud-e for starting the project I forked from.
 
+## Index File
+https://github.com/ShadowLinks/svilland-elements
+
 ## Things to do:
 Potential additions from the new svilland book.
 
-### Classes:
+### Classes: COMPLETE
 - Runewalker 
 	- Runescarred
 	- Runescribe
@@ -93,10 +96,10 @@ Potential additions from the new svilland book.
 
 ### Spells COMPLETE
 
-### Items
-- Weapons COMPLETE
-- Armor COMPLETE
-- Magic Items/Armor/Weapons COMPLETE
+### Items COMPLETE
+- Weapons 
+- Armor 
+- Magic Items/Armor/Weapons 
 - Runestones 
 
 
